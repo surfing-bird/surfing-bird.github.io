@@ -70,14 +70,13 @@ const Triggers = () => (
         subtitle="As if moving by its own accord, your Soulblade parries and ripostes."
         keywords="Melee, Weapon, Magic"
         actionType="Triggered action"
-        range="Melee 1"
+        range="Melee 2"
         targets="Self or one ally"
         trigger="A creature deals damage to the target."
-        effect="If the target is an ally, you may change the 
-              target of the triggering ability to yourself.
-              The target takes half the damage. If the damage
-              has any potency effect associated with it, the potency is
-              decreased by 1."
+        effect="You can shift a number of squares equal to your Reason score.
+                If the target is an ally and you end this shift adjacent to it,
+                you may change the target of the triggering ability to yourself, the target takes half the damage.
+                If you are the target, you take half the damage."
         spend={
           <Detail
             detailName="Spend 2 Balance"

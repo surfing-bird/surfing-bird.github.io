@@ -21,7 +21,6 @@ export function ManualLayout({ children, className = "" }: ManualLayoutProps) {
           {/* Separator: only after each page except the last */}
           {idx < pages.length - 1 && (
             <div className="border-b-1 border-dashed border-gray-400 w-full" />
-            // border-b border-dashed border-gray-400
           )}
         </div>
       ))}

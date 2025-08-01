@@ -8,6 +8,7 @@ const ChangeLog = () => (
       <Heading3>V0.3.1</Heading3>
       <BulletList>
         <Text>Soul Wave: Nerfed damage.</Text>
+        <Text>Blade's Will: Reworked effect</Text>
       </BulletList>
 
       <Heading3>V0.3.0</Heading3>
