@@ -5,7 +5,6 @@ import {
   Heading2,
   Heading4,
   AdvancementTable,
-  TextBlock,
   Ability,
   Detail,
 } from "@/components";
