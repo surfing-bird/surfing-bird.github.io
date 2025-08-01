@@ -12,7 +12,7 @@ import { routeTree } from "./routeTree.gen";
 import "./styles.css";
 import reportWebVitals from "./reportWebVitals.ts";
 
-const hashHistory = createHashHistory();
+  const hashHistory = createHashHistory();
 
 // Create a new router instance
 const router = createRouter({
