@@ -57,7 +57,7 @@ const Class = () => (
 
         <Detail
           detailName="Stamina Gained at 2nd and Higher Levels"
-          detailValue="12"
+          detailValue="9"
         />
         <Detail detailName="Recoveries" detailValue="8" />
 
