@@ -5,6 +5,12 @@ const ChangeLog = () => (
     <Column>
       <Title>Changelog</Title>
 
+      <Heading3>V0.3.2</Heading3>
+      <BulletList>
+        <Text>Afterimage: afterimage lasts until the end of the next turn</Text>
+        <Text>Cross Slash: changed range text</Text>
+      </BulletList>
+
       <Heading3>V0.3.1</Heading3>
       <BulletList>
         <Text>Soul Wave: Nerfed damage.</Text>

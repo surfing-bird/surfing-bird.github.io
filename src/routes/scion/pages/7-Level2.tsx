@@ -29,9 +29,9 @@ const Level2 = () => (
       <Feature title="Afterimage">
         <Text>
           Whenever you teleport by any means, you leave a distracting afterimage
-          in your previous location until the start of your next turn. Power
-          rolls targeting enemies adjacent to an afterimage gain edge. The
-          afterimage does not occupy space and cannot be targeted or destroyed.
+          in your previous location until the end of your next turn. Power rolls
+          targeting enemies adjacent to an afterimage gain edge. The afterimage
+          does not occupy space and cannot be targeted or destroyed.
         </Text>
       </Feature>
 

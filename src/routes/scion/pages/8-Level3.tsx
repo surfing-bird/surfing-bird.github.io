@@ -47,7 +47,7 @@ const Level3 = () => (
         subtitle="You cleave the air in all directions, blades of force radiating from your stance."
         keywords="Melee, Weapon, Magic, Area"
         actionType="Main action"
-        range="four line 5 within 1"
+        range="four 5x1 lines within 1"
         targets="Each enemy in the area"
         addedStats={["Agility"]}
         tierResults={{

@@ -7,12 +7,11 @@ interface ManualLayoutProps {
 }
 
 export function ManualLayout({ children, className = "" }: ManualLayoutProps) {
-  // Flatten children and filter out null/undefined
   const pages = Children.toArray(children).filter(Boolean);
 
   return (
     <main
-      className={`max-w-[750px] flex flex-col w-full p-4 m-2 border-1 border-gray-400 ${className}`}
+      className={`max-w-[750px] flex flex-col w-full px-4 md:py-4 m-2 border-1 border-gray-400 ${className}`}
       style={{ backgroundColor: "#fffef8" }}
     >
       {pages.map((child, idx) => (
