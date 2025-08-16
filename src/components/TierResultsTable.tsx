@@ -2,6 +2,9 @@ import React from "react";
 import { Text } from "./Text";
 import { RollRange } from "./RollRange";
 import { processTierResultText } from "../utils/textProcessing";
+import T1 from "/icons/power-roll-t1.svg";
+import T2 from "/icons/power-roll-t2.svg";
+import T3 from "/icons/power-roll-t3.svg";
 
 interface TierResults {
   low: string;
@@ -20,7 +23,8 @@ export const TierResultsTable: React.FC<TierResultsTableProps> = ({
     <div className="space-y-1">
       {/* ≤11 row */}
       <div className="flex gap-2 items-center justify-center">
-        <RollRange>≤11</RollRange>
+        <img src={T1} alt="T1" className="w-[27px] h-[12px] mb-[-2px]" />
+        {/* <RollRange>≤ 11</RollRange> */}
         <Text className="grow shrink basis-0">
           {processTierResultText(results.low)}
         </Text>
@@ -28,7 +32,8 @@ export const TierResultsTable: React.FC<TierResultsTableProps> = ({
 
       {/* 12-16 row */}
       <div className="flex gap-2 items-center justify-center">
-        <RollRange>12–16</RollRange>
+        <img src={T2} alt="T2" className="w-[27px] h-[12px] mb-[-2px]" />
+        {/* <RollRange>12–16</RollRange> */}
         <Text className="grow shrink basis-0">
           {processTierResultText(results.middle)}
         </Text>
@@ -36,7 +41,8 @@ export const TierResultsTable: React.FC<TierResultsTableProps> = ({
 
       {/* 17+ row */}
       <div className="flex gap-2 items-center justify-center">
-        <RollRange>17+</RollRange>
+        <img src={T3} alt="T3" className="w-[27px] h-[12px] mb-[-2px]" />
+        {/* <RollRange>17+</RollRange> */}
         <Text className="grow shrink basis-0">
           {processTierResultText(results.high)}
         </Text>

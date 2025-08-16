@@ -7,7 +7,7 @@ interface RollRangeProps {
 
 export const RollRange: React.FC<RollRangeProps> = ({ children }) => {
   return (
-    <div className="w-[25px] h-[12px] mb-[-1px] border border-gray-400 rounded flex items-center justify-center font-medium">
+    <div className="w-[27px] h-[12px] mb-[-1px] border border-gray-400 rounded flex items-center justify-center font-medium">
       <Text className="font-bold">{children}</Text>
     </div>
   );

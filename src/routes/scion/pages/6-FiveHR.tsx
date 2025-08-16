@@ -64,7 +64,7 @@ const FiveHR = () => (
         keywords="Melee, Strike, Weapon, Magic"
         actionType="Main action"
         range="Melee 1"
-        targets="1 creature"
+        targets="One creature"
         addedStats={["Agility"]}
         tierResults={{
           low: "8 + A psychic damage; I < weak, dazed (save ends)",

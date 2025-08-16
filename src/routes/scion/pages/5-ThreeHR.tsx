@@ -53,7 +53,7 @@ const ThreeHR = () => (
         keywords="Ranged, Strike, Magic"
         actionType="Main action"
         range="Ranged 10"
-        targets="1 creature"
+        targets="One creature"
         addedStats={["Agility"]}
         tierResults={{
           low: "8 + R damage",

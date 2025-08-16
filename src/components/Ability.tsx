@@ -6,6 +6,8 @@ import { PowerRoll } from "./PowerRoll";
 import { TierResultsTable } from "./TierResultsTable";
 import { AbilitySection } from "./AbilitySection";
 import { validateTierResults } from "../utils/validation";
+import Target from "/icons/target.svg";
+import Range from "/icons/distance.svg";
 
 interface TierResults {
   low: string;
@@ -84,16 +86,12 @@ export function Ability({
 
           {/* Range and Targets */}
           <div className="flex justify-between items-center">
-            <div className="flex items-center space-x-[1px]">
-              <span className="text-[10px]" aria-label="Range">
-                ◣
-              </span>
+            <div className="flex space-x-[2x]">
+              <img src={Range} alt="Range" className="w-[12px] h-[12px]" />
               <Text>{range}</Text>
             </div>
-            <div className="flex items-center space-x-[1px]">
-              <span className="text-[10px]" aria-label="Targets">
-                ◎
-              </span>
+            <div className="flex space-x-[2px]">
+              <img src={Target} alt="Target" className="w-[12px] h-[12px]" />
               <Text>{targets}</Text>
             </div>
           </div>

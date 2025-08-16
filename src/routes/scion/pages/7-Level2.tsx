@@ -86,7 +86,7 @@ const Level2 = () => (
         keywords="Melee, Strike, Weapon, Magic"
         actionType="Main action"
         range="Melee 1"
-        targets="1 creature"
+        targets="One creature"
         addedStats={["Agility"]}
         tierResults={{
           low: "14 + A damage",

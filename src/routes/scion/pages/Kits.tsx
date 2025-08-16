@@ -75,7 +75,7 @@ const Kits = () => (
         keywords="Melee, Weapon, Strike"
         actionType="Main action"
         range="Melee 2"
-        targets="1 creature"
+        targets="One creature"
         addedStats={["Agility", "Might"]}
         tierResults={{
           low: "5 damage + M or A; M < weak, prone",

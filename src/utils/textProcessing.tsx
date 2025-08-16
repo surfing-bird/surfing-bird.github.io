@@ -105,5 +105,6 @@ const renderToken = (token: WordToken, index: number) => {
 
 export const processTierResultText = (text: string) => {
   const tokens = tokenizeWords(text);
+
   return tokens.map(renderToken);
 };

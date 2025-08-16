@@ -9,6 +9,9 @@ const ChangeLog = () => (
       <BulletList>
         <Text>Afterimage: afterimage lasts until the end of the next turn</Text>
         <Text>Cross Slash: changed range text</Text>
+        <Text>
+          Various places that said '1 creature' now say 'One creature'
+        </Text>
       </BulletList>
 
       <Heading3>V0.3.1</Heading3>
