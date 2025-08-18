@@ -31,6 +31,11 @@ const Maneuvers = () => (
             Subclass: "Soulforged",
             Features: "Soulshape, Soulbound",
           },
+          {
+            level: "",
+            Subclass: "Darksworn",
+            Features: "Glutton for Punishment, Sanguis Maledictum",
+          },
         ]}
       />
 
@@ -106,6 +111,7 @@ const Maneuvers = () => (
           with you, though you may choose to forgo this aspect of it.
         </Text>
       </Feature>
+
       <Ability
         title="Soulshape"
         subtitle="By reshaping the bound fragment of your soul, you persuade your Soulblade to take on a new form."
@@ -146,6 +152,34 @@ const Maneuvers = () => (
           <Detail
             detailName="Spend 2 Balance"
             detailValue="The benefit of the chosen form is doubled in value."
+          />
+        }
+      />
+
+      <Feature title="Glutton for Punishment">
+        <Text>You increase your number of Recoveries by 2.</Text>
+      </Feature>
+
+      <Ability
+        title="Sanguis Maledictum"
+        subtitle="A blood curse creates a link between an ally and a foe, transferring pain from one to the other."
+        keywords="Magic"
+        actionType="Maneuver"
+        range="Ranged 10"
+        targets="Self or an ally and an enemy creature"
+        effect={
+          <TextBlock>
+            <Text>
+              Until the end of your next turn, whenever the friendly target, be
+              it an ally or yourself, takes damage that was dealt by an ability,
+              the same amount of damage is also dealt to each enemy target.
+            </Text>
+          </TextBlock>
+        }
+        spend={
+          <Detail
+            detailName="Spend 2 Balance"
+            detailValue="Add an additional enemy target."
           />
         }
       />

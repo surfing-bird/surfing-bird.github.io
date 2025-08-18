@@ -24,7 +24,6 @@ export const TierResultsTable: React.FC<TierResultsTableProps> = ({
       {/* ≤11 row */}
       <div className="flex gap-2 items-center justify-center">
         <img src={T1} alt="T1" className="w-[27px] h-[12px] mb-[-2px]" />
-        {/* <RollRange>≤ 11</RollRange> */}
         <Text className="grow shrink basis-0">
           {processTierResultText(results.low)}
         </Text>
@@ -33,7 +32,6 @@ export const TierResultsTable: React.FC<TierResultsTableProps> = ({
       {/* 12-16 row */}
       <div className="flex gap-2 items-center justify-center">
         <img src={T2} alt="T2" className="w-[27px] h-[12px] mb-[-2px]" />
-        {/* <RollRange>12–16</RollRange> */}
         <Text className="grow shrink basis-0">
           {processTierResultText(results.middle)}
         </Text>
@@ -42,7 +40,6 @@ export const TierResultsTable: React.FC<TierResultsTableProps> = ({
       {/* 17+ row */}
       <div className="flex gap-2 items-center justify-center">
         <img src={T3} alt="T3" className="w-[27px] h-[12px] mb-[-2px]" />
-        {/* <RollRange>17+</RollRange> */}
         <Text className="grow shrink basis-0">
           {processTierResultText(results.high)}
         </Text>

@@ -23,6 +23,7 @@ const Level2 = () => (
           { Subclass: "Blinkblade", Features: "Afterimage" },
           { Subclass: "Runewright", Features: "Liminal Runes" },
           { Subclass: "Soulforged", Features: "Soul Instinct" },
+          { Subclass: "Darksworn", Features: "Ne Obliviscaris" },
         ]}
       />
 
@@ -49,6 +50,14 @@ const Level2 = () => (
           Once per turn, you can make an opportunity attack whenever a creature
           moves from a square adjacent to you to another square adjacent to you.
           In addition, your stability is increased by 1.
+        </Text>
+      </Feature>
+
+      <Feature title="Ne Obliviscaris">
+        <Text>
+          Whenever you deal damage to a creature who has dealt damage to you
+          since the end of your last turn, you deal extra damage equal to your
+          Reason score.
         </Text>
       </Feature>
 
@@ -100,7 +109,6 @@ const Level2 = () => (
     <Column>
       <Heading3>2nd-Level Runewright Ability</Heading3>
       <Text>Choose one of the following abilities.</Text>
-
       <Ability
         title="Writ of Flame (5 Balance)"
         subtitle="You brand a flaming writ onto the ground, scorching all who would come near."
@@ -110,7 +118,6 @@ const Level2 = () => (
         targets="Each enemy in the area"
         effect="The area remains until the end of the encounter. Each enemy who enters the area for the first time in a combat round or starts their turn there takes damage equal to twice your Reason score."
       />
-
       <Ability
         title="Writ of Sanctuary (5 Balance)"
         subtitle="You brand a defensive writ onto the ground, protecting and emboldening companions."
@@ -120,10 +127,8 @@ const Level2 = () => (
         targets="Each ally in the area"
         effect="The area remains until the end of the encounter. The first time you or an ally enters the area on their turn or begins their turn within it, they gain temporary Stamina equal to three times your Reason score. While within the area, you and your allies gain damage resistance equal to your Reason."
       />
-
       <Heading3>2nd-Level Soulforged Ability</Heading3>
       <Text>Choose one of the following abilities.</Text>
-
       <Ability
         title="Soul Spiral (5 Balance)"
         subtitle="Your Soulblade unfurls in a violent spiral, crashing through foes."
@@ -138,7 +143,6 @@ const Level2 = () => (
           high: "11 damage; push 3",
         }}
       />
-
       <Ability
         title="Soul Wave (5 Balance)"
         subtitle="Your Soulblade blazes with the power of your will, unleashing it in a wave of force."
@@ -151,6 +155,36 @@ const Level2 = () => (
           low: "2 damage; M < weak, dazed (save ends)",
           middle: "3 damage; M < average, dazed (save ends)",
           high: "5 damage; M < strong, dazed (save ends)",
+        }}
+      />
+      <Heading3>2nd-Level Darksworn Ability</Heading3>
+      <Text>Choose one of the following abilities.</Text>
+      <Ability
+        title="Blackest Night (5 Balance)"
+        subtitle="You cloak yourself in a lightless gloom."
+        keywords="Area, Magic"
+        actionType="Maneuver"
+        range="2 aura"
+        targets="Each enemy in the area"
+        effect="Until the end of the encounter or you are dying, each target has its line of effect limited to creatures inside the area. When a target moves into or starts their turn in the area, you can deal 1d6 + your level in damage to yourself to make the target frightened if it has I < STRONG."
+        // effect={
+        //   `Until the end of the encounter or you are dying, each target has its line of effect limited to creatures inside the area. When a target moves into or starts their turn in the area, you can deal 1d6 + your level in damage to yourself to make the target frightened if it has ${processTierResultText("I < strong")}.`
+        // }
+      />
+
+      <Ability
+        title="Scarlet Sunder (5 Balance)"
+        subtitle="A curse of burning vitae - upon death, their body bursts in a crimson dirge."
+        keywords="Melee, Area, Weapon, Magic"
+        actionType="Main action"
+        range="Melee 1"
+        targets="One enemy creature"
+        effect="If the target dies either from this ability or before the start of your next turn, it explodes, dealing damage equal to twice your Reason score to each enemy in range 2. You can deal your Reason score in damage to yourself to deal damage equal to twice your Reason score to the target."
+        addedStats={["Agility"]}
+        tierResults={{
+          low: "10 + A damage",
+          middle: "12 + A damage",
+          high: "16 + A damage",
         }}
       />
     </Column>

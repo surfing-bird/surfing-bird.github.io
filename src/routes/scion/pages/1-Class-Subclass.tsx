@@ -95,11 +95,8 @@ const Class = () => (
 
     <Column>
       <Heading2>1st-Level Features</Heading2>
-
       <Text>As a Scion, you gain the following features.</Text>
-
       <Heading3>Art</Heading3>
-
       <TextBlock>
         <Text>
           Each Scion is a single, carefully chosen inheritor of a different Art.
@@ -113,9 +110,7 @@ const Class = () => (
           which grants you a skill.
         </Text>
       </TextBlock>
-
       <Heading3>Blinkblade</Heading3>
-
       <TextBlock>
         <Text>
           The Blinkblade is a master of teleportation magic, using it to blink
@@ -125,9 +120,7 @@ const Class = () => (
 
         <Text className="italic">No cage can hold me. I choose my path.</Text>
       </TextBlock>
-
       <Heading3>Runewright</Heading3>
-
       <TextBlock>
         <Text>
           The Runewright wields the ancient craft of runebranding to sear
@@ -139,9 +132,7 @@ const Class = () => (
           Knowledge is power. I carve order out of chaos.
         </Text>
       </TextBlock>
-
       <Heading3>Soulforged</Heading3>
-
       <TextBlock>
         <Text>
           The Soulforged binds a fragment of their soul into a chosen weapon,
@@ -153,6 +144,19 @@ const Class = () => (
 
         <Text className="italic">
           I am the soul of my blade. I bring justice for all.
+        </Text>
+      </TextBlock>
+      <Heading3>Darksworn</Heading3>
+      <TextBlock>
+        <Text>
+          The Darksworn embraces forbidden power - blood magic, curses, and the
+          power of pain. They bleed so their foes may suffer, sacrificing
+          vitality to bring ruin to all those who stand in their way. You gain
+          the Intimidate skill.
+        </Text>
+
+        <Text className="italic">
+          Pain is a weapon. I will stop at nothing.
         </Text>
       </TextBlock>
     </Column>

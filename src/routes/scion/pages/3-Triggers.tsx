@@ -25,6 +25,7 @@ const Triggers = () => (
           { level: "", Subclass: "Blinkblade", Features: "Flicker Step" },
           { level: "", Subclass: "Runewright", Features: "Ensnaring Rune" },
           { level: "", Subclass: "Soulforged", Features: "Blade's Will" },
+          { level: "", Subclass: "Darksworn", Features: "Pain Is Power" },
         ]}
       />
 
@@ -44,9 +45,7 @@ const Triggers = () => (
           />
         }
       />
-    </Column>
 
-    <Column>
       <Ability
         title="Ensnaring Rune"
         subtitle="Your foe steps on one of your many traps."
@@ -63,23 +62,40 @@ const Triggers = () => (
           />
         }
       />
+    </Column>
 
+    <Column>
       <Ability
         title="Blade's Will"
         subtitle="As if moving by its own accord, your Soulblade parries and ripostes."
         keywords="Melee, Weapon, Magic"
         actionType="Triggered action"
-        range="Melee 2"
+        range="Ranged 5"
         targets="Self or one ally"
         trigger="A creature deals damage to the target."
         effect="You can shift a number of squares equal to your Reason score.
-                If the target is an ally and you end this shift adjacent to it,
-                you may change the target of the triggering ability to yourself, the target takes half the damage.
-                If you are the target, you take half the damage."
+                If the target is you, or if you end this shift adjacent to the target, the target takes half the damage."
         spend={
           <Detail
             detailName="Spend 2 Balance"
             detailValue="Make a melee free strike against the creature that damaged the target."
+          />
+        }
+      />
+
+      <Ability
+        title="Pain Is Power"
+        subtitle="You take another’s pain - drawing strength from it."
+        keywords="Magic"
+        actionType="Triggered action"
+        range="Ranged 10"
+        targets="Self or an ally"
+        trigger="The target takes damage."
+        effect="You take the damage instead of the target, halving it if you wish. You gain an edge on your next power roll."
+        spend={
+          <Detail
+            detailName="Spend 1+ Balance"
+            detailValue="For each balance spent, deal your Reason in damage to yourself, and double your Reason in damage to the triggering creature."
           />
         }
       />

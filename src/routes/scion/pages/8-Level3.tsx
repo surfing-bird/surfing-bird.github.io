@@ -6,6 +6,7 @@ import {
   Heading3,
   Ability,
   TextBlock,
+  Feature,
 } from "@/components";
 
 const Level3 = () => (
@@ -14,7 +15,7 @@ const Level3 = () => (
       <Heading2>3rd-Level Features</Heading2>
       <Text>As a 3rd-level scion, you gain the following features.</Text>
 
-      <Heading3>Mystic Shield</Heading3>
+      {/* <Heading3>Mystic Shield</Heading3>
       <Text>You gain the following ability.</Text>
 
       <Ability
@@ -34,7 +35,17 @@ const Level3 = () => (
             </Text>
           </TextBlock>
         }
-      />
+      /> */}
+
+      <Feature title="Cascading Enweave">
+        <Text>
+          When using Enweave, you may spend 2 balance to make the chosen effect
+          apply to an additional target within range 5 of the target of your
+          next melee weapon ability. You may choose to use this spend effect
+          more than once - if you do, each additional target needs to be within
+          range 5 of the previous affected target.
+        </Text>
+      </Feature>
 
       <Heading2>7-Balance Abilities</Heading2>
       <Text>
@@ -51,14 +62,12 @@ const Level3 = () => (
         targets="Each enemy in the area"
         addedStats={["Agility"]}
         tierResults={{
-          low: "10 damage",
-          middle: "14 damage",
-          high: "20 damage",
+          low: "6 damage",
+          middle: "10 damage",
+          high: "14 damage",
         }}
       />
-    </Column>
 
-    <Column>
       <Ability
         title="Godspeed"
         subtitle="You surge with arcane power, moving with impossible speed."
@@ -68,7 +77,9 @@ const Level3 = () => (
         targets="Self"
         effect="For the rest of the combat encounter, you have an additional maneuver per turn and gain a +5 bonus to speed."
       />
+    </Column>
 
+    <Column>
       <Ability
         title="Judgment Edge"
         subtitle="A final, measured cut."
@@ -82,7 +93,7 @@ const Level3 = () => (
           middle: "14 + A damage",
           high: "20 + A damage",
         }}
-        effect="If the target of this ability is not a minion and is reduced to 0 stamina, refund the balance cost."
+        effect="If the target of this ability is reduced to 0 stamina, refund the balance cost."
       />
 
       <Ability
@@ -92,7 +103,11 @@ const Level3 = () => (
         actionType="Maneuver"
         range="Self"
         targets="Self"
-        effect="Place a d6 die set to 6 to track this effect. Once a turn you may reduce the die by any amount up to its current value. Then, distribute that many spectral blades among enemies within range 5 as you choose. You cannot assign more than one blade per enemy. Each blade deals 2 + your Reason in damage."
+        effect="Place a d6 die set to 6 to track this effect.
+        Once a turn you may reduce the die by any amount up to its current value.
+        Then, distribute that many spectral blades among enemies within range 5 as you choose.
+        You cannot assign more than one blade per enemy. Each blade deals 2 + your Reason in damage.
+        In addition, whenever an enemy in range 5 is affected by a potency effect, you may reduce the die by 1 to increase the potency by 1."
       />
     </Column>
   </Page>

@@ -5,6 +5,20 @@ const ChangeLog = () => (
     <Column>
       <Title>Changelog</Title>
 
+      <Heading3>V0.3.4</Heading3>
+      <BulletList>
+        <Text>Added Darksworn Art</Text>
+        <Text>Replaced Mystic Shield with Cascading Enweave feature</Text>
+        <Text>Blade's Will: changed range to Ranged 5</Text>
+        <Text>Blade's Will: changed effect</Text>
+      </BulletList>
+
+      <Heading3>V0.3.3</Heading3>
+      <BulletList>
+        <Text>Judgment Edge: changed effect to work on minions as well</Text>
+        <Text>Cross Slash: reduced damage by 4 on each tier</Text>
+      </BulletList>
+
       <Heading3>V0.3.2</Heading3>
       <BulletList>
         <Text>Afterimage: afterimage lasts until the end of the next turn</Text>

@@ -86,7 +86,7 @@ export function Ability({
 
           {/* Range and Targets */}
           <div className="flex justify-between items-center">
-            <div className="flex items-center space-x-[2x]">
+            <div className="flex items-center space-x-[2px]">
               <img src={Range} alt="Range" className="w-[10px] h-[10px]" />
               <Text>{range}</Text>
             </div>

@@ -71,7 +71,7 @@ const tokenizeWords = (text: string): WordToken[] => {
 
     if (isLetterWordPattern(words, i)) {
       tokens.push(createLetterWordToken(words, i));
-      i += 2; // Skip next two words
+      i += 2;
     } else if (isSingleLetter(currentWord)) {
       tokens.push(createLetterToken(words[i]));
     } else {
