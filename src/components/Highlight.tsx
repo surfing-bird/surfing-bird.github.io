@@ -10,7 +10,7 @@ export const Highlight: React.FC<HighlightProps> = ({
   highlightFirstLetter = false,
 }) => {
   const highlight =
-    "bg-black text-white rounded-[1px] px-[3px] text-[10px] font-bold";
+    "bg-black text-white rounded-[1px] px-[3px] text-[8px] font-bold";
 
   if (highlightFirstLetter && children.length > 0) {
     const firstLetter = children[0];

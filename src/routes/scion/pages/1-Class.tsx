@@ -233,12 +233,12 @@ const Class = () => (
                 detailValue="Deal triple your Reason score in fire damage."
               />
               <Detail
-                detailName="Freeze Strike"
-                detailValue="Damage becomes cold. The target is slowed (save ends)."
+                detailName="Gale Strike"
+                detailValue="Damage becomes lightning. You can either push the target, or yourself away from the target, a distance equal to double your Reason score."
               />
               <Detail
-                detailName="Gale Strike"
-                detailValue="Damage becomes lightning. You can either push the target, or yourself away from the target, a distance equal to double your Reason in squares after the strike is resolved."
+                detailName="Freeze Strike"
+                detailValue="Damage becomes cold. The target is slowed (save ends)."
               />
               <Detail
                 detailName="Crimson Strike"
@@ -246,15 +246,15 @@ const Class = () => (
               />
               <Detail
                 detailName="Acid Strike"
-                detailValue="Damage becomes acid. Attacks against the target have an edge (save ends)."
+                detailValue="Deal your Reason score in acid damage. Attacks against the target gain an edge (save ends)."
               />
               <Detail
                 detailName="Umbral Strike"
-                detailValue="Deal your Reason score in psychic damage, and the target is weakened (save ends)."
+                detailValue="Deal your Reason score in psychic damage. The target is weakened (save ends)."
               />
               <Detail
                 detailName="Explosive Strike"
-                detailValue="Damage becomes sonic; deal your Reason in sonic damage to each target in range 2 of the target."
+                detailValue="Damage becomes sonic. Deal your Reason in sonic damage to each enemy in range 2 of the target."
               />
             </BulletList>
             <Text>

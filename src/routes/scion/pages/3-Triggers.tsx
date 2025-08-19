@@ -58,7 +58,7 @@ const Triggers = () => (
         spend={
           <Detail
             detailName="Spend 1 Balance"
-            detailValue="If the target has I < average, they are slowed (EoT)."
+            detailValue="If the target has I < AVERAGE, they are slowed (EoT)."
           />
         }
       />

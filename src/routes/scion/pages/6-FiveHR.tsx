@@ -34,9 +34,9 @@ const FiveHR = () => (
         targets="Each enemy in the area"
         addedStats={["Agility"]}
         tierResults={{
-          low: "5 cold damage, A < weak, slowed (save ends)",
-          middle: "8 cold damage, A < average, slowed (save ends)",
-          high: "11 cold damage, A < strong, restrained (save ends)",
+          low: "5 cold damage, A < WEAK, slowed (save ends)",
+          middle: "8 cold damage, A < AVERAGE, slowed (save ends)",
+          high: "11 cold damage, A < STRONG, restrained (save ends)",
         }}
       />
     </Column>
@@ -67,9 +67,9 @@ const FiveHR = () => (
         targets="One creature"
         addedStats={["Agility"]}
         tierResults={{
-          low: "8 + A psychic damage; I < weak, dazed (save ends)",
-          middle: "12 + A psychic damage; I < average, dazed (save ends)",
-          high: "16 + A psychic damage; I < strong, dazed (save ends)",
+          low: "8 + A psychic damage; I < WEAK, dazed (save ends)",
+          middle: "12 + A psychic damage; I < AVERAGE, dazed (save ends)",
+          high: "16 + A psychic damage; I < STRONG, dazed (save ends)",
         }}
       />
     </Column>

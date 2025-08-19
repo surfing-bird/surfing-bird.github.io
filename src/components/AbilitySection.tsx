@@ -1,5 +1,6 @@
 import React from "react";
 import { Detail } from "./Detail";
+import { processTierResultText } from "@/utils/textProcessing";
 
 interface AbilitySectionProps {
   trigger?: string | React.ReactNode;
@@ -12,22 +13,37 @@ export const AbilitySection: React.FC<AbilitySectionProps> = ({
   effect,
   spend,
 }) => {
+  let processedTrigger: React.ReactNode;
+  let processedEffect: React.ReactNode;
+
+  if (typeof trigger === "string") {
+    processedTrigger = processTierResultText(trigger);
+  } else {
+    processedTrigger = trigger;
+  }
+
+  if (typeof effect === "string") {
+    processedEffect = processTierResultText(effect);
+  } else {
+    processedEffect = effect;
+  }
+
   const triggerSection = trigger && (
     <div className="mt-1">
-      {typeof trigger === "string" ? (
-        <Detail detailName="Trigger" detailValue={trigger} />
+      {typeof processedTrigger === "string" ? (
+        <Detail detailName="Trigger" detailValue={processedTrigger} />
       ) : (
-        trigger
+        processedTrigger
       )}
     </div>
   );
 
   const effectSection = effect && (
     <div className="mt-1">
-      {typeof effect === "string" ? (
-        <Detail detailName="Effect" detailValue={effect} />
+      {typeof processedEffect === "string" ? (
+        <Detail detailName="Effect" detailValue={processedEffect} />
       ) : (
-        effect
+        processedEffect
       )}
     </div>
   );

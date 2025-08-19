@@ -37,15 +37,14 @@ const Level3 = () => (
         }
       /> */}
 
-      <Feature title="Cascading Enweave">
-        <Text>
-          When using Enweave, you may spend 2 balance to make the chosen effect
-          apply to an additional target within range 5 of the target of your
-          next melee weapon ability. You may choose to use this spend effect
-          more than once - if you do, each additional target needs to be within
-          range 5 of the previous affected target.
-        </Text>
-      </Feature>
+      <Heading3>Cascading Enweave</Heading3>
+      <Text>
+        When using Enweave, you may spend 2 balance to make the chosen effect
+        apply to an additional target within range 5 of the target of your next
+        melee weapon ability. You may choose to use this spend effect more than
+        once - if you do, each additional target needs to be within range 5 of
+        the previous affected target.
+      </Text>
 
       <Heading2>7-Balance Abilities</Heading2>
       <Text>

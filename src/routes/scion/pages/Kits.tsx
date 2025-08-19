@@ -78,9 +78,9 @@ const Kits = () => (
         targets="One creature"
         addedStats={["Agility", "Might"]}
         tierResults={{
-          low: "5 damage + M or A; M < weak, prone",
-          middle: "8 damage + M or A; M < average, prone",
-          high: "11 damage + M or A; M < strong, prone",
+          low: "5 damage + M or A; M < WEAK, prone",
+          middle: "8 damage + M or A; M < AVERAGE, prone",
+          high: "11 damage + M or A; M < STRONG, prone",
         }}
         effect="You can jump up to 3 squares straight toward the target without provoking attacks of opportunity before this strike."
       />

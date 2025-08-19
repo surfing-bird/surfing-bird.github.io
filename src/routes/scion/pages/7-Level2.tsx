@@ -152,9 +152,9 @@ const Level2 = () => (
         targets="Each enemy in the area"
         addedStats={["Agility"]}
         tierResults={{
-          low: "2 damage; M < weak, dazed (save ends)",
-          middle: "3 damage; M < average, dazed (save ends)",
-          high: "5 damage; M < strong, dazed (save ends)",
+          low: "2 damage; M < WEAK, dazed (save ends)",
+          middle: "3 damage; M < AVERAGE, dazed (save ends)",
+          high: "5 damage; M < STRONG, dazed (save ends)",
         }}
       />
       <Heading3>2nd-Level Darksworn Ability</Heading3>
@@ -168,7 +168,7 @@ const Level2 = () => (
         targets="Each enemy in the area"
         effect="Until the end of the encounter or you are dying, each target has its line of effect limited to creatures inside the area. When a target moves into or starts their turn in the area, you can deal 1d6 + your level in damage to yourself to make the target frightened if it has I < STRONG."
         // effect={
-        //   `Until the end of the encounter or you are dying, each target has its line of effect limited to creatures inside the area. When a target moves into or starts their turn in the area, you can deal 1d6 + your level in damage to yourself to make the target frightened if it has ${processTierResultText("I < strong")}.`
+        //   `Until the end of the encounter or you are dying, each target has its line of effect limited to creatures inside the area. When a target moves into or starts their turn in the area, you can deal 1d6 + your level in damage to yourself to make the target frightened if it has ${processTierResultText("I < STRONG")}.`
         // }
       />
 

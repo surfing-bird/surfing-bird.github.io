@@ -5,6 +5,13 @@ const ChangeLog = () => (
     <Column>
       <Title>Changelog</Title>
 
+      <Heading3>V0.3.5</Heading3>
+      <BulletList>
+        <Text>
+          Enweave: add damage to Acid Strike, clean up wording on other effects
+        </Text>
+      </BulletList>
+
       <Heading3>V0.3.4</Heading3>
       <BulletList>
         <Text>Added Darksworn Art</Text>
