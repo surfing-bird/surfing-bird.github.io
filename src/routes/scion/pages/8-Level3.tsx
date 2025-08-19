@@ -1,11 +1,4 @@
-import {
-  Page,
-  Column,
-  Text,
-  Heading2,
-  Ability,
-  Feature,
-} from "@/components";
+import { Page, Column, Text, Heading2, Ability, Heading3 } from "@/components";
 
 const Level3 = () => (
   <Page id="level-3">
