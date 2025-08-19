@@ -166,7 +166,7 @@ const Maneuvers = () => (
         keywords="Magic"
         actionType="Maneuver"
         range="Ranged 10"
-        targets="Self or an ally and an enemy creature"
+        targets="Self or an ally and one enemy creature"
         effect={
           <TextBlock>
             <Text>

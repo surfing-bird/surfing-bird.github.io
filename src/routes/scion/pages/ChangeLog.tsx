@@ -10,6 +10,7 @@ const ChangeLog = () => (
         <Text>
           Enweave: add damage to Acid Strike, clean up wording on other effects
         </Text>
+        <Text>Blinkblade: changed skill to Gymnastics</Text>
       </BulletList>
 
       <Heading3>V0.3.4</Heading3>

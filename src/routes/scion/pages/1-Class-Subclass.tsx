@@ -115,7 +115,7 @@ const Class = () => (
         <Text>
           The Blinkblade is a master of teleportation magic, using it to blink
           in and out of reach with uncanny speed - difficult to catch, and
-          harder still to escape. You gain the Escape Artist skill.
+          harder still to escape. You gain the Gymnastics skill.
         </Text>
 
         <Text className="italic">No cage can hold me. I choose my path.</Text>

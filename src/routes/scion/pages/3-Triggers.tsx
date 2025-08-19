@@ -7,6 +7,7 @@ import {
   AdvancementTable,
   Ability,
   Detail,
+  Highlight,
 } from "@/components";
 
 const Triggers = () => (
@@ -56,10 +57,11 @@ const Triggers = () => (
         trigger="The target moves."
         effect="The target takes damage equal to triple your Reason score."
         spend={
-          <Detail
-            detailName="Spend 1 Balance"
-            detailValue="If the target has I < AVERAGE, they are slowed (EoT)."
-          />
+          <Text>
+            <span className="font-bold">Spend 1 Balance: </span>
+            If the target has <Highlight>{"I < AVERAGE"}</Highlight>, they are
+            slowed (EoT).
+          </Text>
         }
       />
     </Column>

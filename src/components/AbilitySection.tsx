@@ -13,37 +13,22 @@ export const AbilitySection: React.FC<AbilitySectionProps> = ({
   effect,
   spend,
 }) => {
-  let processedTrigger: React.ReactNode;
-  let processedEffect: React.ReactNode;
-
-  if (typeof trigger === "string") {
-    processedTrigger = processTierResultText(trigger);
-  } else {
-    processedTrigger = trigger;
-  }
-
-  if (typeof effect === "string") {
-    processedEffect = processTierResultText(effect);
-  } else {
-    processedEffect = effect;
-  }
-
   const triggerSection = trigger && (
     <div className="mt-1">
-      {typeof processedTrigger === "string" ? (
-        <Detail detailName="Trigger" detailValue={processedTrigger} />
+      {typeof trigger === "string" ? (
+        <Detail detailName="Trigger" detailValue={trigger} />
       ) : (
-        processedTrigger
+        trigger
       )}
     </div>
   );
 
   const effectSection = effect && (
     <div className="mt-1">
-      {typeof processedEffect === "string" ? (
-        <Detail detailName="Effect" detailValue={processedEffect} />
+      {typeof effect === "string" ? (
+        <Detail detailName="Effect" detailValue={effect} />
       ) : (
-        processedEffect
+        effect
       )}
     </div>
   );

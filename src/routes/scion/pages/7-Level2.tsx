@@ -8,6 +8,7 @@ import {
   Ability,
   AdvancementTable,
   Feature,
+  Highlight,
 } from "@/components";
 
 const Level2 = () => (
@@ -161,25 +162,34 @@ const Level2 = () => (
       <Text>Choose one of the following abilities.</Text>
       <Ability
         title="Blackest Night (5 Balance)"
-        subtitle="You cloak yourself in a lightless gloom."
+        subtitle="You cloak yourself in lightless gloom."
         keywords="Area, Magic"
         actionType="Maneuver"
         range="2 aura"
         targets="Each enemy in the area"
-        effect="Until the end of the encounter or you are dying, each target has its line of effect limited to creatures inside the area. When a target moves into or starts their turn in the area, you can deal 1d6 + your level in damage to yourself to make the target frightened if it has I < STRONG."
-        // effect={
-        //   `Until the end of the encounter or you are dying, each target has its line of effect limited to creatures inside the area. When a target moves into or starts their turn in the area, you can deal 1d6 + your level in damage to yourself to make the target frightened if it has ${processTierResultText("I < STRONG")}.`
-        // }
+        effect={
+          <Text>
+            <span className="font-bold">Effect: </span>
+            Until the end of the encounter or you are dying, each target in the
+            area has its line of effect limited to creatures inside the area.
+            When a target moves into or starts their turn in the area, you can
+            deal 1d6 + level damage to yourself to make the target frightened if
+            it has <Highlight>{"I < STRONG"}</Highlight>.
+          </Text>
+        }
       />
 
       <Ability
         title="Scarlet Sunder (5 Balance)"
-        subtitle="A curse of burning vitae - upon death, their body bursts in a crimson dirge."
+        subtitle="A curse of burning blood - upon death, their body bursts in a crimson dirge."
         keywords="Melee, Area, Weapon, Magic"
         actionType="Main action"
         range="Melee 1"
         targets="One enemy creature"
-        effect="If the target dies either from this ability or before the start of your next turn, it explodes, dealing damage equal to twice your Reason score to each enemy in range 2. You can deal your Reason score in damage to yourself to deal damage equal to twice your Reason score to the target."
+        effect="You can deal your Reason score in damage to yourself to deal damage equal to twice your Reason score to the target.
+        Until the end of this encounter, if the target dies, it explodes,
+        dealing damage equal to twice your Reason score to each enemy in range 2."
+        effectBeforeResult
         addedStats={["Agility"]}
         tierResults={{
           low: "10 + A damage",

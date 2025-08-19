@@ -2,7 +2,7 @@ import { TextBlock } from "./TextBlock";
 
 interface DetailProps {
   detailName: string;
-  detailValue: string;
+  detailValue: string | React.ReactNode;
   className?: string;
 }
 
@@ -14,7 +14,8 @@ export function Detail({
   return (
     <TextBlock>
       <span className={`font-alegreya text-[10px] ${className}`}>
-        <strong>{detailName}:</strong> {detailValue}
+        <strong>{detailName}: </strong>
+        <span>{detailValue}</span>
       </span>
     </TextBlock>
   );
