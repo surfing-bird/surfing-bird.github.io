@@ -3,9 +3,7 @@ import {
   Column,
   Text,
   Heading2,
-  Heading3,
   Ability,
-  TextBlock,
   Feature,
 } from "@/components";
 

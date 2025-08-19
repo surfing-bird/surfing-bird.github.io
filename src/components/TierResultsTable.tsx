@@ -1,6 +1,5 @@
 import React from "react";
 import { Text } from "./Text";
-import { RollRange } from "./RollRange";
 import { processTierResultText } from "../utils/textProcessing";
 import T1 from "/icons/power-roll-t1.svg";
 import T2 from "/icons/power-roll-t2.svg";
