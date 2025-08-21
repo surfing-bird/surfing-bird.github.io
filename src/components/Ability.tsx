@@ -9,6 +9,14 @@ import { validateTierResults } from "../utils/validation";
 import Target from "/icons/target.svg";
 import Range from "/icons/distance.svg";
 
+// ---- Types ----
+type ActionType =
+  | "Main action"
+  | "Maneuver"
+  | "Free maneuver"
+  | "Triggered action"
+  | "Free triggered action";
+
 interface TierResults {
   low: string;
   middle: string;
@@ -19,7 +27,7 @@ interface AbilityProps {
   title: string;
   subtitle: string;
   keywords: string;
-  actionType: string;
+  actionType: ActionType;
   range: string;
   targets: string;
   addedStats?: ("Might" | "Agility" | "Reason" | "Intuition" | "Presence")[];
@@ -30,6 +38,15 @@ interface AbilityProps {
   spend?: React.ReactNode;
   className?: string;
 }
+
+// ---- Action Type → Color Map ----
+const actionTypeColors: Record<ActionType, string> = {
+  "Main action": "bg-red-100",
+  Maneuver: "bg-blue-100",
+  "Free maneuver": "bg-blue-100/50",
+  "Triggered action": "bg-green-100",
+  "Free triggered action": "bg-green-100/50",
+};
 
 export function Ability({
   title,
@@ -60,11 +77,20 @@ export function Ability({
     .join(", ");
 
   return (
-    <div className={`${className}`}>
-      {/* Header section with vertical line */}
-      <div className="flex flex-row items-stretch">
-        <div className="ability-vertical-line" />
-        <div className="flex-1 pl-3">
+    <div className={`bg-gray-100 p-2 ${className}`}>
+      {/* Header section with background depending on action type */}
+      <div
+        className={`flex flex-row items-stretch border-1 border-gray-300 ${actionTypeColors[actionType]}`}
+      >
+        {/* <div
+          style={{
+            width: "1px",
+            borderRadius: "2px",
+            background: "black",
+            minHeight: "100%",
+          }}
+        /> */}
+        <div className="flex-1 px-3 py-1">
           {/* Title */}
           <Heading5>{title}</Heading5>
 
@@ -98,26 +124,23 @@ export function Ability({
         </div>
       </div>
 
-      {/* Power Roll and Tier Results (only if all are provided) */}
+      {/* Power Roll and Tier Results */}
       {hasTierResults && (
         <>
-          {/* Trigger and Effect before results if specified */}
           {effectBeforeResult && (
             <AbilitySection trigger={trigger} effect={effect} />
           )}
 
           <PowerRoll addedStats={addedStats!} />
-
           <TierResultsTable results={tierResults!} />
 
-          {/* Trigger, Effect, and Spend after results (default) */}
           {!effectBeforeResult && (
             <AbilitySection trigger={trigger} effect={effect} spend={spend} />
           )}
         </>
       )}
 
-      {/* If no tier results, just render trigger, effect, and spend */}
+      {/* If no tier results */}
       {!hasTierResults && (
         <AbilitySection trigger={trigger} effect={effect} spend={spend} />
       )}

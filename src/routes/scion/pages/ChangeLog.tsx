@@ -11,6 +11,10 @@ const ChangeLog = () => (
           Enweave: add damage to Acid Strike, clean up wording on other effects
         </Text>
         <Text>Blinkblade: changed skill to Gymnastics</Text>
+        <Text>Scarlet Dirge: changed effect </Text>
+        <Text>Blackest Night: changed effect and turned into main action</Text>
+        <Text>Chain Weaver: added to kits</Text>
+        <Text>Lightning Strike: slightly reduced damage on T1</Text>
       </BulletList>
 
       <Heading3>V0.3.4</Heading3>

@@ -13,7 +13,7 @@ export function Detail({
 }: DetailProps) {
   return (
     <TextBlock>
-      <span className={`font-alegreya text-[10px] ${className}`}>
+      <span className={`text-[10px] ${className}`}>
         <strong>{detailName}: </strong>
         <span>{detailValue}</span>
       </span>

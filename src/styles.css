@@ -16,7 +16,8 @@
 body {
   margin: 0;
   place-items: center;
-  font-family: "Alegreya", serif;
+  font-family: "Crimson Pro", serif;
+  line-height: 1.1;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -32,7 +33,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Fraunces", serif;
+  font-family: "Crimson Pro", serif;
   line-height: 1.1;
 }
 
@@ -55,9 +56,11 @@ h3 {
 }
 
 h4 {
+  font-family: "Cinzel", serif;
   font-size: 12px;
   font-weight: 800;
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 
 h5 {
@@ -77,12 +80,4 @@ h5 {
   height: 0.5px;
   width: 90%;
   background: linear-gradient(to right, black 25%, transparent 100%);
-}
-
-.ability-vertical-line {
-  width: 1px;
-  border-radius: 2px;
-  background: black;
-  min-height: 100%;
-  margin-right: 0rem;
 }

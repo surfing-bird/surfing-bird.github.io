@@ -1,4 +1,4 @@
-import { Page, Column, Text, Heading2, Heading3, Ability } from "@/components";
+import { Page, Column, Text, Heading2, Heading4, Ability } from "@/components";
 
 const Signatures = () => (
   <Page id="signatures">
@@ -9,7 +9,7 @@ const Signatures = () => (
         through battle with speed and precision.
       </Text>
 
-      <Heading3>Signature Ability</Heading3>
+      <Heading4>Signature Ability</Heading4>
       <Text>
         Select one signature ability from the options below. Signature abilities
         can be used at will.

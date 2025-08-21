@@ -44,11 +44,11 @@ const Level3 = () => (
       </Text>
 
       <Ability
-        title="Cross Slash"
+        title="Cross Slash (7 Balance)"
         subtitle="You cleave the air in all directions, blades of force radiating from your stance."
         keywords="Melee, Weapon, Magic, Area"
         actionType="Main action"
-        range="four 5x1 lines within 1"
+        range="four 5 × 1 lines within 1"
         targets="Each enemy in the area"
         addedStats={["Agility"]}
         tierResults={{
@@ -59,10 +59,10 @@ const Level3 = () => (
       />
 
       <Ability
-        title="Godspeed"
+        title="Godspeed (7 Balance)"
         subtitle="You surge with arcane power, moving with impossible speed."
         keywords="Magic"
-        actionType="Free Maneuver"
+        actionType="Free maneuver"
         range="Self"
         targets="Self"
         effect="For the rest of the combat encounter, you have an additional maneuver per turn and gain a +5 bonus to speed."
@@ -71,7 +71,7 @@ const Level3 = () => (
 
     <Column>
       <Ability
-        title="Judgment Edge"
+        title="Judgment Edge (7 Balance)"
         subtitle="A final, measured cut."
         keywords="Melee, Strike, Weapon, Magic"
         actionType="Main action"
@@ -87,7 +87,7 @@ const Level3 = () => (
       />
 
       <Ability
-        title="Spectral Blades"
+        title="Spectral Blades (7 Balance)"
         subtitle="You summon spectral blades, suspended in poise, released with but a thought."
         keywords="Magic"
         actionType="Maneuver"

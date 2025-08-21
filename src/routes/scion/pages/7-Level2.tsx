@@ -147,7 +147,7 @@ const Level2 = () => (
       <Ability
         title="Soul Wave (5 Balance)"
         subtitle="Your Soulblade blazes with the power of your will, unleashing it in a wave of force."
-        keywords="Melee, Area, Weapon, Magic"
+        keywords="Melee, Weapon, Magic, Strike"
         actionType="Main action"
         range="5 × 3 line within 1"
         targets="Each enemy in the area"
@@ -164,35 +164,47 @@ const Level2 = () => (
         title="Blackest Night (5 Balance)"
         subtitle="You cloak yourself in lightless gloom."
         keywords="Area, Magic"
-        actionType="Maneuver"
+        actionType="Main action"
         range="2 aura"
         targets="Each enemy in the area"
-        effect={
-          <Text>
-            <span className="font-bold">Effect: </span>
-            Until the end of the encounter or you are dying, each target in the
-            area has its line of effect limited to creatures inside the area.
-            When a target moves into or starts their turn in the area, you can
-            deal 1d6 + level damage to yourself to make the target frightened if
-            it has <Highlight>{"I < STRONG"}</Highlight>.
-          </Text>
-        }
+        addedStats={["Reason"]}
+        tierResults={{
+          low: "1 psychic damage; R < WEAK, frightened (save ends)",
+          middle: "2 psychic damage; R < AVERAGE, frightened (save ends)",
+          high: "3 psychic damage; R < STRONG, frightened (save ends)",
+        }}
+        effectBeforeResult
+        effect="Until the end of the encounter or you are dying,
+        the area is considered as difficult terrain for enemies,
+        and their line of effect is limited to creatures inside the area.
+        At the end of each of your turns while this aura is active,
+        you can make one power roll that targets each enemy in the area."
+        // effect={
+        //   <Text>
+        //     <span className="font-bold">Effect: </span>
+        //     Until the end of the encounter or you are dying, each target in the
+        //     area has its line of effect limited to creatures inside the area.
+        //     When a target moves into or starts their turn in the area, you can
+        //     deal 1d6 + level damage to yourself to make the target frightened if
+        //     it has <Highlight>{"I < STRONG"}</Highlight>.
+        //   </Text>
+        // }
       />
 
       <Ability
-        title="Scarlet Sunder (5 Balance)"
+        title="Scarlet Dirge (5 Balance)"
         subtitle="A curse of burning blood - upon death, their body bursts in a crimson dirge."
         keywords="Melee, Area, Weapon, Magic"
         actionType="Main action"
         range="Melee 1"
         targets="One enemy creature"
-        effect="You can deal your Reason score in damage to yourself to deal damage equal to twice your Reason score to the target.
-        Until the end of this encounter, if the target dies, it explodes,
-        dealing damage equal to twice your Reason score to each enemy in range 2."
-        effectBeforeResult
+        effect="A target who is not a minion, leader, or solo creature and who is winded
+          at the end of its next turn is reduced to 0 Stamina. When it dies either this way,
+          or beforehand, the target explodes in a shower of burning blood, dealing twice your
+          Reason score in damage to all enemies within range 3 of it."
         addedStats={["Agility"]}
         tierResults={{
-          low: "10 + A damage",
+          low: "8 + A damage",
           middle: "12 + A damage",
           high: "16 + A damage",
         }}

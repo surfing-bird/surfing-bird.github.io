@@ -8,7 +8,7 @@ interface TextProps {
 export function Text({ children, className = "" }: TextProps) {
   return (
     <div
-      className={`font-alegreya text-[10px] leading-normal break-words overflow-wrap-anywhere ${className}`}
+      className={`text-[10px] leading-normal break-words overflow-wrap-anywhere ${className}`}
     >
       {children}
     </div>

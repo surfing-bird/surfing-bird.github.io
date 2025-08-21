@@ -9,6 +9,7 @@ import {
   BulletList,
   AdvancementTable,
   TextBlock,
+  Heading5,
 } from "@/components";
 import { Detail } from "@/components/Detail";
 
@@ -68,7 +69,7 @@ const Class = () => (
       </div>
 
       {/* --- ADVANCEMENT TABLE --- */}
-      <Heading4 className="text-center">Scion Advancement</Heading4>
+      <Heading3 className="text-center">Scion Advancement</Heading3>
       <AdvancementTable
         showLevel={true}
         columns={["Features", "Abilities"]}
@@ -142,7 +143,7 @@ const Class = () => (
           Empathize skill.
         </Text>
 
-        <Text className="italic">
+        <Text className="italic !font-cinzel-decorative">
           I am the soul of my blade. I bring justice for all.
         </Text>
       </TextBlock>

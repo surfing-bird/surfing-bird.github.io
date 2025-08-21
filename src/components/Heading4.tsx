@@ -6,5 +6,5 @@ interface Heading4Props {
 }
 
 export function Heading4({ children, className = "" }: Heading4Props) {
-  return <h4 className={`capitalize ${className}`}>{children}</h4>;
+  return <h4 className={`${className}`}>{children}</h4>;
 }

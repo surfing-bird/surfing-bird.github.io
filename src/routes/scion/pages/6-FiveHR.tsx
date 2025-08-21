@@ -14,11 +14,11 @@ const FiveHR = () => (
         subtitle="You become lightning, flashing from one place to another, leaving ruin in your wake."
         keywords="Melee, Weapon, Magic, Area"
         actionType="Main action"
-        range="10 x 1 line within 1"
+        range="10 × 1 line within 1"
         targets="Each enemy in the area"
         addedStats={["Agility"]}
         tierResults={{
-          low: "8 damage",
+          low: "6 damage",
           middle: "10 damage",
           high: "14 damage",
         }}

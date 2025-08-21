@@ -8,9 +8,7 @@ interface SubtitleProps {
 export function Subtitle({ children, className = "" }: SubtitleProps) {
   return (
     <div className="flex">
-      <span
-        className={`font-alegreya-sans text-[11px] leading-tight italic ${className}`.trim()}
-      >
+      <span className={`text-[11px] leading-tight italic ${className}`.trim()}>
         {children}
       </span>
     </div>

@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { Heading5 } from "./Heading5";
+import { Heading4 } from "./Heading4";
 import { TextBlock } from "./TextBlock";
 
 interface FeatureProps {
@@ -11,7 +11,7 @@ interface FeatureProps {
 export function Feature({ title, children, className = "" }: FeatureProps) {
   return (
     <div className={`flex flex-col ${className}`}>
-      <Heading5>{title}</Heading5>
+      <Heading4>{title}</Heading4>
       <TextBlock>{children}</TextBlock>
     </div>
   );

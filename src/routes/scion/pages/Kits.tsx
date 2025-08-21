@@ -47,6 +47,40 @@ const Kits = () => (
         }}
         effect="You shift up to 3 squares and make one power roll that targets all enemies that you moved through during the move. Enemies are not treated as difficult terrain for the purpose of this movement. You may not end this movement inside an enemy's square"
       />
+
+      <Heading3>Chain Weaver</Heading3>
+      <Text>
+        Specializing in the elegant control of a chained weapon such as a
+        kusarigama or chain whip, you are able to perform melee attacks at a
+        distance, binding your foes and keeping them at bay.
+      </Text>
+
+      <Heading4>Equipment</Heading4>
+      <Text>You wear light armor and wield a whip.</Text>
+
+      <Heading4>Kit Bonuses</Heading4>
+      <div className="flex flex-col gap-0">
+        <Detail detailName="Stamina Bonus" detailValue="+3" />
+        <Detail detailName="Melee Damage Bonus" detailValue="+1/+1/+1" />
+        <Detail detailName="Melee Distance Bonus" detailValue="+3" />
+      </div>
+
+      <Heading4>Signature Ability</Heading4>
+      <Ability
+        className="mt-2"
+        title="Binding Snake"
+        subtitle="You wrap your chain around your foe, holding them in place."
+        keywords="Melee, Weapon"
+        actionType="Main action"
+        range="Melee 4"
+        targets="Special"
+        addedStats={["Agility", "Might"]}
+        tierResults={{
+          low: "3 + M or A damage; A < WEAK, grabbed",
+          middle: "5 + M or A damage; A < AVERAGE, grabbed",
+          high: "8 + M or A damage; A < STRONG, grabbed",
+        }}
+      />
     </Column>
 
     <Column>
@@ -78,9 +112,9 @@ const Kits = () => (
         targets="One creature"
         addedStats={["Agility", "Might"]}
         tierResults={{
-          low: "5 damage + M or A; M < WEAK, prone",
-          middle: "8 damage + M or A; M < AVERAGE, prone",
-          high: "11 damage + M or A; M < STRONG, prone",
+          low: "5 + M or A damage; M < WEAK, prone",
+          middle: "8 + M or A damage; M < AVERAGE, prone",
+          high: "11 + M or A damage; M < STRONG, prone",
         }}
         effect="You can jump up to 3 squares straight toward the target without provoking attacks of opportunity before this strike."
       />
