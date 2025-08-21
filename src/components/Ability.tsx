@@ -41,11 +41,11 @@ interface AbilityProps {
 
 // ---- Action Type → Color Map ----
 const actionTypeColors: Record<ActionType, string> = {
-  "Main action": "bg-red-100",
-  Maneuver: "bg-blue-100",
-  "Free maneuver": "bg-blue-100/50",
-  "Triggered action": "bg-green-100",
-  "Free triggered action": "bg-green-100/50",
+  "Main action": "bg-red-100/50",
+  Maneuver: "bg-blue-100/50",
+  "Free maneuver": "bg-blue-100/33",
+  "Triggered action": "bg-green-100/50",
+  "Free triggered action": "bg-green-100/33",
 };
 
 export function Ability({
