@@ -12,8 +12,8 @@ export function BulletList({ children, className = "" }: BulletListProps) {
   return (
     <ul className={`list-none ${className}`}>
       {items.map((item, index) => (
-        <li key={index} className="flex items-start">
-          <span className="mr-2 text-[10px]" aria-hidden="true">
+        <li key={index} className="flex items-start items-center">
+          <span className="mr-2 mt-[4px] text-[7px]" aria-hidden="true">
             ◆
           </span>
           <Text>{item}</Text>

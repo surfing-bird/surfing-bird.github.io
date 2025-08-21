@@ -50,20 +50,22 @@ const Class = () => (
           <Text>1, 0, 0</Text>
         </BulletList>
 
-        <Detail detailName="Potency" detailValue="Reason" />
+        <div className="flex flex-col gap-2">
+          <Detail detailName="Potency" detailValue="Reason" />
 
-        <Detail detailName="Starting Stamina at 1st Level" detailValue="21" />
+          <Detail detailName="Starting Stamina at 1st Level" detailValue="21" />
 
-        <Detail
-          detailName="Stamina Gained at 2nd and Higher Levels"
-          detailValue="9"
-        />
-        <Detail detailName="Recoveries" detailValue="8" />
+          <Detail
+            detailName="Stamina Gained at 2nd and Higher Levels"
+            detailValue="9"
+          />
+          <Detail detailName="Recoveries" detailValue="8" />
 
-        <Detail
-          detailName="Skills"
-          detailValue="Magic and Strategy, plus choose any two skills from the exploration skill group."
-        />
+          <Detail
+            detailName="Skills"
+            detailValue="Magic and Strategy, plus choose any two skills from the exploration skill group."
+          />
+        </div>
       </div>
 
       {/* --- ADVANCEMENT TABLE --- */}
