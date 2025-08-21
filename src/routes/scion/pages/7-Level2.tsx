@@ -8,7 +8,6 @@ import {
   Ability,
   AdvancementTable,
   Feature,
-  Highlight,
 } from "@/components";
 
 const Level2 = () => (

@@ -1,6 +1,5 @@
 import React from "react";
 import { Detail } from "./Detail";
-import { processTierResultText } from "@/utils/textProcessing";
 
 interface AbilitySectionProps {
   trigger?: string | React.ReactNode;

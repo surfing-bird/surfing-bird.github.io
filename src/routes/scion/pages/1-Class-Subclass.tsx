@@ -5,11 +5,9 @@ import {
   Title,
   Heading2,
   Heading3,
-  Heading4,
   BulletList,
   AdvancementTable,
   TextBlock,
-  Heading5,
 } from "@/components";
 import { Detail } from "@/components/Detail";
 
