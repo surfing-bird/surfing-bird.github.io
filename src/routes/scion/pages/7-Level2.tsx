@@ -23,7 +23,7 @@ const Level2 = () => (
           { Subclass: "Blinkblade", Features: "Afterimage" },
           { Subclass: "Runewright", Features: "Liminal Runes" },
           { Subclass: "Soulforged", Features: "Soul Instinct" },
-          { Subclass: "Darksworn", Features: "Ne Obliviscaris" },
+          { Subclass: "Darksworn", Features: "Sacramentum Sanguinis" },
         ]}
       />
 
@@ -53,11 +53,11 @@ const Level2 = () => (
         </Text>
       </Feature>
 
-      <Feature title="Ne Obliviscaris">
+      <Feature title="Sacramentum Sanguinis">
         <Text>
-          Whenever you deal damage to a creature who has dealt damage to you
-          since the end of your last turn, you deal extra damage equal to your
-          Reason score.
+          Whenever you deal rolled damage to a creature you may choose to deal
+          your Reason in damage to yourself to gain two surges which must be
+          used on the triggering ability.
         </Text>
       </Feature>
 

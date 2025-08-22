@@ -15,6 +15,7 @@ const ChangeLog = () => (
         <Text>Blackest Night: changed effect and turned into main action</Text>
         <Text>Chain Weaver: added to kits</Text>
         <Text>Lightning Strike: slightly reduced damage on T1</Text>
+        <Text>Renamed and reworked several Darksworn abilities</Text>
       </BulletList>
 
       <Heading3>V0.3.4</Heading3>

@@ -3,7 +3,7 @@ import {
   Column,
   Text,
   Heading2,
-  Heading4,
+  Heading3,
   AdvancementTable,
   Ability,
   Detail,
@@ -19,7 +19,7 @@ const Triggers = () => (
         Action table.
       </Text>
 
-      <Heading4 className="text-center">Art Triggered Action</Heading4>
+      <Heading3 className="text-center">Art Triggered Action</Heading3>
       <AdvancementTable
         columns={["Subclass", "Features"]}
         rows={[
@@ -58,7 +58,7 @@ const Triggers = () => (
         effect="The target takes damage equal to triple your Reason score."
         spend={
           <Text>
-            <span className="font-bold">Spend 1 Balance: </span>
+            <span className="font-bold">Effect: </span>
             If the target has <Highlight>{"I < AVERAGE"}</Highlight>, they are
             slowed (EoT).
           </Text>
