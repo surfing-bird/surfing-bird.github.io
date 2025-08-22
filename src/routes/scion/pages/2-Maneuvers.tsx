@@ -34,7 +34,7 @@ const Maneuvers = () => (
           {
             level: "",
             Subclass: "Darksworn",
-            Features: "Glutton for Punishment, Sanguis Maledictum",
+            Features: "Vorator Cruciatum, Chain of Torment",
           },
         ]}
       />
