@@ -95,12 +95,12 @@ const BalanceEnweave = () => (
                 detailValue="Deal triple your Reason score in fire damage."
               />
               <Detail
-                detailName="Freeze Strike"
-                detailValue="Damage becomes cold. The target is slowed (save ends)."
+                detailName="Gale Strike"
+                detailValue="Damage becomes lightning. You can either push the target, or yourself away from the target, a distance equal to double your Reason score."
               />
               <Detail
-                detailName="Gale Strike"
-                detailValue="Damage becomes lightning. You can either push the target, or yourself away from the target, a distance equal to double your Reason in squares after the strike is resolved."
+                detailName="Freeze Strike"
+                detailValue="Damage becomes cold. The target is slowed (save ends)."
               />
               <Detail
                 detailName="Crimson Strike"
@@ -108,26 +108,25 @@ const BalanceEnweave = () => (
               />
               <Detail
                 detailName="Acid Strike"
-                detailValue="Damage becomes acid. Attacks against the target have an edge (save ends)."
+                detailValue="Deal your Reason score in acid damage. Attacks against the target gain an edge (save ends)."
               />
               <Detail
                 detailName="Umbral Strike"
-                detailValue="Deal your Reason score in psychic damage, and the target is weakened (save ends)."
+                detailValue="Deal your Reason score in psychic damage. The target is weakened (save ends)."
               />
               <Detail
                 detailName="Explosive Strike"
-                detailValue="Damage becomes sonic; deal your Reason in sonic damage to each target in range 2 of the target."
+                detailValue="Damage becomes sonic. Deal your Reason in sonic damage to each enemy in range 2 of the target."
               />
             </BulletList>
             <Text>
-              The chosen effect applies to your next melee weapon ability. It
-              may change its damage type. Any additional effects are applied
-              after the ability is resolved, and if the ability has multiple
-              targets - apply the effect to one target of your choosing. If you
-              use this ability more than once before an ability, choose one of
-              the damage types to change your next ability's type to, but apply
-              all of the additional effects. You cannot use this ability more
-              than twice before benefiting from its effect.
+              The chosen effect applies to your next strike. It may change your
+              next strike’s damage type. Any additional effects are applied
+              after the strike is resolved, and to one target of your choosing.
+              If you use this ability more than once before a strike, choose one
+              of the damage types to change your next strike’s type to, but
+              apply all of the additional effects. You cannot use this ability
+              more than twice before making a strike.
             </Text>
           </TextBlock>
         }
