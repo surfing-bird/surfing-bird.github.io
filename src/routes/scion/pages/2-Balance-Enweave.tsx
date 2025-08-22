@@ -120,20 +120,19 @@ const BalanceEnweave = () => (
               />
             </BulletList>
             <Text>
-              The chosen effect applies to your next strike. It may change your
-              next strike’s damage type. Any additional effects are applied
-              after the strike is resolved, and to one target of your choosing.
-              If you use this ability more than once before a strike, choose one
-              of the damage types to change your next strike’s type to, but
-              apply all of the additional effects. You cannot use this ability
-              more than twice before making a strike.
+              The chosen effect applies to your weapon ability. It may change
+              that ability’s damage type. Any additional effects are applied
+              after the ability is resolved, and to one target of your choosing.
+              If you use this ability more than once before a weapon ability,
+              choose one of the damage types to apply to the affected ability,
+              but apply all of the additional effects.
             </Text>
           </TextBlock>
         }
         spend={
           <Detail
             detailName="Spend 2 Balance"
-            detailValue="This ability becomes a free maneuver instead."
+            detailValue="This ability becomes a free maneuver instead. You can only use this spend once per turn."
           />
         }
       />
