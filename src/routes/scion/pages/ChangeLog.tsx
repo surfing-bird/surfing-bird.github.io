@@ -5,6 +5,12 @@ const ChangeLog = () => (
     <Column>
       <Title>Changelog</Title>
 
+      <Heading3>V0.3.6</Heading3>
+      <BulletList>
+        <Text>Blackest Night: reworked (again)</Text>
+        <Text>Scarlet Dirge: reduced damage</Text>
+      </BulletList>
+
       <Heading3>V0.3.5</Heading3>
       <BulletList>
         <Text>

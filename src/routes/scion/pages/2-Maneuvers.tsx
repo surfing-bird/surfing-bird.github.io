@@ -24,15 +24,13 @@ const Maneuvers = () => (
       <AdvancementTable
         columns={["Subclass", "Features"]}
         rows={[
-          { level: "", Subclass: "Blinkblade", Features: "Blink, Phasewalk" },
-          { level: "", Subclass: "Runewright", Features: "Runebrand" },
+          { Subclass: "Blinkblade", Features: "Blink, Phasewalk" },
+          { Subclass: "Runewright", Features: "Runebrand" },
           {
-            level: "",
             Subclass: "Soulforged",
             Features: "Soulshape, Soulbound",
           },
           {
-            level: "",
             Subclass: "Darksworn",
             Features: "Vorator Cruciatum, Chain of Torment",
           },
