@@ -71,8 +71,24 @@ const Level3 = () => (
 
     <Column>
       <Ability
-        title="Judgment Edge (7 Balance)"
-        subtitle="A final, measured cut."
+        title="Reaper's Edge (7 Balance)"
+        subtitle="There is power in death."
+        keywords="Melee, Strike, Weapon, Magic"
+        actionType="Main action"
+        range="Melee 1"
+        targets="One creature"
+        addedStats={["Agility"]}
+        tierResults={{
+          low: "12 + A damage",
+          middle: "18 + A damage",
+          high: "24 + A damage",
+        }}
+        effect="If this ability reduces a creature to 0 Stamina, gain 5 balance."
+      />
+
+      {/* <Ability
+        title="Reaper's Edge (7 Balance)"
+        subtitle="There is power in death."
         keywords="Melee, Strike, Weapon, Magic"
         actionType="Main action"
         range="Melee 1"
@@ -83,8 +99,8 @@ const Level3 = () => (
           middle: "14 + A damage",
           high: "20 + A damage",
         }}
-        effect="If the target of this ability is reduced to 0 stamina, refund the balance cost."
-      />
+        effect="If this ability reduces a creature to 0 Stamina, gain an additional main action this turn."
+      /> */}
 
       <Ability
         title="Spectral Blades (7 Balance)"
@@ -96,8 +112,9 @@ const Level3 = () => (
         effect="Place a d6 die set to 6 to track this effect.
         Once a turn you may reduce the die by any amount up to its current value.
         Then, distribute that many spectral blades among enemies within range 5 as you choose.
-        You cannot assign more than one blade per enemy. Each blade deals 2 + your Reason in damage.
-        In addition, whenever an enemy in range 5 is affected by a potency effect, you may reduce the die by 1 to increase the potency by 1."
+        Each blade deals 4 + your Reason score in damage. You cannot assign more than one blade per enemy.
+        In addition, whenever an enemy in range 5 is affected by a potency effect,
+        you may reduce the die by 1 to increase the potency of the ability by 1."
       />
     </Column>
   </Page>

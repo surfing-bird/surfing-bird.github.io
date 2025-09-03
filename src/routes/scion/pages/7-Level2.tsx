@@ -39,10 +39,9 @@ const Level2 = () => (
 
       <Feature title="Liminal Runes">
         <Text>
-          An enemy with a branded rune receives a bane on their power rolls as
-          long as the rune remains undetonated. An ally or yourself with a
-          branded rune gains an edge on their power rolls as long as the rune
-          remains undetonated.
+          An enemy carrying an undetonated runebrand receives a bane on their
+          power rolls. An ally carrying an undetonated runebrand gains an edge
+          on their power rolls.
         </Text>
       </Feature>
 
@@ -115,7 +114,7 @@ const Level2 = () => (
         subtitle="You brand a flaming writ onto the ground, scorching all who would come near."
         keywords="Area, Magic"
         actionType="Maneuver"
-        range="2 burst"
+        range="3 burst"
         targets="Each enemy in the area"
         effect="The area remains until the end of the encounter. Each enemy who enters the area for the first time in a combat round or starts their turn there takes damage equal to twice your Reason score."
       />
@@ -124,7 +123,7 @@ const Level2 = () => (
         subtitle="You brand a defensive writ onto the ground, protecting and emboldening companions."
         keywords="Area, Magic"
         actionType="Maneuver"
-        range="2 burst"
+        range="3 burst"
         targets="Each ally in the area"
         effect="The area remains until the end of the encounter. The first time you or an ally enters the area on their turn or begins their turn within it, they gain temporary Stamina equal to three times your Reason score. While within the area, you and your allies gain damage resistance equal to your Reason."
       />
@@ -171,9 +170,9 @@ const Level2 = () => (
           <Text>
             <span className="font-bold">Effect: </span>
             Until the end of the encounter or you are dying, each target in the
-            area has its line of effect limited to creatures inside the area,
-            and the cost of its movement is doubled.
-            You can use the Chain of Torment maneuver.
+            area can only affect creatures within the area, and each square of
+            movement it takes costs one extra square. You can use the Chain of
+            Torment maneuver.
           </Text>
         }
         // effect={

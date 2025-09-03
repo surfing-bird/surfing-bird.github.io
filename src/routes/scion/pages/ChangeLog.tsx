@@ -5,6 +5,21 @@ const ChangeLog = () => (
     <Column>
       <Title>Changelog</Title>
 
+      <Heading3>V0.3.7</Heading3>
+      <BulletList>
+        <Text>Blackest Night: changed effect wording</Text>
+        <Text>Sever the Moment: changed damage & effect</Text>
+        <Text>
+          Liminal Runes: changed effect wording, also doesn't affect self
+        </Text>
+        <Text>Spectral Blades: buffed damage by 2 and changed wording</Text>
+        <Text>Writ of Flame: increased range to 3 burst</Text>
+        <Text>Writ of Sanctuary: increased range to 3 burst</Text>
+        <Text>
+          Judgement Edge: renamed to Reaper's Edge, changed effect and damage
+        </Text>
+      </BulletList>
+
       <Heading3>V0.3.6</Heading3>
       <BulletList>
         <Text>Blackest Night: reworked (again)</Text>
