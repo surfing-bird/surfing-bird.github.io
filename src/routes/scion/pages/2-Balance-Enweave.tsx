@@ -34,14 +34,11 @@ const BalanceEnweave = () => (
         </Text>
 
         <Text>
-          Additionally, the first time in a combat round that you use an ability
-          with a Weapon tag after using an ability with the Magic tag, or vice
-          versa, you gain 1 Balance.
-        </Text>
-
-        <Text>
-          The first time you spend Balance in a combat round, the cost is
-          reduced by one.
+          Additionally, the first time in a combat round that you or an ally
+          within 10 squares of you uses an ability with a Weapon tag, you gain 1
+          balance. The first time in a combat round that you or an ally within
+          10 squares of you uses an ability with a Magic tag, you gain 1
+          balance.
         </Text>
       </TextBlock>
 
@@ -83,16 +80,18 @@ const BalanceEnweave = () => (
         keywords="Magic, Weapon"
         actionType="Maneuver"
         range="Self"
-        targets="Self"
+        targets="Special"
         effect={
           <TextBlock>
             <Text>
-              <strong>Effect:</strong> Choose one of the following effects:
+              <strong>Effect:</strong> Choose one of the following effects,
+              which applies to one target of the next damaging melee weapon ability
+              you use:
             </Text>
             <BulletList>
               <Detail
                 detailName="Flame Strike"
-                detailValue="Deal triple your Reason score in fire damage."
+                detailValue="Damage becomes fire. Deal triple your Reason score in fire damage."
               />
               <Detail
                 detailName="Gale Strike"
@@ -108,31 +107,35 @@ const BalanceEnweave = () => (
               />
               <Detail
                 detailName="Acid Strike"
-                detailValue="Deal your Reason score in acid damage. Attacks against the target gain an edge (save ends)."
+                detailValue="Damage becomes acid. The target has damage weakness equal to your Reason score (save ends)."
               />
               <Detail
                 detailName="Umbral Strike"
-                detailValue="Deal your Reason score in psychic damage. The target is weakened (save ends)."
+                detailValue="Damage becomes psychic. Deal your Reason score in psychic damage, and the target is weakened (save ends)."
               />
               <Detail
                 detailName="Explosive Strike"
-                detailValue="Damage becomes sonic. Deal your Reason in sonic damage to each enemy in range 2 of the target."
+                detailValue="Damage becomes sonic. Deal your sonic damage equal to your Reason score to each enemy in range 2 of the target."
               />
             </BulletList>
             <Text>
-              The chosen effect applies to your weapon ability. It may change
-              that ability’s damage type. Any additional effects are applied
-              after the ability is resolved, and to one target of your choosing.
-              If you use this ability more than once before a weapon ability,
-              choose one of the damage types to apply to the affected ability,
-              but apply all of the additional effects.
+              Effects other than the changing of the damage type are applied
+              after the ability is resolved. If you use this ability more than
+              once before it applies to an ability, you can choose one of the
+              damage types to apply to the affected ability, but apply all of
+              the effects.
+            </Text>
+
+            <Text>
+              You cannot use Enweave more than twice before applying its effect
+              to an ability.
             </Text>
           </TextBlock>
         }
         spend={
           <Detail
             detailName="Spend 2 Balance"
-            detailValue="This ability becomes a free maneuver instead. You can only use this spend once per turn."
+            detailValue="This ability becomes a free maneuver instead."
           />
         }
       />

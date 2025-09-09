@@ -5,6 +5,20 @@ const ChangeLog = () => (
     <Column>
       <Title>Changelog</Title>
 
+      <Heading3>V0.3.8</Heading3>
+      <BulletList>
+        <Text>Balance in Combat: reworked balance gain</Text>
+        <Text>Enweave: changed effect wording and effects</Text>
+        <Text>Sacramentum Sanguinis: changed name to Sacramentum Sanguis</Text>
+        <Text>Soul Instinct: changed effect wording</Text>
+        <Text>
+          Writ of Power: repacked Writ of Flame and Writ of Sanctuary into one
+          ability
+        </Text>
+        <Text>Writ of Binding: new Runewright 5-HR heroic</Text>
+        <Text>Spirit Rend: Added effect</Text>
+      </BulletList>
+
       <Heading3>V0.3.7</Heading3>
       <BulletList>
         <Text>Blackest Night: changed effect wording</Text>

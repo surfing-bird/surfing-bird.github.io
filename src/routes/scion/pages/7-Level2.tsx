@@ -8,6 +8,9 @@ import {
   Ability,
   AdvancementTable,
   Feature,
+  TextBlock,
+  BulletList,
+  Detail,
 } from "@/components";
 
 const Level2 = () => (
@@ -23,7 +26,7 @@ const Level2 = () => (
           { Subclass: "Blinkblade", Features: "Afterimage" },
           { Subclass: "Runewright", Features: "Liminal Runes" },
           { Subclass: "Soulforged", Features: "Soul Instinct" },
-          { Subclass: "Darksworn", Features: "Sacramentum Sanguinis" },
+          { Subclass: "Darksworn", Features: "Sacramentum Sanguis" },
         ]}
       />
 
@@ -46,13 +49,13 @@ const Level2 = () => (
 
       <Feature title="Soul Instinct">
         <Text>
-          Once per turn, you can make an opportunity attack whenever a creature
+          Once per turn, you can make a melee free strike whenever a creature
           moves from a square adjacent to you to another square adjacent to you.
           In addition, your stability is increased by 1.
         </Text>
       </Feature>
 
-      <Feature title="Sacramentum Sanguinis">
+      <Feature title="Sacramentum Sanguis">
         <Text>
           Whenever you deal rolled damage to a creature you may choose to deal
           your Reason in damage to yourself to gain two surges which must be
@@ -109,6 +112,48 @@ const Level2 = () => (
       <Heading3>2nd-Level Runewright Ability</Heading3>
       <Text>Choose one of the following abilities.</Text>
       <Ability
+        title="Writ of Power (5 Balance)"
+        subtitle="You brand an arcane writ onto the ground, scorching foes, or soothing allies."
+        keywords="Area, Magic"
+        actionType="Maneuver"
+        range="2 burst"
+        targets="Each enemy in the area"
+        effect={
+          <TextBlock>
+            <Text>
+              <strong>Effect:</strong> The area remains until the end of the
+              encounter or you are dying. Choose one of the following effects to
+              apply to the area:
+            </Text>
+            <BulletList>
+              <Detail
+                detailName="Writ of Flame"
+                detailValue="Each enemy who enters the area for the first time in a combat round or starts their turn there takes damage equal to triple your Reason score."
+              />
+              <Detail
+                detailName="Writ of Sanctuary"
+                detailValue="Each ally, or youreslf, who enters the area for the first time in a combat round or starts their turn there may either spend a recovery, or end one effect that is ended by a saving throw or ends at the end of their turn."
+              />
+            </BulletList>
+          </TextBlock>
+        }
+      />
+      <Ability
+        title="Writ of Binding (5 Balance)"
+        subtitle="Arcane chains erupt from the ground, coling around your foe."
+        keywords="Magic, Ranged"
+        actionType="Main action"
+        range="Range 5"
+        targets="One creature"
+        addedStats={["Reason"]}
+        tierResults={{
+          low: "6 damage; M < WEAK, restrained (save ends)",
+          middle: "10 damage; M < AVERAGE, restrained (save ends)",
+          high: "14 damage; M < STRONG, restrained (save ends)",
+        }}
+        effect="While restrained this way, the target cannot teleport by any means."
+      />
+      {/* <Ability
         title="Writ of Flame (5 Balance)"
         subtitle="You brand a flaming writ onto the ground, scorching all who would come near."
         keywords="Area, Magic"
@@ -125,7 +170,7 @@ const Level2 = () => (
         range="3 burst"
         targets="Each ally in the area"
         effect="The area remains until the end of the encounter. The first time you or an ally enters the area on their turn or begins their turn within it, they gain temporary Stamina equal to three times your Reason score. While within the area, you and your allies gain damage resistance equal to your Reason."
-      />
+      /> */}
       <Heading3>2nd-Level Soulforged Ability</Heading3>
       <Text>Choose one of the following abilities.</Text>
       <Ability
@@ -197,7 +242,6 @@ const Level2 = () => (
         // At the end of each of your turns while this aura is active,
         // you can make one power roll that targets each enemy in the area."
       />
-
       <Ability
         title="Scarlet Dirge (5 Balance)"
         subtitle="A curse of burning blood - upon death, their body bursts in a crimson shower."

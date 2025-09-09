@@ -18,9 +18,9 @@ const FiveHR = () => (
         targets="Each enemy in the area"
         addedStats={["Agility"]}
         tierResults={{
-          low: "6 damage",
-          middle: "10 damage",
-          high: "14 damage",
+          low: "6 lightning damage",
+          middle: "10 lightning damage",
+          high: "14 lightning damage",
         }}
         effect="You teleport to a square on the opposite side of the area before making the power roll."
       />
@@ -71,6 +71,7 @@ const FiveHR = () => (
           middle: "12 + A psychic damage; I < AVERAGE, dazed (save ends)",
           high: "16 + A psychic damage; I < STRONG, dazed (save ends)",
         }}
+        effect="While dazed this way, the target's characteristic scores are treated as lower by 1 for the sake of resisting potencies."
       />
     </Column>
   </Page>
