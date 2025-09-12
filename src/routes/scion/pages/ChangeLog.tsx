@@ -16,7 +16,7 @@ const ChangeLog = () => (
           ability
         </Text>
         <Text>Writ of Binding: new Runewright 5-HR heroic</Text>
-        <Text>Spirit Rend: Added effect</Text>
+        <Text>Spirit Rend: Added effect and lowered damage</Text>
       </BulletList>
 
       <Heading3>V0.3.7</Heading3>

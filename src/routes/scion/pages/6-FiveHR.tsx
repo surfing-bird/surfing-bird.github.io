@@ -67,9 +67,9 @@ const FiveHR = () => (
         targets="One creature"
         addedStats={["Agility"]}
         tierResults={{
-          low: "8 + A psychic damage; I < WEAK, dazed (save ends)",
-          middle: "12 + A psychic damage; I < AVERAGE, dazed (save ends)",
-          high: "16 + A psychic damage; I < STRONG, dazed (save ends)",
+          low: "6 + A psychic damage; I < WEAK, dazed (save ends)",
+          middle: "10 + A psychic damage; I < AVERAGE, dazed (save ends)",
+          high: "14 + A psychic damage; I < STRONG, dazed (save ends)",
         }}
         effect="While dazed this way, the target's characteristic scores are treated as lower by 1 for the sake of resisting potencies."
       />
