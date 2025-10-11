@@ -12,7 +12,7 @@ import FiveHR from "./pages/6-FiveHR";
 import Level2 from "./pages/7-Level2";
 import Level3 from "./pages/8-Level3";
 import Kits from "./pages/Kits";
-import ChangeLog from "./pages/ChangeLog";
+import Changelog from "./pages/Changelog";
 
 export const Route = createFileRoute("/scion")({
   component: Scion,
@@ -35,7 +35,7 @@ function Scion() {
         <Level2 />
         <Level3 />
         <Kits />
-        <ChangeLog />
+        <Changelog />
       </ManualLayout>
     </div>
   );

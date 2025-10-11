@@ -33,9 +33,11 @@ const Level2 = () => (
       <Feature title="Afterimage">
         <Text>
           Whenever you teleport by any means, you leave a distracting afterimage
-          in your previous location until the end of your next turn. Power rolls
-          targeting enemies adjacent to an afterimage gain edge. The afterimage
-          does not occupy space and cannot be targeted or destroyed.
+          in your previous location until the start of your next turn. Power
+          rolls targeting enemies adjacent to one afterimage or more an gain
+          edge. The afterimage does not occupy space and cannot be targeted or
+          destroyed. At the start of any turn when an afterimage fades, you can
+          choose to teleport to its location.
         </Text>
       </Feature>
 
@@ -174,6 +176,15 @@ const Level2 = () => (
       <Heading3>2nd-Level Soulforged Ability</Heading3>
       <Text>Choose one of the following abilities.</Text>
       <Ability
+        title="Soul Form (5 Balance)"
+        subtitle="Your Soulblade takes its true form, flaring with power."
+        keywords="Magic"
+        actionType="Maneuver"
+        range="Self"
+        targets="Self"
+        effect="Until the end of the encounter, whenever you gain the benefit of a Soulshape form, you may choose an additional form to benefit from. You can use the spend effect for no cost on both form benefits. You may use the Soulshape maneuver."
+      />
+      <Ability
         title="Soul Spiral (5 Balance)"
         subtitle="Your Soulblade unfurls in a violent spiral, crashing through foes."
         keywords="Melee, Area, Weapon, Magic"
@@ -187,7 +198,7 @@ const Level2 = () => (
           high: "11 damage; push 3",
         }}
       />
-      <Ability
+      {/* <Ability
         title="Soul Wave (5 Balance)"
         subtitle="Your Soulblade blazes with the power of your will, unleashing it in a wave of force."
         keywords="Melee, Weapon, Magic, Strike"
@@ -200,7 +211,7 @@ const Level2 = () => (
           middle: "3 damage; M < AVERAGE, dazed (save ends)",
           high: "5 damage; M < STRONG, dazed (save ends)",
         }}
-      />
+      /> */}
       <Heading3>2nd-Level Darksworn Ability</Heading3>
       <Text>Choose one of the following abilities.</Text>
       <Ability
@@ -208,15 +219,15 @@ const Level2 = () => (
         subtitle="You cloak yourself in lightless gloom."
         keywords="Area, Magic"
         actionType="Maneuver"
-        range="2 aura"
+        range="3 aura"
         targets="Each enemy in the area"
         effect={
           <Text>
             <span className="font-bold">Effect: </span>
-            Until the end of the encounter or you are dying, each target in the
-            area can only affect creatures within the area, and each square of
-            movement it takes costs one extra square. You can use the Chain of
-            Torment maneuver.
+            Until the end of the encounter, each target in the area can only
+            affect creatures within the area, and each square of movement it
+            takes costs one extra square. You can use the Chain of Torment
+            maneuver.
           </Text>
         }
         // effect={

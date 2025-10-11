@@ -1,9 +1,22 @@
 import { Page, Column, Text, Title, Heading3, BulletList } from "@/components";
 
-const ChangeLog = () => (
+const Changelog = () => (
   <Page id="changelog">
     <Column>
       <Title>Changelog</Title>
+
+      <Heading3>V0.3.9</Heading3>
+      <BulletList>
+        <Text>Afterimage: changed effect</Text>
+        <Text>
+          Soulshape: removed the 'cannot benefit from more than one form at the
+          same time' text
+        </Text>
+        <Text>Chain of Torment: changed spend effect</Text>
+        <Text>Soulshape: changed spend effect wording</Text>
+        <Text>Soul Form: moved to level 2</Text>
+        <Text>Soul Wave: moved to level 6 and buffed</Text>
+      </BulletList>
 
       <Heading3>V0.3.8</Heading3>
       <BulletList>
@@ -98,7 +111,9 @@ const ChangeLog = () => (
         <Text>Crescent Arc: reduced damage</Text>
         <Text>Blade's Will: changed effect</Text>
       </BulletList>
+    </Column>
 
+    <Column className="flex flex-col">
       <Heading3>V0.2.9</Heading3>
       <BulletList>
         <Text>Increase Soul Wave area to 5x3</Text>
@@ -213,10 +228,7 @@ const ChangeLog = () => (
           Liminal Runes text changed, applies bane instead of weakened
         </Text>
       </BulletList>
-    </Column>
 
-    <Column className="flex flex-col">
-      {" "}
       <Heading3>V0.1.7</Heading3>
       <BulletList>
         <Text>Writ of Flame turned into a Main Action</Text>
@@ -282,4 +294,4 @@ const ChangeLog = () => (
   </Page>
 );
 
-export default ChangeLog;
+export default Changelog;

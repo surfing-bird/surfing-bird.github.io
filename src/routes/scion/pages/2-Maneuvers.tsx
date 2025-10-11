@@ -141,15 +141,12 @@ const Maneuvers = () => (
                 detailValue="Melee weapon abilities have their distance increased by double your Reason."
               />
             </BulletList>
-            <Text>
-              You cannot benefit from more than one form at the same time.
-            </Text>
           </TextBlock>
         }
         spend={
           <Detail
             detailName="Spend 2 Balance"
-            detailValue="The benefit of the chosen form is doubled in value."
+            detailValue="Any numeric benefit of the chosen form is doubled in value."
           />
         }
       />
@@ -176,8 +173,8 @@ const Maneuvers = () => (
         }
         spend={
           <Detail
-            detailName="Spend 2 Balance"
-            detailValue="Add an additional enemy target."
+            detailName="Spend 1+ Balance"
+            detailValue="For each balance spent you may make an enemy within range of this ability with taunted (save ends)."
           />
         }
       />
