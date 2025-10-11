@@ -12,7 +12,7 @@ import FiveHR from "./pages/6-FiveHR";
 import Level2 from "./pages/7-Level2";
 import Level3 from "./pages/8-Level3";
 import Kits from "./pages/Kits";
-import Changelog from "./pages/Changelog";
+import Changelog from "./pages/ChangeLog";
 
 export const Route = createFileRoute("/scion")({
   component: Scion,
