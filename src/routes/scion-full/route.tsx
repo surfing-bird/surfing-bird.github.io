@@ -10,12 +10,19 @@ import Signatures from "../../scion-pages/4-Signatures";
 import ThreeHR from "../../scion-pages/5-ThreeHR";
 import FiveHR from "../../scion-pages/6-FiveHR";
 import Level2 from "../../scion-pages/7-Level2";
+import Level2ArtAbilities from "../../scion-pages/8-Level2-ArtAbilities";
 import Level3 from "../../scion-pages/9-Level3";
+import Level4 from "../../scion-pages/10-Level4";
+import Level5 from "../../scion-pages/11-Level5";
+import NineHR from "../../scion-pages/11-NineHR";
+import Level6 from "../../scion-pages/12-Level6";
+import Level7 from "../../scion-pages/13-Level7";
+import Level8 from "../../scion-pages/15-Level8";
+import Level8ElevenHR from "../../scion-pages/16-Level8-ElevenHR";
 import Kits from "../../scion-pages/Kits";
 import Changelog from "../../scion-pages/ChangeLog";
-import Level2ArtAbilities from "../../scion-pages/8-Level2-ArtAbilities";
 
-export const Route = createFileRoute("/scion")({
+export const Route = createFileRoute("/scion-full")({
   component: Scion,
 });
 
@@ -24,7 +31,7 @@ function Scion() {
 
   return (
     <div className="flex flex-col items-center">
-      {!isMobile && <Sidebar />}
+      {!isMobile && <Sidebar full />}
       <ManualLayout>
         <ClassSubclass />
         <BalanceEnweave />
@@ -36,6 +43,13 @@ function Scion() {
         <Level2 />
         <Level2ArtAbilities />
         <Level3 />
+        <Level4 />
+        <Level5 />
+        <NineHR />
+        <Level6 />
+        <Level7 />
+        <Level8 />
+        <Level8ElevenHR />
         <Kits />
         <Changelog />
       </ManualLayout>

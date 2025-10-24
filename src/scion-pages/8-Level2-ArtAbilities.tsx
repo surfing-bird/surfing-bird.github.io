@@ -4,73 +4,15 @@ import {
   Text,
   Heading2,
   Heading3,
-  Heading4,
   Ability,
-  AdvancementTable,
-  Feature,
   TextBlock,
   BulletList,
   Detail,
 } from "@/components";
 
-const Level2 = () => (
-  <Page id="level-2">
+const Level2ArtAbilities = () => (
+  <Page id="level-2-art-abilities">
     <Column>
-      <Heading2>2nd-Level Features</Heading2>
-      <Text>As a 2nd-level Scion, you gain the following features.</Text>
-
-      <Heading4 className="text-center">2nd-Level Art Features</Heading4>
-      <AdvancementTable
-        columns={["Subclass", "Features"]}
-        rows={[
-          { Subclass: "Blinkblade", Features: "Afterimage" },
-          { Subclass: "Runewright", Features: "Liminal Runes" },
-          { Subclass: "Soulforged", Features: "Soul Instinct" },
-          { Subclass: "Darksworn", Features: "Sacramentum Sanguis" },
-        ]}
-      />
-
-      <Feature title="Afterimage">
-        <Text>
-          Whenever you teleport by any means, you leave a distracting afterimage
-          in your previous location until the start of your next turn. Power
-          rolls targeting enemies adjacent to one afterimage or more an gain
-          edge. The afterimage does not occupy space and cannot be targeted or
-          destroyed. At the start of any turn when an afterimage fades, you can
-          choose to teleport to its location.
-        </Text>
-      </Feature>
-
-      <Feature title="Liminal Runes">
-        <Text>
-          An enemy carrying an undetonated runebrand receives a bane on their
-          power rolls. An ally carrying an undetonated runebrand gains an edge
-          on their power rolls.
-        </Text>
-      </Feature>
-
-      <Feature title="Soul Instinct">
-        <Text>
-          Once per turn, you can make a melee free strike whenever a creature
-          moves from a square adjacent to you to another square adjacent to you.
-          In addition, your stability is increased by 1.
-        </Text>
-      </Feature>
-
-      <Feature title="Sacramentum Sanguis">
-        <Text>
-          Whenever you deal rolled damage to a creature you may choose to deal
-          your Reason in damage to yourself to gain two surges which must be
-          used on the triggering ability.
-        </Text>
-      </Feature>
-
-      <Heading2>Perk</Heading2>
-      <Text>
-        You gain an exploration, lore, or supernatural perk of your choice. See
-        Perks for more information.
-      </Text>
-
       <Heading2>2nd-Level Art Ability</Heading2>
       <Text>Your scion Art grants your choice of one of two abilities.</Text>
 
@@ -108,9 +50,7 @@ const Level2 = () => (
         }}
         effect="You may teleport to up to 15 squares before this strike."
       />
-    </Column>
 
-    <Column>
       <Heading3>2nd-Level Runewright Ability</Heading3>
       <Text>Choose one of the following abilities.</Text>
       <Ability
@@ -155,24 +95,9 @@ const Level2 = () => (
         }}
         effect="While restrained this way, the target cannot teleport by any means."
       />
-      {/* <Ability
-        title="Writ of Flame (5 Balance)"
-        subtitle="You brand a flaming writ onto the ground, scorching all who would come near."
-        keywords="Area, Magic"
-        actionType="Maneuver"
-        range="3 burst"
-        targets="Each enemy in the area"
-        effect="The area remains until the end of the encounter. Each enemy who enters the area for the first time in a combat round or starts their turn there takes damage equal to twice your Reason score."
-      />
-      <Ability
-        title="Writ of Sanctuary (5 Balance)"
-        subtitle="You brand a defensive writ onto the ground, protecting and emboldening companions."
-        keywords="Area, Magic"
-        actionType="Maneuver"
-        range="3 burst"
-        targets="Each ally in the area"
-        effect="The area remains until the end of the encounter. The first time you or an ally enters the area on their turn or begins their turn within it, they gain temporary Stamina equal to three times your Reason score. While within the area, you and your allies gain damage resistance equal to your Reason."
-      /> */}
+    </Column>
+
+    <Column>
       <Heading3>2nd-Level Soulforged Ability</Heading3>
       <Text>Choose one of the following abilities.</Text>
       <Ability
@@ -198,20 +123,7 @@ const Level2 = () => (
           high: "11 damage; push 3",
         }}
       />
-      {/* <Ability
-        title="Soul Wave (5 Balance)"
-        subtitle="Your Soulblade blazes with the power of your will, unleashing it in a wave of force."
-        keywords="Melee, Weapon, Magic, Strike"
-        actionType="Main action"
-        range="5 × 3 line within 1"
-        targets="Each enemy in the area"
-        addedStats={["Agility"]}
-        tierResults={{
-          low: "2 damage; M < WEAK, dazed (save ends)",
-          middle: "3 damage; M < AVERAGE, dazed (save ends)",
-          high: "5 damage; M < STRONG, dazed (save ends)",
-        }}
-      /> */}
+
       <Heading3>2nd-Level Darksworn Ability</Heading3>
       <Text>Choose one of the following abilities.</Text>
       <Ability
@@ -230,28 +142,6 @@ const Level2 = () => (
             maneuver.
           </Text>
         }
-        // effect={
-        //   <Text>
-        //     <span className="font-bold">Effect: </span>
-        //     Until the end of the encounter or you are dying, each target in the
-        //     area has its line of effect limited to creatures inside the area.
-        //     When a target moves into or starts their turn in the area, you can
-        //     deal 1d6 + level damage to yourself to make the target frightened if
-        //     it has <Highlight>{"I < STRONG"}</Highlight>.
-        //   </Text>
-        // }
-        // addedStats={["Reason"]}
-        // tierResults={{
-        //   low: "1 psychic damage; R < WEAK, frightened (save ends)",
-        //   middle: "2 psychic damage; R < AVERAGE, frightened (save ends)",
-        //   high: "3 psychic damage; R < STRONG, frightened (save ends)",
-        // }}
-        // effectBeforeResult
-        // effect="Until the end of the encounter or you are dying,
-        // the area is considered as difficult terrain for enemies,
-        // and their line of effect is limited to creatures inside the area.
-        // At the end of each of your turns while this aura is active,
-        // you can make one power roll that targets each enemy in the area."
       />
       <Ability
         title="Scarlet Dirge (5 Balance)"
@@ -275,4 +165,4 @@ const Level2 = () => (
   </Page>
 );
 
-export default Level2;
+export default Level2ArtAbilities;

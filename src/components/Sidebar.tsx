@@ -7,7 +7,7 @@ interface NavItem {
   type?: "divider" | "item";
 }
 
-const navItems: NavItem[] = [
+const partialNavItems: NavItem[] = [
   { id: "class-subclass", label: "Level 1" },
   { id: "balance-enweave", label: "Features", indent: true },
   { id: "maneuvers", label: "Maneuvers", indent: true },
@@ -22,12 +22,34 @@ const navItems: NavItem[] = [
   { id: "changelog", label: "Changelog" },
 ];
 
+const fullNavItems: NavItem[] = [
+  { id: "class-subclass", label: "Level 1" },
+  { id: "balance-enweave", label: "Features", indent: true },
+  { id: "maneuvers", label: "Maneuvers", indent: true },
+  { id: "triggers", label: "Triggers", indent: true },
+  { id: "signatures", label: "Signatures", indent: true },
+  { id: "three-hr", label: "3-Balance Abilities", indent: true },
+  { id: "five-hr", label: "5-Balance Abilities", indent: true },
+  { id: "level-2", label: "Level 2" },
+  { id: "level-3", label: "Level 3" },
+  { id: "level-4", label: "Level 4" },
+  { id: "level-5", label: "Level 5" },
+  { id: "level-6", label: "Level 6" },
+  { id: "level-7", label: "Level 7" },
+  { id: "level-8", label: "Level 8" },
+  { id: "divider-1", label: "divider-1", type: "divider" },
+  { id: "kits", label: "Kits" },
+  { id: "changelog", label: "Changelog" },
+];
+
 interface SidebarProps {
   className?: string;
+  full?: boolean;
 }
 
-export function Sidebar({ className = "" }: SidebarProps) {
+export function Sidebar({ className = "", full = false }: SidebarProps) {
   const [activeSection, setActiveSection] = useState<string>("");
+  const navItems = full ? fullNavItems : partialNavItems;
 
   useEffect(() => {
     const handleScroll = () => {

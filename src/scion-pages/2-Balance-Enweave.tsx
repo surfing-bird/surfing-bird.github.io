@@ -85,8 +85,8 @@ const BalanceEnweave = () => (
           <TextBlock>
             <Text>
               <strong>Effect:</strong> Choose one of the following effects,
-              which applies to one target of the next damaging melee weapon ability
-              you use:
+              which applies to one target of the next damaging melee weapon
+              ability you use:
             </Text>
             <BulletList>
               <Detail
@@ -99,7 +99,7 @@ const BalanceEnweave = () => (
               />
               <Detail
                 detailName="Freeze Strike"
-                detailValue="Damage becomes cold. The target is slowed (save ends)."
+                detailValue="Damage becomes cold. Deal your Reason score in cold damage. The target is slowed (save ends)."
               />
               <Detail
                 detailName="Crimson Strike"
@@ -111,8 +111,12 @@ const BalanceEnweave = () => (
               />
               <Detail
                 detailName="Umbral Strike"
-                detailValue="Damage becomes psychic. Deal your Reason score in psychic damage, and the target is weakened (save ends)."
+                detailValue="Damage becomes psychic. The target has damage weakness equal to your Reason score (save ends).`"
               />
+              {/* <Detail
+                detailName="Umbral Strike"
+                detailValue="Damage becomes psychic. Deal your Reason score in psychic damage, and the target is weakened (save ends)."
+              /> */}
               <Detail
                 detailName="Explosive Strike"
                 detailValue="Damage becomes sonic. Deal your sonic damage equal to your Reason score to each enemy in range 2 of the target."

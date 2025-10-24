@@ -9,9 +9,15 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as ScionFullRouteRouteImport } from './routes/scion-full/route'
 import { Route as ScionRouteRouteImport } from './routes/scion/route'
 import { Route as IndexRouteImport } from './routes/index'
 
+const ScionFullRouteRoute = ScionFullRouteRouteImport.update({
+  id: '/scion-full',
+  path: '/scion-full',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ScionRouteRoute = ScionRouteRouteImport.update({
   id: '/scion',
   path: '/scion',
@@ -26,31 +32,42 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/scion': typeof ScionRouteRoute
+  '/scion-full': typeof ScionFullRouteRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/scion': typeof ScionRouteRoute
+  '/scion-full': typeof ScionFullRouteRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/scion': typeof ScionRouteRoute
+  '/scion-full': typeof ScionFullRouteRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/scion'
+  fullPaths: '/' | '/scion' | '/scion-full'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/scion'
-  id: '__root__' | '/' | '/scion'
+  to: '/' | '/scion' | '/scion-full'
+  id: '__root__' | '/' | '/scion' | '/scion-full'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ScionRouteRoute: typeof ScionRouteRoute
+  ScionFullRouteRoute: typeof ScionFullRouteRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/scion-full': {
+      id: '/scion-full'
+      path: '/scion-full'
+      fullPath: '/scion-full'
+      preLoaderRoute: typeof ScionFullRouteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/scion': {
       id: '/scion'
       path: '/scion'
@@ -71,6 +88,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ScionRouteRoute: ScionRouteRoute,
+  ScionFullRouteRoute: ScionFullRouteRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
