@@ -105,10 +105,10 @@ const BalanceEnweave = () => (
                 detailName="Crimson Strike"
                 detailValue="Damage becomes corruption. The target is bleeding (save ends)."
               />
-              <Detail
+              {/* <Detail
                 detailName="Acid Strike"
                 detailValue="Damage becomes acid. The target has damage weakness equal to your Reason score (save ends)."
-              />
+              /> */}
               <Detail
                 detailName="Umbral Strike"
                 detailValue="Damage becomes psychic. The target has damage weakness equal to your Reason score (save ends).`"
