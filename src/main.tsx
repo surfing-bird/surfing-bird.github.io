@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import {
   RouterProvider,
   createRouter,
-  createHashHistory,
+  // createHashHistory,
 } from "@tanstack/react-router";
 
 // Import the generated route tree
@@ -12,12 +12,12 @@ import { routeTree } from "./routeTree.gen";
 import "./styles.css";
 import reportWebVitals from "./reportWebVitals.ts";
 
-  const hashHistory = createHashHistory();
+// const hashHistory = createHashHistory();
 
 // Create a new router instance
 const router = createRouter({
   routeTree,
-  history: hashHistory,
+  // history: hashHistory,
   context: {},
   defaultPreload: "intent",
   scrollRestoration: true,
