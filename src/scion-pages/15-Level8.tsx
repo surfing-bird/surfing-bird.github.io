@@ -11,7 +11,7 @@ import {
 const Level8 = () => (
   <Page id="level-8">
     <Column>
-      <Heading2>8th-Level Features</Heading2>re
+      <Heading2>8th-Level Features</Heading2>
       <Text>As an 8th-level Scion, you gain the following features.</Text>
 
       <Heading4 className="text-center">8th-Level Scion Art Features</Heading4>
@@ -30,7 +30,8 @@ const Level8 = () => (
         <Text>
           Whenever you teleport by any means, you don't require line of sight to
           the target location. Additionally, any ally adjacent to you may use
-          Blink as a maneuver with this benefit.
+          Blink as a maneuver with this benefit, but cannot use its spend
+          effect.
         </Text>
       </Feature>
 
@@ -38,13 +39,16 @@ const Level8 = () => (
         <Text>
           When a Runebrand is detonated, it applies its effect to every enemy
           within range 4 of it, instead of within range 3. In addition, your
-          Runebrand ability may now be used at range 5 in addition to melee 1
-          range.
+          Runebrand ability now has a 'Ranged 5' range.
         </Text>
       </Feature>
 
       <Feature title="Soul Manifest">
-        <Text>Placeholder</Text>
+        <Text>
+          Choose a Soulshape form, its effects are now permanent. When it is
+          chosen when using Soulshape, the bonuses increase further. You may
+          change the chosen form for this feature as a downtime activity.
+        </Text>
       </Feature>
     </Column>
   </Page>

@@ -45,15 +45,15 @@ const Level8ElevenHR = () => (
       <Ability
         title="Singularity (11 Balance)"
         subtitle="You rend the fabric of reality, leaving a yawning void that demands to be filled."
-        keywords="Area, Magic, Melee, Weapon"
+        keywords="Area, Magic, Weapon"
         actionType="Main action"
         range="5 burst"
         targets="Each enemy in the area"
         addedStats={["Agility"]}
         tierResults={{
-          low: "3 damage; pull 5, M < WEAK, slowed (save ends)",
-          middle: "6 damage; pull 7, M < AVERAGE, slowed (save ends)",
-          high: "9 damage; pull 9, M < STRONG, slowed (save ends)",
+          low: "3 damage; pull 3, M < WEAK, slowed (save ends)",
+          middle: "6 damage; pull 5, M < AVERAGE, slowed (save ends)",
+          high: "9 damage; pull 7, M < STRONG, slowed (save ends)",
         }}
       />
     </Column>
@@ -61,18 +61,18 @@ const Level8ElevenHR = () => (
     <Column>
       <Ability
         title="Unlimited Bladeworks (11 Balance)"
-        subtitle="You summon a near infinite amount of spectral blades, imbued with tiny fragments of your soul, unleashing them in a relentless barrage."
-        keywords="Area, Magic"
+        subtitle="You summon a mighty host of spectral blades, unleashing them in a relentless barrage."
+        keywords="Area, Magic, Ranged"
         actionType="Main action"
-        range="Five 4 cube within 10"
+        range="Five 3 cubes within 10"
         targets="Each enemy in the area"
         addedStats={["Agility"]}
         tierResults={{
-          low: "5 damage; A < WEAK, bleeding (save ends)",
-          middle: "8 damage; A < AVERAGE, bleeding (save ends)",
-          high: "11 damage; A < STRONG, bleeding (save ends)",
+          low: "6 damage;",
+          middle: "9 damage;",
+          high: "13 damage;",
         }}
-        effect="Until the end of the encounter or you are dying, you may make an additional power roll targeting a single 4 cube within 10 at the start of each of your turns."
+        effect="Until the end of the encounter or you are dying, you may make an additional power roll targeting a single 3 cube within 10 at the start of each of your turns."
       />
 
       <Ability
@@ -84,11 +84,13 @@ const Level8ElevenHR = () => (
         targets="Each enemy in the area"
         addedStats={["Agility"]}
         tierResults={{
-          low: "10 damage",
-          middle: "14 damage",
-          high: "20 damage",
+          low: "4 damage",
+          middle: "6 damage",
+          high: "10 damage",
         }}
-        effect="Until the start of your next turn, the area projects an impenetrable sheet of energy both above and below it, which is physically impassable by any means other than teleportation. Creatures caught in the area are pushed to either side of the wall they are caught in, chosen by you."
+        effect="Until the start of your next turn, the area projects a 10-square high impenetrable sheet of force both above and below it,
+        which blocks line of effect and can't be moved through by any means other than teleportation.
+        Creatures caught in the area are pushed to either side of the wall they are caught in, chosen by you."
       />
     </Column>
   </Page>

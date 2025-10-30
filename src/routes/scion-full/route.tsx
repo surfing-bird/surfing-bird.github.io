@@ -19,6 +19,7 @@ import Level6 from "../../scion-pages/12-Level6";
 import Level7 from "../../scion-pages/13-Level7";
 import Level8 from "../../scion-pages/15-Level8";
 import Level8ElevenHR from "../../scion-pages/16-Level8-ElevenHR";
+import Level9 from "../../scion-pages/17-Level9";
 import Kits from "../../scion-pages/Kits";
 import Changelog from "../../scion-pages/ChangeLog";
 
@@ -50,6 +51,7 @@ function Scion() {
         <Level7 />
         <Level8 />
         <Level8ElevenHR />
+        <Level9 />
         <Kits />
         <Changelog />
       </ManualLayout>

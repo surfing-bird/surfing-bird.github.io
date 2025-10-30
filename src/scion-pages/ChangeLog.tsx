@@ -5,6 +5,25 @@ const Changelog = () => (
     <Column>
       <Title>Changelog</Title>
 
+      <Heading3>V0.4.1</Heading3>
+      <BulletList>
+        <Text>Soul Flow: changed effect slightly</Text>
+        <Text>Blade Barrier: added</Text>
+        <Text>Dancer’s Step: added</Text>
+        <Text>Chain of Torment: spend effect typo fixed</Text>
+        <Text>Level 4 Runewright balance trigger text clarified</Text>
+        <Text>Inferno Helix: changed effect</Text>
+        <Text>Masterstroke: changed wording</Text>
+        <Text>Soul Manifest: effect slightly changed</Text>
+        <Text>Phase Field: slightly changed effect wording</Text>
+      </BulletList>
+
+      <Heading3>V0.4.0</Heading3>
+      <BulletList>
+        <Text>Changed Aether Lash effect wording</Text>
+        <Text>Added Blade Barrier signature</Text>
+      </BulletList>
+
       <Heading3>V0.3.9</Heading3>
       <BulletList>
         <Text>Afterimage: changed effect</Text>

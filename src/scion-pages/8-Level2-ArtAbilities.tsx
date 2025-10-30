@@ -85,7 +85,7 @@ const Level2ArtAbilities = () => (
         subtitle="Arcane chains erupt from the ground, coling around your foe."
         keywords="Magic, Ranged"
         actionType="Main action"
-        range="Range 5"
+        range="Ranged 5"
         targets="One creature"
         addedStats={["Reason"]}
         tierResults={{

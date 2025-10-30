@@ -19,8 +19,8 @@ const Level6 = () => (
         <Text>
           Whenever you use an ability which costs balance on your turn, your
           next power roll on that turn gains an edge. This effect applies before
-          whichever ability triggered it is resolved, such that it may apply to
-          it.
+          whichever ability triggered it is resolved, such that the edge may
+          apply to it.
         </Text>
         <Text>
           You achieve a critical hit on an 18 or higher, instead of 19 or 20.
@@ -56,7 +56,7 @@ const Level6 = () => (
 
       <Ability
         title="Sunder Space (9 Balance)"
-        subtitle="You cut a precise incision in reality, folding in upon itself."
+        subtitle="You cut a precise incision in reality, folding it upon itself."
         keywords="Area, Magic, Weapon"
         actionType="Main action"
         range="Special"
@@ -121,7 +121,6 @@ const Level6 = () => (
           middle: "6 damage; M < AVERAGE, dazed (save ends)",
           high: "10 damage; M < STRONG, dazed (save ends)",
         }}
-        effect="Whenever the creature is dealt rolled damage while they have this weakness, it is increased by 1. Additionally, while the target has damage weakness this way, its characteristic scores are treated as 1 lower for the purpose of resisting potency effects."
       />
     </Column>
   </Page>

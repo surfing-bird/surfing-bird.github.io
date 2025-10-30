@@ -37,6 +37,7 @@ const fullNavItems: NavItem[] = [
   { id: "level-6", label: "Level 6" },
   { id: "level-7", label: "Level 7" },
   { id: "level-8", label: "Level 8" },
+  { id: "level-9", label: "Level 9" },
   { id: "divider-1", label: "divider-1", type: "divider" },
   { id: "kits", label: "Kits" },
   { id: "changelog", label: "Changelog" },

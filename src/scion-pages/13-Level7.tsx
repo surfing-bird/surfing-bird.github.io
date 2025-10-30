@@ -25,7 +25,7 @@ const Level7 = () => (
       <Heading3>Eternal Master</Heading3>
       <Text>
         The master's path is that of endless study. Whenever you take a respite,
-        choose a heroic ability of an ally's class. You gain this heroic
+        choose any heroic ability of an ally's class. You gain this heroic
         ability, which can be paid for using the Heroic Resource of your class.
         You can't use a heroic ability that requires a class feature you don't
         have.
@@ -33,7 +33,7 @@ const Level7 = () => (
 
       <Heading3>Unravel Weakness</Heading3>
       <Text>
-        Whenever you deal typed damage to an enemy, you may spend 3 balance to
+        Whenever you deal typed damage to an enemy, you may spend 2 balance to
         inflict the target with weakness 5 to that damage type (save ends). The
         weakness is imposed after the damage is resolved.
       </Text>

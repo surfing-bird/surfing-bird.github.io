@@ -44,8 +44,10 @@ const Level5 = () => (
 
       <Feature title="Soul Flow">
         <Text>
-          Whenever you use a Heroic Ability that is a main action, you can use
-          Soulshape after it is resolved as a free maneuver, with the effect
+          Whenever you use a Heroic Ability that is a main action, if a
+          Soulshape benefit is active, you can extend the duration of it until
+          the end of your next turn. If a Soulshape benefit is not active, you
+          may choose to use Soulshape as a free maneuver, with the effect
           instead lasting until the end of your next turn.
         </Text>
       </Feature>

@@ -61,7 +61,7 @@ const Level4 = () => (
           />
           <Detail
             detailName="Runewright"
-            detailValue="You gain 2 balance the first time in an encounter that a creature within 10 squares is affected by an effect that is ended by a saving throw."
+            detailValue="You gain 2 balance the first time in an encounter that a creature within 10 squares receives an effect that is ended by a saving throw."
           />
           <Detail
             detailName="Soulforged"

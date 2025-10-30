@@ -174,7 +174,7 @@ const Maneuvers = () => (
         spend={
           <Detail
             detailName="Spend 1+ Balance"
-            detailValue="For each balance spent you may make an enemy within range of this ability with taunted (save ends)."
+            detailValue="For each balance spent you may make an enemy within range of this ability taunted (save ends)."
           />
         }
       />
