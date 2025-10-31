@@ -46,12 +46,12 @@ const Level9 = () => (
         targets="One creature"
         addedStats={["Reason"]}
         tierResults={{
-          low: "4 damage; R < WEAK, damage weakness 5 (save ends)",
-          middle: "6 damage; R < AVERAGE, damage weakness 5 (save ends)",
-          high: "10 damage; R < STRONG, damage weakness 5 (save ends)",
+          low: "4 damage",
+          middle: "6 damage",
+          high: "10 damage",
         }}
-        effect="Until the end of the encounter or you are dying, the target is weakened, can't gain Stamina,
-        and automatically fails all saving throws."
+        effect="Until the end of the encounter or you are dying, the target has damage weakness 5,
+        is weakened, can't gain Stamina, and automatically fails all saving throws."
       />
     </Column>
 
@@ -68,11 +68,12 @@ const Level9 = () => (
         targets="One creature"
         addedStats={["Reason"]}
         tierResults={{
-          low: "P < WEAK, dazed and frightened (save ends)",
-          middle: "P < AVERAGE, dazed and frightened (save ends)",
-          high: "P < STRONG, dazed and frightened (save ends)",
+          low: "8 psychic damage, P < WEAK, dazed and frightened (save ends)",
+          middle:
+            "12 psychic damage, P < AVERAGE, dazed and frightened (save ends)",
+          high: "16 psychic damage, P < STRONG, dazed and frightened (save ends)",
         }}
-        effect="Until the end of the encounter or you are dying, the first time in a turn that the target damages another creature, they take 10 damage."
+        effect="Until the end of the encounter or you are dying, the first time in a turn that the target damages another creature, they take 20 damage."
       />
 
       <Ability
