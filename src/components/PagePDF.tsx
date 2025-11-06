@@ -10,7 +10,7 @@ export function PagePDF({ children, className = "", id }: PagePDFProps) {
   return (
     <div
       id={id}
-      className={`pdf-page w-full flex flex-col md:flex-row items-start gap-[15px] ${className}`}
+      className={`pdf-page w-full flex flex-row items-start gap-[15px] ${className}`}
       style={{
         width: "210mm",
         minHeight: "257mm", // A4 height (297mm) - margins (20mm top + 20mm bottom)
@@ -23,4 +23,3 @@ export function PagePDF({ children, className = "", id }: PagePDFProps) {
     </div>
   );
 }
-
