@@ -9,9 +9,11 @@
 /* PDF-specific styling */
 .pdf-page-wrapper {
   width: 210mm;
-  background: white;
+  height: 297mm; /* Fixed A4 height */
+  background: #fffef8; /* Match page background */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 10mm;
+  overflow: hidden; /* Prevent content overflow */
 }
 
 .pdf-page {
@@ -30,6 +32,12 @@
   page-break-inside: avoid;
 }
 
+/* Hide dev tools on screen and in print for PDF routes */
+[data-tanstack-router-devtools],
+.TanStackRouterDevtools {
+  display: none !important;
+}
+
 /* Print-specific styles */
 @media print {
   body {
@@ -45,11 +53,6 @@
   .pdf-page {
     box-shadow: none;
     margin: 0;
-  }
-
-  /* Hide any router devtools or other non-content elements when printing */
-  [data-tanstack-router-devtools] {
-    display: none !important;
   }
 }
 
@@ -68,4 +71,3 @@ h6 {
   font-family: "Fraunces", serif;
   line-height: 1.1;
 }
-
