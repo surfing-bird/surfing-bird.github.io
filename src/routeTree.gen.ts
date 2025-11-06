@@ -9,10 +9,22 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as ScionPdfRouteRouteImport } from './routes/scion-pdf/route'
+import { Route as ScionFullPdfRouteRouteImport } from './routes/scion-full-pdf/route'
 import { Route as ScionFullRouteRouteImport } from './routes/scion-full/route'
 import { Route as ScionRouteRouteImport } from './routes/scion/route'
 import { Route as IndexRouteImport } from './routes/index'
 
+const ScionPdfRouteRoute = ScionPdfRouteRouteImport.update({
+  id: '/scion-pdf',
+  path: '/scion-pdf',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ScionFullPdfRouteRoute = ScionFullPdfRouteRouteImport.update({
+  id: '/scion-full-pdf',
+  path: '/scion-full-pdf',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ScionFullRouteRoute = ScionFullRouteRouteImport.update({
   id: '/scion-full',
   path: '/scion-full',
@@ -33,34 +45,62 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/scion': typeof ScionRouteRoute
   '/scion-full': typeof ScionFullRouteRoute
+  '/scion-full-pdf': typeof ScionFullPdfRouteRoute
+  '/scion-pdf': typeof ScionPdfRouteRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/scion': typeof ScionRouteRoute
   '/scion-full': typeof ScionFullRouteRoute
+  '/scion-full-pdf': typeof ScionFullPdfRouteRoute
+  '/scion-pdf': typeof ScionPdfRouteRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/scion': typeof ScionRouteRoute
   '/scion-full': typeof ScionFullRouteRoute
+  '/scion-full-pdf': typeof ScionFullPdfRouteRoute
+  '/scion-pdf': typeof ScionPdfRouteRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/scion' | '/scion-full'
+  fullPaths: '/' | '/scion' | '/scion-full' | '/scion-full-pdf' | '/scion-pdf'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/scion' | '/scion-full'
-  id: '__root__' | '/' | '/scion' | '/scion-full'
+  to: '/' | '/scion' | '/scion-full' | '/scion-full-pdf' | '/scion-pdf'
+  id:
+    | '__root__'
+    | '/'
+    | '/scion'
+    | '/scion-full'
+    | '/scion-full-pdf'
+    | '/scion-pdf'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ScionRouteRoute: typeof ScionRouteRoute
   ScionFullRouteRoute: typeof ScionFullRouteRoute
+  ScionFullPdfRouteRoute: typeof ScionFullPdfRouteRoute
+  ScionPdfRouteRoute: typeof ScionPdfRouteRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/scion-pdf': {
+      id: '/scion-pdf'
+      path: '/scion-pdf'
+      fullPath: '/scion-pdf'
+      preLoaderRoute: typeof ScionPdfRouteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/scion-full-pdf': {
+      id: '/scion-full-pdf'
+      path: '/scion-full-pdf'
+      fullPath: '/scion-full-pdf'
+      preLoaderRoute: typeof ScionFullPdfRouteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/scion-full': {
       id: '/scion-full'
       path: '/scion-full'
@@ -89,6 +129,8 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ScionRouteRoute: ScionRouteRoute,
   ScionFullRouteRoute: ScionFullRouteRoute,
+  ScionFullPdfRouteRoute: ScionFullPdfRouteRoute,
+  ScionPdfRouteRoute: ScionPdfRouteRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

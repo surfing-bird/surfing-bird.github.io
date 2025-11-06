@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+/* A4 Page Definition */
+@page {
+  size: A4 portrait;
+  margin: 0;
+}
+
+/* PDF-specific styling */
+.pdf-page-wrapper {
+  width: 210mm;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10mm;
+}
+
+.pdf-page {
+  box-sizing: border-box;
+  background: #fffef8;
+}
+
+/* Prevent page breaks inside important elements */
+.pdf-page h1,
+.pdf-page h2,
+.pdf-page h3,
+.pdf-page h4,
+.pdf-page h5,
+.pdf-page h6 {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+/* Print-specific styles */
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .pdf-page-wrapper {
+    margin: 0;
+    box-shadow: none;
+  }
+
+  .pdf-page {
+    box-shadow: none;
+    margin: 0;
+  }
+
+  /* Hide any router devtools or other non-content elements when printing */
+  [data-tanstack-router-devtools] {
+    display: none !important;
+  }
+}
+
+/* Typography overrides for PDF if needed */
+body {
+  font-family: "Alegreya", serif;
+  color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fraunces", serif;
+  line-height: 1.1;
+}
+

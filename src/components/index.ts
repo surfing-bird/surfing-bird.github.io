@@ -21,3 +21,6 @@ export { PowerRoll } from "./PowerRoll";
 export { TierResultsTable } from "./TierResultsTable";
 export { AbilitySection } from "./AbilitySection";
 export { Sidebar } from "./Sidebar";
+export { PDFLayout } from "./PDFLayout";
+export { PagePDF } from "./PagePDF";
+export { ColumnPDF } from "./ColumnPDF";
