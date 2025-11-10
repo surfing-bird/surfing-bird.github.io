@@ -1,4 +1,5 @@
-import { Page, Column, Text, Heading2, Ability, Heading3 } from "@/components";
+import { Page, Column, Text, Heading2, Heading3 } from "@/components";
+import { CrossSlash, Godspeed, ReapersEdge, SpectralBlades } from "@/abilities";
 
 const Level3 = () => (
   <Page id="level-3">
@@ -43,48 +44,13 @@ const Level3 = () => (
         costs 7 balance to use.
       </Text>
 
-      <Ability
-        title="Cross Slash (7 Balance)"
-        subtitle="You cleave the air in all directions, blades of force radiating from your stance."
-        keywords="Melee, Weapon, Magic, Area"
-        actionType="Main action"
-        range="four 5 × 1 lines within 1"
-        targets="Each enemy in the area"
-        addedStats={["Agility"]}
-        tierResults={{
-          low: "6 damage",
-          middle: "10 damage",
-          high: "14 damage",
-        }}
-      />
+      <CrossSlash />
 
-      <Ability
-        title="Godspeed (7 Balance)"
-        subtitle="You surge with arcane power, moving with impossible speed."
-        keywords="Magic"
-        actionType="Free maneuver"
-        range="Self"
-        targets="Self"
-        effect="For the rest of the combat encounter, you have an additional maneuver per turn and gain a +5 bonus to speed."
-      />
+      <Godspeed />
     </Column>
 
     <Column>
-      <Ability
-        title="Reaper's Edge (7 Balance)"
-        subtitle="There is power in death."
-        keywords="Melee, Strike, Weapon, Magic"
-        actionType="Main action"
-        range="Melee 1"
-        targets="One creature"
-        addedStats={["Agility"]}
-        tierResults={{
-          low: "12 + A damage",
-          middle: "18 + A damage",
-          high: "24 + A damage",
-        }}
-        effect="If this ability reduces a creature to 0 Stamina, gain 5 balance."
-      />
+      <ReapersEdge />
 
       {/* <Ability
         title="Reaper's Edge (7 Balance)"
@@ -102,20 +68,7 @@ const Level3 = () => (
         effect="If this ability reduces a creature to 0 Stamina, gain an additional main action this turn."
       /> */}
 
-      <Ability
-        title="Spectral Blades (7 Balance)"
-        subtitle="You summon spectral blades, suspended in poise, released with but a thought."
-        keywords="Magic"
-        actionType="Maneuver"
-        range="Self"
-        targets="Self"
-        effect="Place a d6 die set to 6 to track this effect.
-        Once a turn you may reduce the die by any amount up to its current value.
-        Then, distribute that many spectral blades among enemies within range 5 as you choose.
-        Each blade deals 4 + your Reason score in damage. You cannot assign more than one blade per enemy.
-        In addition, whenever an enemy in range 5 is affected by a potency effect,
-        you may reduce the die by 1 to increase the potency of the ability by 1."
-      />
+      <SpectralBlades />
     </Column>
   </Page>
 );

@@ -4,11 +4,9 @@ import {
   Text,
   Heading2,
   Heading3,
-  BulletList,
   TextBlock,
-  Ability,
-  Detail,
 } from "@/components";
+import { Enweave } from "@/abilities";
 
 const BalanceEnweave = () => (
   <Page id="balance-enweave">
@@ -74,75 +72,7 @@ const BalanceEnweave = () => (
         You gain the following ability.
       </Text>
 
-      <Ability
-        title="Enweave (1 Balance)"
-        subtitle="You weave magic into your weapon, preparing to unleash it with your next strike."
-        keywords="Magic, Weapon"
-        actionType="Maneuver"
-        range="Self"
-        targets="Special"
-        effect={
-          <TextBlock>
-            <Text>
-              <strong>Effect:</strong> Choose one of the following effects,
-              which applies to one target of the next damaging melee weapon
-              ability you use:
-            </Text>
-            <BulletList>
-              <Detail
-                detailName="Flame Strike"
-                detailValue="Damage becomes fire. Deal triple your Reason score in fire damage."
-              />
-              <Detail
-                detailName="Gale Strike"
-                detailValue="Damage becomes lightning. You can either push the target, or yourself away from the target, a distance equal to double your Reason score."
-              />
-              <Detail
-                detailName="Freeze Strike"
-                detailValue="Damage becomes cold. Deal your Reason score in cold damage. The target is slowed (save ends)."
-              />
-              <Detail
-                detailName="Crimson Strike"
-                detailValue="Damage becomes corruption. The target is bleeding (save ends)."
-              />
-              {/* <Detail
-                detailName="Acid Strike"
-                detailValue="Damage becomes acid. The target has damage weakness equal to your Reason score (save ends)."
-              /> */}
-              <Detail
-                detailName="Umbral Strike"
-                detailValue="Damage becomes psychic. The target has damage weakness equal to your Reason score (save ends).`"
-              />
-              {/* <Detail
-                detailName="Umbral Strike"
-                detailValue="Damage becomes psychic. Deal your Reason score in psychic damage, and the target is weakened (save ends)."
-              /> */}
-              <Detail
-                detailName="Explosive Strike"
-                detailValue="Damage becomes sonic. Deal your sonic damage equal to your Reason score to each enemy in range 2 of the target."
-              />
-            </BulletList>
-            <Text>
-              Effects other than the changing of the damage type are applied
-              after the ability is resolved. If you use this ability more than
-              once before it applies to an ability, you can choose one of the
-              damage types to apply to the affected ability, but apply all of
-              the effects.
-            </Text>
-
-            <Text>
-              You cannot use Enweave more than twice before applying its effect
-              to an ability.
-            </Text>
-          </TextBlock>
-        }
-        spend={
-          <Detail
-            detailName="Spend 2 Balance"
-            detailValue="This ability becomes a free maneuver instead."
-          />
-        }
-      />
+      <Enweave />
     </Column>
   </Page>
 );

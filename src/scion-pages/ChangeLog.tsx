@@ -5,6 +5,17 @@ const Changelog = () => (
     <Column>
       <Title>Changelog</Title>
 
+      <Heading3>V0.4.2</Heading3>
+      <BulletList>
+        <Text>Afterimage: changed effect slightly</Text>
+        <Text>Soul Gaze: changed effect wording</Text>
+        <Text>Rune of Power: renamed to Rune of Strength</Text>
+        <Text>Enweave: changed effect wording</Text>
+        <Text>Runebrand: changed effect wording</Text>
+        <Text>Spectral Blades: changed effect wording</Text>
+        <Text>Cross Slash: added effect clarification</Text>
+      </BulletList>
+
       <Heading3>V0.4.1</Heading3>
       <BulletList>
         <Text>Soul Flow: changed effect slightly</Text>

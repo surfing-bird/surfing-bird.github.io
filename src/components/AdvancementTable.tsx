@@ -14,7 +14,7 @@ export function AdvancementTable({
   showLevel = false,
 }: AdvancementTableProps) {
   return (
-    <div className={`overflow-x-auto ${className}`}>
+    <div className={`${className}`}>
       <table className="w-full border-collapse text-xs leading-tight">
         <thead>
           <tr>

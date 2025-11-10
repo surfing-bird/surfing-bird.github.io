@@ -6,11 +6,10 @@ import {
   Heading3,
   AdvancementTable,
   TextBlock,
-  Ability,
   Detail,
   Feature,
-  BulletList,
 } from "@/components";
+import { Blink, Runebrand, Soulshape, ChainOfTorment } from "@/abilities";
 
 const Maneuvers = () => (
   <Page id="maneuvers">
@@ -44,50 +43,9 @@ const Maneuvers = () => (
         </Text>
       </Feature>
 
-      <Ability
-        title="Blink"
-        subtitle="…And you miss it."
-        keywords="Magic"
-        actionType="Maneuver"
-        range="Self"
-        targets="Self"
-        effect={
-          <TextBlock>
-            <Text>You teleport up to 7 squares.</Text>
-          </TextBlock>
-        }
-        spend={
-          <Detail
-            detailName="Spend 5 Balance"
-            detailValue="If used immediately after performing an ability that targets only one enemy, you may repeat that ability at your target destination without needing to spend the base cost as long as it costs 5 balance or fewer."
-          />
-        }
-      />
+      <Blink />
 
-      <Ability
-        title="Runebrand (1 Balance)"
-        subtitle="You brand a volatile rune on your target, priming it for detonation."
-        keywords="Magic"
-        actionType="Maneuver"
-        range="Melee 1"
-        targets="One creature or object"
-        effect="When using this ability, choose one of the Enweave effects,
-              ignoring the component that changes the damage type of your next
-              strike. You brand your target with a rune imbued by the effect you
-              chose, priming it for detonation. At the end of your turn, the
-              rune is primed. When a rune is primed, the next time the branded
-              target is damaged, the rune detonates, applying its effect to
-              every enemy within range 2 of it. If the branded effect already
-              has an area, it is increased by 2 instead. If the branded effect
-              has a push effect, it is relative to the branded target’s
-              location."
-        spend={
-          <Detail
-            detailName="Spend 2 Balance"
-            detailValue="The rune is immediately primed, allowing you to detonate it this turn."
-          />
-        }
-      />
+      <Runebrand />
     </Column>
 
     <Column>
@@ -110,74 +68,13 @@ const Maneuvers = () => (
         </Text>
       </Feature>
 
-      <Ability
-        title="Soulshape"
-        subtitle="By reshaping the bound fragment of your soul, you persuade your Soulblade to take on a new form."
-        keywords="Magic"
-        actionType="Maneuver"
-        range="Self"
-        targets="Self"
-        effect={
-          <TextBlock>
-            <Text>
-              Choose a modified form for your Soulblade, each granting a
-              distinct effect until the start of your next turn:
-            </Text>
-            <BulletList>
-              <Detail
-                detailName="Expansive"
-                detailValue="Melee weapon abilities have their area increased by 1. If the area is a line, increase the size of the larger dimension by 2 instead."
-              />
-              <Detail
-                detailName="Powerful"
-                detailValue="Melee weapon abilities with rolled damage have their damage increased by your Reason score. If the ability force moves a target, the forced movement distance gains a bonus equal to your Reason score."
-              />
-              <Detail
-                detailName="Resonant"
-                detailValue="Melee weapon abilities have their potency increased by 1."
-              />
-              <Detail
-                detailName="Reaching"
-                detailValue="Melee weapon abilities have their distance increased by double your Reason."
-              />
-            </BulletList>
-          </TextBlock>
-        }
-        spend={
-          <Detail
-            detailName="Spend 2 Balance"
-            detailValue="Any numeric benefit of the chosen form is doubled in value."
-          />
-        }
-      />
+      <Soulshape />
 
       <Feature title="Vorator Cruciatum">
         <Text>You increase your number of Recoveries by 2.</Text>
       </Feature>
 
-      <Ability
-        title="Chain of Torment"
-        subtitle="A fell curse creates a link between two creatures, transferring pain from one to the other."
-        keywords="Magic"
-        actionType="Maneuver"
-        range="Ranged 10"
-        targets="Self or an ally and one enemy creature"
-        effect={
-          <TextBlock>
-            <Text>
-              Until the end of your next turn, whenever the friendly target
-              takes damage that was dealt by an ability, the same amount of
-              damage is also dealt to each enemy target.
-            </Text>
-          </TextBlock>
-        }
-        spend={
-          <Detail
-            detailName="Spend 1+ Balance"
-            detailValue="For each balance spent you may make an enemy within range of this ability taunted (save ends)."
-          />
-        }
-      />
+      <ChainOfTorment />
     </Column>
   </Page>
 );
