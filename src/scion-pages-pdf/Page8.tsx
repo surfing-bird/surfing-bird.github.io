@@ -30,11 +30,11 @@ const Page8 = () => (
       <Heading3>6th-Level Soulforged Ability</Heading3>
       <Text>Choose one of the following abilities.</Text>
 
-      <SoulGaze />
+      <SoulWave />
     </ColumnPDF>
 
     <ColumnPDF>
-      <SoulWave />
+      <SoulGaze />
 
       <Heading2>7th-Level Features</Heading2>
       <Text>As a 7th-level scion, you gain the following features.</Text>
