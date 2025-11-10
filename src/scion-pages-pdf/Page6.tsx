@@ -7,18 +7,11 @@ import {
   TextBlock,
   Detail,
 } from "@/components";
-import {
-  SoulSpiral,
-  Godspeed,
-  CrossSlash,
-  ReapersEdge,
-  SpectralBlades,
-} from "@/abilities";
+import { Godspeed, CrossSlash, ReapersEdge, SpectralBlades } from "@/abilities";
 
 const Page6 = () => (
   <PagePDF id="page-6">
     <ColumnPDF>
-      <SoulSpiral />
       {/* 
       <Heading3>2nd-Level Darksworn Ability</Heading3>
       <Text>Choose one of the following abilities.</Text>
@@ -47,11 +40,10 @@ const Page6 = () => (
       <CrossSlash />
       <Godspeed />
       <ReapersEdge />
+      <SpectralBlades />
     </ColumnPDF>
 
     <ColumnPDF>
-      <SpectralBlades />
-
       <Heading2>4th-Level Features</Heading2>
       <Text>As a 4th-level scion, you gain the following features.</Text>
 

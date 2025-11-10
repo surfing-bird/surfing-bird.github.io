@@ -14,6 +14,7 @@ import {
   WritOfPower,
   WritOfBinding,
   SoulForm,
+  SoulSpiral,
 } from "@/abilities";
 
 const Page5 = () => (
@@ -28,7 +29,7 @@ const Page5 = () => (
           { Subclass: "Blinkblade", Features: "Afterimage" },
           { Subclass: "Runewright", Features: "Liminal Runes" },
           { Subclass: "Soulforged", Features: "Soul Instinct" },
-          { Subclass: "Darksworn", Features: "Sacramentum Sanguis" },
+          // { Subclass: "Darksworn", Features: "Sacramentum Sanguis" },
         ]}
       />
       <Feature title="Afterimage">
@@ -55,14 +56,14 @@ const Page5 = () => (
           In addition, your stability is increased by 1.
         </Text>
       </Feature>
-      <Feature title="Sacramentum Sanguis">
+      {/* <Feature title="Sacramentum Sanguis">
         <Text>
           Whenever you deal rolled damage to a creature you may choose to deal
           your Reason in damage to yourself to gain two surges which must be
           used on the triggering ability.
         </Text>
-      </Feature>
-      <Heading2>Perk</Heading2>
+      </Feature> */}
+      <Heading3>Perk</Heading3>
       <Text>
         You gain an exploration, lore, or supernatural perk of your choice. See
         Perks for more information.
@@ -74,11 +75,10 @@ const Page5 = () => (
       <Heading3>2nd-Level Blinkblade Ability</Heading3>
       <Text>Choose one of the following abilities.</Text>
       <PhaseAssault />
+      <HorizonStep />
     </ColumnPDF>
 
     <ColumnPDF>
-      <HorizonStep />
-
       <Heading3>2nd-Level Runewright Ability</Heading3>
       <Text>Choose one of the following abilities.</Text>
       <WritOfPower />
@@ -87,6 +87,7 @@ const Page5 = () => (
       <Heading3>2nd-Level Soulforged Ability</Heading3>
       <Text>Choose one of the following abilities.</Text>
       <SoulForm />
+      <SoulSpiral />
     </ColumnPDF>
   </PagePDF>
 );

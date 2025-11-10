@@ -12,6 +12,7 @@
 // import Page9 from "../../scion-pages-pdf/Page9";
 // import Page10 from "../../scion-pages-pdf/Page10";
 // import Page11 from "../../scion-pages-pdf/Page11";
+// import Page12 from "../../scion-pages-pdf/Page12";
 // import { useIsMobile } from "@/hooks/useIsMobile";
 
 // export const Route = createFileRoute("/scion-full-pdf")({
@@ -36,6 +37,7 @@
 //         <Page9 />
 //         <Page10 />
 //         <Page11 />
+//         <Page12 />
 //       </PDFLayout>
 //     </div>
 //   );

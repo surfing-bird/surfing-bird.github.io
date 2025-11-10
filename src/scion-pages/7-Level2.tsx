@@ -6,6 +6,7 @@ import {
   Heading4,
   AdvancementTable,
   Feature,
+  Heading3,
 } from "@/components";
 
 const Level2 = () => (
@@ -52,7 +53,7 @@ const Level2 = () => (
         </Text>
       </Feature>
 
-      <Heading2>Perk</Heading2>
+      <Heading3>Perk</Heading3>
       <Text>
         You gain an exploration, lore, or supernatural perk of your choice. See
         Perks for more information.
@@ -84,7 +85,7 @@ const Level2 = () => (
         </Text>
       </Feature>
 
-      <Heading2>Perk</Heading2>
+      <Heading3>Perk</Heading3>
       <Text>
         You gain an exploration, lore, or supernatural perk of your choice. See
         Perks for more information.

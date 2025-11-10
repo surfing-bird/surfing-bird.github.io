@@ -4,19 +4,10 @@ import {
   Text,
   Heading2,
   Heading3,
-  TextBlock,
-  Detail,
   Feature,
   AdvancementTable,
 } from "@/components";
-import {
-  Enweave,
-  Blink,
-  Runebrand,
-  Soulshape,
-  ChainOfTorment,
-  FlickerStep,
-} from "@/abilities";
+import { Enweave, Blink, Runebrand, Soulshape } from "@/abilities";
 
 const Page2 = () => (
   <PagePDF id="page-2">

@@ -10,9 +10,9 @@ export const SoulRupture = () => (
     targets="One creature"
     addedStats={["Agility"]}
     tierResults={{
-      low: "10 + A damage; P < weak, damage weakness 10 (save ends)",
-      middle: "14 + A damage; P < average, damage weakness 10 (save ends)",
-      high: "20 + A damage; P < strong, damage weakness 10 (save ends)",
+      low: "10 + A damage; P < WEAK, damage weakness 10 (save ends)",
+      middle: "14 + A damage; P < AVERAGE, damage weakness 10 (save ends)",
+      high: "20 + A damage; P < STRONG, damage weakness 10 (save ends)",
     }}
     effect="Whenever the creature is dealt rolled damage while they have this damage weakness, it is increased by 1. When this condition would end, the damage weakness is instead lowered by 5. When it is lowered to zero or lower, the condition ends."
   />
