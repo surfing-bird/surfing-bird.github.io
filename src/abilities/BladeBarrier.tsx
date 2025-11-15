@@ -7,7 +7,7 @@ export const BladeBarrier = () => (
     keywords="Magic, Area"
     actionType="Main action"
     range="1 burst"
-    targets="One creature"
+    targets="Each enemy in the area"
     addedStats={["Agility"]}
     tierResults={{
       low: "2 damage, push 1",
@@ -17,4 +17,3 @@ export const BladeBarrier = () => (
     effect="This ability ignores stability. Gain damage immunity equal to your Reason until the end of your next turn."
   />
 );
-

@@ -30,10 +30,10 @@ const Level2 = () => (
         <Text>
           Whenever you teleport by any means, you leave a distracting afterimage
           in your previous location until the start of your next turn. Power
-          rolls targeting enemies adjacent to one afterimage or more gain an
-          gain edge. The afterimage does not occupy space and cannot be targeted
-          or destroyed. At the start of any turn when an afterimage fades, you
-          can choose to teleport to its location.
+          rolls targeting enemies adjacent to one or more afterimages gain an
+          edge. The afterimage does not occupy space and cannot be targeted or
+          destroyed. At the start of any turn when an afterimage fades, you can
+          choose to teleport to its location.
         </Text>
       </Feature>
 
