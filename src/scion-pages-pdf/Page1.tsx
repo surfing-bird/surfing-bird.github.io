@@ -21,12 +21,12 @@ const Page1 = () => (
           to weave steel and magic into a single, fluid dance. Passed down
           through an unbroken chain of master and disciple, this ancient
           discipline was entrusted to you, its esoteric techniques guiding you
-          toward the cultivation of Balance: a harmonious alignment of movement,
+          toward the cultivation of balance: a harmonious alignment of movement,
           feeling, and intent.
         </Text>
 
         <Text>
-          As a Scion, you move with purpose - each strike empowered to suit the
+          As a scion, you move with purpose - each strike empowered to suit the
           moment, whether to wound, disrupt, or disable, your flexibility is
           unmatched. At the height of your mastery, you are the eye of the
           storm: utterly calm, yet entirely devastating.
@@ -65,11 +65,11 @@ const Page1 = () => (
         </div>
       </div>
       <Heading2>1st-Level Features</Heading2>
-      <Text>As a Scion, you gain the following features.</Text>
+      <Text>As a scion, you gain the following features.</Text>
       <Heading3>Art</Heading3>
       <TextBlock>
         <Text>
-          Each Scion is a single, carefully chosen inheritor of a different Art.
+          Each scion is a single, carefully chosen inheritor of a different Art.
           The masters of each Art hold different ideals, and choose their scions
           according to their adherence to these ideals - and their capability to
           uphold them.
@@ -207,7 +207,7 @@ const Page1 = () => (
       <TextBlock>
         <Text>
           You can align movement, feeling, and intent to a single purpose,
-          cultivating a heroic resource called Balance.
+          cultivating a heroic resource called balance.
         </Text>
       </TextBlock>
       <Heading3>Balance in Combat</Heading3>

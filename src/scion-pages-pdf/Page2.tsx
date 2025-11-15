@@ -14,7 +14,7 @@ const Page2 = () => (
     <ColumnPDF>
       <Heading2>Enweave</Heading2>
       <Text>
-        Your mastery of Balance allows you to channel magic through your weapon.
+        Your mastery of balance allows you to channel magic through your weapon.
         You gain the following ability.
       </Text>
       <Enweave />

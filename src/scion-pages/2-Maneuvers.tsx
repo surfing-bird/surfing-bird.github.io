@@ -5,11 +5,9 @@ import {
   Heading2,
   Heading3,
   AdvancementTable,
-  TextBlock,
-  Detail,
   Feature,
 } from "@/components";
-import { Blink, Runebrand, Soulshape, ChainOfTorment } from "@/abilities";
+import { Blink, Runebrand, Soulshape } from "@/abilities";
 
 const Maneuvers = () => (
   <Page id="maneuvers">
@@ -29,10 +27,10 @@ const Maneuvers = () => (
             Subclass: "Soulforged",
             Features: "Soulshape, Soulbound",
           },
-          {
-            Subclass: "Darksworn",
-            Features: "Vorator Cruciatum, Chain of Torment",
-          },
+          // {
+          //   Subclass: "Darksworn",
+          //   Features: "Vorator Cruciatum, Chain of Torment",
+          // },
         ]}
       />
 
@@ -70,11 +68,11 @@ const Maneuvers = () => (
 
       <Soulshape />
 
-      <Feature title="Vorator Cruciatum">
+      {/* <Feature title="Vorator Cruciatum">
         <Text>You increase your number of Recoveries by 2.</Text>
-      </Feature>
+      </Feature> */}
 
-      <ChainOfTorment />
+      {/* <ChainOfTorment /> */}
     </Column>
   </Page>
 );

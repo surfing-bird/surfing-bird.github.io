@@ -147,7 +147,7 @@ const Class = () => (
           I am the soul of my blade. I bring justice for all.
         </Text>
       </TextBlock>
-      <Heading3>Darksworn</Heading3>
+      {/* <Heading3>Darksworn</Heading3>
       <TextBlock>
         <Text>
           The Darksworn embraces forbidden power - blood magic, curses, and the
@@ -159,7 +159,7 @@ const Class = () => (
         <Text className="italic">
           Pain is a weapon. I will stop at nothing.
         </Text>
-      </TextBlock>
+      </TextBlock> */}
     </Column>
   </Page>
 );

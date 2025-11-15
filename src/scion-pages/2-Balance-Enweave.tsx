@@ -17,7 +17,7 @@ const BalanceEnweave = () => (
       <TextBlock>
         <Text>
           You can align movement, feeling, and intent to a single purpose,
-          cultivating a heroic resource called Balance.
+          cultivating a heroic resource called balance.
         </Text>
       </TextBlock>
 
@@ -68,7 +68,7 @@ const BalanceEnweave = () => (
     <Column>
       <Heading2>Enweave</Heading2>
       <Text>
-        Your mastery of Balance allows you to channel magic through your weapon.
+        Your mastery of balance allows you to channel magic through your weapon.
         You gain the following ability.
       </Text>
 

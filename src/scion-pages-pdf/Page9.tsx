@@ -49,7 +49,7 @@ const Page9 = () => (
       </Text>
 
       <Heading2>8th-Level Features</Heading2>
-      <Text>As an 8th-level Scion, you gain the following features.</Text>
+      <Text>As an 8th-level scion, you gain the following features.</Text>
 
       <Heading4 className="text-center">8th-Level Scion Art Features</Heading4>
       <AdvancementTable

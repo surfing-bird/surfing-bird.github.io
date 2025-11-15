@@ -1,10 +1,4 @@
-import {
-  Page,
-  Column,
-  Text,
-  Heading2,
-  Heading3,
-} from "@/components";
+import { Page, Column, Text, Heading2, Heading3 } from "@/components";
 import {
   PhaseAssault,
   HorizonStep,
@@ -12,8 +6,8 @@ import {
   WritOfBinding,
   SoulForm,
   SoulSpiral,
-  BlackestNight,
-  ScarletDirge,
+  // BlackestNight,
+  // ScarletDirge,
 } from "@/abilities";
 
 const Level2ArtAbilities = () => (
@@ -41,10 +35,10 @@ const Level2ArtAbilities = () => (
       <SoulForm />
       <SoulSpiral />
 
-      <Heading3>2nd-Level Darksworn Ability</Heading3>
+      {/* <Heading3>2nd-Level Darksworn Ability</Heading3>
       <Text>Choose one of the following abilities.</Text>
       <BlackestNight />
-      <ScarletDirge />
+      <ScarletDirge /> */}
     </Column>
   </Page>
 );

@@ -6,7 +6,12 @@ import {
   Heading3,
   AdvancementTable,
 } from "@/components";
-import { FlickerStep, EnsnaringRune, BladesWill, PainIsPower } from "@/abilities";
+import {
+  FlickerStep,
+  EnsnaringRune,
+  BladesWill,
+  // PainIsPower,
+} from "@/abilities";
 
 const Triggers = () => (
   <Page id="triggers">
@@ -24,7 +29,7 @@ const Triggers = () => (
           { level: "", Subclass: "Blinkblade", Features: "Flicker Step" },
           { level: "", Subclass: "Runewright", Features: "Ensnaring Rune" },
           { level: "", Subclass: "Soulforged", Features: "Blade's Will" },
-          { level: "", Subclass: "Darksworn", Features: "Pain Is Power" },
+          // { level: "", Subclass: "Darksworn", Features: "Pain Is Power" },
         ]}
       />
 
@@ -36,7 +41,7 @@ const Triggers = () => (
     <Column>
       <BladesWill />
 
-      <PainIsPower />
+      {/* <PainIsPower /> */}
     </Column>
   </Page>
 );

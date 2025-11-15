@@ -97,10 +97,10 @@ const Page6 = () => (
             detailName="Soulforged"
             detailValue="You gain 2 balance the first time in an encounter that you or an ally within 10 squares uses a heroic ability."
           />
-          <Detail
+          {/* <Detail
             detailName="Darksworn"
             detailValue="You gain 2 balance the first time in an encounter that you take damage."
-          />
+          /> */}
         </div>
       </div>
     </ColumnPDF>

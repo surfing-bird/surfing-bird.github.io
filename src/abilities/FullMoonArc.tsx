@@ -6,7 +6,7 @@ export const FullMoonArc = () => (
     subtitle="Your blade traces a perfect circle in red."
     keywords="Melee, Weapon"
     actionType="Main action"
-    range="burst 1"
+    range="Burst 1"
     targets="Each enemy in the area"
     addedStats={["Agility"]}
     tierResults={{
@@ -16,4 +16,3 @@ export const FullMoonArc = () => (
     }}
   />
 );
-

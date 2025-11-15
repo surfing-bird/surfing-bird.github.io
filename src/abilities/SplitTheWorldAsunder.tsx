@@ -6,7 +6,7 @@ export const SplitTheWorldAsunder = () => (
     subtitle="You reave space itself in twain, leaving remnants of pure, impenetrable force in the wake of your slash."
     keywords="Area, Magic, Weapon, Melee"
     actionType="Main action"
-    range="two 10 × 1 walls within 10"
+    range="two 10 × 1 lines within 5"
     targets="Each enemy in the area"
     addedStats={["Agility"]}
     tierResults={{
@@ -19,4 +19,3 @@ export const SplitTheWorldAsunder = () => (
     Creatures caught in the area are pushed to either side of the wall they are caught in, chosen by you."
   />
 );
-

@@ -13,7 +13,7 @@ const Level2 = () => (
   <Page id="level-2">
     <Column>
       <Heading2>2nd-Level Features</Heading2>
-      <Text>As a 2nd-level Scion, you gain the following features.</Text>
+      <Text>As a 2nd-level scion, you gain the following features.</Text>
 
       <Heading4 className="text-center">2nd-Level Art Features</Heading4>
       <AdvancementTable
@@ -22,7 +22,7 @@ const Level2 = () => (
           { Subclass: "Blinkblade", Features: "Afterimage" },
           { Subclass: "Runewright", Features: "Liminal Runes" },
           { Subclass: "Soulforged", Features: "Soul Instinct" },
-          { Subclass: "Darksworn", Features: "Sacramentum Sanguis" },
+          // { Subclass: "Darksworn", Features: "Sacramentum Sanguis" },
         ]}
       />
 

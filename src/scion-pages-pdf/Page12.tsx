@@ -111,39 +111,38 @@ const Page12 = () => (
         effect="You can jump up to 3 squares straight toward the target without provoking attacks of opportunity before this strike."
       />
 
-      <Heading3>Spear Dancer</Heading3>
+      <Heading3>Greatblade Adept</Heading3>
       <Text>
-        In your hands the spear is more than just a weapon - it is an instrument
-        of expression, a tool of of both mobility and power.
+        Under your control, the seemingly too-large, clunky blade moves with the
+        grace of a feather.
       </Text>
 
       <Heading4>Equipment</Heading4>
-      <Text>You wear medium armor and wield a medium weapon.</Text>
+      <Text>You wear medium armor and wield a heavy weapon.</Text>
 
       <Heading4>Kit Bonuses</Heading4>
       <div className="flex flex-col gap-0">
         <Detail detailName="Stamina Bonus" detailValue="+6" />
         <Detail detailName="Speed Bonus" detailValue="+1" />
-        <Detail detailName="Melee Damage Bonus" detailValue="+2/+2/+2" />
         <Detail detailName="Melee Distance Bonus" detailValue="+1" />
+        <Detail detailName="Melee Damage Bonus" detailValue="0/0/+4" />
       </div>
 
       <Heading4>Signature Ability</Heading4>
       <Ability
         className="mt-2"
-        title="Leaping Swan"
-        subtitle="You plant your spear into the earth and launch yourself skyward, twisting through the air before driving down with deadly force."
+        title="Falling Petal Cut"
+        subtitle="Seemingly weightless in the air, your enemy feels the full brunt of your blade."
         keywords="Melee, Weapon, Strike"
         actionType="Main action"
-        range="Melee 2"
+        range="Melee 1"
         targets="One creature"
         addedStats={["Agility", "Might"]}
         tierResults={{
-          low: "5 + M or A damage; M < WEAK, prone",
-          middle: "8 + M or A damage; M < AVERAGE, prone",
-          high: "11 + M or A damage; M < STRONG, prone",
+          low: "3 + M or A damage; push 1",
+          middle: "6 + M or A damage; push 2",
+          high: "13 + M or A damage; push 4",
         }}
-        effect="You can jump up to 3 squares straight toward the target without provoking attacks of opportunity before this strike."
       />
     </ColumnPDF>
   </PagePDF>
