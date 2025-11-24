@@ -18,7 +18,7 @@ const Page11 = () => (
       <Heading3>Harmony</Heading3>
       <Text>
         You have an epic resource called harmony. Each time you finish a
-        respite, you gain breath equal to the XP you gain. You can spend any
+        respite, you gain harmony equal to the XP you gain. You can spend any
         number of harmony to gain balance (no action required). When you do, 1
         harmony becomes 3 balance. Harmony remains until you convert it to
         balance.
@@ -45,7 +45,7 @@ const Page11 = () => (
       <Text>You gain one skill of your choice.</Text>
     </ColumnPDF>
 
-    <ColumnPDF>{""} </ColumnPDF>
+    <ColumnPDF>{""}</ColumnPDF>
   </PagePDF>
 );
 

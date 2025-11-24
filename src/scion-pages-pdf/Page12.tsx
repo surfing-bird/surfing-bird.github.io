@@ -12,14 +12,14 @@ import {
 const Page12 = () => (
   <PagePDF id="page-12">
     <ColumnPDF>
-      <Heading2>Additional Kits</Heading2>
+      <Heading2>Kits</Heading2>
       <Heading3>Sword Master</Heading3>
       <Text>
         An artist of the blade, the battlefield is your canvas - each step a
         flourish, each cut a stroke.
       </Text>
       <Heading4>Equipment</Heading4>
-      <Text>You wear medium armor and wield a medium weapon.</Text>
+      <Text>You wear medium armor and wield a light weapon.</Text>
       <Heading4>Kit Bonuses</Heading4>
       <div className="flex flex-col gap-0">
         <Detail detailName="Stamina Bonus" detailValue="+6" />

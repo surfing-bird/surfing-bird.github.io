@@ -1,6 +1,7 @@
 import "@/pdf-styles.css";
 import { createFileRoute } from "@tanstack/react-router";
 import { PDFLayout, Sidebar } from "@/components";
+import Cover from "../../scion-pages-pdf/Cover";
 import Page1 from "../../scion-pages-pdf/Page1";
 import Page2 from "../../scion-pages-pdf/Page2";
 import Page3 from "../../scion-pages-pdf/Page3";
@@ -14,6 +15,8 @@ import Page10 from "../../scion-pages-pdf/Page10";
 import Page11 from "../../scion-pages-pdf/Page11";
 import Page12 from "../../scion-pages-pdf/Page12";
 import { useIsMobile } from "@/hooks/useIsMobile";
+import Page13 from "../../scion-pages-pdf/Page13";
+import Credits from "../../scion-pages-pdf/Credits";
 
 export const Route = createFileRoute("/scion-full-pdf")({
   component: ScionFullPDF,
@@ -26,6 +29,7 @@ function ScionFullPDF() {
     <div className="flex flex-col items-center">
       {!isMobile && <Sidebar full />}
       <PDFLayout>
+        <Cover />
         <Page1 />
         <Page2 />
         <Page3 />
@@ -38,6 +42,8 @@ function ScionFullPDF() {
         <Page10 />
         <Page11 />
         <Page12 />
+        <Page13 />
+        <Credits />
       </PDFLayout>
     </div>
   );

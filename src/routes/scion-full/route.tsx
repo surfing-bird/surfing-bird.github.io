@@ -21,7 +21,6 @@ import Level8 from "../../scion-pages/15-Level8";
 import Level8ElevenHR from "../../scion-pages/16-Level8-ElevenHR";
 import Level9 from "../../scion-pages/17-Level9";
 import Kits from "../../scion-pages/Kits";
-import Changelog from "../../scion-pages/ChangeLog";
 
 export const Route = createFileRoute("/scion-full")({
   component: Scion,
@@ -53,7 +52,6 @@ function Scion() {
         <Level8ElevenHR />
         <Level9 />
         <Kits />
-        <Changelog />
       </ManualLayout>
     </div>
   );

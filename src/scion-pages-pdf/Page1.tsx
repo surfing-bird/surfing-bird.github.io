@@ -2,7 +2,6 @@ import {
   PagePDF,
   ColumnPDF,
   Text,
-  Title,
   Heading2,
   Heading3,
   BulletList,
@@ -14,25 +13,6 @@ import {
 const Page1 = () => (
   <PagePDF id="level-1">
     <ColumnPDF>
-      <Title>The Scion</Title>
-      <TextBlock>
-        <Text>
-          You were deemed worthy of a secret Art unknown to most, allowing you
-          to weave steel and magic into a single, fluid dance. Passed down
-          through an unbroken chain of master and disciple, this ancient
-          discipline was entrusted to you, its esoteric techniques guiding you
-          toward the cultivation of balance: a harmonious alignment of movement,
-          feeling, and intent.
-        </Text>
-
-        <Text>
-          As a scion, you move with purpose - each strike empowered to suit the
-          moment, whether to wound, disrupt, or disable, your flexibility is
-          unmatched. At the height of your mastery, you are the eye of the
-          storm: utterly calm, yet entirely devastating.
-        </Text>
-      </TextBlock>
-
       <Heading2>Basics</Heading2>
       <div className="flex flex-col gap-1">
         <Detail
@@ -190,13 +170,14 @@ const Page1 = () => (
           },
           {
             level: "9",
-            Features: "SOMETHING COOL, Art Ability",
+            Features: "Flow Like Water, Art Ability",
             Abilities: "Signature, 3, 5, 7, 9, 11",
             "Art Abilities": "5, 9, 11",
           },
           {
             level: "10",
-            Features: "Characteristic Increase, Eternal Master, Harmony",
+            Features:
+              "Characteristic Increase, Enduring Enweave, Harmony, Legacy Unbroken, Perfect Balance",
             Abilities: "Signature, 3, 5, 7, 9, 11",
             "Art Abilities": "5, 9, 11",
           },

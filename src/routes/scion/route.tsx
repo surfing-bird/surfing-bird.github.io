@@ -9,11 +9,11 @@ import Triggers from "../../scion-pages/3-Triggers";
 import Signatures from "../../scion-pages/4-Signatures";
 import ThreeHR from "../../scion-pages/5-ThreeHR";
 import FiveHR from "../../scion-pages/6-FiveHR";
+import Level2ArtAbilities from "../../scion-pages/8-Level2-ArtAbilities";
 import Level2 from "../../scion-pages/7-Level2";
 import Level3 from "../../scion-pages/9-Level3";
-import Kits from "../../scion-pages/Kits";
-import Changelog from "../../scion-pages/ChangeLog";
-import Level2ArtAbilities from "../../scion-pages/8-Level2-ArtAbilities";
+// import Kits from "../../scion-pages/Kits";
+// import Changelog from "../../scion-pages/ChangeLog";
 
 export const Route = createFileRoute("/scion")({
   component: Scion,
@@ -36,8 +36,8 @@ function Scion() {
         <Level2 />
         <Level2ArtAbilities />
         <Level3 />
-        <Kits />
-        <Changelog />
+        {/* <Kits /> */}
+        {/* <Changelog /> */}
       </ManualLayout>
     </div>
   );

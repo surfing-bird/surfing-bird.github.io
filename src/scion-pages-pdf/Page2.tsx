@@ -42,8 +42,8 @@ const Page2 = () => (
       />
       <Feature title="Phasewalk">
         <Text>
-          Whenever you take the Advance move action, you can instead teleport
-          your Reason + 1 in squares.
+          Whenever you disengage, you may teleport instead of shifting. The
+          number of squares you can shift when disengaging is increased by one.
         </Text>
       </Feature>
       <Blink />
