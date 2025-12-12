@@ -34,11 +34,10 @@ const Triggers = () => (
       />
 
       <FlickerStep />
-
-      <EnsnaringRune />
     </Column>
 
     <Column>
+      <EnsnaringRune />
       <BladesWill />
 
       {/* <PainIsPower /> */}

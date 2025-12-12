@@ -73,23 +73,26 @@ const Class = () => (
       <Heading3 className="text-center">Scion Advancement</Heading3>
       <AdvancementTable
         showLevel={true}
-        columns={["Features", "Abilities"]}
+        columns={["Features", "Abilities", "Art Abilities"]}
         rows={[
           {
             level: "1",
             Features:
               "Art, Balance, Kit, Enweave, Art Features, Art Triggered Action, Scion Abilities",
             Abilities: "Signature, 3, 5",
+            "Art Abilities": "—",
           },
           {
             level: "2",
             Features: "Art Feature, Perk, Art Ability",
             Abilities: "Signature, 3, 5",
+            "Art Abilities": "5",
           },
           {
             level: "3",
             Features: "Mystic Shield, 7-Balance Ability",
             Abilities: "Signature, 3, 5, 7",
+            "Art Abilities": "5",
           },
         ]}
       />

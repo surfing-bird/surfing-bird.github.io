@@ -5,7 +5,7 @@ import {
   BladeBarrier,
   AetherLash,
   CrescentArc,
-  FurysCall,
+  // FurysCall,
 } from "@/abilities";
 
 const Signatures = () => (
@@ -24,18 +24,15 @@ const Signatures = () => (
       </Text>
 
       <EssenceLance />
-
       <StillEdge />
-
       <BladeBarrier />
     </Column>
 
     <Column>
       <AetherLash />
-
       <CrescentArc />
 
-      <FurysCall />
+      {/* <FurysCall /> */}
     </Column>
   </Page>
 );

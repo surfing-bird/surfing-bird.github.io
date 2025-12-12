@@ -36,28 +36,6 @@ const Level2 = () => (
           choose to teleport to its location.
         </Text>
       </Feature>
-
-      {/* <Feature title="Soul Instinct">
-        <Text>
-          Once per turn, you can make a melee free strike whenever a creature
-          moves from a square adjacent to you to another square adjacent to you.
-          In addition, your stability is increased by 1.
-        </Text>
-      </Feature>
-
-      <Feature title="Sacramentum Sanguis">
-        <Text>
-          Whenever you deal rolled damage to a creature you may choose to deal
-          your Reason in damage to yourself to gain two surges which must be
-          used on the triggering ability.
-        </Text>
-      </Feature>
-
-      <Heading3>Perk</Heading3>
-      <Text>
-        You gain an exploration, lore, or supernatural perk of your choice. See
-        Perks for more information.
-      </Text> */}
     </Column>
 
     <Column>
@@ -77,13 +55,13 @@ const Level2 = () => (
         </Text>
       </Feature>
 
-      <Feature title="Sacramentum Sanguis">
+      {/* <Feature title="Sacramentum Sanguis">
         <Text>
           Whenever you deal rolled damage to a creature you may choose to deal
           your Reason in damage to yourself to gain two surges which must be
           used on the triggering ability.
         </Text>
-      </Feature>
+      </Feature> */}
 
       <Heading3>Perk</Heading3>
       <Text>
