@@ -6,7 +6,7 @@ const ThreeHR = () => (
     <Column>
       <Heading2>Heroic Abilities</Heading2>
       <Text>
-        A range of heroic abilities defines your Art, all of which make use of
+        A range of heroic abilities defines the inheritance of a scion, all of which make use of
         your balance.
       </Text>
 

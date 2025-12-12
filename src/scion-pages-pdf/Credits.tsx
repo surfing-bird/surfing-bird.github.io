@@ -31,8 +31,8 @@ const Credits = () => (
           <Heading3>Playtesters</Heading3>
           <div className="flex flex-col gap-1">
             <Text className="!text-[12px]">Exocist</Text>
-            <Text className="!text-[12px]">Tamwin5</Text>
-            <Text className="!text-[12px]">Mattelonian</Text>
+            <Text className="!text-[12px]">Tamwin “Tamwin5” Le’Feur</Text>
+            <Text className="!text-[12px]">mattelonian/chaoticgoodra</Text>
             <Text className="!text-[12px]">Schmarauder</Text>
             <Text className="!text-[12px]">Jonas Tintenseher</Text>
             <Text className="!text-[12px]">KingGurke</Text>

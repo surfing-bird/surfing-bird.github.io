@@ -3,7 +3,7 @@ import { Ability } from "@/components";
 export const GlacialBloom = () => (
   <Ability
     title="Glacial Bloom (5 Balance)"
-    subtitle="Like a flower in bloom, ice explodes onto your foes."
+    subtitle="Fractals of ice bloom outward and shatter across your foes."
     keywords="Area, Magic, Ranged"
     actionType="Main action"
     range="3 cube in range 10"
@@ -16,4 +16,3 @@ export const GlacialBloom = () => (
     }}
   />
 );
-

@@ -3,7 +3,7 @@ import { Ability } from "@/components";
 export const CrossSlash = () => (
   <Ability
     title="Cross Slash (7 Balance)"
-    subtitle="You cleave the air in all directions, blades of force radiating from your stance."
+    subtitle="You cleave the air in multiple directions, unleashing blades of pure force."
     keywords="Melee, Weapon, Magic, Area"
     actionType="Main action"
     range="four 5 × 1 lines within 1"
@@ -17,4 +17,3 @@ export const CrossSlash = () => (
     effect="Overlapping lines are treated as a single area."
   />
 );
-

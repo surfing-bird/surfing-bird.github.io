@@ -6,7 +6,6 @@ import Page2 from "../../scion-pages-pdf/Page2";
 import Page3 from "../../scion-pages-pdf/Page3";
 import Page4 from "../../scion-pages-pdf/Page4";
 import Page5 from "../../scion-pages-pdf/Page5";
-import Page6 from "../../scion-pages-pdf/Page6";
 
 export const Route = createFileRoute("/scion-pdf")({
   component: ScionPDF,
@@ -21,7 +20,6 @@ function ScionPDF() {
         <Page3 />
         <Page4 />
         <Page5 />
-        <Page6 />
       </PDFLayout>
     </div>
   );

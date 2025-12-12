@@ -59,10 +59,7 @@ const BalanceEnweave = () => (
       </TextBlock>
 
       <Heading2>Kit</Heading2>
-      <Text>
-        You can use and gain the benefits of a kit. See Chapter 6: Kits for more
-        information.
-      </Text>
+      <Text>You can use and gain the benefits of a kit.</Text>
     </Column>
 
     <Column>

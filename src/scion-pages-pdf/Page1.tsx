@@ -54,7 +54,6 @@ const Page1 = () => (
           according to their adherence to these ideals - and their capability to
           uphold them.
         </Text>
-
         <Text>
           You were trained in an Art chosen from the following options, each of
           which grants you a skill.
@@ -68,7 +67,11 @@ const Page1 = () => (
           harder still to escape. You gain the Gymnastics skill.
         </Text>
 
-        <Text className="italic">No cage can hold me. I choose my path.</Text>
+        <Text className="mx-auto">
+          <p style={{ fontFamily: "Cinzel Decorative" }}>
+            No cage can hold me. I choose my path.
+          </p>
+        </Text>
       </TextBlock>
       <Heading3>Runewright</Heading3>
       <TextBlock>
@@ -78,8 +81,10 @@ const Page1 = () => (
           groundlaid writs. You gain the Mechanics skill.
         </Text>
 
-        <Text className="italic">
-          Knowledge is power. I carve order out of chaos.
+        <Text className="mx-auto">
+          <p style={{ fontFamily: "Cinzel Decorative" }}>
+            Knowledge is power. I carve order out of chaos.
+          </p>
         </Text>
       </TextBlock>
       <Heading3>Soulforged</Heading3>
@@ -92,8 +97,15 @@ const Page1 = () => (
           Empathize skill.
         </Text>
 
-        <Text className="italic !font-cinzel-decorative">
-          I am the soul of my blade. I bring justice for all.
+        <Text className="mx-auto">
+          <p style={{ fontFamily: "Cinzel Decorative" }}>
+            I am the soul of my blade. I bring justice for all.
+          </p>
+        </Text>
+
+        <Text className="mt-2">
+          Your Art is your subclass, and your choice of Art determines many of
+          the features you'll gain as you gain new levels
         </Text>
       </TextBlock>
       {/* <Heading3>Darksworn</Heading3>
@@ -158,7 +170,8 @@ const Page1 = () => (
           },
           {
             level: "7",
-            Features: "Characteristic Increase, Immaculate Balance, Skill",
+            Features:
+              "Characteristic Increase, Immaculate Balance, Eternal Master, Unravel Weakness, Skill",
             Abilities: "Signature, 3, 5, 7, 9",
             "Art Abilities": "5, 9",
           },
@@ -226,8 +239,7 @@ const Page1 = () => (
       </TextBlock>
       <Heading2>Kit</Heading2>
       <Text>
-        You can use and gain the benefits of a kit. See Chapter 6: Kits for more
-        information.
+        You can use and gain the benefits of a kit.
       </Text>
     </ColumnPDF>
   </PagePDF>

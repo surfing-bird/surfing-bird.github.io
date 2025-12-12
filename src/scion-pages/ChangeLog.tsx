@@ -5,6 +5,17 @@ const Changelog = () => (
     <Column>
       <Title>Changelog</Title>
 
+      <Heading3>V0.4.4</Heading3>
+      <BulletList>
+        <Text>Cross Slash: changed description</Text>
+        <Text>Glacial Bloom: changed description</Text>
+        <Text>Horizon Step: changed description</Text>
+        <Text>Changed description of Three HR heroics blurb</Text>
+        <Text>
+          Eternal Master: Changed effect to last until your next respite
+        </Text>
+      </BulletList>
+
       <Heading3>V0.4.3</Heading3>
       <BulletList>
         <Text>Sword Master: changed to light weapon.</Text>
