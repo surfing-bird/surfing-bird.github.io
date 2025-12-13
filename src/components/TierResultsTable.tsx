@@ -19,7 +19,7 @@ export const TierResultsTable: React.FC<TierResultsTableProps> = ({
   results,
 }) => {
   return (
-    <div className="space-y-1">
+    <div className="space-y-0.25">
       {/* ≤11 row */}
       <div className="flex gap-2 items-center justify-center">
         <img src={T1} alt="T1" className="w-[27px] h-[12px] mb-[-2px]" />

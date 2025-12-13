@@ -31,20 +31,35 @@ const Credits = () => (
           <Heading3>Playtesters</Heading3>
           <div className="flex flex-col gap-1">
             <Text className="!text-[12px]">Exocist</Text>
-            <Text className="!text-[12px]">Tamwin “Tamwin5” Le’Feur</Text>
-            <Text className="!text-[12px]">mattelonian/chaoticgoodra</Text>
-            <Text className="!text-[12px]">Schmarauder</Text>
             <Text className="!text-[12px]">Jonas Tintenseher</Text>
             <Text className="!text-[12px]">KingGurke</Text>
-            <Text className="!text-[12px]">Sunbear Games</Text>
-            <Text className="!text-[12px]">Zetesofos</Text>
-            <Text className="!text-[12px]">miskatonic</Text>
-            <Text className="!text-[12px]">Vinny</Text>
-            <Text className="!text-[12px]">Moffles</Text>
+            <Text className="!text-[12px]">mattelonian/chaoticgoodra</Text>
             <Text className="!text-[12px]">Mike</Text>
+            <Text className="!text-[12px]">miskatonic</Text>
+            <Text className="!text-[12px]">Moffles</Text>
+            <Text className="!text-[12px]">Schmarauder</Text>
+            <Text className="!text-[12px]">Sunbear Games</Text>
+            <Text className="!text-[12px]">Tamwin “Tamwin5” Le’Feur</Text>
+            <Text className="!text-[12px]">Vinny</Text>
             <Text className="!text-[12px]">WrenChappel</Text>
+            <Text className="!text-[12px]">Zetesofos</Text>
             <Text className="!text-[12px]">
               And many others that participated in the playtesting process!
+            </Text>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center gap-1">
+          <Heading3>Influences</Heading3>
+          <div className="flex flex-col gap-0">
+            <Text className="!text-[12px]">
+              The Scion was inspired by many works of fiction, but most notably
+              the following:
+            </Text>
+
+            <Text className="!text-[12px]">
+              Devil May Cry, The Stormlight Archive, Demon Slayer, Tome of
+              Battle, Magus (Pathfinder), The Sun Eater.
             </Text>
           </div>
         </div>

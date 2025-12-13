@@ -238,9 +238,7 @@ const Page1 = () => (
         </Text>
       </TextBlock>
       <Heading2>Kit</Heading2>
-      <Text>
-        You can use and gain the benefits of a kit.
-      </Text>
+      <Text>You can use and gain the benefits of a kit.</Text>
     </ColumnPDF>
   </PagePDF>
 );

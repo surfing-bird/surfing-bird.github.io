@@ -119,7 +119,7 @@ const Page13 = () => (
 
     <ColumnPDF>
       <Heading1>Titles</Heading1>
-      <Heading2>3rd-Echelon Titles</Heading2>
+      <Heading2>2nd-Echelon Titles</Heading2>
 
       <div className="my-1" />
 
@@ -132,7 +132,7 @@ const Page13 = () => (
         </Subtitle>
         <Detail
           detailName="Prerequisite"
-          detailValue="You triumph in single-combat against the scion of an art, and they have agreed to teach you an inkling of their art as a result."
+          detailValue="You triumph in single-combat against the scion of an art, and they have agreed to teach you a portion of their art as a result."
         />
         <Detail
           detailName="Effect"
@@ -141,26 +141,26 @@ const Page13 = () => (
 
         <div className="flex flex-col gap-0">
           <Text>
-            <i>Enweave:</i> You learn the scion's Enweave maneuver. You may use
-            it once per encounter, and can use your own class' heroic resource
-            for it.
+            <i>Enweave:</i> You learn the scion's Enweave maneuver.
           </Text>
           <Text>
-            <i>Blink:</i> You learn the blinkblade scion's blink maneuver. You
-            may use it once per encounter, and can use your own heroic resource
-            for it.
+            <i>Blink:</i> You learn the blinkblade scion's Blink maneuver
           </Text>
           <Text>
             <i>Runebrand:</i> You learn the runewright scion's Runebrand
-            maneuver. You may use it once per encounter, and can use your own
-            heroic resource for it.
+            maneuver.
           </Text>
           <Text>
             <i>Soulshape:</i> You learn the soulforged scion's Soulshape
-            maneuver. You may use it once per encounter, and can use your own
-            heroic resource for it.
+            maneuver.
           </Text>
         </div>
+
+        <Text>
+          When you use any of these benefits, you can use your own heroic
+          resource for it, but you can't spend additional balance unless you
+          have the balance class feature.
+        </Text>
       </div>
     </ColumnPDF>
   </PagePDF>
