@@ -69,9 +69,9 @@ const Maneuvers = () => (
 
       {/* <Feature title="Vorator Cruciatum">
         <Text>You increase your number of Recoveries by 2.</Text>
-      </Feature> */}
+      </Feature>
 
-      {/* <ChainOfTorment /> */}
+      <ChainOfTorment /> */}
     </Column>
   </Page>
 );

@@ -3,13 +3,11 @@ import { Ability } from "@/components";
 export const FluxOverdrive = () => (
   <Ability
     title="Flux Overdrive (11 Balance)"
-    subtitle="Flavor"
+    subtitle="Space buckles under your command, reshaping the entire battlefield in an instant."
     keywords="Magic"
-    actionType="Maneuver"
-    range="Self"
-    targets="Self"
-    effect="Until the end of the encounter or you are dying, whenever you either damage or teleport next to a creature, you may teleport that creature a number of squares equal to your Reason score.
-    Additionally, whenever you teleport using Hard to Catch, you receive half the damage of the triggering ability."
+    actionType="Free maneuver"
+    range="10 burst"
+    targets="Each creature in the area"
+    effect="You may teleport each target 5 squares in any direction."
   />
 );
-

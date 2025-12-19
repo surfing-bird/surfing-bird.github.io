@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as ScionPdfRouteRouteImport } from './routes/scion-pdf/route'
 import { Route as ScionRouteRouteImport } from './routes/scion/route'
+import { Route as DarkswornPdfRouteRouteImport } from './routes/darksworn-pdf/route'
 import { Route as IndexRouteImport } from './routes/index'
 
 const ScionPdfRouteRoute = ScionPdfRouteRouteImport.update({
@@ -23,6 +24,11 @@ const ScionRouteRoute = ScionRouteRouteImport.update({
   path: '/scion',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DarkswornPdfRouteRoute = DarkswornPdfRouteRouteImport.update({
+  id: '/darksworn-pdf',
+  path: '/darksworn-pdf',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -31,30 +37,34 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/darksworn-pdf': typeof DarkswornPdfRouteRoute
   '/scion': typeof ScionRouteRoute
   '/scion-pdf': typeof ScionPdfRouteRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/darksworn-pdf': typeof DarkswornPdfRouteRoute
   '/scion': typeof ScionRouteRoute
   '/scion-pdf': typeof ScionPdfRouteRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/darksworn-pdf': typeof DarkswornPdfRouteRoute
   '/scion': typeof ScionRouteRoute
   '/scion-pdf': typeof ScionPdfRouteRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/scion' | '/scion-pdf'
+  fullPaths: '/' | '/darksworn-pdf' | '/scion' | '/scion-pdf'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/scion' | '/scion-pdf'
-  id: '__root__' | '/' | '/scion' | '/scion-pdf'
+  to: '/' | '/darksworn-pdf' | '/scion' | '/scion-pdf'
+  id: '__root__' | '/' | '/darksworn-pdf' | '/scion' | '/scion-pdf'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  DarkswornPdfRouteRoute: typeof DarkswornPdfRouteRoute
   ScionRouteRoute: typeof ScionRouteRoute
   ScionPdfRouteRoute: typeof ScionPdfRouteRoute
 }
@@ -75,6 +85,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ScionRouteRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/darksworn-pdf': {
+      id: '/darksworn-pdf'
+      path: '/darksworn-pdf'
+      fullPath: '/darksworn-pdf'
+      preLoaderRoute: typeof DarkswornPdfRouteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -87,6 +104,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  DarkswornPdfRouteRoute: DarkswornPdfRouteRoute,
   ScionRouteRoute: ScionRouteRoute,
   ScionPdfRouteRoute: ScionPdfRouteRoute,
 }

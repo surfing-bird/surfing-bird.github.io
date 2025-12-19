@@ -12,11 +12,10 @@ export const EnsnaringRune = () => (
     effect="The target takes damage equal to triple your Reason score."
     spend={
       <Text>
-        <span className="font-bold">Effect: </span>
+        <span className="font-bold">Spend 1 Balance:</span>
         If the target has <Highlight>{"I < AVERAGE"}</Highlight>, they are
         slowed (EoT).
       </Text>
     }
   />
 );
-

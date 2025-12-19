@@ -4,7 +4,7 @@ export const Enweave = () => (
   <Ability
     title="Enweave (1 Balance)"
     subtitle="You weave magic into your weapon, preparing to unleash it with your next strike."
-    keywords="Magic, Weapon"
+    keywords="Magic"
     actionType="Maneuver"
     range="Self"
     targets="Special"

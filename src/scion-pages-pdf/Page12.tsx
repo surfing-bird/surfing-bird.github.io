@@ -135,7 +135,7 @@ const Page12 = () => (
         subtitle="Seemingly weightless in the air, your enemy feels the full brunt of your blade."
         keywords="Melee, Weapon, Strike"
         actionType="Main action"
-        range="Melee 1"
+        range="Melee 2"
         targets="One creature"
         addedStats={["Agility", "Might"]}
         tierResults={{

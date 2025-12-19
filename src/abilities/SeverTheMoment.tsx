@@ -14,7 +14,7 @@ export const SeverTheMoment = () => (
       middle: "9 + A damage",
       high: "13 + A damage",
     }}
-    effect="If the target has any condition, this ability deals an additional 10 damage."
+    effect="If the target is suffering from an effect that is ended by a saving throw, this ability deals an additional 10 damage."
   />
 );
 

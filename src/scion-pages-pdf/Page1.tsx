@@ -234,7 +234,7 @@ const Page1 = () => (
         <Text>
           If you use an ability outside of combat that lets you spend unlimited
           balance on its effect, you can use it as if you had spent an amount of
-          nerve on it equal to your Victories.
+          balance on it equal to your Victories.
         </Text>
       </TextBlock>
       <Heading2>Kit</Heading2>

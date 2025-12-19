@@ -1,10 +1,11 @@
 import { PagePDF, ColumnPDF, Text, Heading3, Heading2 } from "@/components";
 import {
+  FluxOverdrive,
+  PhaseDisruption,
   SoulRupture,
   SoulRealm,
   MasterWrit,
   AdamantSeal,
-  FluxOverdrive,
 } from "@/abilities";
 
 const Page10 = () => (
@@ -28,7 +29,7 @@ const Page10 = () => (
       <Heading3>9th-Level Blinkblade Ability</Heading3>
       <Text>Choose one of the following abilities.</Text>
       <FluxOverdrive />
-      <FluxOverdrive />
+      <PhaseDisruption />
 
       <Heading3>9th-Level Runewright Ability</Heading3>
       <Text>Choose one of the following abilities.</Text>

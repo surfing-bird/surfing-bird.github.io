@@ -24,6 +24,7 @@ export { LightningStrike } from "./LightningStrike";
 export { MasterWrit } from "./MasterWrit";
 export { PainIsPower } from "./PainIsPower";
 export { PhaseAssault } from "./PhaseAssault";
+export { PhaseDisruption } from "./PhaseDisruption";
 export { ReapersEdge } from "./ReapersEdge";
 export { Runebrand } from "./Runebrand";
 export { RuneOfPower } from "./RuneOfPower";
