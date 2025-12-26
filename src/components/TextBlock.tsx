@@ -10,7 +10,7 @@ export function TextBlock({ children, className = "" }: TextBlockProps) {
   const childArray = Array.isArray(children) ? children : [children];
 
   return (
-    <div className={`flex flex-col space-y-1 ${className}`}>
+    <div className={`flex flex-col space-y-1.5 ${className}`}>
       {childArray.map((child, i) =>
         typeof child === "string" ? <Text key={i}>{child}</Text> : child
       )}

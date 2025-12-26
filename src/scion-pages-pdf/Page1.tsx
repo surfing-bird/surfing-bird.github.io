@@ -220,6 +220,8 @@ const Page1 = () => (
           10 squares of you uses an ability with a Magic tag, you gain 1
           balance.
         </Text>
+
+        <Text>You lose any remaining balance at the end of the encounter.</Text>
       </TextBlock>
       <Heading3>Balance Outside of Combat</Heading3>
       <TextBlock>

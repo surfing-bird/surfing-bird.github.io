@@ -9,11 +9,17 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as ShadowUnseenRouteRouteImport } from './routes/shadow-unseen/route'
 import { Route as ScionPdfRouteRouteImport } from './routes/scion-pdf/route'
 import { Route as ScionRouteRouteImport } from './routes/scion/route'
 import { Route as DarkswornPdfRouteRouteImport } from './routes/darksworn-pdf/route'
 import { Route as IndexRouteImport } from './routes/index'
 
+const ShadowUnseenRouteRoute = ShadowUnseenRouteRouteImport.update({
+  id: '/shadow-unseen',
+  path: '/shadow-unseen',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ScionPdfRouteRoute = ScionPdfRouteRouteImport.update({
   id: '/scion-pdf',
   path: '/scion-pdf',
@@ -40,12 +46,14 @@ export interface FileRoutesByFullPath {
   '/darksworn-pdf': typeof DarkswornPdfRouteRoute
   '/scion': typeof ScionRouteRoute
   '/scion-pdf': typeof ScionPdfRouteRoute
+  '/shadow-unseen': typeof ShadowUnseenRouteRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/darksworn-pdf': typeof DarkswornPdfRouteRoute
   '/scion': typeof ScionRouteRoute
   '/scion-pdf': typeof ScionPdfRouteRoute
+  '/shadow-unseen': typeof ShadowUnseenRouteRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -53,13 +61,20 @@ export interface FileRoutesById {
   '/darksworn-pdf': typeof DarkswornPdfRouteRoute
   '/scion': typeof ScionRouteRoute
   '/scion-pdf': typeof ScionPdfRouteRoute
+  '/shadow-unseen': typeof ShadowUnseenRouteRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/darksworn-pdf' | '/scion' | '/scion-pdf'
+  fullPaths: '/' | '/darksworn-pdf' | '/scion' | '/scion-pdf' | '/shadow-unseen'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/darksworn-pdf' | '/scion' | '/scion-pdf'
-  id: '__root__' | '/' | '/darksworn-pdf' | '/scion' | '/scion-pdf'
+  to: '/' | '/darksworn-pdf' | '/scion' | '/scion-pdf' | '/shadow-unseen'
+  id:
+    | '__root__'
+    | '/'
+    | '/darksworn-pdf'
+    | '/scion'
+    | '/scion-pdf'
+    | '/shadow-unseen'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -67,10 +82,18 @@ export interface RootRouteChildren {
   DarkswornPdfRouteRoute: typeof DarkswornPdfRouteRoute
   ScionRouteRoute: typeof ScionRouteRoute
   ScionPdfRouteRoute: typeof ScionPdfRouteRoute
+  ShadowUnseenRouteRoute: typeof ShadowUnseenRouteRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/shadow-unseen': {
+      id: '/shadow-unseen'
+      path: '/shadow-unseen'
+      fullPath: '/shadow-unseen'
+      preLoaderRoute: typeof ShadowUnseenRouteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/scion-pdf': {
       id: '/scion-pdf'
       path: '/scion-pdf'
@@ -107,6 +130,7 @@ const rootRouteChildren: RootRouteChildren = {
   DarkswornPdfRouteRoute: DarkswornPdfRouteRoute,
   ScionRouteRoute: ScionRouteRoute,
   ScionPdfRouteRoute: ScionPdfRouteRoute,
+  ShadowUnseenRouteRoute: ShadowUnseenRouteRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
