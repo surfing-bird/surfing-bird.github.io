@@ -1,5 +1,10 @@
 import { Page, Column, Text, Heading2 } from "@/components";
-import { SevenfoldForm, Singularity, UnlimitedBladeworks, SplitTheWorldAsunder } from "@/abilities";
+import {
+  SevenfoldForm,
+  Singularity,
+  UnlimitedBladeworks,
+  SplitTheWorldAsunder,
+} from "@/scion-abilities";
 
 const Level8ElevenHR = () => (
   <Page id="level-8-eleven-hr">

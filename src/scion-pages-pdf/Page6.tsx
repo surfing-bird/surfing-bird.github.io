@@ -7,7 +7,12 @@ import {
   TextBlock,
   Detail,
 } from "@/components";
-import { Godspeed, CrossSlash, ReapersEdge, SpectralBlades } from "@/abilities";
+import {
+  Godspeed,
+  CrossSlash,
+  ReapersEdge,
+  SpectralBlades,
+} from "@/scion-abilities";
 
 const Page6 = ({ hideLevel4 = false }: { hideLevel4?: boolean }) => (
   <PagePDF id="page-6">

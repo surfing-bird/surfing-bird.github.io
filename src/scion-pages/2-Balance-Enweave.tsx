@@ -6,7 +6,7 @@ import {
   Heading3,
   TextBlock,
 } from "@/components";
-import { Enweave } from "@/abilities";
+import { Enweave } from "@/scion-abilities";
 
 const BalanceEnweave = () => (
   <Page id="balance-enweave">

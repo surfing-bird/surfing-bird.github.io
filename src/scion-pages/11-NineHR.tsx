@@ -1,5 +1,10 @@
 import { Page, Column, Text, Heading2 } from "@/components";
-import { SurgeWeave, TempestFlurry, FallingStar, InfernoHelix } from "@/abilities";
+import {
+  SurgeWeave,
+  TempestFlurry,
+  FallingStar,
+  InfernoHelix,
+} from "@/scion-abilities";
 
 const NineHR = () => (
   <Page id="nine-hr">

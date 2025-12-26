@@ -13,7 +13,7 @@ import {
   Singularity,
   UnlimitedBladeworks,
   SplitTheWorldAsunder,
-} from "@/abilities";
+} from "@/scion-abilities";
 
 const Page9 = () => (
   <PagePDF id="page-9">
@@ -36,9 +36,9 @@ const Page9 = () => (
       <Text>
         The master's path is that of endless study. Whenever you take a respite,
         choose any heroic ability of an ally's class. You gain this heroic
-        ability until your next respite, which can be paid for using the Heroic Resource of your class.
-        You can't use a heroic ability that requires a class feature you don't
-        have.
+        ability until your next respite, which can be paid for using the Heroic
+        Resource of your class. You can't use a heroic ability that requires a
+        class feature you don't have.
       </Text>
 
       <Heading3>Unravel Weakness</Heading3>

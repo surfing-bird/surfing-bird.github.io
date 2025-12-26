@@ -6,7 +6,14 @@ import {
   Heading3,
   TextBlock,
 } from "@/components";
-import { TetherStrike, SunderSpace, RuneOfSiphoning, RuneOfPower, SoulRupture, SoulWave } from "@/abilities";
+import {
+  TetherStrike,
+  SunderSpace,
+  RuneOfSiphoning,
+  RuneOfPower,
+  SoulRupture,
+  SoulWave,
+} from "@/scion-abilities";
 
 const Level6 = () => (
   <Page id="level-6">

@@ -8,7 +8,7 @@ import {
   AetherLash,
   CrescentArc,
   FlickerStep,
-} from "@/abilities";
+} from "@/scion-abilities";
 
 const Page3 = () => (
   <PagePDF id="page-3">

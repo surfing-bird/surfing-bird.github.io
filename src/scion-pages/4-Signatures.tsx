@@ -6,7 +6,7 @@ import {
   AetherLash,
   CrescentArc,
   // FurysCall,
-} from "@/abilities";
+} from "@/scion-abilities";
 
 const Signatures = () => (
   <Page id="signatures">

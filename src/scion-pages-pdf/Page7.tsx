@@ -12,7 +12,7 @@ import {
   TempestFlurry,
   FallingStar,
   InfernoHelix,
-} from "@/abilities";
+} from "@/scion-abilities";
 
 const Page7 = () => (
   <PagePDF id="page-7">

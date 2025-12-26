@@ -7,7 +7,7 @@ import {
   AdvancementTable,
   Feature,
 } from "@/components";
-import { Blink, Runebrand, Soulshape } from "@/abilities";
+import { Blink, Runebrand, Soulshape } from "@/scion-abilities";
 
 const Maneuvers = () => (
   <Page id="maneuvers">
@@ -36,7 +36,8 @@ const Maneuvers = () => (
 
       <Feature title="Phasewalk">
         <Text>
-          Whenever you disengage, you may teleport instead of shifting. The number of squares you can shift when disengaging is increased by one.
+          Whenever you disengage, you may teleport instead of shifting. The
+          number of squares you can shift when disengaging is increased by one.
         </Text>
       </Feature>
 

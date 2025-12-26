@@ -18,7 +18,7 @@ import {
   PainIsPower,
   ScarletDirge,
   FurysCall,
-} from "@/abilities";
+} from "@/scion-abilities";
 
 const Page1 = () => (
   <PagePDF id="level-1">

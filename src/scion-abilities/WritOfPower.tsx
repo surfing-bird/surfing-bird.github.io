@@ -7,7 +7,7 @@ export const WritOfPower = () => (
     keywords="Area, Magic"
     actionType="Maneuver"
     range="2 burst"
-    targets="Each enemy in the area"
+    targets="Special"
     effect={
       <TextBlock>
         <Text>
@@ -29,4 +29,3 @@ export const WritOfPower = () => (
     }
   />
 );
-

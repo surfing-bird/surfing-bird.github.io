@@ -14,7 +14,6 @@ export const ReapersEdge = () => (
       middle: "18 + A damage",
       high: "24 + A damage",
     }}
-    effect="If this ability reduces a creature to 0 Stamina, gain 5 balance."
+    effect="If this ability reduces a non-minion creature to 0 Stamina, gain 5 balance."
   />
 );
-

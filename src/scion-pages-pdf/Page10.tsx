@@ -6,7 +6,7 @@ import {
   SoulRealm,
   MasterWrit,
   AdamantSeal,
-} from "@/abilities";
+} from "@/scion-abilities";
 
 const Page10 = () => (
   <PagePDF id="page-10">

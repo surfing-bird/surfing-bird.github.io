@@ -1,5 +1,11 @@
 import { Page, Column, Text, Heading2, Heading3 } from "@/components";
-import { FluxOverdrive, MasterWrit, AdamantSeal, SoulGaze, SoulRealm } from "@/abilities";
+import {
+  FluxOverdrive,
+  MasterWrit,
+  AdamantSeal,
+  SoulGaze,
+  SoulRealm,
+} from "@/scion-abilities";
 
 const Level9 = () => (
   <Page id="level-9">

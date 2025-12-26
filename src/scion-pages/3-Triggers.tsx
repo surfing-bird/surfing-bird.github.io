@@ -11,7 +11,7 @@ import {
   EnsnaringRune,
   BladesWill,
   // PainIsPower,
-} from "@/abilities";
+} from "@/scion-abilities";
 
 const Triggers = () => (
   <Page id="triggers">

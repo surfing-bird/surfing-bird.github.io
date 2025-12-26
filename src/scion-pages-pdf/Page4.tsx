@@ -8,7 +8,7 @@ import {
   GlacialBloom,
   CrashingWave,
   SpiritRend,
-} from "@/abilities";
+} from "@/scion-abilities";
 
 const Page4 = () => (
   <PagePDF id="page-4">

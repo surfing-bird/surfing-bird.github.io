@@ -13,7 +13,7 @@ import {
   SoulGaze,
   SoulWave,
   TetherStrike,
-} from "@/abilities";
+} from "@/scion-abilities";
 
 const Page8 = () => (
   <PagePDF id="page-8">

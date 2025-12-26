@@ -15,7 +15,7 @@ import {
   WritOfBinding,
   SoulForm,
   SoulSpiral,
-} from "@/abilities";
+} from "@/scion-abilities";
 
 const Page5 = () => (
   <PagePDF id="page-5">

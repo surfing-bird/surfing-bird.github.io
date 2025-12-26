@@ -7,7 +7,7 @@ import {
   Feature,
   AdvancementTable,
 } from "@/components";
-import { Enweave, Blink, Runebrand, Soulshape } from "@/abilities";
+import { Enweave, Blink, Runebrand, Soulshape } from "@/scion-abilities";
 
 const Page2 = () => (
   <PagePDF id="page-2">

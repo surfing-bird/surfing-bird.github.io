@@ -1,5 +1,5 @@
 import { Page, Column, Text, Heading2 } from "@/components";
-import { CleverTrick, ImNoThreat } from "@/abilities";
+import { CleverTrick, ImNoThreat } from "@/scion-abilities";
 
 const Page2 = () => (
   <Page id="class-subclass">

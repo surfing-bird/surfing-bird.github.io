@@ -8,7 +8,7 @@ import {
   SoulSpiral,
   // BlackestNight,
   // ScarletDirge,
-} from "@/abilities";
+} from "@/scion-abilities";
 
 const Level2ArtAbilities = () => (
   <Page id="level-2-art-abilities">

@@ -1,5 +1,10 @@
 import { Page, Column, Text, Heading3 } from "@/components";
-import { LightningStrike, GlacialBloom, CrashingWave, SpiritRend } from "@/abilities";
+import {
+  LightningStrike,
+  GlacialBloom,
+  CrashingWave,
+  SpiritRend,
+} from "@/scion-abilities";
 
 const FiveHR = () => (
   <Page id="five-hr">

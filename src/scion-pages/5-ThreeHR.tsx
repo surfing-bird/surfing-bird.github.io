@@ -1,13 +1,18 @@
 import { Page, Column, Text, Heading2, Heading3 } from "@/components";
-import { SeverTheMoment, FullMoonArc, VeilPiercer, SanguineThread } from "@/abilities";
+import {
+  SeverTheMoment,
+  FullMoonArc,
+  VeilPiercer,
+  SanguineThread,
+} from "@/scion-abilities";
 
 const ThreeHR = () => (
   <Page id="three-hr">
     <Column>
       <Heading2>Heroic Abilities</Heading2>
       <Text>
-        A range of heroic abilities defines the inheritance of a scion, all of which make use of
-        your balance.
+        A range of heroic abilities defines the inheritance of a scion, all of
+        which make use of your balance.
       </Text>
 
       <Heading3>3-Balance Ability</Heading3>

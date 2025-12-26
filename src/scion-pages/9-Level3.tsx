@@ -1,5 +1,10 @@
 import { Page, Column, Text, Heading2, Heading3 } from "@/components";
-import { CrossSlash, Godspeed, ReapersEdge, SpectralBlades } from "@/abilities";
+import {
+  CrossSlash,
+  Godspeed,
+  ReapersEdge,
+  SpectralBlades,
+} from "@/scion-abilities";
 
 const Level3 = () => (
   <Page id="level-3">
