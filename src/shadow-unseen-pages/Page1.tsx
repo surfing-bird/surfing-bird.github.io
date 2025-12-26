@@ -97,7 +97,7 @@ const Page1 = () => (
         />
         <Detail
           detailName="Darkblade"
-          detailValue="You gain a bonus to speed equal to your agility score. You gain an edge on power rolls for melee abilities against enemies that have no adjacent allies. After resolving a melee Strike, you can Disengage as a free triggered action."
+          detailValue="You gain a bonus to speed equal to your agility score. You gain an edge on power rolls for melee abilities against enemies that have no adjacent allies, and when you and an ally are adjacent to the same enemy, you are considered flanking. After resolving a melee Strike, you can Disengage as a free triggered action."
         />
         <Detail
           detailName="Crossfade"
