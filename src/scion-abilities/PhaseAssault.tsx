@@ -14,6 +14,6 @@ export const PhaseAssault = () => (
       middle: "6 damage",
       high: "9 damage",
     }}
-    effect="Choose a target within range 5, teleport to an unoccupied space adjacent to it. Repeat this effect up to 3 more times. The same target cannot be chosen more than once. Then, all apply the power roll result to all chosen targets."
+    effect="Choose a target within range 5, teleport to an unoccupied space adjacent to it. Repeat this effect up to 3 more times. The same target cannot be chosen more than once. Then, apply the power roll result to all chosen targets."
   />
 );

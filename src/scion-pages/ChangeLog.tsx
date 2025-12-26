@@ -5,6 +5,17 @@ const Changelog = () => (
     <Column>
       <Title>Changelog</Title>
 
+      <Heading3>V0.4.5</Heading3>
+      <BulletList>
+        <Text>
+          Phase Assault: power rolls now resolves after all targets are chosen
+        </Text>
+        <Text>
+          Reapers Edge: now only grants balance if the target is a non-minion
+          creature
+        </Text>
+      </BulletList>
+
       <Heading3>V0.4.4</Heading3>
       <BulletList>
         <Text>Cross Slash: changed description</Text>
