@@ -1,8 +1,8 @@
 import "@/styles.css";
 import { createFileRoute } from "@tanstack/react-router";
-import { ManualLayout, Sidebar } from "@/components";
-import Page1 from "../../shadow-unseen-pages/Page1";
-import Page2 from "../../shadow-unseen-pages/Page2";
+import { ManualLayout } from "@/components";
+import Page1 from "../../pages/shadow-unseen-pages/Page1";
+import Page2 from "../../pages/shadow-unseen-pages/Page2";
 
 export const Route = createFileRoute("/shadow-unseen")({
   component: ShadowUnseen,

@@ -1,7 +1,7 @@
 import "@/pdf-styles.css";
 import { createFileRoute } from "@tanstack/react-router";
 import { PDFLayout } from "@/components";
-import Page1 from "../../scion-darksworn-pages/Page1";
+import Page1 from "../../pages/scion-darksworn-pages/Page1";
 
 export const Route = createFileRoute("/darksworn-pdf")({
   component: DarkswornPDF,
