@@ -36,6 +36,7 @@ interface AbilityProps {
   effectBeforeResult?: boolean;
   trigger?: string | React.ReactNode;
   spend?: React.ReactNode;
+  secondarySpend?: React.ReactNode;
   className?: string;
 }
 
@@ -61,6 +62,7 @@ export function Ability({
   effectBeforeResult = false,
   trigger,
   spend,
+  secondarySpend,
   className = "",
 }: AbilityProps) {
   const hasTierResults = validateTierResults(
@@ -144,6 +146,8 @@ export function Ability({
       {!hasTierResults && (
         <AbilitySection trigger={trigger} effect={effect} spend={spend} />
       )}
+
+      {secondarySpend && <AbilitySection spend={secondarySpend} />}
     </div>
   );
 }
