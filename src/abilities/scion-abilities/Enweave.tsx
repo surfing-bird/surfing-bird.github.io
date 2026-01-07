@@ -22,7 +22,11 @@ export const Enweave = () => (
           />
           <Detail
             detailName="Gale Strike"
-            detailValue="Damage becomes lightning. You can either push the target, or yourself away from the target, a distance equal to double your Reason score."
+            detailValue="Damage becomes sonic. You can either push the target, or yourself away from the target, a distance equal to double your Reason score."
+          />
+          <Detail
+            detailName="Lightning Strike"
+            detailValue="Damage becomes lightning. The target and four other enemies chosen in sequence, each being within range 5 of the previous target, take lightning damage equal to your Reason score."
           />
           <Detail
             detailName="Freeze Strike"
@@ -38,7 +42,7 @@ export const Enweave = () => (
           />
           <Detail
             detailName="Explosive Strike"
-            detailValue="Damage becomes sonic. Each enemy in range 2 of the target is dealt sonic damage equal to your Reason score."
+            detailValue="Each enemy in range 2 of the target is dealt damage equal to your Reason score."
           />
         </BulletList>
         <Text>

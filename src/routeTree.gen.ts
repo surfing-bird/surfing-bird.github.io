@@ -11,7 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as ShadowUnseenRouteRouteImport } from './routes/shadow-unseen/route'
 import { Route as ScionPdfRouteRouteImport } from './routes/scion-pdf/route'
-import { Route as ScionFullPdfRouteRouteImport } from './routes/scion-full-pdf/route'
+import { Route as ScionChangelogRouteRouteImport } from './routes/scion-changelog/route'
 import { Route as ScionRouteRouteImport } from './routes/scion/route'
 import { Route as DarkswornPdfRouteRouteImport } from './routes/darksworn-pdf/route'
 import { Route as ConduitUntetheredRouteRouteImport } from './routes/conduit-untethered/route'
@@ -27,9 +27,9 @@ const ScionPdfRouteRoute = ScionPdfRouteRouteImport.update({
   path: '/scion-pdf',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ScionFullPdfRouteRoute = ScionFullPdfRouteRouteImport.update({
-  id: '/scion-full-pdf',
-  path: '/scion-full-pdf',
+const ScionChangelogRouteRoute = ScionChangelogRouteRouteImport.update({
+  id: '/scion-changelog',
+  path: '/scion-changelog',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ScionRouteRoute = ScionRouteRouteImport.update({
@@ -58,7 +58,7 @@ export interface FileRoutesByFullPath {
   '/conduit-untethered': typeof ConduitUntetheredRouteRoute
   '/darksworn-pdf': typeof DarkswornPdfRouteRoute
   '/scion': typeof ScionRouteRoute
-  '/scion-full-pdf': typeof ScionFullPdfRouteRoute
+  '/scion-changelog': typeof ScionChangelogRouteRoute
   '/scion-pdf': typeof ScionPdfRouteRoute
   '/shadow-unseen': typeof ShadowUnseenRouteRoute
 }
@@ -67,7 +67,7 @@ export interface FileRoutesByTo {
   '/conduit-untethered': typeof ConduitUntetheredRouteRoute
   '/darksworn-pdf': typeof DarkswornPdfRouteRoute
   '/scion': typeof ScionRouteRoute
-  '/scion-full-pdf': typeof ScionFullPdfRouteRoute
+  '/scion-changelog': typeof ScionChangelogRouteRoute
   '/scion-pdf': typeof ScionPdfRouteRoute
   '/shadow-unseen': typeof ShadowUnseenRouteRoute
 }
@@ -77,7 +77,7 @@ export interface FileRoutesById {
   '/conduit-untethered': typeof ConduitUntetheredRouteRoute
   '/darksworn-pdf': typeof DarkswornPdfRouteRoute
   '/scion': typeof ScionRouteRoute
-  '/scion-full-pdf': typeof ScionFullPdfRouteRoute
+  '/scion-changelog': typeof ScionChangelogRouteRoute
   '/scion-pdf': typeof ScionPdfRouteRoute
   '/shadow-unseen': typeof ShadowUnseenRouteRoute
 }
@@ -88,7 +88,7 @@ export interface FileRouteTypes {
     | '/conduit-untethered'
     | '/darksworn-pdf'
     | '/scion'
-    | '/scion-full-pdf'
+    | '/scion-changelog'
     | '/scion-pdf'
     | '/shadow-unseen'
   fileRoutesByTo: FileRoutesByTo
@@ -97,7 +97,7 @@ export interface FileRouteTypes {
     | '/conduit-untethered'
     | '/darksworn-pdf'
     | '/scion'
-    | '/scion-full-pdf'
+    | '/scion-changelog'
     | '/scion-pdf'
     | '/shadow-unseen'
   id:
@@ -106,7 +106,7 @@ export interface FileRouteTypes {
     | '/conduit-untethered'
     | '/darksworn-pdf'
     | '/scion'
-    | '/scion-full-pdf'
+    | '/scion-changelog'
     | '/scion-pdf'
     | '/shadow-unseen'
   fileRoutesById: FileRoutesById
@@ -116,7 +116,7 @@ export interface RootRouteChildren {
   ConduitUntetheredRouteRoute: typeof ConduitUntetheredRouteRoute
   DarkswornPdfRouteRoute: typeof DarkswornPdfRouteRoute
   ScionRouteRoute: typeof ScionRouteRoute
-  ScionFullPdfRouteRoute: typeof ScionFullPdfRouteRoute
+  ScionChangelogRouteRoute: typeof ScionChangelogRouteRoute
   ScionPdfRouteRoute: typeof ScionPdfRouteRoute
   ShadowUnseenRouteRoute: typeof ShadowUnseenRouteRoute
 }
@@ -137,11 +137,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ScionPdfRouteRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/scion-full-pdf': {
-      id: '/scion-full-pdf'
-      path: '/scion-full-pdf'
-      fullPath: '/scion-full-pdf'
-      preLoaderRoute: typeof ScionFullPdfRouteRouteImport
+    '/scion-changelog': {
+      id: '/scion-changelog'
+      path: '/scion-changelog'
+      fullPath: '/scion-changelog'
+      preLoaderRoute: typeof ScionChangelogRouteRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/scion': {
@@ -180,7 +180,7 @@ const rootRouteChildren: RootRouteChildren = {
   ConduitUntetheredRouteRoute: ConduitUntetheredRouteRoute,
   DarkswornPdfRouteRoute: DarkswornPdfRouteRoute,
   ScionRouteRoute: ScionRouteRoute,
-  ScionFullPdfRouteRoute: ScionFullPdfRouteRoute,
+  ScionChangelogRouteRoute: ScionChangelogRouteRoute,
   ScionPdfRouteRoute: ScionPdfRouteRoute,
   ShadowUnseenRouteRoute: ShadowUnseenRouteRoute,
 }

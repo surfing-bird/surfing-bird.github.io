@@ -4,14 +4,18 @@ const Changelog = () => (
   <Page id="changelog">
     <Column>
       <Title>Changelog</Title>
-
       <Heading3>V0.4.6</Heading3>
       <BulletList>
         <Text>
           Blade Barrier: changed effect to be until start of next turn
         </Text>
+        <Text>Spirit Rend: reduced damage by 2 on each tier</Text>
+        <Text>
+          Lightning Strike: renamed to Lightning Flash and reduced damage by 2
+          on each tier
+        </Text>
+        <Text>Enweave: Add Lightning Strike</Text>
       </BulletList>
-
       <Heading3>V0.4.5</Heading3>
       <BulletList>
         <Text>
@@ -22,7 +26,6 @@ const Changelog = () => (
           creature
         </Text>
       </BulletList>
-``
       <Heading3>V0.4.4</Heading3>
       <BulletList>
         <Text>Cross Slash: changed description</Text>
@@ -33,13 +36,11 @@ const Changelog = () => (
           Eternal Master: Changed effect to last until your next respite
         </Text>
       </BulletList>
-
       <Heading3>V0.4.3</Heading3>
       <BulletList>
         <Text>Sword Master: changed to light weapon.</Text>
         <Text>Phasewalk: redesigned</Text>
       </BulletList>
-
       <Heading3>V0.4.2</Heading3>
       <BulletList>
         <Text>Afterimage: changed effect slightly</Text>
@@ -50,7 +51,6 @@ const Changelog = () => (
         <Text>Spectral Blades: changed effect wording</Text>
         <Text>Cross Slash: added effect clarification</Text>
       </BulletList>
-
       <Heading3>V0.4.1</Heading3>
       <BulletList>
         <Text>Soul Flow: changed effect slightly</Text>
@@ -63,13 +63,11 @@ const Changelog = () => (
         <Text>Soul Manifest: effect slightly changed</Text>
         <Text>Phase Field: slightly changed effect wording</Text>
       </BulletList>
-
       <Heading3>V0.4.0</Heading3>
       <BulletList>
         <Text>Changed Aether Lash effect wording</Text>
         <Text>Added Blade Barrier signature</Text>
       </BulletList>
-
       <Heading3>V0.3.9</Heading3>
       <BulletList>
         <Text>Afterimage: changed effect</Text>
@@ -82,7 +80,6 @@ const Changelog = () => (
         <Text>Soul Form: moved to level 2</Text>
         <Text>Soul Wave: moved to level 6 and buffed</Text>
       </BulletList>
-
       <Heading3>V0.3.8</Heading3>
       <BulletList>
         <Text>Balance in Combat: reworked balance gain</Text>
@@ -96,7 +93,6 @@ const Changelog = () => (
         <Text>Writ of Binding: new Runewright 5-HR heroic</Text>
         <Text>Spirit Rend: Added effect and lowered damage</Text>
       </BulletList>
-
       <Heading3>V0.3.7</Heading3>
       <BulletList>
         <Text>Blackest Night: changed effect wording</Text>
@@ -111,13 +107,11 @@ const Changelog = () => (
           Judgement Edge: renamed to Reaper's Edge, changed effect and damage
         </Text>
       </BulletList>
-
       <Heading3>V0.3.6</Heading3>
       <BulletList>
         <Text>Blackest Night: reworked (again)</Text>
         <Text>Scarlet Dirge: reduced damage</Text>
       </BulletList>
-
       <Heading3>V0.3.5</Heading3>
       <BulletList>
         <Text>
@@ -130,7 +124,6 @@ const Changelog = () => (
         <Text>Lightning Strike: slightly reduced damage on T1</Text>
         <Text>Renamed and reworked several Darksworn abilities</Text>
       </BulletList>
-
       <Heading3>V0.3.4</Heading3>
       <BulletList>
         <Text>Added Darksworn Art</Text>
@@ -138,13 +131,11 @@ const Changelog = () => (
         <Text>Blade's Will: changed range to Ranged 5</Text>
         <Text>Blade's Will: changed effect</Text>
       </BulletList>
-
       <Heading3>V0.3.3</Heading3>
       <BulletList>
         <Text>Judgment Edge: changed effect to work on minions as well</Text>
         <Text>Cross Slash: reduced damage by 4 on each tier</Text>
       </BulletList>
-
       <Heading3>V0.3.2</Heading3>
       <BulletList>
         <Text>Afterimage: afterimage lasts until the end of the next turn</Text>
@@ -153,13 +144,11 @@ const Changelog = () => (
           Various places that said '1 creature' now say 'One creature'
         </Text>
       </BulletList>
-
       <Heading3>V0.3.1</Heading3>
       <BulletList>
         <Text>Soul Wave: Nerfed damage.</Text>
         <Text>Blade's Will: Reworked effect</Text>
       </BulletList>
-
       <Heading3>V0.3.0</Heading3>
       <BulletList>
         <Text>Flowing Strike: Renamed to Gliding Heron</Text>

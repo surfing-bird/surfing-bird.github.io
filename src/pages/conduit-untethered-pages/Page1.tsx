@@ -74,8 +74,7 @@ const Page1 = () => (
         </BulletList>
 
         <Text>
-          If you did not pray on your previous turn this encounter, you don't
-          need to roll, and instead gain the benefits of having rolled a 3.
+          If you did not pray on your previous turn this encounter, you can pray without rolling, automatically gaining the benefits of having rolled a 3.
         </Text>
 
         <Text>You lose any remaining piety at the end of the encounter.</Text>
