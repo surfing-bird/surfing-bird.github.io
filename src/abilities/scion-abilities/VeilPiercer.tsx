@@ -14,7 +14,7 @@ export const VeilPiercer = () => (
       middle: "12 + R damage",
       high: "16 + R damage",
     }}
-    effect="Create a 1 burst area of mist which provides concealment to allies that lasts until the end of your next turn. Allies inside the mist can hide even while observed."
+    effect="Create a 1 burst area of mist which provides concealment to yourself and allies that lasts until the end of your next turn. You and allies inside the mist can hide even while observed."
   />
 );
 

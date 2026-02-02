@@ -4,6 +4,17 @@ const Changelog = () => (
   <Page id="changelog">
     <Column>
       <Title>Changelog</Title>
+
+      <Heading3>V0.4.7</Heading3>
+      <BulletList>
+        <Text>Added Iron Fist kit</Text>
+        <Text>
+          Added limitation to Runebrand - only usable on options that target a
+          single creature
+        </Text>
+        <Text>Nerfed lightning strike to target 4 monsters instead of 5</Text>
+        <Text>Kits: fixed Stamina bonus text</Text>
+      </BulletList>
       <Heading3>V0.4.6</Heading3>
       <BulletList>
         <Text>

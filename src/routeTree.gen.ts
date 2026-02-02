@@ -9,7 +9,7 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as ShadowUnseenRouteRouteImport } from './routes/shadow-unseen/route'
+import { Route as ShadowReshadeRouteRouteImport } from './routes/shadow-reshade/route'
 import { Route as ScionPdfRouteRouteImport } from './routes/scion-pdf/route'
 import { Route as ScionChangelogRouteRouteImport } from './routes/scion-changelog/route'
 import { Route as ScionRouteRouteImport } from './routes/scion/route'
@@ -17,9 +17,9 @@ import { Route as DarkswornPdfRouteRouteImport } from './routes/darksworn-pdf/ro
 import { Route as ConduitUntetheredRouteRouteImport } from './routes/conduit-untethered/route'
 import { Route as IndexRouteImport } from './routes/index'
 
-const ShadowUnseenRouteRoute = ShadowUnseenRouteRouteImport.update({
-  id: '/shadow-unseen',
-  path: '/shadow-unseen',
+const ShadowReshadeRouteRoute = ShadowReshadeRouteRouteImport.update({
+  id: '/shadow-reshade',
+  path: '/shadow-reshade',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ScionPdfRouteRoute = ScionPdfRouteRouteImport.update({
@@ -60,7 +60,7 @@ export interface FileRoutesByFullPath {
   '/scion': typeof ScionRouteRoute
   '/scion-changelog': typeof ScionChangelogRouteRoute
   '/scion-pdf': typeof ScionPdfRouteRoute
-  '/shadow-unseen': typeof ShadowUnseenRouteRoute
+  '/shadow-reshade': typeof ShadowReshadeRouteRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -69,7 +69,7 @@ export interface FileRoutesByTo {
   '/scion': typeof ScionRouteRoute
   '/scion-changelog': typeof ScionChangelogRouteRoute
   '/scion-pdf': typeof ScionPdfRouteRoute
-  '/shadow-unseen': typeof ShadowUnseenRouteRoute
+  '/shadow-reshade': typeof ShadowReshadeRouteRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -79,7 +79,7 @@ export interface FileRoutesById {
   '/scion': typeof ScionRouteRoute
   '/scion-changelog': typeof ScionChangelogRouteRoute
   '/scion-pdf': typeof ScionPdfRouteRoute
-  '/shadow-unseen': typeof ShadowUnseenRouteRoute
+  '/shadow-reshade': typeof ShadowReshadeRouteRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -90,7 +90,7 @@ export interface FileRouteTypes {
     | '/scion'
     | '/scion-changelog'
     | '/scion-pdf'
-    | '/shadow-unseen'
+    | '/shadow-reshade'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -99,7 +99,7 @@ export interface FileRouteTypes {
     | '/scion'
     | '/scion-changelog'
     | '/scion-pdf'
-    | '/shadow-unseen'
+    | '/shadow-reshade'
   id:
     | '__root__'
     | '/'
@@ -108,7 +108,7 @@ export interface FileRouteTypes {
     | '/scion'
     | '/scion-changelog'
     | '/scion-pdf'
-    | '/shadow-unseen'
+    | '/shadow-reshade'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -118,16 +118,16 @@ export interface RootRouteChildren {
   ScionRouteRoute: typeof ScionRouteRoute
   ScionChangelogRouteRoute: typeof ScionChangelogRouteRoute
   ScionPdfRouteRoute: typeof ScionPdfRouteRoute
-  ShadowUnseenRouteRoute: typeof ShadowUnseenRouteRoute
+  ShadowReshadeRouteRoute: typeof ShadowReshadeRouteRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/shadow-unseen': {
-      id: '/shadow-unseen'
-      path: '/shadow-unseen'
-      fullPath: '/shadow-unseen'
-      preLoaderRoute: typeof ShadowUnseenRouteRouteImport
+    '/shadow-reshade': {
+      id: '/shadow-reshade'
+      path: '/shadow-reshade'
+      fullPath: '/shadow-reshade'
+      preLoaderRoute: typeof ShadowReshadeRouteRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/scion-pdf': {
@@ -182,7 +182,7 @@ const rootRouteChildren: RootRouteChildren = {
   ScionRouteRoute: ScionRouteRoute,
   ScionChangelogRouteRoute: ScionChangelogRouteRoute,
   ScionPdfRouteRoute: ScionPdfRouteRoute,
-  ShadowUnseenRouteRoute: ShadowUnseenRouteRoute,
+  ShadowReshadeRouteRoute: ShadowReshadeRouteRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

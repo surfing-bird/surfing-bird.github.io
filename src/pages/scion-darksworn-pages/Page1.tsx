@@ -4,13 +4,9 @@ import {
   Text,
   Heading2,
   Heading3,
-  BulletList,
-  AdvancementTable,
   TextBlock,
-  Detail,
   Feature,
   Heading4,
-  Heading5,
 } from "@/components";
 import {
   BlackestNight,
@@ -90,6 +86,8 @@ const Page1 = () => (
           using Chain of Torment.
         </Text>
       </Feature>
+
+      <Heading2>6th-Level Features</Heading2>
     </ColumnPDF>
   </PagePDF>
 );

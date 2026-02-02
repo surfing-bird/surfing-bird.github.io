@@ -2,7 +2,7 @@ import { Ability, TextBlock, Text, Detail } from "@/components";
 
 export const ImNoThreat = () => (
   <Ability
-    title="Im No Threat"
+    title="I'm No Threat"
     subtitle="Taking on an illusory countenance gives you an advantage on subterfuge."
     keywords="Magic"
     actionType="Maneuver"
@@ -13,9 +13,7 @@ export const ImNoThreat = () => (
         <Text>
           You envelop yourself in an illusion that makes you appear
           nonthreatening and harmless to your enemies. While this illusion
-          lasts, your strikes gain an edge, strikes against you suffer a bane,
-          and if they have associated potency effect, it's potency is decreased
-          by 1.
+          lasts, your strikes gain an edge, strikes against you suffer a bane.
         </Text>
 
         <Text>
@@ -24,6 +22,8 @@ export const ImNoThreat = () => (
           end the illusion (no action required). If you end this illusion by
           harming another creature, you gain 1 surge.
         </Text>
+
+        <Text>This ability has no effect telling friend from foe.</Text>
       </TextBlock>
     }
     spend={
@@ -34,7 +34,8 @@ export const ImNoThreat = () => (
 illusion makes you appear as that creature. This illusion covers your
 entire body, including clothing and armor, and alters your voice to
 sound like that of the creature. You gain an edge on tests made to
-convince the creature’s allies that you are the creature."
+convince the creature’s allies that you are the creature, and you
+cannot be targeted by abilities that specify enemies as its targets."
       />
     }
   />

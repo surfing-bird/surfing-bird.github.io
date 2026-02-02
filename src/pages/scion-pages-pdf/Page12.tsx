@@ -22,7 +22,7 @@ const Page12 = () => (
       <Text>You wear medium armor and wield a light weapon.</Text>
       <Heading4>Kit Bonuses</Heading4>
       <div className="flex flex-col gap-0">
-        <Detail detailName="Stamina Bonus" detailValue="+6" />
+        <Detail detailName="Stamina Bonus" detailValue="+6 per echelon" />
         <Detail detailName="Speed Bonus" detailValue="+3" />
         <Detail detailName="Melee Damage Bonus" detailValue="+2/+2/+2" />
       </div>
@@ -53,7 +53,7 @@ const Page12 = () => (
       <Text>You wear light armor and wield a whip.</Text>
       <Heading4>Kit Bonuses</Heading4>
       <div className="flex flex-col gap-0">
-        <Detail detailName="Stamina Bonus" detailValue="+3" />
+        <Detail detailName="Stamina Bonus" detailValue="+3 per echelon" />
         <Detail detailName="Melee Damage Bonus" detailValue="+1/+1/+1" />
         <Detail detailName="Melee Distance Bonus" detailValue="+3" />
       </div>
@@ -87,7 +87,7 @@ const Page12 = () => (
 
       <Heading4>Kit Bonuses</Heading4>
       <div className="flex flex-col gap-0">
-        <Detail detailName="Stamina Bonus" detailValue="+6" />
+        <Detail detailName="Stamina Bonus" detailValue="+6 per echelon" />
         <Detail detailName="Speed Bonus" detailValue="+1" />
         <Detail detailName="Melee Damage Bonus" detailValue="+2/+2/+2" />
         <Detail detailName="Melee Distance Bonus" detailValue="+1" />
@@ -122,7 +122,7 @@ const Page12 = () => (
 
       <Heading4>Kit Bonuses</Heading4>
       <div className="flex flex-col gap-0">
-        <Detail detailName="Stamina Bonus" detailValue="+6" />
+        <Detail detailName="Stamina Bonus" detailValue="+6 per echelon" />
         <Detail detailName="Speed Bonus" detailValue="+1" />
         <Detail detailName="Melee Distance Bonus" detailValue="+1" />
         <Detail detailName="Melee Damage Bonus" detailValue="0/0/+4" />

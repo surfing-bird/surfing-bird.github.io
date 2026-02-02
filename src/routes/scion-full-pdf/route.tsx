@@ -16,6 +16,7 @@
 // import Page11 from "../../pages/scion-pages-pdf/Page11";
 // import Page12 from "../../pages/scion-pages-pdf/Page12";
 // import Page13 from "../../pages/scion-pages-pdf/Page13";
+// import Page14 from "../../pages/scion-pages-pdf/Page14";
 // import Credits from "../../pages/scion-pages-pdf/Credits";
 // import { useIsMobile } from "@/hooks/useIsMobile";
 
@@ -45,6 +46,7 @@
 //         <Page11 />
 //         <Page12 />
 //         <Page13 />
+//         <Page14 />
 //         <Credits />
 //       </PDFLayout>
 //     </div>

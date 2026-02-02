@@ -8,14 +8,13 @@ export const Runebrand = () => (
     actionType="Maneuver"
     range="Melee 1"
     targets="One creature or object"
-    effect="When using this ability, choose one of the Enweave effects,
+    effect="When using this ability, choose one of the Enweave effects that can only affect a single target,
           ignoring the component that changes the damage type of your next
           weapon ability. You brand your target with a rune imbued by the effect you
           chose, priming it for detonation. At the end of your turn, the rune is
           primed. When a rune is primed, the next time the branded target is
-          damaged, the rune detonates, applying its effect to every enemy within
-          range 2 of it. If the branded effect already has an area, it is
-          increased by 2 instead. If the branded effect has a push effect, it is
+          damaged, the rune detonates, applying its effect to the target and each enemy within
+          range 2 of it. If the branded effect has a push effect, it is
           relative to the branded target's location."
     spend={
       <Detail
@@ -25,4 +24,3 @@ export const Runebrand = () => (
     }
   />
 );
-

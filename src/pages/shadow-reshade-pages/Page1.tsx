@@ -13,7 +13,7 @@ import {
 const Page1 = () => (
   <Page id="class-subclass">
     <Column>
-      <Title>Shadow Unseen</Title>
+      <Title>Shadow Reshade</Title>
 
       <Heading2>Design Goals (And Who This Is For)</Heading2>
       <TextBlock>
@@ -93,7 +93,7 @@ const Page1 = () => (
       <BulletList>
         <Detail
           detailName="Ghostshot"
-          detailValue="You get an edge on power rolls against enemies that are 8 or more spaces away. If the enemy is 12 or more spaces away, you also gain a surge that you can use on the triggering roll."
+          detailValue="You get an edge on power rolls against enemies that are 8 or more spaces away. You have an edge on opposed Agility tests using the hide skill."
         />
         <Detail
           detailName="Darkblade"

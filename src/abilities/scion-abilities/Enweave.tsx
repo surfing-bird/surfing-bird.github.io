@@ -26,7 +26,7 @@ export const Enweave = () => (
           />
           <Detail
             detailName="Lightning Strike"
-            detailValue="Damage becomes lightning. The target and four other enemies chosen in sequence, each being within range 5 of the previous target, take lightning damage equal to your Reason score."
+            detailValue="Damage becomes lightning. The target and three other enemies chosen in sequence, each being within range 5 of the previous target, take lightning damage equal to your Reason score."
           />
           <Detail
             detailName="Freeze Strike"

@@ -1,14 +1,14 @@
 import "@/styles.css";
 import { createFileRoute } from "@tanstack/react-router";
 import { ManualLayout } from "@/components";
-import Page1 from "../../pages/shadow-unseen-pages/Page1";
-import Page2 from "../../pages/shadow-unseen-pages/Page2";
+import Page1 from "../../pages/shadow-reshade-pages/Page1";
+import Page2 from "../../pages/shadow-reshade-pages/Page2";
 
-export const Route = createFileRoute("/shadow-unseen")({
-  component: ShadowUnseen,
+export const Route = createFileRoute("/shadow-reshade")({
+  component: ShadowReshade,
 });
 
-function ShadowUnseen() {
+function ShadowReshade() {
   return (
     <div className="flex flex-col items-center">
       <ManualLayout>
