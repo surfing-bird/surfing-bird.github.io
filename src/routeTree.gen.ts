@@ -14,7 +14,8 @@ import { Route as ScionPdfRouteRouteImport } from './routes/scion-pdf/route'
 import { Route as ScionChangelogRouteRouteImport } from './routes/scion-changelog/route'
 import { Route as ScionRouteRouteImport } from './routes/scion/route'
 import { Route as DarkswornPdfRouteRouteImport } from './routes/darksworn-pdf/route'
-import { Route as ConduitUntetheredRouteRouteImport } from './routes/conduit-untethered/route'
+import { Route as ConduitReboundRouteRouteImport } from './routes/conduit-rebound/route'
+import { Route as CensorReformedRouteRouteImport } from './routes/censor-reformed/route'
 import { Route as IndexRouteImport } from './routes/index'
 
 const ShadowReshadeRouteRoute = ShadowReshadeRouteRouteImport.update({
@@ -42,9 +43,14 @@ const DarkswornPdfRouteRoute = DarkswornPdfRouteRouteImport.update({
   path: '/darksworn-pdf',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ConduitUntetheredRouteRoute = ConduitUntetheredRouteRouteImport.update({
-  id: '/conduit-untethered',
-  path: '/conduit-untethered',
+const ConduitReboundRouteRoute = ConduitReboundRouteRouteImport.update({
+  id: '/conduit-rebound',
+  path: '/conduit-rebound',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CensorReformedRouteRoute = CensorReformedRouteRouteImport.update({
+  id: '/censor-reformed',
+  path: '/censor-reformed',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -55,7 +61,8 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/conduit-untethered': typeof ConduitUntetheredRouteRoute
+  '/censor-reformed': typeof CensorReformedRouteRoute
+  '/conduit-rebound': typeof ConduitReboundRouteRoute
   '/darksworn-pdf': typeof DarkswornPdfRouteRoute
   '/scion': typeof ScionRouteRoute
   '/scion-changelog': typeof ScionChangelogRouteRoute
@@ -64,7 +71,8 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/conduit-untethered': typeof ConduitUntetheredRouteRoute
+  '/censor-reformed': typeof CensorReformedRouteRoute
+  '/conduit-rebound': typeof ConduitReboundRouteRoute
   '/darksworn-pdf': typeof DarkswornPdfRouteRoute
   '/scion': typeof ScionRouteRoute
   '/scion-changelog': typeof ScionChangelogRouteRoute
@@ -74,7 +82,8 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/conduit-untethered': typeof ConduitUntetheredRouteRoute
+  '/censor-reformed': typeof CensorReformedRouteRoute
+  '/conduit-rebound': typeof ConduitReboundRouteRoute
   '/darksworn-pdf': typeof DarkswornPdfRouteRoute
   '/scion': typeof ScionRouteRoute
   '/scion-changelog': typeof ScionChangelogRouteRoute
@@ -85,7 +94,8 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
-    | '/conduit-untethered'
+    | '/censor-reformed'
+    | '/conduit-rebound'
     | '/darksworn-pdf'
     | '/scion'
     | '/scion-changelog'
@@ -94,7 +104,8 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
-    | '/conduit-untethered'
+    | '/censor-reformed'
+    | '/conduit-rebound'
     | '/darksworn-pdf'
     | '/scion'
     | '/scion-changelog'
@@ -103,7 +114,8 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
-    | '/conduit-untethered'
+    | '/censor-reformed'
+    | '/conduit-rebound'
     | '/darksworn-pdf'
     | '/scion'
     | '/scion-changelog'
@@ -113,7 +125,8 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  ConduitUntetheredRouteRoute: typeof ConduitUntetheredRouteRoute
+  CensorReformedRouteRoute: typeof CensorReformedRouteRoute
+  ConduitReboundRouteRoute: typeof ConduitReboundRouteRoute
   DarkswornPdfRouteRoute: typeof DarkswornPdfRouteRoute
   ScionRouteRoute: typeof ScionRouteRoute
   ScionChangelogRouteRoute: typeof ScionChangelogRouteRoute
@@ -158,11 +171,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DarkswornPdfRouteRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/conduit-untethered': {
-      id: '/conduit-untethered'
-      path: '/conduit-untethered'
-      fullPath: '/conduit-untethered'
-      preLoaderRoute: typeof ConduitUntetheredRouteRouteImport
+    '/conduit-rebound': {
+      id: '/conduit-rebound'
+      path: '/conduit-rebound'
+      fullPath: '/conduit-rebound'
+      preLoaderRoute: typeof ConduitReboundRouteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/censor-reformed': {
+      id: '/censor-reformed'
+      path: '/censor-reformed'
+      fullPath: '/censor-reformed'
+      preLoaderRoute: typeof CensorReformedRouteRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -177,7 +197,8 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  ConduitUntetheredRouteRoute: ConduitUntetheredRouteRoute,
+  CensorReformedRouteRoute: CensorReformedRouteRoute,
+  ConduitReboundRouteRoute: ConduitReboundRouteRoute,
   DarkswornPdfRouteRoute: DarkswornPdfRouteRoute,
   ScionRouteRoute: ScionRouteRoute,
   ScionChangelogRouteRoute: ScionChangelogRouteRoute,

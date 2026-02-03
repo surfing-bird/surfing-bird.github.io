@@ -18,10 +18,14 @@ const Page1 = () => (
       <Heading2>Design Goals (And Who This Is For)</Heading2>
       <TextBlock>
         <Text>
-          While the Shadow is one of my favorite classes and designs in the
-          game, there a few pain points that I wanted to address with this
-          rework. If you haven't found these to be an issue in your table - feel
-          free to skip document entirely!
+          For this rework and any others I make, I will always attempt to keep
+          my changes to a minimum.
+        </Text>
+
+        <Text>
+          There a few pain points that I wanted to address with this rework. If
+          you haven't found these to be an issue in your table - feel free to
+          skip document entirely!
         </Text>
 
         <BulletList>
@@ -30,7 +34,7 @@ const Page1 = () => (
             detailValue="The insight discount mechanic feels limiting, making the Shadow lag behind in heroic resource gain."
           />
           <Detail
-            detailName="Melee Support"
+            detailName="Melee Viability"
             detailValue="There is not enough of an incentive to pick a melee kit as opposed to a ranged one."
           />
           <Detail

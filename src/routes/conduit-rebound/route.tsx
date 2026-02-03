@@ -1,14 +1,13 @@
 import "@/styles.css";
 import { createFileRoute } from "@tanstack/react-router";
 import { ManualLayout } from "@/components";
-import Page1 from "../../pages/conduit-untethered-pages/Page1";
-// import Page2 from "../../conduit-untethered-pages/Page2";
+import Page1 from "../../pages/conduit-rebound-pages/Page1";
 
-export const Route = createFileRoute("/conduit-untethered")({
-  component: ConduitUntethered,
+export const Route = createFileRoute("/conduit-rebound")({
+  component: ConduitRebound,
 });
 
-function ConduitUntethered() {
+function ConduitRebound() {
   return (
     <div className="flex flex-col items-center">
       <ManualLayout>
