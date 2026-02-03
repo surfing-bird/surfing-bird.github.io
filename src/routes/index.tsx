@@ -17,7 +17,8 @@ function App() {
             Draw Steel Echoes
           </h1>
           <p className="max-w-2xl text-sm text-gray-600 sm:text-base">
-            Home to Draw Steel homebrew made by me, SurfingBird.
+            A compendium of Draw Steel homebrew made by SurfingBird, including
+            the Scion.
           </p>
         </section>
 
