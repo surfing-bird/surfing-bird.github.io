@@ -17,8 +17,8 @@ const Page2 = () => (
         effect of the illusion actually is. This version attempts to make the
         effect more concrete. It lets you move around without provoking attacks
         of opportunity and makes it less appealing to hit you over your allies,
-        allies, while keeping the edge and surge bonuses which are a core part
-        of every Shadow's game-plan.
+        while keeping the edge and surge bonuses which are a core part of every
+        Shadow's game-plan.
       </Text>
     </Column>
 

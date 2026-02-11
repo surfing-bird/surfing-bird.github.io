@@ -66,10 +66,8 @@ const Page1 = () => (
         </Text>
 
         <Text>
-          The first time in a combat round that you would make a power roll with
-          an edge or double edge you gain 1 insight. If that power roll is made
-          as part of a heroic ability that makes use of a power roll, that
-          ability costs 1 fewer insight instead.
+          When you use an ability with an edge or double edge, if it’s a heroic
+          ability, it costs 1 less. Otherwise, you gain 1 insight.
         </Text>
 
         <Text>You lose any remaining insight at the end of the encounter.</Text>
@@ -97,15 +95,15 @@ const Page1 = () => (
       <BulletList>
         <Detail
           detailName="Ghostshot"
-          detailValue="You get an edge on power rolls against enemies that are 8 or more spaces away. You have an edge on opposed Agility tests using the hide skill."
+          detailValue="You get a surge which you can use immediately on power rolls against enemies that are 8 or more spaces away. You have an edge on opposed Agility tests using the hide skill."
         />
         <Detail
           detailName="Darkblade"
-          detailValue="You gain a bonus to speed equal to your agility score. You gain an edge on power rolls for melee abilities against enemies that have no adjacent allies, and when you and an ally are adjacent to the same enemy, you are considered flanking. After resolving a melee Strike, you can Disengage as a free triggered action."
+          detailValue="You gain a bonus to speed equal to your agility score. You gain an edge on power rolls for melee abilities against enemies that have no adjacent allies, and when make a power roll against an enemy you are flanking you gain a surge you can use immediately. After resolving a melee Strike, you can Disengage as a free triggered action."
         />
         <Detail
           detailName="Crossfade"
-          detailValue="When you make a melee or ranged Strike, if you haven’t made a strike of that type since the beginning of your last turn, you gain an edge on the power roll. When you make a ranged Strike against an enemy within 5 squares with an edge, you can Disengage as a free triggered action after the Strike resolves. When you make a melee Strike against an enemy with an edge, you can Disengage after that Strike resolves."
+          detailValue="When you make a melee or ranged Strike, if you haven’t made a strike of that type since the beginning of your last turn, you gain an edge on the power roll. When you make a ranged Strike against an enemy within 5 squares with an edge, you can Disengage as a free triggered action after the Strike resolves. When you make a melee Strike against an enemy with an edge, you can Disengage as a free triggered action after that Strike resolves."
         />
       </BulletList>
 
