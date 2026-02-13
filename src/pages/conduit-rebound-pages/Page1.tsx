@@ -62,19 +62,28 @@ const Page1 = () => (
 
         <BulletList>
           <Text>
-            If the roll is a 1 or 2, you gain 1 additional piety but anger the
-            gods! You take psychic damage equal to 1d6 + your level, which can’t
-            be reduced in any way.
+            If the roll is a 1, you gain 1 additional piety but anger the gods!
+            You take psychic damage equal to 1d6 + your level, which can’t be
+            reduced in any way.
           </Text>
 
           <Text>
-            If the roll is a 3, you gain 1 additional piety and can activate a
+            If the roll is a 2, you gain 1 additional piety and can activate a
+            domain effect of your choice (see below), but anger the gods! You
+            take psychic damage equal to 1d6 + your level, which can’t be
+            reduced in any way.
+          </Text>
+
+          <Text>
+            If the roll is a 3, you gain 2 additional piety and can activate a
             domain effect of your choice (see below).
           </Text>
         </BulletList>
 
         <Text>
-          If you did not pray on your previous turn this encounter, you can pray without rolling, automatically gaining the benefits of having rolled a 3.
+          If you did not pray on your previous turn this encounter, you can pray
+          without rolling, automatically gaining the benefits of having rolled a
+          3.
         </Text>
 
         <Text>You lose any remaining piety at the end of the encounter.</Text>

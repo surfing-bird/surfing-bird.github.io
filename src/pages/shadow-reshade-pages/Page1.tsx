@@ -66,8 +66,9 @@ const Page1 = () => (
         </Text>
 
         <Text>
-          When you use an ability with an edge or double edge, if it’s a heroic
-          ability, it costs 1 less. Otherwise, you gain 1 insight.
+          The first time in a combat round that you use an ability with an edge
+          or double edge, if it’s a heroic ability, it costs 1 less. Otherwise,
+          you gain 1 insight.
         </Text>
 
         <Text>You lose any remaining insight at the end of the encounter.</Text>
@@ -95,7 +96,7 @@ const Page1 = () => (
       <BulletList>
         <Detail
           detailName="Ghostshot"
-          detailValue="You get a surge which you can use immediately on power rolls against enemies that are 8 or more spaces away. You have an edge on opposed Agility tests using the hide skill."
+          detailValue="When you make a Ranged weapon power roll against a target that is 8 or more spaces away, you gain a surge which you can use immediately. You have an edge on opposed Agility tests using the hide skill."
         />
         <Detail
           detailName="Darkblade"
@@ -103,7 +104,7 @@ const Page1 = () => (
         />
         <Detail
           detailName="Crossfade"
-          detailValue="When you make a melee or ranged Strike, if you haven’t made a strike of that type since the beginning of your last turn, you gain an edge on the power roll. When you make a ranged Strike against an enemy within 5 squares with an edge, you can Disengage as a free triggered action after the Strike resolves. When you make a melee Strike against an enemy with an edge, you can Disengage as a free triggered action after that Strike resolves."
+          detailValue="When you make a melee or ranged Strike, if you haven’t made a strike of that type since the beginning of your last turn, you gain an edge on the power roll. When you make a ranged Strike against an enemy within 5 squares with an edge, or a melee strike against an enemy with an edge, you can Disengage as a free triggered action after the Strike resolves."
         />
       </BulletList>
 
