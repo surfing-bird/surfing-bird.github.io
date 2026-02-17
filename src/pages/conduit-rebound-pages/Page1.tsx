@@ -31,7 +31,11 @@ const Page1 = () => (
           />
           <Detail
             detailName="Healing Grace"
-            detailValue="Healing Grace is so overhwelmingly strong that it outclasses all other healing abilities, making it pointless to pick any of them up."
+            detailValue="Healing Grace is so overwhelmingly  strong that it outclasses all other healing abilities, making it pointless to pick any of them up."
+          />
+          <Detail
+            detailName="Prayers"
+            detailValue="The Prayer of Steel is overwhelmingly the best option."
           />
         </BulletList>
 

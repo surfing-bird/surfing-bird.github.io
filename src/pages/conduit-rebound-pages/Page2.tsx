@@ -24,8 +24,8 @@ const Page1 = () => (
           Your god infuses wrath within your being. You gain a +1 bonus to
           rolled damage with magic abilities. When you use a magic area ability
           you can increase the ability’s area by 1 until the end of the
-          encounter. If the area is a line, you only increase the size of the
-          smaller dimension by two.
+          encounter. If the area is a line, you increase the size of the large
+          dimension by two.
         </Text>
 
         <Heading4>Prayer of Soldier’s Skill</Heading4>
