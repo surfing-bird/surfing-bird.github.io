@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -28,6 +34,10 @@ html {
   background: #fff;
 }
 
+div {
+  filter: blur(0.1px);
+}
+
 h1,
 h2,
 h3,
@@ -37,6 +47,8 @@ h6 {
   /* font-family: "Crimson Pro", "Fraunces", serif; */
   font-family: "Fraunces", serif;
   line-height: 1.1;
+  /* Extra smoothing for headings */
+  filter: blur(0.2px);
 }
 
 h1 {

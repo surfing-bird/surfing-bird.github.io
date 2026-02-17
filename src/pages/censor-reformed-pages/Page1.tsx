@@ -4,102 +4,146 @@ import {
   Text,
   Title,
   Heading2,
-  Heading3,
   TextBlock,
   BulletList,
   Detail,
+  Heading3,
 } from "@/components";
+import { Aegis } from "@/abilities/censor-reformed-abilities/Aegis";
+import { YourLifeIsMine } from "@/abilities/censor-reformed-abilities/YourLifeIsMine";
 
 const Page1 = () => (
   <Page id="class-subclass">
     <Column>
       <Title>Censor Reformed</Title>
 
-      <Heading2>Placeholder Section Title</Heading2>
+      <Heading2>Design Goals (And Who This Is For)</Heading2>
       <TextBlock>
         <Text>
-          This is placeholder text. It exists only to indicate where descriptive
-          content will eventually be written. It carries no mechanical or
-          narrative meaning.
+          There a few pain points that I wanted to address with this rework. If
+          you haven't found these to be an issue in your table - feel free to
+          skip document entirely!
         </Text>
 
         <BulletList>
           <Detail
-            detailName="Placeholder Item One"
-            detailValue="This is placeholder detail text intended to be replaced later."
+            detailName="Tonal Cohesion"
+            detailValue="To me, My Life For Yours does not feel like it fits the tone of the Censor. It would fit perfectly on a Paladin class, but feels out of place on a Censor. Hence, this rework adds an alternative triggered action to the class."
           />
           <Detail
-            detailName="Placeholder Item Two"
-            detailValue="This is additional placeholder detail text with no current purpose."
+            detailName="Alternative Theme"
+            detailValue="On the flipside, some might find the inquisitor-like fiction of the Censor to be uncomfortable, or would just want a more 'Paladin' feel to it. Hence, this reworks adds an alternatie maneuver to the class."
+          />
+          <Detail
+            detailName="Subclass Balance"
+            detailValue="This rework attempts to rebalance the subclasses so Oracle doesn't feel like the best option."
           />
         </BulletList>
 
         <Text>
-          More placeholder text follows here. This paragraph represents
-          explanatory or contextual information that has not yet been authored.
+          This rework aims to address all of these issues, while still keeping
+          the core mechanics of the class. Explanations will be provided for
+          each change, detailing why it was made.
         </Text>
       </TextBlock>
 
-      <Heading3>Placeholder Subsection</Heading3>
-
-      <TextBlock>
-        <Text>
-          Placeholder text describing a system, rule, or concept. All numbers,
-          mechanics, and flavor are intentionally omitted.
-        </Text>
-
-        <Text>
-          Additional placeholder text expanding on the above concept. This text
-          does not imply balance decisions or final design intent.
-        </Text>
-
+      <Heading3>Divine Doctrine</Heading3>
+      <Text>
+        Your divine doctrine determines the manifestation of your god's will.
+        Choose one of the following doctrines:
         <BulletList>
           <Text>
-            Placeholder bullet point text. Represents a conditional outcome or
-            rule.
+            <span className="font-bold"> Grace:</span> You gain the Aegis
+            maneuver and the My Life For Yours triggered ability.
           </Text>
-
           <Text>
-            Placeholder bullet point text. Represents an alternative outcome or
-            rule.
+            <span className="font-bold"> Retribution:</span> You gain the
+            Judgement maneuver and the Your Life Is Mine triggered ability.
           </Text>
         </BulletList>
+      </Text>
 
-        <Text>
-          Placeholder text describing an exception, clarification, or edge case.
-        </Text>
+      <Heading2>Aegis</Heading2>
+      <Text>
+        You place a ward of divine protection upon an ally, shielding them with
+        the power of your god.
+      </Text>
 
-        <Text>
-          Placeholder text indicating the end of a temporary resource or state.
-        </Text>
+      <Aegis />
 
-        <Text className="italic">
-          Placeholder italicized commentary. This would normally explain design
-          reasoning, intent, or philosophy, but currently serves as a visual
-          stand-in only.
-        </Text>
-      </TextBlock>
+      {/* Judgment Order Benefit
+The first time on a turn that you use your Judgment ability to judge a
+creature, you gain the following benefit based on your order:
+¥ Exorcist: You can teleport up to a number of squares equal to twice
+your Presence score. This movement must take you closer to the
+judged creature. You do not need line of effect to your destination.
+¥ Oracle: You can deal holy damage equal to twice your Presence score
+to the judged creature.
+¥ Paragon: You can vertical pull the judged creature up to a number of
+squares equal to twice your Presence score. */}
     </Column>
 
     <Column>
-      <Heading2>Placeholder Ability Section</Heading2>
-
+      <Heading2>Your Life Is Mine</Heading2>
       <Text>
-        Placeholder text introducing an ability, feature, or mechanic that will
-        be defined later.
+        Your god's wrath flows through you as you punish those who would harm
+        the righteous.
       </Text>
 
-      <TextBlock>
+      <YourLifeIsMine />
+
+      <Heading2>Judgement Order Benefit</Heading2>
+      <Text>
+        The first time on a turn that you use your Judgment ability to judge a
+        creature, you gain the following benefit based on your order:
+      </Text>
+
+      <BulletList className="mt-[-0.5rem]">
         <Text>
-          Placeholder text where an ability component, rules block, or stat
-          breakdown would normally appear.
+          <span className="font-bold">Exorcist:</span> You can teleport to a
+          space adjacent to the judged creature. If you were already adjacent,
+          that creature is slowed (EoT) instead.
         </Text>
-      </TextBlock>
+        <Text>
+          <span className="font-bold">Oracle:</span> The target receives a bane
+          on their next power roll, and you gain an edge on your next power roll
+          against the target.
+        </Text>
+        <Text>
+          <span className="font-bold">Paragon:</span> You can vertical pull the
+          judged creature up to a number of squares equal to twice your Presence
+          score.
+        </Text>
+      </BulletList>
 
       <Text className="italic">
-        Placeholder italicized text for balance notes, comparative analysis, or
-        future justification. This content is not final.
+        The Oracle spend in vanilla isn't especially on-theme for the Oracle,
+        and the Exorcist spend is too situational compared to the other two
+        which always have value.
       </Text>
+
+      <Heading2>Aegis Order Benefit</Heading2>
+      <Text>
+        The first time on a turn that you use your Aegis ability to ward an
+        ally, you gain the following benefit based on your order:
+      </Text>
+
+      <BulletList className="mt-[-0.5rem]">
+        <Text>
+          <span className="font-bold">Exorcist:</span> You can either teleport
+          to a space adjacent to the warded ally, or the ally can teleport a
+          number of squares up to twice your Presence score.
+        </Text>
+        <Text>
+          <span className="font-bold">Oracle:</span> The warded ally gains 2
+          surges.
+        </Text>
+        <Text>
+          <span className="font-bold">Paragon:</span> The warded ally may slide
+          a number of squares equal to twice your Presence score. They take no
+          damage from any resulting collisions.
+        </Text>
+      </BulletList>
     </Column>
   </Page>
 );

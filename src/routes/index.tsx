@@ -73,6 +73,7 @@ function App() {
               Open →
             </span>
           </Link>
+
           <Link
             to="/shadow-reshade"
             className="flex flex-col gap-2 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
@@ -80,6 +81,19 @@ function App() {
             <h3 className="text-lg font-semibold">Shadow Reshade</h3>
             <p className="text-sm text-gray-600">
               A Minimal Rework for Shadow.
+            </p>
+            <span className="text-[10px] uppercase tracking-[0.3em] text-gray-500">
+              Open →
+            </span>
+          </Link>
+
+          <Link
+            to="/censor-reformed"
+            className="flex flex-col gap-2 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+          >
+            <h3 className="text-lg font-semibold">Censor Reformed</h3>
+            <p className="text-sm text-gray-600">
+              A Minimal Rework for Censor.
             </p>
             <span className="text-[10px] uppercase tracking-[0.3em] text-gray-500">
               Open →
