@@ -105,9 +105,8 @@ squares equal to twice your Presence score. */}
           that creature is slowed (EoT) instead.
         </Text>
         <Text>
-          <span className="font-bold">Oracle:</span> The target receives a bane
-          on their next power roll, and you gain an edge on your next power roll
-          against the target.
+          <span className="font-bold">Oracle:</span> You either gain 2 surges or
+          gain temporary Stamina equal to twice your Presence score.
         </Text>
         <Text>
           <span className="font-bold">Paragon:</span> You can vertical pull the

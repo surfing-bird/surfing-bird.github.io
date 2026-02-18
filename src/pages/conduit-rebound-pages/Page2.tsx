@@ -28,6 +28,13 @@ const Page1 = () => (
           dimension by two.
         </Text>
 
+        <Heading4>Prayer of Distance</Heading4>
+        <Text>
+          Your god blesses you with the ability to stretch your divine magic
+          farther. You have a +5 bonus to the distance of your ranged magic
+          abilities, and can draw line of effect through solid objects.
+        </Text>
+
         <Heading4>Prayer of Soldier’s Skill</Heading4>
         <Text>
           Your god gives your mind the training of a soldier. You can use and
