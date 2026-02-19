@@ -25,10 +25,6 @@ export const Enweave = () => (
             detailValue="Damage becomes sonic. You can either push the target, or yourself away from the target, a distance equal to double your Reason score."
           />
           <Detail
-            detailName="Lightning Strike"
-            detailValue="Damage becomes lightning. The target and three other enemies chosen in sequence, each being within range 5 of the previous target, take lightning damage equal to your Reason score."
-          />
-          <Detail
             detailName="Freeze Strike"
             detailValue="Damage becomes cold. The target takes cold damage equal to your Reason score. The target is slowed (save ends)."
           />
@@ -37,13 +33,18 @@ export const Enweave = () => (
             detailValue="Damage becomes corruption. The target is bleeding (save ends)."
           />
           <Detail
+            detailName="Lightning Strike"
+            detailValue="Damage becomes lightning. Each enemy in range 2 of the target is dealt damage equal to your Reason score."
+          />
+          {/* <Detail
+              detailName="Lightning Strike"
+              detailValue="Damage becomes lightning. The target and four other enemies chosen in sequence, each being within range 3 of the previous target, take lightning damage equal to your Reason score."
+            /> */}
+
+          {/* <Detail
             detailName="Umbral Strike"
             detailValue="Damage becomes psychic. The target has damage weakness equal to your Reason score (save ends)."
-          />
-          <Detail
-            detailName="Explosive Strike"
-            detailValue="Each enemy in range 2 of the target is dealt damage equal to your Reason score."
-          />
+          /> */}
         </BulletList>
         <Text>
           Effects other than the changing of the damage type are applied after
