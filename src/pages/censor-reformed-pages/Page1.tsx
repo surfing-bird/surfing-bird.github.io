@@ -8,6 +8,8 @@ import {
   BulletList,
   Detail,
   Heading3,
+  Block,
+  Heading4,
 } from "@/components";
 import { Aegis } from "@/abilities/censor-reformed-abilities/Aegis";
 import { YourLifeIsMine } from "@/abilities/censor-reformed-abilities/YourLifeIsMine";
@@ -47,21 +49,49 @@ const Page1 = () => (
         </Text>
       </TextBlock>
 
+      <Heading3>Wrath</Heading3>
+      <TextBlock className="mt-[0.5rem]">
+        <Heading4>Wrath in Combat</Heading4>
+        <Text>
+          The power you serve grants you a Heroic Resource called wrath, fueling
+          your abilities as you censor those your church deems to be heretics.
+        </Text>
+
+        <Text>
+          At the start of a combat encounter or some other stressful situation
+          tracked in combat rounds (as determined by the Director), you gain
+          wrath equal to your Victories. At the start of each of your turns
+          during combat, you gain 2 wrath.
+        </Text>
+
+        <Text>You lose any remaining wrath at the end of the encounter.</Text>
+      </TextBlock>
+
       <Heading3>Divine Doctrine</Heading3>
-      <Text>
-        Your divine doctrine determines the manifestation of your god's will.
-        Choose one of the following doctrines:
+      <Block>
+        <Text>
+          Your divine doctrine determines the manifestation of your god's will.
+          Choose one of the following doctrines:
+        </Text>
+
         <BulletList>
           <Text>
             <span className="font-bold"> Grace:</span> You gain the Aegis
-            maneuver and the My Life For Yours triggered ability.
+            maneuver and the My Life For Yours triggered ability. The first time
+            each combat round that you target an ally with an ability, you gain
+            1 wrath. Additionally, the first time each combat round that your
+            warded ally takes damage or spends a recovery, you gain 1 wrath.
           </Text>
           <Text>
             <span className="font-bold"> Retribution:</span> You gain the
-            Judgement maneuver and the Your Life Is Mine triggered ability.
+            Judgement maneuver and the Your Life Is Mine triggered ability. The
+            first time each combat round that a creature judged by you deals
+            damage to you, you gain 1 wrath. Additionally, the first time each
+            combat round that you deal damage to a creature judged by you, you
+            gain 1 wrath.
           </Text>
         </BulletList>
-      </Text>
+      </Block>
 
       <Heading2>Aegis</Heading2>
       <Text>
@@ -143,6 +173,13 @@ squares equal to twice your Presence score. */}
           damage from any resulting collisions.
         </Text>
       </BulletList>
+
+      <Heading3>TODO</Heading3>
+
+      <Text>
+        Reprint every single ability that refers to Judgement and My Life For
+        Yours, and make it worth with every Divine Doctrine.
+      </Text>
     </Column>
   </Page>
 );
