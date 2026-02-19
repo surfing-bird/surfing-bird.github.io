@@ -41,7 +41,7 @@ const Page1 = () => (
           />
           <Detail
             detailName="Balance"
-            detailValue="This rework will tone down some underpeforming Fury abilities, such as Thunder Roar and You Are Already Dead, to clear some power-budget for the new features in this package. I also boosted the Stormwight aspect, which feels underpowered compared to the other aspects."
+            detailValue="This rework will tone down some overperforming Fury abilities, such as Thunder Roar and You Are Already Dead, to clear some power-budget for the new features in this package. I also boosted the Stormwight aspect, which feels underpowered compared to the other aspects."
           />
         </BulletList>
 
@@ -54,7 +54,7 @@ const Page1 = () => (
 
       <Heading2>1st-Level Fury Features</Heading2>
 
-      <Heading3>Unstoppable Force</Heading3>
+      <Heading3>Primordial Charge</Heading3>
 
       <Block>
         <TextBlock>
@@ -73,7 +73,7 @@ const Page1 = () => (
         </Text>
       </Block>
 
-      <Heading3>Primodrial Power</Heading3>
+      <Heading3>Primordial Power</Heading3>
 
       <Block>
         <TextBlock>
@@ -85,7 +85,7 @@ const Page1 = () => (
           <Text>
             Your speed is not halved if you are grabbing a creature of your size
             or larger, and while grabbing a creature you have a bonus to
-            stability equal to your Night score.
+            stability equal to your Might score.
           </Text>
         </TextBlock>
 
@@ -248,7 +248,7 @@ const Page1 = () => (
 
       <Heading2>2nd-Level Berserker Aspect Features</Heading2>
 
-      <Heading3>Stampede</Heading3>
+      <Heading3>Unstoppable Force</Heading3>
 
       <TextBlock>
         <Text>
