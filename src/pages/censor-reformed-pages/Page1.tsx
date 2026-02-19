@@ -42,7 +42,7 @@ const Page1 = () => (
 
         <Text>
           This rework aims to address all of these issues, while still keeping
-          the core mechanics of the class. Explanations will be provided for
+          the core identity of the class. Explanations will be provided for each
           each change, detailing why it was made.
         </Text>
       </TextBlock>

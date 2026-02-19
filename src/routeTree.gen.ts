@@ -13,6 +13,7 @@ import { Route as ShadowReshadeRouteRouteImport } from './routes/shadow-reshade/
 import { Route as ScionPdfRouteRouteImport } from './routes/scion-pdf/route'
 import { Route as ScionChangelogRouteRouteImport } from './routes/scion-changelog/route'
 import { Route as ScionRouteRouteImport } from './routes/scion/route'
+import { Route as FuryRechargedRouteRouteImport } from './routes/fury-recharged/route'
 import { Route as DarkswornPdfRouteRouteImport } from './routes/darksworn-pdf/route'
 import { Route as ConduitReboundRouteRouteImport } from './routes/conduit-rebound/route'
 import { Route as CensorReformedRouteRouteImport } from './routes/censor-reformed/route'
@@ -36,6 +37,11 @@ const ScionChangelogRouteRoute = ScionChangelogRouteRouteImport.update({
 const ScionRouteRoute = ScionRouteRouteImport.update({
   id: '/scion',
   path: '/scion',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FuryRechargedRouteRoute = FuryRechargedRouteRouteImport.update({
+  id: '/fury-recharged',
+  path: '/fury-recharged',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DarkswornPdfRouteRoute = DarkswornPdfRouteRouteImport.update({
@@ -64,6 +70,7 @@ export interface FileRoutesByFullPath {
   '/censor-reformed': typeof CensorReformedRouteRoute
   '/conduit-rebound': typeof ConduitReboundRouteRoute
   '/darksworn-pdf': typeof DarkswornPdfRouteRoute
+  '/fury-recharged': typeof FuryRechargedRouteRoute
   '/scion': typeof ScionRouteRoute
   '/scion-changelog': typeof ScionChangelogRouteRoute
   '/scion-pdf': typeof ScionPdfRouteRoute
@@ -74,6 +81,7 @@ export interface FileRoutesByTo {
   '/censor-reformed': typeof CensorReformedRouteRoute
   '/conduit-rebound': typeof ConduitReboundRouteRoute
   '/darksworn-pdf': typeof DarkswornPdfRouteRoute
+  '/fury-recharged': typeof FuryRechargedRouteRoute
   '/scion': typeof ScionRouteRoute
   '/scion-changelog': typeof ScionChangelogRouteRoute
   '/scion-pdf': typeof ScionPdfRouteRoute
@@ -85,6 +93,7 @@ export interface FileRoutesById {
   '/censor-reformed': typeof CensorReformedRouteRoute
   '/conduit-rebound': typeof ConduitReboundRouteRoute
   '/darksworn-pdf': typeof DarkswornPdfRouteRoute
+  '/fury-recharged': typeof FuryRechargedRouteRoute
   '/scion': typeof ScionRouteRoute
   '/scion-changelog': typeof ScionChangelogRouteRoute
   '/scion-pdf': typeof ScionPdfRouteRoute
@@ -97,6 +106,7 @@ export interface FileRouteTypes {
     | '/censor-reformed'
     | '/conduit-rebound'
     | '/darksworn-pdf'
+    | '/fury-recharged'
     | '/scion'
     | '/scion-changelog'
     | '/scion-pdf'
@@ -107,6 +117,7 @@ export interface FileRouteTypes {
     | '/censor-reformed'
     | '/conduit-rebound'
     | '/darksworn-pdf'
+    | '/fury-recharged'
     | '/scion'
     | '/scion-changelog'
     | '/scion-pdf'
@@ -117,6 +128,7 @@ export interface FileRouteTypes {
     | '/censor-reformed'
     | '/conduit-rebound'
     | '/darksworn-pdf'
+    | '/fury-recharged'
     | '/scion'
     | '/scion-changelog'
     | '/scion-pdf'
@@ -128,6 +140,7 @@ export interface RootRouteChildren {
   CensorReformedRouteRoute: typeof CensorReformedRouteRoute
   ConduitReboundRouteRoute: typeof ConduitReboundRouteRoute
   DarkswornPdfRouteRoute: typeof DarkswornPdfRouteRoute
+  FuryRechargedRouteRoute: typeof FuryRechargedRouteRoute
   ScionRouteRoute: typeof ScionRouteRoute
   ScionChangelogRouteRoute: typeof ScionChangelogRouteRoute
   ScionPdfRouteRoute: typeof ScionPdfRouteRoute
@@ -162,6 +175,13 @@ declare module '@tanstack/react-router' {
       path: '/scion'
       fullPath: '/scion'
       preLoaderRoute: typeof ScionRouteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/fury-recharged': {
+      id: '/fury-recharged'
+      path: '/fury-recharged'
+      fullPath: '/fury-recharged'
+      preLoaderRoute: typeof FuryRechargedRouteRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/darksworn-pdf': {
@@ -200,6 +220,7 @@ const rootRouteChildren: RootRouteChildren = {
   CensorReformedRouteRoute: CensorReformedRouteRoute,
   ConduitReboundRouteRoute: ConduitReboundRouteRoute,
   DarkswornPdfRouteRoute: DarkswornPdfRouteRoute,
+  FuryRechargedRouteRoute: FuryRechargedRouteRoute,
   ScionRouteRoute: ScionRouteRoute,
   ScionChangelogRouteRoute: ScionChangelogRouteRoute,
   ScionPdfRouteRoute: ScionPdfRouteRoute,

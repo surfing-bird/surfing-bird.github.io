@@ -31,8 +31,9 @@ const Page1 = () => (
         <Heading4>Prayer of Distance</Heading4>
         <Text>
           Your god blesses you with the ability to stretch your divine magic
-          farther. You have a +5 bonus to the distance of your ranged magic
-          abilities, and can draw line of effect through solid objects.
+          farther. Your allies are always considered to be within range and line
+          of effect of your magic abilities, and you can use your magic
+          abilities as if you were in the same square as any of your allies.
         </Text>
 
         <Heading4>Prayer of Soldier’s Skill</Heading4>

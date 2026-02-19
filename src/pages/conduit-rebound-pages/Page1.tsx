@@ -41,8 +41,8 @@ const Page1 = () => (
 
         <Text>
           This rework aims to address all of these issues, while still keeping
-          the core mechanics of the class. Explanations will be provided for
-          each change, detailing why it was made.
+          the core identity of the class. Explanations will be provided for each
+          change, detailing why it was made.
         </Text>
       </TextBlock>
 

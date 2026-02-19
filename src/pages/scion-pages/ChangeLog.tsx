@@ -12,7 +12,13 @@ const Changelog = () => (
           Added limitation to Runebrand - only usable on options that target a
           single creature
         </Text>
-        <Text>Nerfed lightning strike to target 4 monsters instead of 5</Text>
+        <Text>Enweave: Removed old Lightning Strike</Text>
+        <Text>Enweave: Removed Umbral Strike</Text>
+        <Text>Enweave: Renamed Explosive Strike to Lightning Strike</Text>
+        <Text>
+          Aether Lash: Removed stability loss, increased T1 damage by 1
+        </Text>
+        <Text>Enweave:</Text>
         <Text>Kits: fixed Stamina bonus text</Text>
       </BulletList>
       <Heading3>V0.4.6</Heading3>

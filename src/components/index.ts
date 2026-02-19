@@ -11,6 +11,7 @@ export { Ability } from "./Ability";
 export { ManualLayout } from "./ManualLayout";
 export { Page } from "./Page";
 export { Column } from "./Column";
+export { Block } from "./Block";
 export { TextBlock } from "./TextBlock";
 export { Subtitle } from "./Subtitle";
 export { Detail } from "./Detail";
