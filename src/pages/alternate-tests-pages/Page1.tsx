@@ -19,6 +19,35 @@ const Page1 = () => (
   <Page>
     <Column>
       <Title>Alternate Tests</Title>
+      <Heading2>Design Goals</Heading2>
+      <TextBlock>
+        <ol className="list-decimal pl-6 mt-[-4px]">
+          <li>
+            <Text>
+              Encapsulate difficulty within the 'Effect' segment, instead of
+              tying it to one of three tables, allowing more granualrity in
+              difficulty.
+            </Text>
+          </li>
+          <li>
+            <Text>
+              Encapsulate level of risk within the 'Risk' segment, instead of
+              tying it to one of three tables, allowing more granularity in
+              risk.
+            </Text>
+          </li>
+          <li>
+            <Text>
+              Uncouple success from difficulty. A test may be difficult but
+              low-risk, or vice versa, rather than having those two factors
+              hard-coupled. In addition, this means players may still suffer
+              consequences even when they optimize their odds of success,
+              whereas in the existing system abilities and perks can optimize
+              risk away.
+            </Text>
+          </li>
+        </ol>
+      </TextBlock>
 
       <Heading2>Test Procedure</Heading2>
       <Text className="italic mb-2 mt-[-2px]">
@@ -29,7 +58,6 @@ const Page1 = () => (
         instead, which in this framework are encapsulated by the Risk and Effect
         questions.
       </Text>
-
       <TextBlock>
         <Text>
           When the players take action which the director deterimnes requires a
@@ -81,19 +109,18 @@ const Page1 = () => (
           rolls two seperate rolls. The action roll, and the risk roll.
         </Text>
       </TextBlock>
-
       <TextBlock>
         <Heading4>Action Roll</Heading4>
         <Text>
-          The action roll is a standard power roll (2d10), adding the director's
-          chosen characteristic of the hero based on the nature of the task, and
-          if applicable, a skill bonus as chosen by the player, in addition to
+          This action roll determines the success or failure of the action. This
+          roll uses a standard power roll (2d10), adding the director's chosen
+          characteristic of the hero based on the nature of the task, and if
+          applicable, a skill bonus as chosen by the player, in addition to
           applying edges and banes according to any factors in the fiction or
-          otherwise. This roll determines the success or failure of the action.
-          Importantly, just because a result reads 'success', it does not mean
-          that the Intent has been achieved, but rather than the established
-          Effect is achieved. The player should be aware of the potential effect
-          before the roll is made.
+          otherwise. Importantly, just because a result reads 'success', it does
+          not mean that the Intent has been achieved, but rather than the
+          established Effect is achieved. The player should be aware of the
+          potential effect before the roll is made.
         </Text>
         <BulletList>
           <Text>
@@ -111,19 +138,36 @@ const Page1 = () => (
           </Text>
         </BulletList>
       </TextBlock>
-
       <TextBlock>
-        <Heading4>Risk Roll</Heading4>
+        <Heading4>Risk Roll (Version 1, emphasizes competence)</Heading4>
         <Text>
-          The risk roll is a simple d6, which determines whether the hero
-          suffers the consequences of the established Risk.
+          The risk roll determines whether the hero suffers the consequences of
+          the established Risk. If the hero applies a skill to the action roll,
+          the player rolls 2d6 and take the highest result. If they don't apply
+          a skill, the player rolls a single d6.
         </Text>
         <BulletList>
           <Text>
             <span className="font-bold">1-3:</span> Consequences suffered.
           </Text>
           <Text>
-            <span className="font-bold">3-6:</span> Consequences avoided.
+            <span className="font-bold">4-6:</span> Consequences avoided.
+          </Text>
+        </BulletList>
+      </TextBlock>
+
+      <TextBlock>
+        <Heading4>Risk Roll (Version 2, emphasizes randomness)</Heading4>
+        <Text>
+          The risk roll determines whether the hero suffers the consequences of
+          the established Risk. The player rolls a single d6.
+        </Text>
+        <BulletList>
+          <Text>
+            <span className="font-bold">1-3:</span> Consequences suffered.
+          </Text>
+          <Text>
+            <span className="font-bold">4-6:</span> Consequences avoided.
           </Text>
         </BulletList>
       </TextBlock>
