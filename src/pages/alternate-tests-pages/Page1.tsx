@@ -4,14 +4,8 @@ import {
   Text,
   Title,
   Heading2,
-  Heading3,
   TextBlock,
-  Highlight,
-  Detail,
   BulletList,
-  NumberedList,
-  AdvancementTable,
-  Block,
   Heading4,
 } from "@/components";
 
@@ -109,6 +103,9 @@ const Page1 = () => (
           rolls two seperate rolls. The action roll, and the risk roll.
         </Text>
       </TextBlock>
+    </Column>
+
+    <Column>
       <TextBlock>
         <Heading4>Action Roll</Heading4>
         <Text>
@@ -139,7 +136,7 @@ const Page1 = () => (
         </BulletList>
       </TextBlock>
       <TextBlock>
-        <Heading4>Risk Roll (Version 1, emphasizes competence)</Heading4>
+        <Heading4>Risk Roll</Heading4>
         <Text>
           The risk roll determines whether the hero suffers the consequences of
           the established Risk. If the hero applies a skill to the action roll,
@@ -156,7 +153,7 @@ const Page1 = () => (
         </BulletList>
       </TextBlock>
 
-      <TextBlock>
+      {/* <TextBlock>
         <Heading4>Risk Roll (Version 2, emphasizes randomness)</Heading4>
         <Text>
           The risk roll determines whether the hero suffers the consequences of
@@ -170,10 +167,8 @@ const Page1 = () => (
             <span className="font-bold">4-6:</span> Consequences avoided.
           </Text>
         </BulletList>
-      </TextBlock>
+      </TextBlock> */}
     </Column>
-
-    {/* <Column>{"asd"}</Column> */}
   </Page>
 );
 

@@ -125,8 +125,8 @@ const Page1 = () => (
 
     <ColumnPDF>
       {/* --- ADVANCEMENT TABLE --- */}
-      <Heading3 className="text-center">Scion Advancement</Heading3>
       <AdvancementTable
+        title="Scion Advancement"
         showLevel={true}
         columns={["Features", "Abilities", "Art Abilities"]}
         rows={[

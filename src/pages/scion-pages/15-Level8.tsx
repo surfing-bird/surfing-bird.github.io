@@ -3,7 +3,6 @@ import {
   Column,
   Text,
   Heading2,
-  Heading4,
   AdvancementTable,
   Feature,
 } from "@/components";
@@ -14,8 +13,8 @@ const Level8 = () => (
       <Heading2>8th-Level Features</Heading2>
       <Text>As an 8th-level scion, you gain the following features.</Text>
 
-      <Heading4 className="text-center">8th-Level Scion Art Features</Heading4>
       <AdvancementTable
+        title="8th-Level Scion Art Features"
         columns={["Subclass", "Features"]}
         rows={[
           { Subclass: "Blinkblade", Features: "Phase Field" },

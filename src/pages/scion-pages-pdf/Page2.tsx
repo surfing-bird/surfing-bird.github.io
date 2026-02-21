@@ -3,7 +3,6 @@ import {
   ColumnPDF,
   Text,
   Heading2,
-  Heading3,
   Feature,
   AdvancementTable,
 } from "@/components";
@@ -29,8 +28,8 @@ const Page2 = () => (
         Your Art grants you one or two features, as shown on the 1st-Level Art
         Features table.
       </Text>
-      <Heading3 className="text-center">1st-Level Art Features</Heading3>
       <AdvancementTable
+        title="1st-Level Art Features"
         columns={["Subclass", "Features"]}
         rows={[
           { Subclass: "Blinkblade", Features: "Blink, Phasewalk" },
@@ -86,8 +85,8 @@ const Page2 = () => (
         Your Art grants you a triggered action, as shown on the Scion Triggered
         Action table.
       </Text>
-      <Heading3 className="text-center">Art Triggered Action</Heading3>
       <AdvancementTable
+        title="Art Triggered Action"
         columns={["Subclass", "Features"]}
         rows={[
           { level: "", Subclass: "Blinkblade", Features: "Flicker Step" },

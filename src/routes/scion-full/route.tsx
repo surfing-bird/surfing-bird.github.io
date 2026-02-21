@@ -31,7 +31,6 @@
 
 //   return (
 //     <div className="flex flex-col items-center">
-//       {!isMobile && <Sidebar full />}
 //       <ManualLayout>
 //         <ClassSubclass />
 //         <BalanceEnweave />

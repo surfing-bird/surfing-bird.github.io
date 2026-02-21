@@ -77,7 +77,7 @@ export function Sidebar({ className = "", full = false }: SidebarProps) {
 
   return (
     <nav
-      className={`print:hidden fixed left-2 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm border-[#e0e0e0] border-1 rounded-lg shadow-lg p-4 max-h-[80vh] overflow-y-auto w-40 text-xs ${className}`}
+      className={`print:hidden sticky top-[20%] self-start bg-white/90 backdrop-blur-sm border-[#e0e0e0] border-1 rounded-lg shadow-lg p-4 max-h-[80vh] overflow-y-auto w-40 text-xs ${className}`}
     >
       <h3
         className="font-semibold text-gray-800 uppercase tracking-wide"

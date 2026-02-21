@@ -3,7 +3,6 @@ import {
   ColumnPDF,
   Text,
   Heading2,
-  Heading3,
   AdvancementTable,
   Feature,
 } from "@/components";
@@ -20,8 +19,8 @@ const Page7 = () => (
       <Heading2>5th-Level Features</Heading2>
       <Text>As a 5th-level scion, you gain the following features.</Text>
 
-      <Heading3 className="text-center">5th-Level Art Features</Heading3>
       <AdvancementTable
+        title="5th-Level Art Features"
         columns={["Subclass", "Features"]}
         rows={[
           { Subclass: "Blinkblade", Features: "Hard to Catch" },

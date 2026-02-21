@@ -3,7 +3,6 @@ import {
   Column,
   Text,
   Heading2,
-  Heading3,
   AdvancementTable,
 } from "@/components";
 import {
@@ -22,8 +21,8 @@ const Triggers = () => (
         Action table.
       </Text>
 
-      <Heading3 className="text-center">Art Triggered Action</Heading3>
       <AdvancementTable
+        title="Art Triggered Action"
         columns={["Subclass", "Features"]}
         rows={[
           { level: "", Subclass: "Blinkblade", Features: "Flicker Step" },

@@ -29,7 +29,6 @@
 
 //   return (
 //     <div className="flex flex-col items-center">
-//       {!isMobile && <Sidebar full />}
 //       <PDFLayout>
 //         <Cover />
 //         <Intro />

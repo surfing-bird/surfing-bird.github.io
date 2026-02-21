@@ -23,6 +23,7 @@ const OptionalRules = () => (
       </Text>
 
       <AdvancementTable
+        title="Simple Tests"
         columns={[
           "Power Roll",
           "Easy Outcomes",

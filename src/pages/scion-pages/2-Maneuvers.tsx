@@ -3,7 +3,6 @@ import {
   Column,
   Text,
   Heading2,
-  Heading3,
   AdvancementTable,
   Feature,
 } from "@/components";
@@ -17,8 +16,8 @@ const Maneuvers = () => (
         Your Art grants you one or two features, as shown on the 1st-Level Art
         Features table.
       </Text>
-      <Heading3 className="text-center">1st-Level Art Features</Heading3>
       <AdvancementTable
+        title="1st-Level Art Features"
         columns={["Subclass", "Features"]}
         rows={[
           { Subclass: "Blinkblade", Features: "Blink, Phasewalk" },

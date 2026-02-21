@@ -4,7 +4,6 @@ import {
   Text,
   Heading2,
   Heading3,
-  Heading4,
   AdvancementTable,
   Feature,
 } from "@/components";
@@ -22,8 +21,8 @@ const Page5 = () => (
     <ColumnPDF>
       <Heading2>2nd-Level Features</Heading2>
       <Text>As a 2nd-level scion, you gain the following features.</Text>
-      <Heading4 className="text-center">2nd-Level Art Features</Heading4>
       <AdvancementTable
+        title="2nd-Level Art Features"
         columns={["Subclass", "Features"]}
         rows={[
           { Subclass: "Blinkblade", Features: "Afterimage" },

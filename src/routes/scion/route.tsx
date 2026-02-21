@@ -23,7 +23,7 @@ function Scion() {
   const isMobile = useIsMobile();
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center w-full md:flex-row md:items-start md:justify-center md:gap-6">
       {!isMobile && <Sidebar />}
       <ManualLayout>
         <ClassSubclass />
