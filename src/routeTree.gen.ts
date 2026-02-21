@@ -17,6 +17,7 @@ import { Route as FuryRechargedRouteRouteImport } from './routes/fury-recharged/
 import { Route as DarkswornPdfRouteRouteImport } from './routes/darksworn-pdf/route'
 import { Route as ConduitReboundRouteRouteImport } from './routes/conduit-rebound/route'
 import { Route as CensorReformedRouteRouteImport } from './routes/censor-reformed/route'
+import { Route as AlternateTestsRouteRouteImport } from './routes/alternate-tests/route'
 import { Route as IndexRouteImport } from './routes/index'
 
 const ShadowReshadeRouteRoute = ShadowReshadeRouteRouteImport.update({
@@ -59,6 +60,11 @@ const CensorReformedRouteRoute = CensorReformedRouteRouteImport.update({
   path: '/censor-reformed',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AlternateTestsRouteRoute = AlternateTestsRouteRouteImport.update({
+  id: '/alternate-tests',
+  path: '/alternate-tests',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -67,6 +73,7 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/alternate-tests': typeof AlternateTestsRouteRoute
   '/censor-reformed': typeof CensorReformedRouteRoute
   '/conduit-rebound': typeof ConduitReboundRouteRoute
   '/darksworn-pdf': typeof DarkswornPdfRouteRoute
@@ -78,6 +85,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/alternate-tests': typeof AlternateTestsRouteRoute
   '/censor-reformed': typeof CensorReformedRouteRoute
   '/conduit-rebound': typeof ConduitReboundRouteRoute
   '/darksworn-pdf': typeof DarkswornPdfRouteRoute
@@ -90,6 +98,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/alternate-tests': typeof AlternateTestsRouteRoute
   '/censor-reformed': typeof CensorReformedRouteRoute
   '/conduit-rebound': typeof ConduitReboundRouteRoute
   '/darksworn-pdf': typeof DarkswornPdfRouteRoute
@@ -103,6 +112,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/alternate-tests'
     | '/censor-reformed'
     | '/conduit-rebound'
     | '/darksworn-pdf'
@@ -114,6 +124,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/alternate-tests'
     | '/censor-reformed'
     | '/conduit-rebound'
     | '/darksworn-pdf'
@@ -125,6 +136,7 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/alternate-tests'
     | '/censor-reformed'
     | '/conduit-rebound'
     | '/darksworn-pdf'
@@ -137,6 +149,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AlternateTestsRouteRoute: typeof AlternateTestsRouteRoute
   CensorReformedRouteRoute: typeof CensorReformedRouteRoute
   ConduitReboundRouteRoute: typeof ConduitReboundRouteRoute
   DarkswornPdfRouteRoute: typeof DarkswornPdfRouteRoute
@@ -205,6 +218,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CensorReformedRouteRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/alternate-tests': {
+      id: '/alternate-tests'
+      path: '/alternate-tests'
+      fullPath: '/alternate-tests'
+      preLoaderRoute: typeof AlternateTestsRouteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -217,6 +237,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AlternateTestsRouteRoute: AlternateTestsRouteRoute,
   CensorReformedRouteRoute: CensorReformedRouteRoute,
   ConduitReboundRouteRoute: ConduitReboundRouteRoute,
   DarkswornPdfRouteRoute: DarkswornPdfRouteRoute,

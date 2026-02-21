@@ -6,6 +6,7 @@ export { Heading4 } from "./Heading4";
 export { Heading5 } from "./Heading5";
 export { Text } from "./Text";
 export { BulletList } from "./BulletList";
+export { NumberedList } from "./NumberedList";
 export { AdvancementTable } from "./AdvancementTable";
 export { Ability } from "./Ability";
 export { ManualLayout } from "./ManualLayout";

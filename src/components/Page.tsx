@@ -7,7 +7,6 @@ interface PageProps {
 }
 
 export function Page({ children, className = "", id }: PageProps) {
-  // TODO: Consider if to put a specific height when not on mobile (md:h-[800px])
   return (
     <div
       id={id}

@@ -85,9 +85,9 @@ const Page1 = () => (
           <Text>
             <span className="font-bold"> Retribution:</span> You gain the
             Judgement maneuver and the Your Life Is Mine triggered ability. The
-            first time each combat round that a creature judged by you deals
-            damage to you, you gain 1 wrath. Additionally, the first time each
-            combat round that you deal damage to a creature judged by you, you
+            first time each combat round that you deal damage to a creature
+            judged by you, you gain 1 wrath. Additionally, the first time each
+            combat round that a creature judged by you uses a main action, you
             gain 1 wrath.
           </Text>
         </BulletList>
