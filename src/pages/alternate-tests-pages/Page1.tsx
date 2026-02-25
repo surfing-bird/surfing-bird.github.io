@@ -83,17 +83,19 @@ const Page1 = () => (
 
           <li>
             <Text>
-              <span className="font-bold">Effect:</span> Considering the
-              Leverage, how effective would this action be at achieving the
-              Intent?
+              <span className="font-bold">Effect:</span> How effective would
+              this action be at achieving the Intent, considering the Leverage?
+              If it would be trivial to achieve the Intent, skip the action roll
+              (see below).
             </Text>
           </li>
 
           <li>
             <Text>
-              <span className="font-bold">Risk:</span> What's at risk? If there
-              is no risk, skip the risk die (see below), or even skip the test
-              entirely.
+              <span className="font-bold">Risk:</span> What's at risk? The
+              potential consequences could be minor, or catastrophic, or
+              anything in between. If there is no risk, skip the risk die (see
+              below).
             </Text>
           </li>
         </ol>
@@ -109,15 +111,14 @@ const Page1 = () => (
       <TextBlock>
         <Heading4>Action Roll</Heading4>
         <Text>
-          This action roll determines the success or failure of the action. This
-          roll uses a standard power roll (2d10), adding the director's chosen
+          This action roll determines whether the hero achieves the result
+          established in the Effect phase, and to what extent. This roll uses a
+          standard power roll (2d10), adding the director's chosen
           characteristic of the hero based on the nature of the task, and if
           applicable, a skill bonus as chosen by the player, in addition to
           applying edges and banes according to any factors in the fiction or
-          otherwise. Importantly, just because a result reads 'success', it does
-          not mean that the Intent has been achieved, but rather than the
-          established Effect is achieved. The player should be aware of the
-          potential effect before the roll is made.
+          otherwise. The player should be aware of the potential Effect before
+          the roll is made.
         </Text>
         <BulletList>
           <Text>
@@ -127,11 +128,10 @@ const Page1 = () => (
             <span className="font-bold">12-16:</span> Reduced success.
           </Text>
           <Text>
-            <span className="font-bold">17-20:</span> Success.
+            <span className="font-bold">17-20</span> Success.
           </Text>
           <Text>
-            <span className="font-bold">Natural 19 or 20:</span> Success with a
-            reward.
+            <span className="font-bold">21+</span> Success with a reward.
           </Text>
         </BulletList>
       </TextBlock>
@@ -139,9 +139,10 @@ const Page1 = () => (
         <Heading4>Risk Roll</Heading4>
         <Text>
           The risk roll determines whether the hero suffers the consequences of
-          the established Risk. If the hero applies a skill to the action roll,
-          the player rolls 2d6 and take the highest result. If they don't apply
-          a skill, the player rolls a single d6.
+          the established Risk that was determined by the director in the Risk
+          phase. If the hero applies a skill to the action roll, the player
+          rolls 2d6 and take the highest result. If they don't apply a skill,
+          the player rolls a single d6.
         </Text>
         <BulletList>
           <Text>
@@ -152,22 +153,6 @@ const Page1 = () => (
           </Text>
         </BulletList>
       </TextBlock>
-
-      {/* <TextBlock>
-        <Heading4>Risk Roll (Version 2, emphasizes randomness)</Heading4>
-        <Text>
-          The risk roll determines whether the hero suffers the consequences of
-          the established Risk. The player rolls a single d6.
-        </Text>
-        <BulletList>
-          <Text>
-            <span className="font-bold">1-3:</span> Consequences suffered.
-          </Text>
-          <Text>
-            <span className="font-bold">4-6:</span> Consequences avoided.
-          </Text>
-        </BulletList>
-      </TextBlock> */}
     </Column>
   </Page>
 );
