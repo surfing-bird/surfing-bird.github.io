@@ -1,9 +1,9 @@
 {
   "short_name": "DS Echoes",
-  "name": "Draw Steel Echoes",
+  "name": "Steel Echoes",
   "icons": [
     {
-      "src": "ds-echoes.png",
+      "src": "steel-echoes.png",
       "sizes": "32x32",
       "type": "image/x-icon"
     }

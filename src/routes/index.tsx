@@ -14,7 +14,7 @@ function App() {
             Welcome
           </p> */}
           <h1 className="text-3xl font-semibold tracking-[0.08em] sm:text-4xl">
-            Draw Steel Echoes
+            Steel Echoes
           </h1>
           <p className="max-w-2xl text-sm text-gray-600 sm:text-base">
             A compendium of Draw Steel homebrew made by SurfingBird, including
@@ -92,9 +92,7 @@ function App() {
             className="flex flex-col gap-2 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
           >
             <h3 className="text-lg font-semibold">Fury Recharged</h3>
-            <p className="text-sm text-gray-600">
-              A Minimal Rework for Fury.
-            </p>
+            <p className="text-sm text-gray-600">A Minimal Rework for Fury.</p>
             <span className="text-[10px] uppercase tracking-[0.3em] text-gray-500">
               Open →
             </span>
