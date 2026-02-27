@@ -8,7 +8,9 @@
     "build": "vite build",
     "build:check": "vite build && tsc --noEmit",
     "serve": "vite preview",
-    "test": "vitest run"
+    "test": "vitest run",
+    "deploy": "npm run build && wrangler deploy",
+    "preview": "npm run build && wrangler dev"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
@@ -30,6 +32,7 @@
     "typescript": "^5.7.2",
     "vite": "^6.3.5",
     "vitest": "^3.0.5",
-    "web-vitals": "^4.2.4"
+    "web-vitals": "^4.2.4",
+    "wrangler": "^4.69.0"
   }
 }
