@@ -72,6 +72,7 @@ const renderToken = (token: WordToken, index: number) => {
       </React.Fragment>
     );
   }
+
   return (
     <React.Fragment key={index}>
       {spacing}

@@ -9,12 +9,12 @@ import {
   BulletList,
   Detail,
 } from "@/components";
-import { HealingGrace } from "@/abilities/conduit-untethered-abilities/HealingGrace";
+import { HealingGrace } from "@/abilities/conduit-abilities/HealingGrace";
 
 const Page1 = () => (
   <Page id="class-subclass">
     <Column>
-      <Title>Conduit Untethered</Title>
+      <Title>Conduit Rebound</Title>
 
       <Heading2>Design Goals (And Who This Is For)</Heading2>
       <TextBlock>
@@ -26,16 +26,16 @@ const Page1 = () => (
 
         <BulletList>
           <Detail
-            detailName="Piety Gain"
-            detailValue="The risk of praying is too low in comparison to the piety gain, such that you almost always choose to pray."
+            detailName="Praying"
+            detailValue="Praying should be an actual choice, rather than something you nearly always do."
           />
           <Detail
             detailName="Healing Grace"
-            detailValue="Healing Grace is so overwhelmingly  strong that it outclasses all other healing abilities, making it pointless to pick any of them up."
+            detailValue="Healing Grace is so strong that it actively warps both the difficulty level of the game and your heroic ability choices."
           />
           <Detail
             detailName="Prayers"
-            detailValue="The Prayer of Steel is overwhelmingly the best option."
+            detailValue="The Prayer of Steel is by far the best option."
           />
         </BulletList>
 
@@ -119,7 +119,7 @@ const Page1 = () => (
         addition to making your party able to win fights it has no business
         surviving. In this variation, I hope to make it so Healing Grace is a
         bit more balanced - it still can massively heal and cleanse a couple of
-        PCs, but it can't stabilize the entire party on its own, making
+        heroes, but it can't stabilize the entire party on its own, making
         abilities like Sermon of Grace more viable pickups.
       </Text>
     </Column>

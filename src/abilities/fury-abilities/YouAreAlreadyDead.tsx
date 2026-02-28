@@ -8,6 +8,6 @@ export const YouAreAlreadyDead = () => (
     actionType="Main action"
     range="Melee 1"
     targets="One creature"
-    effect="At the end of the target's next turn, they take damage equal to ten times your level."
+    effect="At the end of the target's next turn, they take damage equal to 20 + 10 times your level."
   />
 );

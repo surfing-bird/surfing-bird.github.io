@@ -6,6 +6,7 @@ import {
   Heading4,
   TextBlock,
 } from "@/components";
+import { FaithIsOurArmor } from "@/abilities/conduit-abilities/FaithIsOurArmor";
 
 const Page1 = () => (
   <Page id="class-subclass">
@@ -76,7 +77,28 @@ const Page1 = () => (
       </Text>
     </Column>
 
-    <Column>{""}</Column>
+    <Column>
+      <Heading2>Rebalanced Abilities</Heading2>
+
+      <FaithIsOurArmor />
+      <Text className="italic">
+        Early on, Faith is Our Armor is much too strong. It's temporary Stamina
+        bonus is incredibly potent at reducing recovery attrition for the
+        heroes. For perspective, the minimum Stamina a hero can have at 1st
+        level is 18, with the maximum being 33 (with Shining Armor, without
+        ancestry traits). And so, 15 Temporary Stamina at level 1 is worth more
+        than 2 recoveries' worth for some characters. And even for very high
+        Stamina characters, 10 Temporary Stamina is almost an entire recovery's
+        worth. And to top this all of, this ability can be used outside of
+        combat, as a pre-buff. On the flip-side, this ability becomes
+        effectively unusable in combat at higher levels, since the temporary
+        Stamina it gives gets massively outscaled by hero Stamina, encouraging
+        players to either only use it as a pre-buff, or just retrain it for
+        something else, which is kind of lame if you ask me. With this version I
+        hope to tone down the effectiveness of this ability at early levels,
+        while keeping it viable as the party levels.
+      </Text>
+    </Column>
   </Page>
 );
 

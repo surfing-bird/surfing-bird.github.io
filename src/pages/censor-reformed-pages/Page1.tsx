@@ -11,8 +11,8 @@ import {
   Block,
   Heading4,
 } from "@/components";
-import { Aegis } from "@/abilities/censor-reformed-abilities/Aegis";
-import { YourLifeIsMine } from "@/abilities/censor-reformed-abilities/YourLifeIsMine";
+import { Aegis } from "@/abilities/censor-abilities/Aegis";
+import { YourLifeIsMine } from "@/abilities/censor-abilities/YourLifeIsMine";
 
 const Page1 = () => (
   <Page id="class-subclass">

@@ -68,10 +68,10 @@ const Page1 = () => (
             during combat, you gain 2 ferocity.
           </Text>
           <Text>
-            Additionally, the first time each combat round that you end your
-            turn ajacent to an enemy, or an enemy ends their turn adjacent to
-            you, you gain 1 ferocity. The first time you become winded or are
-            dying in an encounter, you gain 2 ferocity.
+            Additionally, the first time each combat round that a turn ends with
+            an enemy adjacent to you, you gain 1 ferocity. The first time you
+            become winded in an encounter, you gain 2 ferocity. The first time
+            you become dying in an encounter, you gain 2 ferocity.
           </Text>
           <Text>
             You lose any remaining ferocity at the end of the encounter.
@@ -82,7 +82,8 @@ const Page1 = () => (
           free to ignore this change if you like rolling for your HR. I also
           swapped one of the HR triggers to be slightly more reliably
           triggerable, since I am not a fan of having triggers be entirely
-          reliant on the director's choices.
+          reliant on the director's choices. Lastly I clarified that the winded
+          and dying ferocity triggers are seperate.
         </Text>
       </Block>
 
