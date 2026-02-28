@@ -131,6 +131,7 @@ A shifting shroud of dusk clings to this armor, swallowing light with a whisper.
 *9th Level*: The armor’s bonus to Stamina increases to +21.  You have Corruption Immunity 10. The area of the pool of shadow increases to 5 cube. You can now create the pool of shadow as a free maneuver once per turn with no cost./}
 */}
       <div className="flex flex-col gap-0">
+        <Heading2>Leveled Armor Treasures</Heading2>
         <Heading4>Shade-maker</Heading4>
 
         <Subtitle className="mt-[2px]">

@@ -34,7 +34,7 @@ export const Enweave = () => (
           />
           <Detail
             detailName="Lightning Strike"
-            detailValue="Damage becomes lightning. Each enemy in range 2 of the target is dealt damage equal to your Reason score."
+            detailValue="Damage becomes lightning. Each enemy in range 2 of the target is dealt lightning damage equal to your Reason score."
           />
           {/* <Detail
               detailName="Lightning Strike"

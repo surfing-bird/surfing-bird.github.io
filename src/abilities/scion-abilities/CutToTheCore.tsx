@@ -14,6 +14,6 @@ export const CutToTheCore = () => (
       middle: "5 + A damage;",
       high: "8 + A damage;",
     }}
-    effect="The target's characteristic scores are treated as lower by 1 for the sake of resisting potencies."
+    effect="The target's characteristic scores are treated as lower by 1 for the sake of resisting potencies until the end of their next turn."
   />
 );

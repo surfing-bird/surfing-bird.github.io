@@ -15,7 +15,7 @@ export const Runebrand = () => (
           primed. When a rune is primed, the next time the branded target is
           damaged, the rune detonates, applying its effect to the target and each enemy within
           range 2 of it. If the branded effect has a push effect, it is
-          relative to the branded target's location and doesn't effect the branded target."
+          relative to the branded target's location and doesn't affect the branded target."
     spend={
       <Detail
         detailName="Spend 2 Balance"

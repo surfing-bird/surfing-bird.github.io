@@ -6,7 +6,7 @@ const Credits = () => (
       <div className="flex flex-col items-center text-center gap-8 w-full">
         <div className="flex flex-col items-center gap-2">
           <span className="text-5xl font-bold">THE SCION</span>
-          <span className="text-xl">Version 1.07</span>
+          <span className="text-xl">Version 1.08</span>
         </div>
 
         <div className="flex flex-col items-center gap-1">

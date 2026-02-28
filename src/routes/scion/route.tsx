@@ -13,7 +13,7 @@ import Level2ArtAbilities from "../../pages/scion-pages/8-Level2-ArtAbilities";
 import Level2 from "../../pages/scion-pages/7-Level2";
 import Level3 from "../../pages/scion-pages/9-Level3";
 // import Kits from "../../scion-pages/Kits";
-// import Changelog from "../../scion-pages/ChangeLog";
+import Changelog from "../../pages/scion-pages/ChangeLog";
 
 export const Route = createFileRoute("/scion")({
   component: Scion,
@@ -37,7 +37,7 @@ function Scion() {
         <Level2ArtAbilities />
         <Level3 />
         {/* <Kits /> */}
-        {/* <Changelog /> */}
+        <Changelog />
       </ManualLayout>
     </div>
   );
