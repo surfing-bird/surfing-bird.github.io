@@ -5,7 +5,8 @@ import {
   BladeBarrier,
   AetherLash,
   CrescentArc,
-  // FurysCall,
+  RageIsBlindness,
+  CutToTheCore,
 } from "@/abilities/scion-abilities";
 
 const Signatures = () => (
@@ -31,8 +32,8 @@ const Signatures = () => (
     <Column>
       <AetherLash />
       <CrescentArc />
-
-      {/* <FurysCall /> */}
+      <RageIsBlindness />
+      <CutToTheCore />
     </Column>
   </Page>
 );

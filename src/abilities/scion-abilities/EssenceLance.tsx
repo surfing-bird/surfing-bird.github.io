@@ -10,11 +10,11 @@ export const EssenceLance = () => (
     targets="One creature"
     addedStats={["Agility"]}
     tierResults={{
-      low: "6 + R psychic damage",
-      middle: "8 + R psychic damage",
-      high: "11 + R psychic damage",
+      low: "6 + R psychic damage, R < WEAK, disoriented (save ends)",
+      middle: "8 + R psychic damage, R < AVERAGE, disoriented (save ends)",
+      high: "11 + R psychic damage, R < STRONG, disoriented (save ends)",
     }}
-    effect="The target's characteristic scores are treated as lower by 1 for the sake of resisting potencies (save ends)."
+    effect="A disoriented creature has line of effect only within 2 squares."
+    // effect="The target's characteristic scores are treated as lower by 1 for the sake of resisting potencies (save ends)."
   />
 );
-

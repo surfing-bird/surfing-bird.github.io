@@ -17,7 +17,7 @@ export const AetherLash = () => (
     effectBeforeResult
     effect="Before choosing the target of this ability and resolving the power roll,
           choose a creature or object within range 5, then either vertical pull 4 the chosen creature or object,
-          or vertical pull yourself 4 the chosen from the creature or object's space. When a creature is pulled into the air this way and they can't fly,
+          or vertical pull yourself 4 the chosen from the creature or object's space. When a creature is pulled into the air this way and it can't fly,
           you may choose to make it stay aloft until the end of your turn."
   />
 );

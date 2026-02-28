@@ -261,14 +261,15 @@ const Page1 = () => (
       </TextBlock> */}
       </Block>
 
-      <FuriousChange />
-      <Text className="italic">
-        The vanilla Furious Change is underwhelming. This buff should make it
-        more comparable to the other aspect triggered actions.
-      </Text>
+      <Block>
+        <FuriousChange />
+        <Text className="italic">
+          The vanilla Furious Change is underwhelming. This buff should make it
+          more comparable to the other aspect triggered actions.
+        </Text>
+      </Block>
 
       <Heading2>2nd-Level Berserker Aspect Features</Heading2>
-
       <Heading3>Unstoppable Force</Heading3>
 
       <TextBlock>
