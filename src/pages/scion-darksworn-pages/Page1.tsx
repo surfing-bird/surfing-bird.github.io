@@ -13,7 +13,7 @@ import {
   ChainOfTorment,
   PainIsPower,
   ScarletDirge,
-  FurysCall,
+  YourRageBetraysYou,
 } from "@/abilities/scion-abilities";
 
 const Page1 = () => (
@@ -38,7 +38,7 @@ const Page1 = () => (
         When you select a signature ability at 1st level, you may also select
         from the following abilities.
       </Text>
-      <FurysCall />
+      <YourRageBetraysYou />
 
       <Heading3>Art Features</Heading3>
       <div />

@@ -1,7 +1,7 @@
 import "@/styles.css";
 import { createFileRoute } from "@tanstack/react-router";
-import { ManualLayout, Sidebar } from "@/components";
-import { useIsMobile } from "@/hooks/useIsMobile";
+import { ManualLayout } from "@/components";
+// import { useIsMobile } from "@/hooks/useIsMobile";
 import ClassSubclass from "../../pages/scion-pages/1-Class-Subclass";
 import BalanceEnweave from "../../pages/scion-pages/2-Balance-Enweave";
 import Maneuvers from "../../pages/scion-pages/2-Maneuvers";
@@ -20,11 +20,11 @@ export const Route = createFileRoute("/scion")({
 });
 
 function Scion() {
-  const isMobile = useIsMobile();
+  // const isMobile = useIsMobile();
 
   return (
     <div className="flex flex-col items-center w-full md:flex-row md:items-start md:justify-center md:gap-6">
-      {!isMobile && <Sidebar />}
+      {/* {!isMobile && <Sidebar />} */}
       <ManualLayout>
         <ClassSubclass />
         <BalanceEnweave />
