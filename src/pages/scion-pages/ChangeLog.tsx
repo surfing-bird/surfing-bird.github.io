@@ -5,6 +5,12 @@ const Changelog = () => (
     <Column>
       <Title>Changelog</Title>
 
+      <Heading3>V0.4.8</Heading3>
+      <BulletList>
+        <Text>Essence Lance: Reduced damage of T1 by 1</Text>
+        <Text>Rage Is Blindness: Renamed to Your Rage Betrays You</Text>
+      </BulletList>
+
       <Heading3>V0.4.7</Heading3>
       <BulletList>
         <Text>Kits: fixed Stamina bonus text</Text>

@@ -21,6 +21,10 @@ export const Enweave = () => (
             detailValue="Damage becomes fire. The target takes fire damage equal to triple your Reason score."
           />
           <Detail
+            detailName="Lightning Strike"
+            detailValue="Damage becomes lightning. Each enemy in range 2 of the target is dealt lightning damage equal to your Reason score."
+          />
+          <Detail
             detailName="Gale Strike"
             detailValue="Damage becomes sonic. You can either push the target, or yourself away from the target, a distance equal to double your Reason score."
           />
@@ -32,10 +36,7 @@ export const Enweave = () => (
             detailName="Crimson Strike"
             detailValue="Damage becomes corruption. The target is bleeding (save ends)."
           />
-          <Detail
-            detailName="Lightning Strike"
-            detailValue="Damage becomes lightning. Each enemy in range 2 of the target is dealt lightning damage equal to your Reason score."
-          />
+
           {/* <Detail
               detailName="Lightning Strike"
               detailValue="Damage becomes lightning. The target and four other enemies chosen in sequence, each being within range 3 of the previous target, take lightning damage equal to your Reason score."

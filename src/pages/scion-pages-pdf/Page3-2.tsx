@@ -1,7 +1,7 @@
 import {
   EssenceLance,
   StillEdge,
-  RageIsBlindness,
+  YourRageBetraysYou,
   VeilPiercer,
   FullMoonArc,
   SeverTheMoment,
@@ -15,7 +15,7 @@ const Page3_2 = () => (
     <ColumnPDF>
       <EssenceLance />
       <StillEdge />
-      <RageIsBlindness />
+      <YourRageBetraysYou />
       <CutToTheCore />
     </ColumnPDF>
 

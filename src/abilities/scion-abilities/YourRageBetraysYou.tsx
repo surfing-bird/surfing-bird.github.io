@@ -1,9 +1,9 @@
 import { Ability } from "@/components";
 
-export const RageIsBlindness = () => (
+export const YourRageBetraysYou = () => (
   <Ability
-    title="Rage Is Blindness"
-    subtitle="Their fury betrays them."
+    title="Your Rage Betrays You"
+    subtitle="A well-placed strike turns their attention wholly to you."
     keywords="Magic, Melee, Weapon, Strike"
     actionType="Main action"
     range="Melee 1"

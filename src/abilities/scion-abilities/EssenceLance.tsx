@@ -10,7 +10,7 @@ export const EssenceLance = () => (
     targets="One creature"
     addedStats={["Agility"]}
     tierResults={{
-      low: "6 + R psychic damage, R < WEAK, disoriented (save ends)",
+      low: "5 + R psychic damage, R < WEAK, disoriented (save ends)",
       middle: "8 + R psychic damage, R < AVERAGE, disoriented (save ends)",
       high: "11 + R psychic damage, R < STRONG, disoriented (save ends)",
     }}

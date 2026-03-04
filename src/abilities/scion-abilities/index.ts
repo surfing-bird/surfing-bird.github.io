@@ -15,7 +15,7 @@ export { FallingStar } from "./FallingStar";
 export { FlickerStep } from "./FlickerStep";
 export { FluxOverdrive } from "./FluxOverdrive";
 export { FullMoonArc } from "./FullMoonArc";
-export { RageIsBlindness } from "./RageIsBlindness";
+export { YourRageBetraysYou } from "./YourRageBetraysYou";
 export { CutToTheCore } from "./CutToTheCore";
 export { GlacialBloom } from "./GlacialBloom";
 export { Godspeed } from "./Godspeed";
