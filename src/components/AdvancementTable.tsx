@@ -76,7 +76,7 @@ export function AdvancementTable({
         </tbody>
       </table>
       {title && (
-        <div className="flex items-center gap-1 px-2 pt-1.5 pb-1 mt-[-2px]">
+        <div className="flex items-center gap-1 px-2 pt-1.5 pb-1 mt-[-6px]">
           <div className="flex-1 h-px bg-gradient-to-r from-transparent to-gray-500" />
           <div className="flex justify-center py-1 text-gray-500 text-[8px] leading-none">
             ◆

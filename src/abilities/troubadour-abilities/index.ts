@@ -1,0 +1,10 @@
+export { DramaticMonologue } from "./DramaticMonologue";
+export { PowerChord } from "./PowerChord";
+export { StarPower } from "./StarPower";
+export { Riposte } from "./Riposte";
+export { TurnaboutIsFairPlay } from "./TurnaboutIsFairPlay";
+export { Harmonize } from "./Harmonize";
+export { DramaticReversal } from "./DramaticReversal";
+export { FakeYourDeath } from "./FakeYourDeath";
+export { FlipTheScript } from "./FlipTheScript";
+export { MethodActing } from "./MethodActing";

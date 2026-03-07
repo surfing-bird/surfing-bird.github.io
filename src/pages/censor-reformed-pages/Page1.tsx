@@ -178,7 +178,7 @@ squares equal to twice your Presence score. */}
 
       <Text>
         Reprint every single ability that refers to Judgement and My Life For
-        Yours, and make it worth with every Divine Doctrine.
+        Yours, and make it work with every Divine Doctrine.
       </Text>
     </Column>
   </Page>
