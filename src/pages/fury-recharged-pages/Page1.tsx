@@ -280,6 +280,21 @@ const Page1 = () => (
           <Highlight>M &lt; AVERAGE</Highlight> prone.
         </Text>
       </TextBlock>
+
+      <Heading2>4th-Level Fury Features</Heading2>
+
+      <Block>
+        <Heading3>Proximal Ferocity</Heading3>
+
+        <TextBlock>
+          <Text>
+            The first time each combat round that a turn ends with an enemy
+            adjacent to you, you gain 2 ferocity instead of 1.
+          </Text>
+
+          <Text>This feature replaces Damaging Ferocity.</Text>
+        </TextBlock>
+      </Block>
     </Column>
   </Page>
 );
