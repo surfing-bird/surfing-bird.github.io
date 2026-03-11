@@ -8,6 +8,6 @@ export const SteelBreaker = () => (
     actionType="Free maneuver"
     range="Self"
     targets="Self"
-    effect="You gain temporary Stamina equal to your level multiplied by 5."
+    effect="You gain temporary Stamina equal to 5 plus your level multiplied by 5."
   />
 );

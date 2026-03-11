@@ -8,6 +8,6 @@ export const MakePeaceWithYourGod = () => (
     actionType="Free maneuver"
     range="Self"
     targets="Self"
-    effect="You gain 5 surges, and may use as many surges as you have on the next ability roll you make this turn."
+    effect="You gain 5 surges. On the next ability power roll you make this turn, there is no limit on the amount of surges you can spend on a single target to deal extra damage, nor on how many times you may increase its potency."
   />
 );
