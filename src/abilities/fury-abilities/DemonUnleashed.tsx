@@ -7,7 +7,7 @@ export const DemonUnleashed = () => (
     keywords="Magic"
     actionType="Maneuver"
     range="2 Burst"
-    targets="Self"
+    targets="Each enemy in the area"
     effect={
       <Text>
         <strong>Effect:</strong> Each target moves half their speed away from
