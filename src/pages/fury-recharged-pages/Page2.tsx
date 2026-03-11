@@ -72,9 +72,7 @@ const Page2 = () => (
           Steel Breaker is an OK ability when you get it, but it scales poorly
           as your Stamina scales to potentially hundreds, losing it's relevance.
           The fact it costs a maneuver is salt on the wound. This version
-          removes the awakwardness of it being a maneuver, and makes it scale,
-          at the cost of giving a little less temporary Stamina at the level you
-          get it.
+          removes the awakwardness of it being a maneuver, and makes it scale.
         </Text>
       </Block>
 
