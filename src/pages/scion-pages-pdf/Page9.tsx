@@ -50,6 +50,11 @@ const Page9 = () => (
       <Heading2>8th-Level Features</Heading2>
       <Text>As an 8th-level scion, you gain the following features.</Text>
 
+      <Heading3>Perk</Heading3>
+      <Text>
+        You gain an exploration, lore, or supernatural perk of your choice.
+      </Text>
+
       <AdvancementTable
         title="8th-Level Scion Art Features"
         columns={["Subclass", "Features"]}

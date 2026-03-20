@@ -13,7 +13,6 @@ import {
   ChainOfTorment,
   PainIsPower,
   ScarletDirge,
-  YourRageBetraysYou,
 } from "@/abilities/scion-abilities";
 
 const Page1 = () => (
@@ -32,13 +31,6 @@ const Page1 = () => (
           Pain is a weapon. I will stop at nothing.
         </Text>
       </TextBlock>
-
-      <Heading3>Signature Abilities</Heading3>
-      <Text>
-        When you select a signature ability at 1st level, you may also select
-        from the following abilities.
-      </Text>
-      <YourRageBetraysYou />
 
       <Heading3>Art Features</Heading3>
       <div />
@@ -86,8 +78,6 @@ const Page1 = () => (
           using Chain of Torment.
         </Text>
       </Feature>
-
-      <Heading2>6th-Level Features</Heading2>
     </ColumnPDF>
   </PagePDF>
 );

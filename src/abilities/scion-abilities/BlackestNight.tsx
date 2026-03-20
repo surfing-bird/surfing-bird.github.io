@@ -11,12 +11,11 @@ export const BlackestNight = () => (
     effect={
       <Text>
         <span className="font-bold">Effect: </span>
-        Until the end of the encounter, each target in the area can only
-        affect creatures within the area, and each square of movement it
-        takes costs one extra square. You can use the Chain of Torment
-        maneuver.
+        Until the end of the encounter, each target in the area is disoriented,
+        and each square of movement it takes costs one extra square. You can use
+        the Chain of Torment maneuver. A disoriented creature has line of effect
+        only within 2 squares.
       </Text>
     }
   />
 );
-

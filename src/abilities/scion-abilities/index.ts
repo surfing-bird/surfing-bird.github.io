@@ -54,7 +54,5 @@ export { UnlimitedBladeworks } from "./UnlimitedBladeworks";
 export { VeilPiercer } from "./VeilPiercer";
 export { WritOfBinding } from "./WritOfBinding";
 export { WritOfPower } from "./WritOfPower";
-
-// Shadow Unseen
-export { CleverTrick } from "./CleverTrick";
-export { ImNoThreat } from "./ImNoThreat";
+export { BloodDance } from "./BloodDance";
+export { Nevermore } from "./Nevermore";

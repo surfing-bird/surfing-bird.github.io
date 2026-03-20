@@ -1,5 +1,5 @@
 import { Page, Column, Text, Heading2 } from "@/components";
-import { CleverTrick, ImNoThreat } from "@/abilities/scion-abilities";
+import { CleverTrick, ImNoThreat } from "@/abilities/shadow-abilities";
 
 const Page2 = () => (
   <Page id="class-subclass">
@@ -38,6 +38,19 @@ const Page2 = () => (
         redirect it! It can literally be used to redirect a solo's attack
         against itself. This version makes this ability more reasonable, while
         still being powerful.
+      </Text>
+
+      <Text className="italic text-sm text-gray-500 mt-20">
+        For a complete rework of most of Shadow's abilities, check out Exocist's
+        complementary extension to this rework →{" "}
+        <a
+          href="https://docs.google.com/document/d/12hvWaEtvp6jGYQzfnaE16fzRBwPl4Y35fCgdMRRiFs8"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-gray-700"
+        >
+          Shadow Rework: Ability Rework (by Exocist)
+        </a>
       </Text>
     </Column>
   </Page>

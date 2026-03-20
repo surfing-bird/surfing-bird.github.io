@@ -177,7 +177,7 @@ const Page1 = () => (
           },
           {
             level: "8",
-            Features: "Art Features, 11-Balance Ability",
+            Features: "Art Features, Perk, 11-Balance Ability",
             Abilities: "Signature, 3, 5, 7, 9, 11",
             "Art Abilities": "5, 9",
           },
@@ -190,7 +190,7 @@ const Page1 = () => (
           {
             level: "10",
             Features:
-              "Characteristic Increase, Enduring Enweave, Harmony, Legacy Unbroken, Perfect Balance",
+              "Characteristic Increase, Enduring Enweave, Harmony, Legacy Unbroken, Perfect Balance, Perk, Skill",
             Abilities: "Signature, 3, 5, 7, 9, 11",
             "Art Abilities": "5, 9, 11",
           },

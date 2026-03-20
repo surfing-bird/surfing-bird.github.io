@@ -11,18 +11,17 @@ export const ChainOfTorment = () => (
     effect={
       <TextBlock>
         <Text>
-          Until the end of your next turn, whenever the friendly target
-          takes damage that was dealt by an ability, the same amount of
-          damage is also dealt to each enemy target.
+          Until the end of your next turn, whenever the friendly target takes
+          damage that was dealt by an ability, the same amount of damage is also
+          dealt to each enemy target, up to twice your Reason score.
         </Text>
       </TextBlock>
     }
     spend={
       <Detail
-        detailName="Spend 1+ Balance"
-        detailValue="For each balance spent you may make an enemy within range of this ability taunted (save ends)."
+        detailName="Spend 1 Balance"
+        detailValue="The target is taunted (EoT)."
       />
     }
   />
 );
-

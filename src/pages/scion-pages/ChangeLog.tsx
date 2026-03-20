@@ -5,6 +5,12 @@ const Changelog = () => (
     <Column>
       <Title>Changelog</Title>
 
+      <Heading3>V0.4.9</Heading3>
+      <BulletList>
+        <Text>Perk added to 8th-level features</Text>
+        <Text>Fix advancement table</Text>
+      </BulletList>
+
       <Heading3>V0.4.8</Heading3>
       <BulletList>
         <Text>Essence Lance: Reduced damage of T1 by 1</Text>
