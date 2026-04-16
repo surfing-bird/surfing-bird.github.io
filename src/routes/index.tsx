@@ -102,7 +102,7 @@ function App() {
             to="/troubadour-retold"
             className="flex flex-col gap-2 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
           >
-            <h3 className="text-lg font-semibold">Troubadour Retold</h3>
+            <h3 className="text-lg font-semibold">Troubadour Reprise</h3>
             <p className="text-sm text-gray-600">
               A Minimal Rework for Troubadour.
             </p>

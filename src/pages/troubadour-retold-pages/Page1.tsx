@@ -22,7 +22,7 @@ import {
 const Page1 = () => (
   <Page id="class-subclass">
     <Column>
-      <Title>Troubadour Retold</Title>
+      <Title>Troubadour Reprise</Title>
 
       <Heading2>Design Goals (And Who This Is For)</Heading2>
       <TextBlock>

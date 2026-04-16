@@ -10,9 +10,9 @@ export const MethodActing = () => (
     targets="One creature"
     addedStats={["Agility"]}
     tierResults={{
-      low: "6 + A damage; P < WEAK, dazed (save ends)",
-      middle: "11 + A damage; P < AVERAGE, dazed (save ends)",
-      high: "16 + A damage; P < STRONG, dazed (save ends)",
+      low: "5 + A damage; P < WEAK, dazed (save ends)",
+      middle: "8 + A damage; P < AVERAGE, dazed (save ends)",
+      high: "12 + A damage; P < STRONG, dazed (save ends)",
     }}
     effect="You can become bleeding (save ends) to make the target bleeding (save ends)."
   />

@@ -20,7 +20,7 @@ export const ChainOfTorment = () => (
     spend={
       <Detail
         detailName="Spend 1 Balance"
-        detailValue="The target is taunted (EoT)."
+        detailValue="The enemy target is taunted (EoT)."
       />
     }
   />

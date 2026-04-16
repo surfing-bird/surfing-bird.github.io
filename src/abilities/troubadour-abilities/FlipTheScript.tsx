@@ -8,6 +8,6 @@ export const FlipTheScript = () => (
     actionType="Maneuver"
     range="3 burst"
     targets="Self and each ally in the area"
-    effect="Each target can teleport up to 5 squares. Any teleported target who was slowed is no longer slowed."
+    effect="Each target can teleport up to 5 squares. Any teleported target can end one effect on themselves that is ended by a saving throw or that ends at the end of their turn. You can change your routine."
   />
 );

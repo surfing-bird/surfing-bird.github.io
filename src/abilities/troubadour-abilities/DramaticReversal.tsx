@@ -10,10 +10,11 @@ export const DramaticReversal = () => (
     targets="Self and each ally in the area"
     addedStats={["Presence"]}
     tierResults={{
-      low: "4 targets in the area can shift 1 square and make a free strike that gains a bane.",
+      low: "Up to 2 targets in the area can shift 2 square and make a free strike.",
       middle:
-        "4 targets in the area can shift 2 square and make a free strike.",
-      high: "4 targets in the area can shift 2 square and make a free strike that gains an edge.",
+        "Up to 3 targets in the area can shift 2 square and make a free strike.",
+      high: "Up to 4 targets in the area can shift 2 square and make a free strike.",
     }}
+    effect="Each target can spend a recovery."
   />
 );
