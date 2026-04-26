@@ -11,6 +11,7 @@ import {
   AdvancementTable,
 } from "@/components";
 import {
+  Acrobatics,
   DramaticMonologue,
   PowerChord,
   StarPower,
@@ -92,7 +93,7 @@ const Page1 = () => (
           },
           {
             Subclass: "Duelist",
-            "Class Act Features": "Star Power",
+            "Class Act Features": "Acrobatics, Star Power",
           },
           {
             Subclass: "Virtuoso",
@@ -100,6 +101,14 @@ const Page1 = () => (
           },
         ]}
       />
+
+      <Block>
+        <Acrobatics />
+        <Text className="italic">
+          Acrobatics in vanilla barely does anything at all, and so has a hard
+          time competing with Revitalizing Limerick.
+        </Text>
+      </Block>
 
       <Block>
         <DramaticMonologue />

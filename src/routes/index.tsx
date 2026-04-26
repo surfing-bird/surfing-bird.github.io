@@ -8,17 +8,10 @@ export const Route = createFileRoute("/")({
 function App() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
-      <main className="mx-auto flex max-w-5xl flex-col gap-8 px-4 py-10 sm:px-6 lg:px-8">
+      <main className="mx-auto flex max-w-5xl flex-col gap-8 px-4 pb-10 pt-6 sm:px-6 lg:px-8">
         <section className="flex flex-col gap-3">
-          {/* <p className="text-[10px] uppercase tracking-[0.3em] text-gray-500">
-            Welcome
-          </p> */}
-          <h1 className="text-3xl font-semibold tracking-[0.08em] sm:text-4xl">
-            Steel Echoes
-          </h1>
-          <p className="max-w-2xl text-sm text-gray-600 sm:text-base">
-            A compendium of Draw Steel homebrew made by SurfingBird, including
-            the Scion.
+          <p className="max-w-2xl text-sm text-gray-600 sm:text-base text-center">
+            A compendium of Draw Steel homebrew made by SurfingBird.
           </p>
         </section>
 
@@ -99,7 +92,7 @@ function App() {
           </Link>
 
           <Link
-            to="/troubadour-retold"
+            to="/troubadour-reprise"
             className="flex flex-col gap-2 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
           >
             <h3 className="text-lg font-semibold">Troubadour Reprise</h3>

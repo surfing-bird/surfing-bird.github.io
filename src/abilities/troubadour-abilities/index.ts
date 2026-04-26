@@ -1,4 +1,5 @@
 export { DramaticMonologue } from "./DramaticMonologue";
+export { Acrobatics } from "./Acrobatics";
 export { PowerChord } from "./PowerChord";
 export { StarPower } from "./StarPower";
 export { Riposte } from "./Riposte";

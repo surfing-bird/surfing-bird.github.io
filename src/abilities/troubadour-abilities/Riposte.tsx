@@ -8,12 +8,12 @@ export const Riposte = () => (
     actionType="Triggered action"
     range="Melee 3"
     targets="Self or one ally"
-    trigger="The target takes damage from a melee ability."
-    effect="You can shift a number of squares equal to your Presence score. If the target is you, or if you end this shift adjacent to the target, you make a melee free strike against the creature who made the triggering ability."
+    trigger="You take damage from a melee ability."
+    effect="You can either reduce the damage of the triggering strike by half or make a free strike against the creature who made the triggering strike. You then can shift 2 squares. "
     spend={
       <Detail
-        detailName="Spend 1 Drama"
-        detailValue="You or the target may shift a number of squares equal to your Presence score."
+        detailName="Spend 2 Drama"
+        detailValue="You can reduce the damage of the triggering strike by half and make a free strike against the creature who made the triggering strike. You then can shift 2 squares."
       />
     }
   />

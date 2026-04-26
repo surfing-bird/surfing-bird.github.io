@@ -2,7 +2,6 @@ import {
   Page,
   Column,
   Text,
-  Title,
   Heading2,
   TextBlock,
   BulletList,

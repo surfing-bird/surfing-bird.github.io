@@ -9,7 +9,7 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as TroubadourRetoldRouteRouteImport } from './routes/troubadour-retold/route'
+import { Route as TroubadourRepriseRouteRouteImport } from './routes/troubadour-reprise/route'
 import { Route as ShadowReshadeRouteRouteImport } from './routes/shadow-reshade/route'
 import { Route as ScionPdfRouteRouteImport } from './routes/scion-pdf/route'
 import { Route as ScionChangelogRouteRouteImport } from './routes/scion-changelog/route'
@@ -21,9 +21,9 @@ import { Route as CensorReformedRouteRouteImport } from './routes/censor-reforme
 import { Route as AlternateTestsRouteRouteImport } from './routes/alternate-tests/route'
 import { Route as IndexRouteImport } from './routes/index'
 
-const TroubadourRetoldRouteRoute = TroubadourRetoldRouteRouteImport.update({
-  id: '/troubadour-retold',
-  path: '/troubadour-retold',
+const TroubadourRepriseRouteRoute = TroubadourRepriseRouteRouteImport.update({
+  id: '/troubadour-reprise',
+  path: '/troubadour-reprise',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ShadowReshadeRouteRoute = ShadowReshadeRouteRouteImport.update({
@@ -88,7 +88,7 @@ export interface FileRoutesByFullPath {
   '/scion-changelog': typeof ScionChangelogRouteRoute
   '/scion-pdf': typeof ScionPdfRouteRoute
   '/shadow-reshade': typeof ShadowReshadeRouteRoute
-  '/troubadour-retold': typeof TroubadourRetoldRouteRoute
+  '/troubadour-reprise': typeof TroubadourRepriseRouteRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -101,7 +101,7 @@ export interface FileRoutesByTo {
   '/scion-changelog': typeof ScionChangelogRouteRoute
   '/scion-pdf': typeof ScionPdfRouteRoute
   '/shadow-reshade': typeof ShadowReshadeRouteRoute
-  '/troubadour-retold': typeof TroubadourRetoldRouteRoute
+  '/troubadour-reprise': typeof TroubadourRepriseRouteRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -115,7 +115,7 @@ export interface FileRoutesById {
   '/scion-changelog': typeof ScionChangelogRouteRoute
   '/scion-pdf': typeof ScionPdfRouteRoute
   '/shadow-reshade': typeof ShadowReshadeRouteRoute
-  '/troubadour-retold': typeof TroubadourRetoldRouteRoute
+  '/troubadour-reprise': typeof TroubadourRepriseRouteRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -130,7 +130,7 @@ export interface FileRouteTypes {
     | '/scion-changelog'
     | '/scion-pdf'
     | '/shadow-reshade'
-    | '/troubadour-retold'
+    | '/troubadour-reprise'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -143,7 +143,7 @@ export interface FileRouteTypes {
     | '/scion-changelog'
     | '/scion-pdf'
     | '/shadow-reshade'
-    | '/troubadour-retold'
+    | '/troubadour-reprise'
   id:
     | '__root__'
     | '/'
@@ -156,7 +156,7 @@ export interface FileRouteTypes {
     | '/scion-changelog'
     | '/scion-pdf'
     | '/shadow-reshade'
-    | '/troubadour-retold'
+    | '/troubadour-reprise'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -170,16 +170,16 @@ export interface RootRouteChildren {
   ScionChangelogRouteRoute: typeof ScionChangelogRouteRoute
   ScionPdfRouteRoute: typeof ScionPdfRouteRoute
   ShadowReshadeRouteRoute: typeof ShadowReshadeRouteRoute
-  TroubadourRetoldRouteRoute: typeof TroubadourRetoldRouteRoute
+  TroubadourRepriseRouteRoute: typeof TroubadourRepriseRouteRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/troubadour-retold': {
-      id: '/troubadour-retold'
-      path: '/troubadour-retold'
-      fullPath: '/troubadour-retold'
-      preLoaderRoute: typeof TroubadourRetoldRouteRouteImport
+    '/troubadour-reprise': {
+      id: '/troubadour-reprise'
+      path: '/troubadour-reprise'
+      fullPath: '/troubadour-reprise'
+      preLoaderRoute: typeof TroubadourRepriseRouteRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/shadow-reshade': {
@@ -266,7 +266,7 @@ const rootRouteChildren: RootRouteChildren = {
   ScionChangelogRouteRoute: ScionChangelogRouteRoute,
   ScionPdfRouteRoute: ScionPdfRouteRoute,
   ShadowReshadeRouteRoute: ShadowReshadeRouteRoute,
-  TroubadourRetoldRouteRoute: TroubadourRetoldRouteRoute,
+  TroubadourRepriseRouteRoute: TroubadourRepriseRouteRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

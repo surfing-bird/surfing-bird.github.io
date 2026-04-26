@@ -26,3 +26,4 @@ export { Sidebar } from "./Sidebar";
 export { PDFLayout } from "./PDFLayout";
 export { PagePDF } from "./PagePDF";
 export { ColumnPDF } from "./ColumnPDF";
+export { SiteChrome } from "./SiteChrome";
