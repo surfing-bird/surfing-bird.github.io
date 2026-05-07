@@ -8,6 +8,6 @@ export const FaithIsOurArmor = () => (
     actionType="Maneuver"
     range="Ranged 10"
     targets="Four allies"
-    effect="Each target gains temporary Stamina equal to five plus your` level. You can target yourself instead of one ally with this ability."
+    effect="Each target gains temporary Stamina equal to five plus your level. You can target yourself instead of one ally with this ability."
   />
 );
