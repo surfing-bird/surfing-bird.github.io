@@ -20,16 +20,46 @@ function App() {
             <div className="block">
               <div className="relative">
                 <img
-                  src="/Scion_itch_banner.png"
+                  src="/mythic_treasures_banner.png"
+                  alt="The Mythic Treasures banner"
+                  className="h-48 w-full sm:h-64"
+                />
+                <div className="absolute inset-0 bg-black/10" />
+              </div>
+              <div className="flex flex-col gap-2 p-5 sm:p-6">
+                <h2 className="text-xl font-semibold sm:text-2xl">
+                  Mythic Treasures
+                </h2>
+                <p className="text-sm text-gray-600 sm:text-base">
+                  Wield narrative-driven, character-defining treasures of myth.
+                </p>
+                <div className="flex flex-wrap items-center gap-4 text-sm font-semibold text-gray-900">
+                  <a
+                    href="https://www.backerkit.com/call_to_action/8ee09726-5af5-46ad-bccf-97250877f898/landing?ref=bk-steelechoes"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="underline decoration-gray-300"
+                  >
+                    BackerKit →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="flex flex-col gap-4">
+          <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+            <div className="block">
+              <div className="relative">
+                <img
+                  src="/scion_banner.png"
                   alt="The Scion banner"
                   className="h-48 w-full object-cover sm:h-64"
                 />
                 <div className="absolute inset-0 bg-black/10" />
               </div>
-              <div className="flex flex-col gap-3 p-5 sm:p-6">
-                {/* <span className="text-[10px] uppercase tracking-[0.3em] text-gray-500">
-                  Featured
-                </span> */}
+              <div className="flex flex-col gap-2 p-5 sm:p-6">
                 <h2 className="text-xl font-semibold sm:text-2xl">Scion</h2>
                 <p className="text-sm text-gray-600 sm:text-base">
                   Become the scion of an ancient mystic art. Weave magic and
