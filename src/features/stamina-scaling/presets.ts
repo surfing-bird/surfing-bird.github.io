@@ -16,76 +16,184 @@ function withIds(
   );
 }
 
+// const tweakedConfigs: Array<Omit<ComparisonConfig, "id">> = [
+//   {
+//     name: "Kit +0, Echelon +0",
+//     startingStamina: 24,
+//     perLevelStamina: 3,
+//     kit: 0,
+//     echelon: 0,
+//   },
+//   {
+//     name: "Kit +0, Echelon +3",
+//     startingStamina: 24,
+//     perLevelStamina: 3,
+//     kit: 0,
+//     echelon: 3,
+//   },
+//   {
+//     name: "Kit +3, Echelon +0",
+//     startingStamina: 24,
+//     perLevelStamina: 3,
+//     kit: 3,
+//     echelon: 0,
+//   },
+//   {
+//     name: "Kit +3, Echelon +3",
+//     startingStamina: 24,
+//     perLevelStamina: 3,
+//     kit: 3,
+//     echelon: 3,
+//   },
+//   {
+//     name: "Kit +6, Echelon +0",
+//     startingStamina: 24,
+//     perLevelStamina: 3,
+//     kit: 6,
+//     echelon: 0,
+//   },
+//   {
+//     name: "Kit +6, Echelon +3",
+//     startingStamina: 24,
+//     perLevelStamina: 3,
+//     kit: 6,
+//     echelon: 3,
+//   },
+//   {
+//     name: "Kit +9, Echelon +0",
+//     startingStamina: 24,
+//     perLevelStamina: 3,
+//     kit: 9,
+//     echelon: 0,
+//   },
+//   {
+//     name: "Kit +9, Echelon +3",
+//     startingStamina: 24,
+//     perLevelStamina: 3,
+//     kit: 9,
+//     echelon: 3,
+//   },
+//   {
+//     name: "Kit +12, Echelon +0",
+//     startingStamina: 24,
+//     perLevelStamina: 3,
+//     kit: 12,
+//     echelon: 0,
+//   },
+//   {
+//     name: "Kit +12, Echelon +3",
+//     startingStamina: 24,
+//     perLevelStamina: 3,
+//     kit: 12,
+//     echelon: 3,
+//   },
+// ];
+
 const tweakedConfigs: Array<Omit<ComparisonConfig, "id">> = [
   {
     name: "Kit +0, Echelon +0",
-    startingStamina: 30,
+    startingStamina: 24,
     perLevelStamina: 3,
     kit: 0,
     echelon: 0,
   },
   {
     name: "Kit +0, Echelon +3",
-    startingStamina: 30,
+    startingStamina: 24,
     perLevelStamina: 3,
     kit: 0,
     echelon: 3,
   },
   {
+    name: "Kit +0, Echelon +6",
+    startingStamina: 24,
+    perLevelStamina: 3,
+    kit: 0,
+    echelon: 6,
+  },
+  {
     name: "Kit +3, Echelon +0",
-    startingStamina: 30,
+    startingStamina: 24,
     perLevelStamina: 3,
     kit: 3,
     echelon: 0,
   },
   {
     name: "Kit +3, Echelon +3",
-    startingStamina: 30,
+    startingStamina: 24,
     perLevelStamina: 3,
     kit: 3,
     echelon: 3,
   },
   {
+    name: "Kit +3, Echelon +6",
+    startingStamina: 24,
+    perLevelStamina: 3,
+    kit: 3,
+    echelon: 6,
+  },
+  {
     name: "Kit +6, Echelon +0",
-    startingStamina: 30,
+    startingStamina: 24,
     perLevelStamina: 3,
     kit: 6,
-    echelon: 3,
+    echelon: 0,
   },
   {
     name: "Kit +6, Echelon +3",
-    startingStamina: 30,
+    startingStamina: 24,
     perLevelStamina: 3,
     kit: 6,
     echelon: 3,
   },
   {
+    name: "Kit +6, Echelon +6",
+    startingStamina: 24,
+    perLevelStamina: 3,
+    kit: 6,
+    echelon: 6,
+  },
+  {
     name: "Kit +9, Echelon +0",
-    startingStamina: 30,
+    startingStamina: 24,
     perLevelStamina: 3,
     kit: 9,
     echelon: 0,
   },
   {
     name: "Kit +9, Echelon +3",
-    startingStamina: 30,
+    startingStamina: 24,
     perLevelStamina: 3,
     kit: 9,
     echelon: 3,
   },
   {
+    name: "Kit +9, Echelon +6",
+    startingStamina: 24,
+    perLevelStamina: 3,
+    kit: 9,
+    echelon: 6,
+  },
+  {
     name: "Kit +12, Echelon +0",
-    startingStamina: 30,
+    startingStamina: 24,
+    perLevelStamina: 3,
+    kit: 12,
+    echelon: 0,
+  },
+  {
+    name: "Kit +12, Echelon +3",
+    startingStamina: 24,
     perLevelStamina: 3,
     kit: 12,
     echelon: 3,
   },
   {
-    name: "Kit +12, Echelon +3",
-    startingStamina: 30,
+    name: "Kit +12, Echelon +6",
+    startingStamina: 24,
     perLevelStamina: 3,
     kit: 12,
-    echelon: 3,
+    echelon: 6,
   },
 ];
 
@@ -198,5 +306,5 @@ export function loadPreset(preset: PresetDefinition): {
 }
 
 export function getDefaultState() {
-  return loadPreset(VANILLA_PRESET);
+  return loadPreset(TWEAKED_PRESET);
 }
