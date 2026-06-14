@@ -20,7 +20,7 @@ export function GlobalRulesPanel({
   const updateArmorEntry = (
     index: number,
     field: "level" | "bonus",
-    value: number,
+    value: number
   ) => {
     onChange((current) => {
       const entries = Object.entries(current.armorBonuses)
@@ -41,7 +41,7 @@ export function GlobalRulesPanel({
       return {
         ...current,
         armorBonuses: Object.fromEntries(
-          entries.map((entry) => [entry.level, entry.bonus]),
+          entries.map((entry) => [entry.level, entry.bonus])
         ),
       };
     });
@@ -97,7 +97,7 @@ export function GlobalRulesPanel({
           />
         </Section>
 
-        <Section title="Multipliers & dividers" defaultOpen={false}>
+        {/* <Section title="Multipliers & dividers" defaultOpen={false}>
           <ParamField
             label="Starting multiplier"
             value={rules.startingMultiplier}
@@ -138,7 +138,7 @@ export function GlobalRulesPanel({
               onChange((current) => ({ ...current, armorBonusDivider }))
             }
           />
-        </Section>
+        </Section> */}
 
         <Section title="Armor bonuses" defaultOpen={false}>
           {armorEntries.map((entry, index) => (
@@ -165,7 +165,7 @@ export function GlobalRulesPanel({
           ))}
         </Section>
 
-        <Section title="Echelon triggers" defaultOpen={false}>
+        {/* <Section title="Echelon triggers" defaultOpen={false}>
           {rules.kitEchelonLevels.map((level, index) => (
             <ParamField
               key={index}
@@ -177,9 +177,9 @@ export function GlobalRulesPanel({
               onChange={(value) => updateEchelonLevel(index, value)}
             />
           ))}
-        </Section>
+        </Section> */}
 
-        <ParamField
+        {/* <ParamField
           label="Max level"
           value={rules.maxLevel}
           min={1}
@@ -188,7 +188,7 @@ export function GlobalRulesPanel({
           onChange={(maxLevel) =>
             onChange((current) => ({ ...current, maxLevel }))
           }
-        />
+        /> */}
       </Section>
     </div>
   );

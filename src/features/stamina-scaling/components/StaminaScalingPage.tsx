@@ -1,8 +1,5 @@
 import { useMemo, useState } from "react";
-import {
-  calculateAllConfigs,
-  computeSummaryStats,
-} from "../stamina-scaling";
+import { calculateAllConfigs, computeSummaryStats } from "../stamina-scaling";
 import { useStaminaState } from "../hooks/useStaminaState";
 import { BreakdownChart } from "./BreakdownChart";
 import { ComparisonPanel } from "./ComparisonPanel";
@@ -17,7 +14,9 @@ interface StaminaScalingPageProps {
   initialEncoded?: string;
 }
 
-export function StaminaScalingPage({ initialEncoded }: StaminaScalingPageProps) {
+export function StaminaScalingPage({
+  initialEncoded,
+}: StaminaScalingPageProps) {
   const {
     state,
     setGlobalRules,
@@ -37,7 +36,7 @@ export function StaminaScalingPage({ initialEncoded }: StaminaScalingPageProps) 
 
   const results = useMemo(
     () => calculateAllConfigs(state.configs, state.globalRules),
-    [state.configs, state.globalRules],
+    [state.configs, state.globalRules]
   );
 
   const summaryStats = useMemo(() => computeSummaryStats(results), [results]);
@@ -59,7 +58,7 @@ export function StaminaScalingPage({ initialEncoded }: StaminaScalingPageProps) 
   const handleResetAll = () => {
     if (
       window.confirm(
-        "Reset all rules and builds to the default Tweaked Matrix?",
+        "Reset all rules and builds to the default Tweaked Matrix?"
       )
     ) {
       resetAll();
@@ -100,11 +99,8 @@ export function StaminaScalingPage({ initialEncoded }: StaminaScalingPageProps) 
       </header>
 
       <div className="grid gap-6 lg:grid-cols-[340px_1fr]">
-        <aside className="flex flex-col gap-4 print:hidden lg:sticky lg:top-4 lg:max-h-[calc(100vh-2rem)] lg:overflow-y-auto">
-          <PresetLoader
-            onLoad={applyPreset}
-            hasEdits={hasEditsSincePreset}
-          />
+        <aside className="flex flex-col gap-4 print:hidden lg:sticky lg:top-4 lg:max-h-[calc(75vh-2rem)] lg:overflow-y-auto max-h-[400px] border border-gray-200 rounded-lg p-5">
+          <PresetLoader onLoad={applyPreset} hasEdits={hasEditsSincePreset} />
           <GlobalRulesPanel
             rules={state.globalRules}
             onChange={setGlobalRules}

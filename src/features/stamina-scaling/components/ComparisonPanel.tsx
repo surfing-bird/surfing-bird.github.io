@@ -29,15 +29,17 @@ export function ComparisonPanel({
   return (
     <section className="rounded-2xl border border-gray-200 bg-white shadow-sm">
       <div className="border-b border-gray-100 px-4 py-3">
-        <h2 className="text-sm font-semibold text-gray-900">Comparison Builds</h2>
-        {configs.length >= 10 && (
+        <h2 className="text-sm font-semibold text-gray-900">
+          Comparison Builds
+        </h2>
+        {configs.length >= 11 && (
           <p className="mt-1 text-xs text-amber-700">
             {configs.length} builds — chart legend may feel crowded.
           </p>
         )}
       </div>
 
-      <div className="max-h-72 overflow-y-auto px-2 py-2">
+      <div className="px-2 py-2">
         {configs.length === 0 ? (
           <p className="px-2 py-4 text-sm text-gray-500">
             No builds yet. Load a preset or add one.

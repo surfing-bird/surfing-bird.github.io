@@ -13,7 +13,6 @@ import { Route as TroubadourRepriseRouteRouteImport } from './routes/troubadour-
 import { Route as StaminaScalingTweaksRouteRouteImport } from './routes/stamina-scaling-tweaks/route'
 import { Route as ShadowReshadeRouteRouteImport } from './routes/shadow-reshade/route'
 import { Route as ScionPdfRouteRouteImport } from './routes/scion-pdf/route'
-import { Route as ScionFullPdfRouteRouteImport } from './routes/scion-full-pdf/route'
 import { Route as ScionChangelogRouteRouteImport } from './routes/scion-changelog/route'
 import { Route as ScionRouteRouteImport } from './routes/scion/route'
 import { Route as FuryRechargedRouteRouteImport } from './routes/fury-recharged/route'
@@ -42,11 +41,6 @@ const ShadowReshadeRouteRoute = ShadowReshadeRouteRouteImport.update({
 const ScionPdfRouteRoute = ScionPdfRouteRouteImport.update({
   id: '/scion-pdf',
   path: '/scion-pdf',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ScionFullPdfRouteRoute = ScionFullPdfRouteRouteImport.update({
-  id: '/scion-full-pdf',
-  path: '/scion-full-pdf',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ScionChangelogRouteRoute = ScionChangelogRouteRouteImport.update({
@@ -99,7 +93,6 @@ export interface FileRoutesByFullPath {
   '/fury-recharged': typeof FuryRechargedRouteRoute
   '/scion': typeof ScionRouteRoute
   '/scion-changelog': typeof ScionChangelogRouteRoute
-  '/scion-full-pdf': typeof ScionFullPdfRouteRoute
   '/scion-pdf': typeof ScionPdfRouteRoute
   '/shadow-reshade': typeof ShadowReshadeRouteRoute
   '/stamina-scaling-tweaks': typeof StaminaScalingTweaksRouteRoute
@@ -114,7 +107,6 @@ export interface FileRoutesByTo {
   '/fury-recharged': typeof FuryRechargedRouteRoute
   '/scion': typeof ScionRouteRoute
   '/scion-changelog': typeof ScionChangelogRouteRoute
-  '/scion-full-pdf': typeof ScionFullPdfRouteRoute
   '/scion-pdf': typeof ScionPdfRouteRoute
   '/shadow-reshade': typeof ShadowReshadeRouteRoute
   '/stamina-scaling-tweaks': typeof StaminaScalingTweaksRouteRoute
@@ -130,7 +122,6 @@ export interface FileRoutesById {
   '/fury-recharged': typeof FuryRechargedRouteRoute
   '/scion': typeof ScionRouteRoute
   '/scion-changelog': typeof ScionChangelogRouteRoute
-  '/scion-full-pdf': typeof ScionFullPdfRouteRoute
   '/scion-pdf': typeof ScionPdfRouteRoute
   '/shadow-reshade': typeof ShadowReshadeRouteRoute
   '/stamina-scaling-tweaks': typeof StaminaScalingTweaksRouteRoute
@@ -147,7 +138,6 @@ export interface FileRouteTypes {
     | '/fury-recharged'
     | '/scion'
     | '/scion-changelog'
-    | '/scion-full-pdf'
     | '/scion-pdf'
     | '/shadow-reshade'
     | '/stamina-scaling-tweaks'
@@ -162,7 +152,6 @@ export interface FileRouteTypes {
     | '/fury-recharged'
     | '/scion'
     | '/scion-changelog'
-    | '/scion-full-pdf'
     | '/scion-pdf'
     | '/shadow-reshade'
     | '/stamina-scaling-tweaks'
@@ -177,7 +166,6 @@ export interface FileRouteTypes {
     | '/fury-recharged'
     | '/scion'
     | '/scion-changelog'
-    | '/scion-full-pdf'
     | '/scion-pdf'
     | '/shadow-reshade'
     | '/stamina-scaling-tweaks'
@@ -193,7 +181,6 @@ export interface RootRouteChildren {
   FuryRechargedRouteRoute: typeof FuryRechargedRouteRoute
   ScionRouteRoute: typeof ScionRouteRoute
   ScionChangelogRouteRoute: typeof ScionChangelogRouteRoute
-  ScionFullPdfRouteRoute: typeof ScionFullPdfRouteRoute
   ScionPdfRouteRoute: typeof ScionPdfRouteRoute
   ShadowReshadeRouteRoute: typeof ShadowReshadeRouteRoute
   StaminaScalingTweaksRouteRoute: typeof StaminaScalingTweaksRouteRoute
@@ -228,13 +215,6 @@ declare module '@tanstack/react-router' {
       path: '/scion-pdf'
       fullPath: '/scion-pdf'
       preLoaderRoute: typeof ScionPdfRouteRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/scion-full-pdf': {
-      id: '/scion-full-pdf'
-      path: '/scion-full-pdf'
-      fullPath: '/scion-full-pdf'
-      preLoaderRoute: typeof ScionFullPdfRouteRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/scion-changelog': {
@@ -305,7 +285,6 @@ const rootRouteChildren: RootRouteChildren = {
   FuryRechargedRouteRoute: FuryRechargedRouteRoute,
   ScionRouteRoute: ScionRouteRoute,
   ScionChangelogRouteRoute: ScionChangelogRouteRoute,
-  ScionFullPdfRouteRoute: ScionFullPdfRouteRoute,
   ScionPdfRouteRoute: ScionPdfRouteRoute,
   ShadowReshadeRouteRoute: ShadowReshadeRouteRoute,
   StaminaScalingTweaksRouteRoute: StaminaScalingTweaksRouteRoute,

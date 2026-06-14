@@ -27,7 +27,7 @@ export function StaminaTable({ results, echelonLevels }: StaminaTableProps) {
               {results.map((result) => (
                 <th
                   key={result.config.id}
-                  className="px-3 py-2 text-right font-semibold"
+                  className="px-2 py-2 text-right font-semibold"
                 >
                   {result.config.name}
                 </th>

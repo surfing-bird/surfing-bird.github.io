@@ -10,13 +10,10 @@ type SerializedState = {
 };
 
 function normalizeArmorBonuses(
-  armorBonuses: Record<string | number, number>,
+  armorBonuses: Record<string | number, number>
 ): Record<number, number> {
   return Object.fromEntries(
-    Object.entries(armorBonuses).map(([level, bonus]) => [
-      Number(level),
-      bonus,
-    ]),
+    Object.entries(armorBonuses).map(([level, bonus]) => [Number(level), bonus])
   );
 }
 
@@ -57,7 +54,7 @@ export function decodeStaminaState(encoded: string | undefined): StaminaState {
       .replace(/-/g, "+")
       .replace(/_/g, "/")
       .padEnd(Math.ceil(encoded.length / 4) * 4, "=");
-    const json = decodeURIComponent(escape(atob(padded)));
+    const json = decodeURIComponent(atob(padded));
     const parsed = JSON.parse(json) as SerializedState;
 
     const configs = parsed.c ?? [];

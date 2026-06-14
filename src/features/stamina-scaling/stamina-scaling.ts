@@ -16,7 +16,7 @@ export const DEFAULT_GLOBAL_RULES: GlobalRules = {
   levelScalingDivider: 1,
   kitBonusDivider: 1,
   armorBonusDivider: 1,
-  armorBonuses: { 3: 6, 6: 6, 9: 9 },
+  armorBonuses: { 2: 6, 5: 6, 9: 9 },
   kitEchelonLevels: [1, 4, 7, 10],
   maxLevel: 10,
 };
