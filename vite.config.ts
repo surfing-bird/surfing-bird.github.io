@@ -1,3 +1,4 @@
+/// <reference types="vitest/config" />
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { tanstackRouter } from "@tanstack/router-plugin/vite";
@@ -6,7 +7,11 @@ import tailwindcss from "@tailwindcss/vite";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    tanstackRouter({ target: "react", autoCodeSplitting: true }),
+    tanstackRouter({
+      target: "react",
+      autoCodeSplitting: true,
+      routeFileIgnorePattern: "stamina-scaling\\.js",
+    }),
     react(),
     tailwindcss(),
   ],
@@ -27,4 +32,7 @@ export default defineConfig({
     },
   },
   base: "/", // Ensure correct base path for GitHub Pages
+  test: {
+    environment: "node",
+  },
 });
