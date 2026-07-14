@@ -1,4 +1,4 @@
-import { Ability, TextBlock, Text, Detail } from "@/components";
+import { Ability, Detail } from "@/components";
 
 export const Blink = () => (
   <Ability
@@ -8,17 +8,12 @@ export const Blink = () => (
     actionType="Maneuver"
     range="Self"
     targets="Self"
-    effect={
-      <TextBlock>
-        <Text>You teleport up to 7 squares.</Text>
-      </TextBlock>
-    }
+    effect="You teleport up to 6 squares. You may break up this movement once with a main action, splitting it into two teleports."
     spend={
       <Detail
         detailName="Spend 5 Balance"
-        detailValue="If used immediately after performing an ability that targets only one enemy, you may repeat that ability at your target destination without needing to spend the base cost as long as it costs 5 balance or fewer."
+        detailValue="If the above movement is split into two teleports, you may repeat the main action used to break it apart at the destination of the second teleport so long as it was a strike ability that costs 3 or fewer balance."
       />
     }
   />
 );
-

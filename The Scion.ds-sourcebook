@@ -1,0 +1,5234 @@
+{
+	"id": "sKxdW-ePlOx-nHT04-wP5S3-8OwqR-h0yKt",
+	"name": "The Scion Full",
+	"description": "Classes, Kits and more related to the custom Scion Class.",
+	"isHomebrew": true,
+	"ancestries": [],
+	"cultures": [],
+	"careers": [],
+	"classes": [
+		{
+			"id": "6I6yyhOOgwGnCawC",
+			"name": "Scion",
+			"description": "You were deemed worthy of a secret Art known only to a chosen few, allowing you to weave steel and magic into a single, fluid dance. Passed down through an unbroken chain of master and disciple, this ancient discipline was entrusted to you, its esoteric techniques guiding you toward the cultivation of Balance: a harmonious alignment of movement, feeling, and intent.\n\nAs a Scion, you are the the quiet before the storm. You move like the wind, and strike as lightning. Your flexibility is unmatched - each blow empowered to suit the moment, whether to debilitate foes, or bring their end closer still. The battlefield is a canvas upon which you paint your masterpiece, and your Art is your brush.",
+			"heroicResource": "Balance",
+			"subclassName": "Art",
+			"subclassCount": 1,
+			"primaryCharacteristicsOptions": [
+				[
+					"Agility",
+					"Reason"
+				]
+			],
+			"primaryCharacteristics": [],
+			"featuresByLevel": [
+				{
+					"level": 1,
+					"features": [
+						{
+							"id": "O9HoOpa7euJhtYOU",
+							"name": "Stamina",
+							"description": "",
+							"type": "Bonus",
+							"data": {
+								"field": "Stamina",
+								"value": 21,
+								"valueCharacteristics": [],
+								"valueCharacteristicMultiplier": 1,
+								"valuePerLevel": 9,
+								"valuePerEchelon": 0
+							}
+						},
+						{
+							"id": "JOGoalJHZrxV29hI",
+							"name": "Recoveries",
+							"description": "",
+							"type": "Bonus",
+							"data": {
+								"field": "Recoveries",
+								"value": 8,
+								"valueCharacteristics": [],
+								"valueCharacteristicMultiplier": 1,
+								"valuePerLevel": 0,
+								"valuePerEchelon": 0
+							}
+						},
+						{
+							"id": "AQVZO67b5ARr837x",
+							"name": "Balance",
+							"description": "",
+							"type": "Heroic Resource",
+							"data": {
+								"type": "heroic",
+								"gains": [
+									{
+										"trigger": "Start of your turn",
+										"value": "2",
+										"tag": "Start 1"
+									},
+									{
+										"trigger": "The first time in a combat round that you or an ally within 10 squares of you uses an ability with a Weapon tag",
+										"value": "1",
+										"tag": "Weapon 1"
+									},
+									{
+										"tag": "Magic 1",
+										"trigger": "The first time in a combat round that you or an ally within 10 squares of you uses an ability with a Magic tag",
+										"value": "1"
+									}
+								],
+								"details": "",
+								"canBeNegative": false
+							}
+						},
+						{
+							"id": "DPrp53cyrPmKlK8Q",
+							"name": "Kit",
+							"description": "You can use and the gain the benefits of a kit.",
+							"type": "Kit",
+							"data": {
+								"types": [
+									""
+								],
+								"count": 1,
+								"selected": []
+							}
+						},
+						{
+							"id": "k9atwGnHLUisOS3g",
+							"name": "Magic Skill",
+							"description": "",
+							"type": "Skill",
+							"data": {
+								"skill": "Magic"
+							}
+						},
+						{
+							"id": "szzG0j9VXTie1vzU",
+							"name": "Strategy Skill",
+							"description": "",
+							"type": "Skill",
+							"data": {
+								"skill": "Strategy"
+							}
+						},
+						{
+							"id": "wWXEEpo7fYtbd7H5",
+							"name": "Exploration Skills",
+							"description": "",
+							"type": "Skill Choice",
+							"data": {
+								"options": [],
+								"listOptions": [
+									"Exploration"
+								],
+								"count": 2,
+								"selected": []
+							}
+						},
+						{
+							"id": "ugwKwhH4ZUEz6SO5",
+							"name": "Enweave",
+							"description": "Your mastery of balance allows you to channel magic through your weapon. You gain the following ability.",
+							"type": "Ability",
+							"data": {
+								"ability": {
+									"id": "WX9IShLh3LTdbYEZ",
+									"name": "Enweave",
+									"description": "You weave magic into your weapon, preparing to unleash it with your next strike.",
+									"type": {
+										"usage": "Maneuver",
+										"free": false,
+										"trigger": "",
+										"time": "",
+										"qualifiers": [],
+										"freeStrike": false
+									},
+									"keywords": [
+										"Magic"
+									],
+									"distance": [
+										{
+											"type": "Special",
+											"value": 0,
+											"value2": 0,
+											"within": 0,
+											"special": "",
+											"qualifier": ""
+										}
+									],
+									"target": "Self",
+									"cost": 1,
+									"repeatable": false,
+									"minLevel": 1,
+									"preEffect": "",
+									"powerRoll": null,
+									"test": null,
+									"effect": "",
+									"strained": "",
+									"alternateEffects": [],
+									"spend": [],
+									"persistence": [],
+									"sections": [
+										{
+											"type": "text",
+											"text": "Choose one of the following effects, which applies to one target of the next damaging melee weapon ability you use:\n\n◆ Flame Strike: Damage becomes fire. The target takes fire damage equal to triple your Reason score.\n◆ Lightning Strike: Damage becomes lightning. The target and three different enemies chosen in sequence, each being within 3 squares of the previous target, take lightning damage equal to your Reason.\n◆ Gale Strike: Damage becomes sonic. You can either push the target, or yourself away from the target a distance equal to double your Reason score.\n◆ Freeze Strike: Damage becomes cold. The target is slowed (save ends).\n\nEffects other than the changing of the damage type are applied after the ability is resolved. If you use this ability more than once before it applies to an ability, you can choose one of the damage types to apply to the affected ability, but apply all of the effects.\n\nYou cannot use Enweave more than twice before applying its effect to an ability."
+										},
+										{
+											"type": "field",
+											"name": "Spend",
+											"value": 2,
+											"repeatable": false,
+											"effect": "This ability becomes a free maneuver instead."
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": "kqUeQx0h23EhxxUc",
+							"name": "Signature Ability",
+							"description": "Select one signature ability from the options below. Signature abilities can be used at will.",
+							"type": "Class Ability",
+							"data": {
+								"cost": "signature",
+								"count": 1,
+								"minLevel": 1,
+								"selectedIDs": [],
+								"source": {
+									"fromClassAbilities": true,
+									"fromSelectedSubclassAbilities": true,
+									"fromUnselectedSubclassAbilities": false,
+									"fromClassLevels": false,
+									"fromSelectedSubclassLevels": false,
+									"fromUnselectedSubclassLevels": false
+								}
+							}
+						},
+						{
+							"id": "iRn3qBxVIwTtBoRi",
+							"name": "3-Balance Ability",
+							"description": "Choose one heroic ability from the following options, each of which costs 3 balance to use.",
+							"type": "Class Ability",
+							"data": {
+								"cost": 3,
+								"count": 1,
+								"minLevel": 1,
+								"selectedIDs": [],
+								"source": {
+									"fromClassAbilities": true,
+									"fromSelectedSubclassAbilities": true,
+									"fromUnselectedSubclassAbilities": false,
+									"fromClassLevels": false,
+									"fromSelectedSubclassLevels": false,
+									"fromUnselectedSubclassLevels": false
+								}
+							}
+						},
+						{
+							"id": "nl3lpEXmEYpYBZVW",
+							"name": "5-Balance Ability",
+							"description": "Choose one heroic ability from the following options, each of which costs 5 balance to use.",
+							"type": "Class Ability",
+							"data": {
+								"cost": 5,
+								"count": 1,
+								"minLevel": 1,
+								"selectedIDs": [],
+								"source": {
+									"fromClassAbilities": true,
+									"fromSelectedSubclassAbilities": true,
+									"fromUnselectedSubclassAbilities": false,
+									"fromClassLevels": false,
+									"fromSelectedSubclassLevels": false,
+									"fromUnselectedSubclassLevels": false
+								}
+							}
+						}
+					]
+				},
+				{
+					"level": 2,
+					"features": [
+						{
+							"id": "rEyShVuQmHFhyvRt",
+							"name": "Perk",
+							"description": "You gain an exploration, lore, or supernatural perk of your choice.",
+							"type": "Perk",
+							"data": {
+								"lists": [
+									"Exploration",
+									"Lore",
+									"Supernatural"
+								],
+								"count": 1,
+								"selected": []
+							}
+						}
+					]
+				},
+				{
+					"level": 3,
+					"features": [
+						{
+							"id": "OVUKkhTfFMlLKdd6",
+							"name": "Cascading Enweave",
+							"description": "When using Enweave, you may spend 1 balance to make the chosen effect apply to an additional target within range 5 of the target of your next melee weapon ability. You may choose to use this spend effect more than once, each time costing 1 more balance than the previous time. Each additional target needs to be within range 5 of the previous affected target.",
+							"type": "Text",
+							"data": null
+						},
+						{
+							"id": "nHkXlESMAT6WMexB",
+							"name": "7-Balance Ability",
+							"description": "Choose one heroic ability from the following options, each of which costs 7 balance to use.",
+							"type": "Class Ability",
+							"data": {
+								"cost": 7,
+								"count": 1,
+								"minLevel": 1,
+								"selectedIDs": [],
+								"source": {
+									"fromClassAbilities": true,
+									"fromSelectedSubclassAbilities": true,
+									"fromUnselectedSubclassAbilities": false,
+									"fromClassLevels": false,
+									"fromSelectedSubclassLevels": false,
+									"fromUnselectedSubclassLevels": false
+								}
+							}
+						}
+					]
+				},
+				{
+					"level": 4,
+					"features": [
+						{
+							"id": "hBKrHEQfNLC6BlH8",
+							"name": "Agility Increase",
+							"description": "",
+							"type": "Characteristic Bonus",
+							"data": {
+								"characteristic": "Agility",
+								"value": 1
+							}
+						},
+						{
+							"id": "W1LPkV4KhmUINtqX",
+							"name": "Reason Increase",
+							"description": "",
+							"type": "Characteristic Bonus",
+							"data": {
+								"characteristic": "Reason",
+								"value": 1
+							}
+						},
+						{
+							"id": "6zBuOdaNm3cjxN3T",
+							"name": "Perk",
+							"description": "",
+							"type": "Perk",
+							"data": {
+								"lists": [
+									"Crafting",
+									"Exploration",
+									"Interpersonal",
+									"Intrigue",
+									"Lore",
+									"Supernatural"
+								],
+								"count": 1,
+								"selected": []
+							}
+						},
+						{
+							"id": "tLv1Jhpgx41nr6vG",
+							"name": "Skill",
+							"description": "",
+							"type": "Skill Choice",
+							"data": {
+								"options": [],
+								"listOptions": [
+									"Crafting",
+									"Exploration",
+									"Interpersonal",
+									"Intrigue",
+									"Lore"
+								],
+								"count": 1,
+								"selected": []
+							}
+						},
+						{
+							"id": "mBuWtTV81iXnPFob",
+							"name": "Elemental Attunement",
+							"description": "Through rigorous training and refinement of your magical senses, you've learned to perceive the subtle resonance of elemental forces. You automatically sense whether any creature within 10 squares has damage immunity or damage weakness to acid, cold, corruption, fire, lightning, poison, or sonic damage and the value of that immunity or weakness. Additionally, you automatically sense any source of one of those damage types within 10 squares, such as a fire or a source of elemental power.",
+							"type": "Text",
+							"data": null
+						},
+						{
+							"id": "DVo0mFxUsUdlri81",
+							"name": "Eternal Student",
+							"description": "Project points earned towards the Learn from a Master project are doubled. If you begin the 'acquire ability' project goal, you may use an ally as the project source.",
+							"type": "Text",
+							"data": null
+						}
+					]
+				},
+				{
+					"level": 5,
+					"features": [
+						{
+							"id": "QQ9Yc8qJlkcWlvF5",
+							"name": "9-Balance Ability",
+							"description": "",
+							"type": "Class Ability",
+							"data": {
+								"cost": 9,
+								"count": 1,
+								"allowAnySource": false,
+								"minLevel": 1,
+								"selectedIDs": [],
+								"source": {
+									"fromClassAbilities": true,
+									"fromSelectedSubclassAbilities": true,
+									"fromUnselectedSubclassAbilities": false,
+									"fromClassLevels": false,
+									"fromSelectedSubclassLevels": false,
+									"fromUnselectedSubclassLevels": false
+								}
+							}
+						}
+					]
+				},
+				{
+					"level": 6,
+					"features": [
+						{
+							"id": "1IQ9ycM0Yc0vIjVS",
+							"name": "Masterstroke",
+							"description": "Whenever you use an ability which costs balance on your turn, your next power roll on that turn gains an edge. This effect applies before whichever ability triggered it is resolved, such that the edge may apply to it.\n\nYou achieve a critical hit on an 18 or higher, instead of 19 or 20.",
+							"type": "Text",
+							"data": null
+						},
+						{
+							"id": "MmZtkKmSi5UBJdVX",
+							"name": "Perk",
+							"description": "You gain an exploration, lore, or supernatural perk of your choice.",
+							"type": "Perk",
+							"data": {
+								"lists": [
+									"Exploration",
+									"Lore",
+									"Supernatural"
+								],
+								"count": 1,
+								"selected": []
+							}
+						}
+					]
+				},
+				{
+					"level": 7,
+					"features": [
+						{
+							"id": "RvZh5bHbqlqVJUeK",
+							"name": "Might Increase",
+							"description": "",
+							"type": "Characteristic Bonus",
+							"data": {
+								"characteristic": "Might",
+								"value": 1
+							}
+						},
+						{
+							"id": "3He5dB34T0kITs3M",
+							"name": "Agility Increase",
+							"description": "",
+							"type": "Characteristic Bonus",
+							"data": {
+								"characteristic": "Agility",
+								"value": 1
+							}
+						},
+						{
+							"id": "Ec5ov6TXSUObyPXE",
+							"name": "Reason Increase",
+							"description": "",
+							"type": "Characteristic Bonus",
+							"data": {
+								"characteristic": "Reason",
+								"value": 1
+							}
+						},
+						{
+							"id": "mgJcEGOdFgAVMK6N",
+							"name": "Intuition Increase",
+							"description": "",
+							"type": "Characteristic Bonus",
+							"data": {
+								"characteristic": "Intuition",
+								"value": 1
+							}
+						},
+						{
+							"id": "YBe7vDleqALCtcmH",
+							"name": "Presence Increase",
+							"description": "",
+							"type": "Characteristic Bonus",
+							"data": {
+								"characteristic": "Presence",
+								"value": 1
+							}
+						},
+						{
+							"id": "TnvH4d7X8eOlxKdv",
+							"name": "Immaculate Balance",
+							"description": "",
+							"type": "Heroic Resource Gain",
+							"data": {
+								"tag": "Start 2",
+								"trigger": "At the start of your turn",
+								"value": "3",
+								"replacesTags": [
+									"Start 1"
+								]
+							}
+						},
+						{
+							"id": "9Ry1k662yR0Lq7G3",
+							"name": "Skill",
+							"description": "You gain one skill of your choice.",
+							"type": "Skill Choice",
+							"data": {
+								"options": [],
+								"listOptions": [
+									"Crafting",
+									"Exploration",
+									"Interpersonal",
+									"Intrigue",
+									"Lore"
+								],
+								"count": 1,
+								"selected": []
+							}
+						},
+						{
+							"id": "0NF8CQvHf3DL6m2O",
+							"name": "Eternal Master",
+							"description": "The master's path is that of endless study. Whenever you take a respite, choose any heroic ability of an ally's class. You gain this heroic ability until your next respite, which can be paid for using the Heroic Resource of your class. You can't use a heroic ability that requires a class feature you don't have.",
+							"type": "Text",
+							"data": null
+						},
+						{
+							"id": "kGKzCXcb40fbyhca",
+							"name": "Unravel Weakness",
+							"description": "Whenever you deal typed damage to an enemy, you may spend 3 balance to inflict the target with weakness 5 to that damage type (save ends). The weakness is imposed after the damage is resolved.",
+							"type": "Text",
+							"data": null
+						}
+					]
+				},
+				{
+					"level": 8,
+					"features": [
+						{
+							"id": "qsVj32URFo0WqZO4",
+							"name": "11-Balance Ability",
+							"description": "",
+							"type": "Class Ability",
+							"data": {
+								"cost": 11,
+								"count": 1,
+								"allowAnySource": false,
+								"minLevel": 1,
+								"selectedIDs": [],
+								"source": {
+									"fromClassAbilities": true,
+									"fromSelectedSubclassAbilities": true,
+									"fromUnselectedSubclassAbilities": false,
+									"fromClassLevels": false,
+									"fromSelectedSubclassLevels": false,
+									"fromUnselectedSubclassLevels": false
+								}
+							}
+						}
+					]
+				},
+				{
+					"level": 9,
+					"features": [
+						{
+							"id": "WwT0avnnlscy4tXG",
+							"name": "Flow Like Water",
+							"description": "At the beginning of each turn when you gain balance, you may choose to forgo any number of balance gained. For each balance forgoed this way, you may end one condition on yourself. Additionally, you cannot be made prone, and your Agility and Reason are treated as 2 higher for the purpose of resisting the potency of abilities.",
+							"type": "Text",
+							"data": null
+						}
+					]
+				},
+				{
+					"level": 10,
+					"features": [
+						{
+							"id": "nSkhr9QWkEoDUcfB",
+							"name": "Agility Increase",
+							"description": "",
+							"type": "Characteristic Bonus",
+							"data": {
+								"characteristic": "Agility",
+								"value": 1
+							}
+						},
+						{
+							"id": "AYasnt7zl51s2MFf",
+							"name": "Reason Increase",
+							"description": "",
+							"type": "Characteristic Bonus",
+							"data": {
+								"characteristic": "Reason",
+								"value": 1
+							}
+						},
+						{
+							"id": "StN7RnI9GnYzbI8y",
+							"name": "Enduring Enweave",
+							"description": "Whenever you Enweave, the effect chosen applies to all targets of your next weapon ability, rather than the first one.",
+							"type": "Text",
+							"data": null
+						},
+						{
+							"id": "kvnz1BXjn4E9gMdx",
+							"name": "Harmony",
+							"description": "You can spend any number of harmony to gain balance (no action required). When you do, 1 harmony becomes 3 balance. \n\nHarmony remains until you convert it to balance.",
+							"type": "Heroic Resource",
+							"data": {
+								"type": "epic",
+								"gains": [
+									{
+										"tag": "",
+										"trigger": "Finish a respite",
+										"value": "XP gained"
+									}
+								],
+								"details": "",
+								"canBeNegative": false,
+								"value": 0
+							}
+						},
+						{
+							"id": "bw8EfHTZxJkWE636",
+							"name": "Legacy Unbroken",
+							"description": "You are considered a master that can be learned from using the Learn from a Master research project. Anyone that makes a Learn from a Master project roll using you as the source doubles the project points gained from the roll.",
+							"type": "Text",
+							"data": null
+						},
+						{
+							"id": "r0l7u2DIZpAgUsXZ",
+							"name": "Perfect Balance",
+							"description": "",
+							"type": "Heroic Resource Gain",
+							"data": {
+								"tag": "Start 3",
+								"trigger": "At the start of your turn",
+								"value": "4",
+								"replacesTags": [
+									"Start 2"
+								]
+							}
+						},
+						{
+							"id": "fk8ZD3XPUrS2Lb42",
+							"name": "Perk",
+							"description": "You gain one perk of your choice.",
+							"type": "Perk",
+							"data": {
+								"lists": [
+									"Crafting",
+									"Exploration",
+									"Interpersonal",
+									"Intrigue",
+									"Lore",
+									"Supernatural"
+								],
+								"count": 1,
+								"selected": []
+							}
+						},
+						{
+							"id": "rmoPsHrX0f0uO3LD",
+							"name": "Skill",
+							"description": "You gain one skill of your choice.",
+							"type": "Skill Choice",
+							"data": {
+								"options": [],
+								"listOptions": [
+									"Crafting",
+									"Exploration",
+									"Interpersonal",
+									"Intrigue",
+									"Lore"
+								],
+								"count": 1,
+								"selected": []
+							}
+						}
+					]
+				}
+			],
+			"abilities": [
+				{
+					"id": "psE8QwJkMo5FGahf",
+					"name": "Aether Lash",
+					"description": "With a flick of your blade, you etch a line of invisible force, preparing to strike.",
+					"type": {
+						"usage": "Main Action",
+						"free": false,
+						"trigger": "",
+						"time": "",
+						"qualifiers": [],
+						"freeStrike": false
+					},
+					"keywords": [
+						"Magic",
+						"Strike",
+						"Weapon",
+						"Melee"
+					],
+					"distance": [
+						{
+							"type": "Melee",
+							"value": 1,
+							"value2": 0,
+							"within": 0,
+							"special": "",
+							"qualifier": ""
+						}
+					],
+					"target": "One creature or object",
+					"cost": "signature",
+					"repeatable": false,
+					"minLevel": 1,
+					"preEffect": "",
+					"powerRoll": null,
+					"test": null,
+					"effect": "",
+					"strained": "",
+					"alternateEffects": [],
+					"spend": [],
+					"persistence": [],
+					"sections": [
+						{
+							"type": "roll",
+							"roll": {
+								"characteristic": [
+									"Agility"
+								],
+								"bonus": 0,
+								"tier1": "3 + A damage",
+								"tier2": "5 + A damage",
+								"tier3": "8 + A damage"
+							}
+						},
+						{
+							"type": "text",
+							"text": "Before choosing the target of this ability and resolving the power roll, choose a creature or object within range 5, then either vertical pull 4 the chosen creature or object, or vertical pull yourself 4 from the chosen creature or object's space. When a creature is pulled into the air this way, you may choose to make it stay aloft until the end of your turn."
+						}
+					]
+				},
+				{
+					"id": "Kyx8UrFs78d0nDWB",
+					"name": "Blade Barrier",
+					"description": "A sphere of shimmering force unfurls around you as you harry your foe.",
+					"type": {
+						"usage": "Main Action",
+						"free": false,
+						"trigger": "",
+						"time": "",
+						"qualifiers": [],
+						"freeStrike": false
+					},
+					"keywords": [
+						"Area",
+						"Magic"
+					],
+					"distance": [
+						{
+							"type": "Burst",
+							"value": 1,
+							"value2": 0,
+							"within": 0,
+							"special": "",
+							"qualifier": ""
+						}
+					],
+					"target": "Each creature within area",
+					"cost": "signature",
+					"repeatable": false,
+					"minLevel": 1,
+					"sections": [
+						{
+							"type": "roll",
+							"roll": {
+								"characteristic": [
+									"Agility"
+								],
+								"bonus": 0,
+								"tier1": "2 damage, push 1",
+								"tier2": "3 damage, push 1",
+								"tier3": "5 damage, push 1",
+								"crit": ""
+							}
+						},
+						{
+							"type": "text",
+							"text": "This ability ignores stability. Gain damage immunity equal to your Reason until the start of your next turn."
+						}
+					],
+					"preEffect": "",
+					"powerRoll": null,
+					"test": null,
+					"effect": "",
+					"strained": "",
+					"alternateEffects": [],
+					"spend": [],
+					"persistence": []
+				},
+				{
+					"id": "K4iussi8iLx5dRET",
+					"name": "Crescent Arc",
+					"description": "A precise arc cuts through your foes with the grace of moonlight.",
+					"type": {
+						"usage": "Main Action",
+						"free": false,
+						"trigger": "",
+						"time": "",
+						"qualifiers": [],
+						"freeStrike": false
+					},
+					"keywords": [
+						"Melee",
+						"Weapon",
+						"Area",
+						"Magic"
+					],
+					"distance": [
+						{
+							"type": "Wall",
+							"value": 3,
+							"value2": 0,
+							"within": 1,
+							"special": "",
+							"qualifier": ""
+						}
+					],
+					"target": "Each enemy within area",
+					"cost": "signature",
+					"repeatable": false,
+					"minLevel": 1,
+					"preEffect": "",
+					"powerRoll": null,
+					"test": null,
+					"effect": "",
+					"strained": "",
+					"alternateEffects": [],
+					"spend": [],
+					"persistence": [],
+					"sections": [
+						{
+							"type": "roll",
+							"roll": {
+								"characteristic": [
+									"Agility"
+								],
+								"bonus": 0,
+								"tier1": "2 damage",
+								"tier2": "5 damage",
+								"tier3": "7 damage"
+							}
+						},
+						{
+							"type": "text",
+							"text": "The wall area is only used for targeting, and does not create an actual wall. Each increase to the wall's length is doubled."
+						}
+					]
+				},
+				{
+					"id": "sa5It8BiU7UVMo3C",
+					"name": "Essence Lance",
+					"description": "You hurl a lance of force that pierces not flesh, but the core of their being.",
+					"type": {
+						"usage": "Main Action",
+						"free": false,
+						"trigger": "",
+						"time": "",
+						"qualifiers": [],
+						"freeStrike": false
+					},
+					"keywords": [
+						"Ranged",
+						"Strike",
+						"Magic"
+					],
+					"distance": [
+						{
+							"type": "Ranged",
+							"value": 10,
+							"value2": 0,
+							"within": 0,
+							"special": "",
+							"qualifier": ""
+						}
+					],
+					"target": "One creature or object",
+					"cost": "signature",
+					"repeatable": false,
+					"minLevel": 1,
+					"preEffect": "",
+					"powerRoll": null,
+					"test": null,
+					"effect": "",
+					"strained": "",
+					"alternateEffects": [],
+					"spend": [],
+					"persistence": [],
+					"sections": [
+						{
+							"type": "roll",
+							"roll": {
+								"characteristic": [
+									"Agility"
+								],
+								"bonus": 0,
+								"tier1": "6 + R damage; R < weak, disoriented (save ends)",
+								"tier2": "8 + R damage; R < average, disoriented (save ends)",
+								"tier3": "11 + R damage; R < strong, disoriented (save ends)"
+							}
+						},
+						{
+							"type": "text",
+							"text": "A disoriented creature only has line of effect within 2 squares."
+						}
+					]
+				},
+				{
+					"id": "SeeQb3AuYSt7LJ2u",
+					"name": "Still Edge",
+					"description": "You cut into your foe, leaving potential energy in their form - threatening to snap into explosive motion.",
+					"type": {
+						"usage": "Main Action",
+						"free": false,
+						"trigger": "",
+						"time": "",
+						"qualifiers": [],
+						"freeStrike": false
+					},
+					"keywords": [
+						"Melee",
+						"Weapon",
+						"Magic",
+						"Strike"
+					],
+					"distance": [
+						{
+							"type": "Melee",
+							"value": 1,
+							"value2": 0,
+							"within": 0,
+							"special": "",
+							"qualifier": ""
+						}
+					],
+					"target": "One creature",
+					"cost": "signature",
+					"repeatable": false,
+					"minLevel": 1,
+					"preEffect": "",
+					"powerRoll": null,
+					"test": null,
+					"effect": "",
+					"strained": "",
+					"alternateEffects": [],
+					"spend": [],
+					"persistence": [],
+					"sections": [
+						{
+							"type": "roll",
+							"roll": {
+								"characteristic": [
+									"Agility"
+								],
+								"bonus": 0,
+								"tier1": "3 + A damage",
+								"tier2": "6 + A damage",
+								"tier3": "9 + A damage"
+							}
+						},
+						{
+							"type": "text",
+							"text": "If the target willingly moves before the end of their next turn, they take damage equal to twice your Reason score."
+						}
+					]
+				},
+				{
+					"id": "8NCcL-1UQL5-587SG-0V4k9-WeA11-8tugY",
+					"name": "Rage Is Blindness",
+					"description": "Their fury betrays them.",
+					"type": {
+						"usage": "Main Action",
+						"free": false,
+						"trigger": "",
+						"time": "",
+						"qualifiers": [],
+						"freeStrike": false
+					},
+					"keywords": [
+						"Magic",
+						"Melee",
+						"Strike",
+						"Weapon"
+					],
+					"distance": [
+						{
+							"type": "Melee",
+							"value": 1,
+							"value2": 0,
+							"within": 0,
+							"special": "",
+							"qualifier": ""
+						}
+					],
+					"target": "One creature",
+					"cost": "signature",
+					"repeatable": false,
+					"minLevel": 1,
+					"sections": [
+						{
+							"type": "roll",
+							"roll": {
+								"characteristic": [
+									"Agility"
+								],
+								"bonus": 0,
+								"tier1": "3 + A damage; I < weak, taunted (save ends)",
+								"tier2": "6 + A damage; I < average, taunted (save ends)",
+								"tier3": "9 + A damage; I < strong, taunted (save ends)"
+							}
+						}
+					],
+					"preEffect": "",
+					"powerRoll": null,
+					"test": null,
+					"effect": "",
+					"strained": "",
+					"alternateEffects": [],
+					"spend": [],
+					"persistence": []
+				},
+				{
+					"id": "mdrzD-jnaTA-NYu5D-U0OGK-4ctLU-6XRIv",
+					"name": "Cut To The Core",
+					"description": "You cut through your opponent's defenses, leaving them vulnerable.",
+					"type": {
+						"usage": "Main Action",
+						"free": false,
+						"trigger": "",
+						"time": "",
+						"qualifiers": [],
+						"freeStrike": false
+					},
+					"keywords": [
+						"Magic",
+						"Melee",
+						"Strike",
+						"Weapon"
+					],
+					"distance": [
+						{
+							"type": "Melee",
+							"value": 1,
+							"value2": 0,
+							"within": 0,
+							"special": "",
+							"qualifier": ""
+						}
+					],
+					"target": "One creature",
+					"cost": "signature",
+					"repeatable": false,
+					"minLevel": 1,
+					"sections": [
+						{
+							"type": "roll",
+							"roll": {
+								"characteristic": [
+									"Agility"
+								],
+								"bonus": 0,
+								"tier1": "3 + A damage",
+								"tier2": "5 + A damage",
+								"tier3": "8 + A damage"
+							}
+						},
+						{
+							"type": "text",
+							"text": "The target's characteristic scores are treated as one lower for the sake of resisting potencies until the end of their next turn."
+						}
+					],
+					"preEffect": "",
+					"powerRoll": null,
+					"test": null,
+					"effect": "",
+					"strained": "",
+					"alternateEffects": [],
+					"spend": [],
+					"persistence": []
+				},
+				{
+					"id": "nEF5J2Lof7zx5C0S",
+					"name": "Sever the Moment",
+					"description": "You read the flaw in their stance and cut deep.",
+					"type": {
+						"usage": "Main Action",
+						"free": false,
+						"trigger": "",
+						"time": "",
+						"qualifiers": [],
+						"freeStrike": false
+					},
+					"keywords": [
+						"Melee",
+						"Strike",
+						"Weapon",
+						"Magic"
+					],
+					"distance": [
+						{
+							"type": "Melee",
+							"value": 1,
+							"value2": 0,
+							"within": 0,
+							"special": "",
+							"qualifier": ""
+						}
+					],
+					"target": "One creature",
+					"cost": 3,
+					"repeatable": false,
+					"minLevel": 1,
+					"preEffect": "",
+					"powerRoll": null,
+					"test": null,
+					"effect": "",
+					"strained": "",
+					"alternateEffects": [],
+					"spend": [],
+					"persistence": [],
+					"sections": [
+						{
+							"type": "roll",
+							"roll": {
+								"characteristic": [
+									"Agility"
+								],
+								"bonus": 0,
+								"tier1": "6 + A damage",
+								"tier2": "9 + A damage",
+								"tier3": "13 + A damage"
+							}
+						},
+						{
+							"type": "text",
+							"text": "If the target is suffering from an effect that is ended by a saving throw, this ability deals an additional 10 damage."
+						}
+					]
+				},
+				{
+					"id": "KvsM9dDuVqzUpIfn",
+					"name": "Full Moon Arc",
+					"description": "Your blade traces a perfect circle in red.",
+					"type": {
+						"usage": "Main Action",
+						"free": false,
+						"trigger": "",
+						"time": "",
+						"qualifiers": [],
+						"freeStrike": false
+					},
+					"keywords": [
+						"Melee",
+						"Weapon"
+					],
+					"distance": [
+						{
+							"type": "Burst",
+							"value": 1,
+							"value2": 0,
+							"within": 0,
+							"special": "",
+							"qualifier": ""
+						}
+					],
+					"target": "Each enemy within area",
+					"cost": 3,
+					"repeatable": false,
+					"minLevel": 1,
+					"preEffect": "",
+					"powerRoll": null,
+					"test": null,
+					"effect": "",
+					"strained": "",
+					"alternateEffects": [],
+					"spend": [],
+					"persistence": [],
+					"sections": [
+						{
+							"type": "roll",
+							"roll": {
+								"characteristic": [
+									"Agility"
+								],
+								"bonus": 0,
+								"tier1": "2 damage; A < WEAK, bleeding (save ends)",
+								"tier2": "4 damage; A < AVERAGE, bleeding (save ends)",
+								"tier3": "6 damage; A < STRONG, bleeding (save ends)"
+							}
+						}
+					]
+				},
+				{
+					"id": "9LLTrUY85AVyIcHI",
+					"name": "Veil Piercer",
+					"description": "You lance through a veil of mist, fading from sight.",
+					"type": {
+						"usage": "Main Action",
+						"free": false,
+						"trigger": "",
+						"time": "",
+						"qualifiers": [],
+						"freeStrike": false
+					},
+					"keywords": [
+						"Ranged",
+						"Strike",
+						"Magic"
+					],
+					"distance": [
+						{
+							"type": "Ranged",
+							"value": 10,
+							"value2": 0,
+							"within": 0,
+							"special": "",
+							"qualifier": ""
+						}
+					],
+					"target": "One creature",
+					"cost": 3,
+					"repeatable": false,
+					"minLevel": 1,
+					"preEffect": "",
+					"powerRoll": null,
+					"test": null,
+					"effect": "",
+					"strained": "",
+					"alternateEffects": [],
+					"spend": [],
+					"persistence": [],
+					"sections": [
+						{
+							"type": "roll",
+							"roll": {
+								"characteristic": [
+									"Agility"
+								],
+								"bonus": 0,
+								"tier1": "8 + R damage",
+								"tier2": "12 + R damage",
+								"tier3": "16 + R damage"
+							}
+						},
+						{
+							"type": "text",
+							"text": "Create a 1 burst area of mist which provides concealment to allies that lasts until the end of your next turn. Allies inside the mist can hide even while observed."
+						}
+					]
+				},
+				{
+					"id": "WnkiVZGxk1aSzG4m",
+					"name": "Sanguine Thread",
+					"description": "Your blade draws a line through flesh, and a thread of life follows - woven back into your form.",
+					"type": {
+						"usage": "Main Action",
+						"free": false,
+						"trigger": "",
+						"time": "",
+						"qualifiers": [],
+						"freeStrike": false
+					},
+					"keywords": [
+						"Melee",
+						"Strike",
+						"Weapon",
+						"Magic"
+					],
+					"distance": [
+						{
+							"type": "Melee",
+							"value": 1,
+							"value2": 0,
+							"within": 0,
+							"special": "",
+							"qualifier": ""
+						}
+					],
+					"target": "One creature or object",
+					"cost": 3,
+					"repeatable": false,
+					"minLevel": 1,
+					"preEffect": "",
+					"powerRoll": null,
+					"test": null,
+					"effect": "",
+					"strained": "",
+					"alternateEffects": [],
+					"spend": [],
+					"persistence": [],
+					"sections": [
+						{
+							"type": "roll",
+							"roll": {
+								"characteristic": [
+									"Agility"
+								],
+								"bonus": 0,
+								"tier1": "4 + A damage",
+								"tier2": "7 + A damage",
+								"tier3": "11 + A damage"
+							}
+						},
+						{
+							"type": "text",
+							"text": "You gain temporary Stamina equal to half the damage dealt by this ability."
+						}
+					]
+				},
+				{
+					"id": "XZxWE6QBTKjvPCYM",
+					"name": "Lightning Flash",
+					"description": "You become lightning, flashing from one place to another, leaving ruin in your wake.",
+					"type": {
+						"usage": "Main Action",
+						"free": false,
+						"trigger": "",
+						"time": "",
+						"qualifiers": [],
+						"freeStrike": false
+					},
+					"keywords": [
+						"Melee",
+						"Weapon",
+						"Magic",
+						"Area"
+					],
+					"distance": [
+						{
+							"type": "Line",
+							"value": 1,
+							"value2": 10,
+							"within": 1,
+							"special": "",
+							"qualifier": ""
+						}
+					],
+					"target": "Each enemy within area",
+					"cost": 5,
+					"repeatable": false,
+					"minLevel": 1,
+					"preEffect": "",
+					"powerRoll": null,
+					"test": null,
+					"effect": "",
+					"strained": "",
+					"alternateEffects": [],
+					"spend": [],
+					"persistence": [],
+					"sections": [
+						{
+							"type": "roll",
+							"roll": {
+								"characteristic": [
+									"Agility"
+								],
+								"bonus": 0,
+								"tier1": "4 lightning damage",
+								"tier2": "8 lightning damage",
+								"tier3": "12 lightning damage"
+							}
+						},
+						{
+							"type": "text",
+							"text": "You teleport to a square on the opposite side of the area before making the power roll."
+						}
+					]
+				},
+				{
+					"id": "D2YGEm6Ic7QrUCwR",
+					"name": "Glacial Bloom",
+					"description": "Fractals of ice bloom outward and shatter across your foes.",
+					"type": {
+						"usage": "Main Action",
+						"free": false,
+						"trigger": "",
+						"time": "",
+						"qualifiers": [],
+						"freeStrike": false
+					},
+					"keywords": [
+						"Magic",
+						"Area",
+						"Ranged"
+					],
+					"distance": [
+						{
+							"type": "Cube",
+							"value": 3,
+							"value2": 0,
+							"within": 10,
+							"special": "",
+							"qualifier": ""
+						}
+					],
+					"target": "Each enemy within area",
+					"cost": 5,
+					"repeatable": false,
+					"minLevel": 1,
+					"preEffect": "",
+					"powerRoll": null,
+					"test": null,
+					"effect": "",
+					"strained": "",
+					"alternateEffects": [],
+					"spend": [],
+					"persistence": [],
+					"sections": [
+						{
+							"type": "roll",
+							"roll": {
+								"characteristic": [
+									"Agility"
+								],
+								"bonus": 0,
+								"tier1": "5 cold damage, A < weak, slowed (save ends)",
+								"tier2": "8 cold damage, A < average, slowed (save ends)",
+								"tier3": "11 cold damage, A < strong, restrained (save ends)"
+							}
+						}
+					]
+				},
+				{
+					"id": "cHb7KRKmqjtzEDNA",
+					"name": "Crashing Wave",
+					"description": "Leaping skyward, you crash down with the weight of the ocean.",
+					"type": {
+						"usage": "Main Action",
+						"free": false,
+						"trigger": "",
+						"time": "",
+						"qualifiers": [],
+						"freeStrike": false
+					},
+					"keywords": [
+						"Melee",
+						"Weapon",
+						"Magic",
+						"Area"
+					],
+					"distance": [
+						{
+							"type": "Cube",
+							"value": 3,
+							"value2": 0,
+							"within": 1,
+							"special": "",
+							"qualifier": ""
+						}
+					],
+					"target": "Each enemy within area",
+					"cost": 5,
+					"repeatable": false,
+					"minLevel": 1,
+					"preEffect": "",
+					"powerRoll": null,
+					"test": null,
+					"effect": "",
+					"strained": "",
+					"alternateEffects": [],
+					"spend": [],
+					"persistence": [],
+					"sections": [
+						{
+							"type": "roll",
+							"roll": {
+								"characteristic": [
+									"Agility"
+								],
+								"bonus": 0,
+								"tier1": "6 damage; push 2",
+								"tier2": "9 damage; push 4",
+								"tier3": "13 damage; push 6"
+							}
+						},
+						{
+							"type": "text",
+							"text": "You can jump up to 2 squares before resolving the power roll. The targets are force moved one at a time, starting with the targets nearest to you, and can be pushed into other targets in the area."
+						}
+					]
+				},
+				{
+					"id": "eGFSaMDQOv3qpxBX",
+					"name": "Spirit Rend",
+					"description": "You carve through your foe’s spirit, leaving their mind reeling.",
+					"type": {
+						"usage": "Main Action",
+						"free": false,
+						"trigger": "",
+						"time": "",
+						"qualifiers": [],
+						"freeStrike": false
+					},
+					"keywords": [
+						"Melee",
+						"Strike",
+						"Weapon",
+						"Magic"
+					],
+					"distance": [
+						{
+							"type": "Melee",
+							"value": 1,
+							"value2": 0,
+							"within": 0,
+							"special": "",
+							"qualifier": ""
+						}
+					],
+					"target": "One creature",
+					"cost": 5,
+					"repeatable": false,
+					"minLevel": 1,
+					"preEffect": "",
+					"powerRoll": null,
+					"test": null,
+					"effect": "",
+					"strained": "",
+					"alternateEffects": [],
+					"spend": [],
+					"persistence": [],
+					"sections": [
+						{
+							"type": "roll",
+							"roll": {
+								"characteristic": [
+									"Agility"
+								],
+								"bonus": 0,
+								"tier1": "4 + A psychic damage; I < weak, dazed (save ends)",
+								"tier2": "8 + A psychic damage; I < average, dazed (save ends)",
+								"tier3": "12 + A psychic damage; I < strong, dazed (save ends)"
+							}
+						},
+						{
+							"type": "text",
+							"text": "While dazed this way, the target's characteristic scores are treated as lower by 1 for the sake of resisting potencies."
+						}
+					]
+				},
+				{
+					"id": "8uSVdpHtYzQ49cU2",
+					"name": "Cross Slash",
+					"description": "You cleave the air in multiple directions, unleashing blades of pure force.",
+					"type": {
+						"usage": "Main Action",
+						"free": false,
+						"trigger": "",
+						"time": "",
+						"qualifiers": [],
+						"freeStrike": false
+					},
+					"keywords": [
+						"Melee",
+						"Magic",
+						"Area"
+					],
+					"distance": [
+						{
+							"type": "Special",
+							"value": 0,
+							"value2": 0,
+							"within": 0,
+							"special": "Four 5 x 1 lines within 1",
+							"qualifier": ""
+						}
+					],
+					"target": "Each enemy within area",
+					"cost": 7,
+					"repeatable": false,
+					"minLevel": 1,
+					"preEffect": "",
+					"powerRoll": null,
+					"test": null,
+					"effect": "",
+					"strained": "",
+					"alternateEffects": [],
+					"spend": [],
+					"persistence": [],
+					"sections": [
+						{
+							"type": "roll",
+							"roll": {
+								"characteristic": [
+									"Agility"
+								],
+								"bonus": 0,
+								"tier1": "6 damage",
+								"tier2": "10 damage",
+								"tier3": "14 damage"
+							}
+						},
+						{
+							"type": "text",
+							"text": "Overlapping lines are treated as a single area."
+						}
+					]
+				},
+				{
+					"id": "mejqYrJQuCnj6X12",
+					"name": "Godspeed",
+					"description": "You surge with arcane power, moving with impossible speed.",
+					"type": {
+						"usage": "Maneuver",
+						"free": true,
+						"trigger": "",
+						"time": "",
+						"qualifiers": [],
+						"freeStrike": false
+					},
+					"keywords": [
+						"Magic"
+					],
+					"distance": [
+						{
+							"type": "Self",
+							"value": 0,
+							"value2": 0,
+							"within": 0,
+							"special": "",
+							"qualifier": ""
+						}
+					],
+					"target": "Self",
+					"cost": 7,
+					"repeatable": false,
+					"minLevel": 1,
+					"preEffect": "",
+					"powerRoll": null,
+					"test": null,
+					"effect": "",
+					"strained": "",
+					"alternateEffects": [],
+					"spend": [],
+					"persistence": [],
+					"sections": [
+						{
+							"type": "text",
+							"text": "For the rest of the combat encounter you have an additional maneuver per turn, and gain a +5 bonus to speed."
+						}
+					]
+				},
+				{
+					"id": "VNtILg0JEcSZMXIw",
+					"name": "Reaper's Edge",
+					"description": "There is power in death.",
+					"type": {
+						"usage": "Main Action",
+						"free": false,
+						"trigger": "",
+						"time": "",
+						"qualifiers": [],
+						"freeStrike": false
+					},
+					"keywords": [
+						"Melee",
+						"Strike",
+						"Magic",
+						"Weapon"
+					],
+					"distance": [
+						{
+							"type": "Melee",
+							"value": 1,
+							"value2": 0,
+							"within": 0,
+							"special": "",
+							"qualifier": ""
+						}
+					],
+					"target": "One creature or object",
+					"cost": 7,
+					"repeatable": false,
+					"minLevel": 1,
+					"preEffect": "",
+					"powerRoll": null,
+					"test": null,
+					"effect": "",
+					"strained": "",
+					"alternateEffects": [],
+					"spend": [],
+					"persistence": [],
+					"sections": [
+						{
+							"type": "roll",
+							"roll": {
+								"characteristic": [
+									"Agility"
+								],
+								"bonus": 0,
+								"tier1": "12 + A damage",
+								"tier2": "18 + A damage",
+								"tier3": "24 + A damage"
+							}
+						},
+						{
+							"type": "text",
+							"text": "If this ability reduces a non-minion creature to 0 Stamina, gain 5 balance."
+						}
+					]
+				},
+				{
+					"id": "EpYMy07L6kpxn0tk",
+					"name": "Spectral Blades",
+					"description": "You summon spectral blades, suspended in poise, released with but a thought.",
+					"type": {
+						"usage": "Maneuver",
+						"free": false,
+						"trigger": "",
+						"time": "",
+						"qualifiers": [],
+						"freeStrike": false
+					},
+					"keywords": [
+						"Magic"
+					],
+					"distance": [
+						{
+							"type": "Self",
+							"value": 0,
+							"value2": 0,
+							"within": 0,
+							"special": "",
+							"qualifier": ""
+						}
+					],
+					"target": "Self",
+					"cost": 7,
+					"repeatable": false,
+					"minLevel": 1,
+					"preEffect": "",
+					"powerRoll": null,
+					"test": null,
+					"effect": "",
+					"strained": "",
+					"alternateEffects": [],
+					"spend": [],
+					"persistence": [],
+					"sections": [
+						{
+							"type": "text",
+							"text": "Place a d6 die set to 6 to track this effect. Once a turn you may reduce the die by any amount up to its current value. Then, distribute that many spectral blades among enemies within range 5 as you choose. Each blade deals 4 + your Reason score in damage. You cannot assign more than one blade per enemy. In addition, whenever an enemy in range 5 is affected by a potency effect, you may reduce the die by 1 to increase the potency of the ability by 1."
+						}
+					]
+				},
+				{
+					"id": "jykSird01h9d1hBw",
+					"name": "Falling Star",
+					"description": "You pierce the firmament, then plunge to the earth with stellar force.",
+					"type": {
+						"usage": "Main Action",
+						"free": false,
+						"trigger": "",
+						"time": "",
+						"qualifiers": [],
+						"freeStrike": false
+					},
+					"keywords": [
+						"Area",
+						"Magic",
+						"Weapon"
+					],
+					"distance": [
+						{
+							"type": "Special",
+							"value": 0,
+							"value2": 0,
+							"within": 0,
+							"special": "",
+							"qualifier": ""
+						}
+					],
+					"target": "Special",
+					"cost": 9,
+					"repeatable": false,
+					"minLevel": 1,
+					"sections": [
+						{
+							"type": "roll",
+							"roll": {
+								"characteristic": [
+									"Reason"
+								],
+								"bonus": 0,
+								"tier1": "5 damage; A < weak, dazed (save ends)",
+								"tier2": "8 damage; A < average, dazed (save ends)",
+								"tier3": "11 damage; A < strong, dazed (save ends)",
+								"crit": ""
+							}
+						},
+						{
+							"type": "text",
+							"text": "You are removed from the battlefield, then re-enter, landing in an unoccupied space within range 10 without requiring line of sight to it. Make one power roll that targets each enemy within range 3 of the space where you land. The ground in or directly beneath all squares in range 3 of you drops 2 squares."
+						}
+					],
+					"preEffect": "",
+					"powerRoll": null,
+					"test": null,
+					"effect": "",
+					"strained": "",
+					"alternateEffects": [],
+					"spend": [],
+					"persistence": []
+				},
+				{
+					"id": "Fn5FLI206ErWYTbv",
+					"name": "Inferno Helix",
+					"description": "Flames whirl in step with your dance, spiraling outward in staccato.",
+					"type": {
+						"usage": "Main Action",
+						"free": false,
+						"trigger": "",
+						"time": "",
+						"qualifiers": [],
+						"freeStrike": false
+					},
+					"keywords": [
+						"Area",
+						"Magic",
+						"Weapon"
+					],
+					"distance": [
+						{
+							"type": "Aura",
+							"value": 3,
+							"value2": 0,
+							"within": 0,
+							"special": "",
+							"qualifier": ""
+						}
+					],
+					"target": "All enemies within area",
+					"cost": 9,
+					"repeatable": false,
+					"minLevel": 1,
+					"sections": [
+						{
+							"type": "roll",
+							"roll": {
+								"characteristic": [
+									"Might"
+								],
+								"bonus": 0,
+								"tier1": "6 fire damage",
+								"tier2": "10 fire damage",
+								"tier3": "14 fire damage",
+								"crit": ""
+							}
+						},
+						{
+							"type": "text",
+							"text": "The aura lasts until the start of your next turn. The first time on a turn that an enemy inside the aura takes damage, you can shift up to a distance equal to your Reason score. If you end this shift adjacent to the target, the target takes damage equal to double your Reason score."
+						}
+					],
+					"preEffect": "",
+					"powerRoll": null,
+					"test": null,
+					"effect": "",
+					"strained": "",
+					"alternateEffects": [],
+					"spend": [],
+					"persistence": []
+				},
+				{
+					"id": "t0WEOHMUcVrtIDH9",
+					"name": "Tempest Flurry",
+					"description": "You unleash a storm of strikes in blinding rhythm.",
+					"type": {
+						"usage": "Main Action",
+						"free": false,
+						"trigger": "",
+						"time": "",
+						"qualifiers": [],
+						"freeStrike": false
+					},
+					"keywords": [
+						"Magic"
+					],
+					"distance": [
+						{
+							"type": "Self",
+							"value": 0,
+							"value2": 0,
+							"within": 0,
+							"special": "",
+							"qualifier": ""
+						}
+					],
+					"target": "Self",
+					"cost": 9,
+					"repeatable": false,
+					"minLevel": 1,
+					"sections": [
+						{
+							"type": "text",
+							"text": "You can use up to three signature abilities. You may shift up to 3 squares either before or after each usage."
+						}
+					],
+					"preEffect": "",
+					"powerRoll": null,
+					"test": null,
+					"effect": "",
+					"strained": "",
+					"alternateEffects": [],
+					"spend": [],
+					"persistence": []
+				},
+				{
+					"id": "XkJpWtL8zAHon2Kn",
+					"name": "Surge Weave",
+					"description": "You weave power through your weapon and unleash it in a sculpted surge of energy.",
+					"type": {
+						"usage": "Main Action",
+						"free": false,
+						"trigger": "",
+						"time": "",
+						"qualifiers": [],
+						"freeStrike": false
+					},
+					"keywords": [
+						"Area",
+						"Magic",
+						"Weapon"
+					],
+					"distance": [
+						{
+							"type": "Wall",
+							"value": 15,
+							"value2": 0,
+							"within": 1,
+							"special": "",
+							"qualifier": ""
+						}
+					],
+					"target": "Each enemy within area",
+					"cost": 9,
+					"repeatable": false,
+					"minLevel": 1,
+					"sections": [
+						{
+							"type": "roll",
+							"roll": {
+								"characteristic": [
+									"Agility"
+								],
+								"bonus": 0,
+								"tier1": "4 damage",
+								"tier2": "8 damage",
+								"tier3": "14 damage",
+								"crit": ""
+							}
+						},
+						{
+							"type": "text",
+							"text": "Choose any Enweave effect without an area. It is applied to all enemies within the area. The wall does not persist after the ability resolves."
+						}
+					],
+					"preEffect": "",
+					"powerRoll": null,
+					"test": null,
+					"effect": "",
+					"strained": "",
+					"alternateEffects": [],
+					"spend": [],
+					"persistence": []
+				},
+				{
+					"id": "zwqdkI4pLiX4jkCj",
+					"name": "Sevenfold Form",
+					"description": "A chorus of cuts. A crescendo. Silence.",
+					"type": {
+						"usage": "Main Action",
+						"free": false,
+						"trigger": "",
+						"time": "",
+						"qualifiers": [],
+						"freeStrike": false
+					},
+					"keywords": [
+						"Magic",
+						"Melee",
+						"Strike",
+						"Weapon"
+					],
+					"distance": [
+						{
+							"type": "Melee",
+							"value": 1,
+							"value2": 0,
+							"within": 0,
+							"special": "",
+							"qualifier": ""
+						}
+					],
+					"target": "One creature",
+					"cost": 11,
+					"repeatable": false,
+					"minLevel": 1,
+					"sections": [
+						{
+							"type": "roll",
+							"roll": {
+								"characteristic": [
+									"Reason"
+								],
+								"bonus": 0,
+								"tier1": "7 x 5 damage",
+								"tier2": "7 x 6 damage",
+								"tier3": "7 x 7 damage",
+								"crit": ""
+							}
+						},
+						{
+							"type": "text",
+							"text": "Each instance of damage is considered a separate strike."
+						}
+					],
+					"preEffect": "",
+					"powerRoll": null,
+					"test": null,
+					"effect": "",
+					"strained": "",
+					"alternateEffects": [],
+					"spend": [],
+					"persistence": []
+				},
+				{
+					"id": "2hFz4uNOZivhzZ5I",
+					"name": "Singularity",
+					"description": "You rend the fabric of reality, leaving a yawning void that demands to be filled.",
+					"type": {
+						"usage": "Main Action",
+						"free": false,
+						"trigger": "",
+						"time": "",
+						"qualifiers": [],
+						"freeStrike": false
+					},
+					"keywords": [
+						"Area",
+						"Magic",
+						"Melee",
+						"Weapon"
+					],
+					"distance": [
+						{
+							"type": "Burst",
+							"value": 5,
+							"value2": 0,
+							"within": 0,
+							"special": "",
+							"qualifier": ""
+						}
+					],
+					"target": "Each enemy within area",
+					"cost": 11,
+					"repeatable": false,
+					"minLevel": 1,
+					"sections": [
+						{
+							"type": "roll",
+							"roll": {
+								"characteristic": [
+									"Agility"
+								],
+								"bonus": 0,
+								"tier1": "3 damage; pull 3, M < weak, slowed (save ends)",
+								"tier2": "6 damage; pull 5, M < average, slowed (save ends)",
+								"tier3": "9 damage; pull 7, M < strong, slowed (save ends)",
+								"crit": ""
+							}
+						}
+					],
+					"preEffect": "",
+					"powerRoll": null,
+					"test": null,
+					"effect": "",
+					"strained": "",
+					"alternateEffects": [],
+					"spend": [],
+					"persistence": []
+				},
+				{
+					"id": "w6KohnjfWqxqbICc",
+					"name": "Unlimited Bladeworks",
+					"description": "You summon a near infinite amount of spectral blades, imbued with tiny fragments of your soul, unleashing them in a relentless barrage.",
+					"type": {
+						"usage": "Main Action",
+						"free": false,
+						"trigger": "",
+						"time": "",
+						"qualifiers": [],
+						"freeStrike": false
+					},
+					"keywords": [
+						"Area",
+						"Magic"
+					],
+					"distance": [
+						{
+							"type": "Special",
+							"value": 0,
+							"value2": 0,
+							"within": 0,
+							"special": "Five 3 cubes within 10",
+							"qualifier": ""
+						}
+					],
+					"target": "Each enemy within area",
+					"cost": 11,
+					"repeatable": false,
+					"minLevel": 1,
+					"sections": [
+						{
+							"type": "roll",
+							"roll": {
+								"characteristic": [
+									"Agility"
+								],
+								"bonus": 0,
+								"tier1": "6 damage",
+								"tier2": "9 damage",
+								"tier3": "13 damage",
+								"crit": ""
+							}
+						},
+						{
+							"type": "text",
+							"text": "Until the end of the encounter or you are dying, you may make an additional power roll targeting two 3 cubes within 10 at the start of each of your turns."
+						}
+					],
+					"preEffect": "",
+					"powerRoll": null,
+					"test": null,
+					"effect": "",
+					"strained": "",
+					"alternateEffects": [],
+					"spend": [],
+					"persistence": []
+				},
+				{
+					"id": "Em52fmK0uFif3vRV",
+					"name": "Split The World Asunder",
+					"description": "You reave space itself in twain, leaving remnants of pure, impenetrable force in the wake of your slash.",
+					"type": {
+						"usage": "Main Action",
+						"free": false,
+						"trigger": "",
+						"time": "",
+						"qualifiers": [],
+						"freeStrike": false
+					},
+					"keywords": [
+						"Area",
+						"Magic",
+						"Melee",
+						"Weapon"
+					],
+					"distance": [
+						{
+							"type": "Special",
+							"value": 0,
+							"value2": 0,
+							"within": 0,
+							"special": "Two 10 × 1 lines within 10",
+							"qualifier": ""
+						}
+					],
+					"target": "Each enemy within area",
+					"cost": 11,
+					"repeatable": false,
+					"minLevel": 1,
+					"sections": [
+						{
+							"type": "roll",
+							"roll": {
+								"characteristic": [
+									"Agility"
+								],
+								"bonus": 0,
+								"tier1": "4 damage",
+								"tier2": "6 damage",
+								"tier3": "10 damage",
+								"crit": ""
+							}
+						},
+						{
+							"type": "text",
+							"text": "Until the start of your next turn, the area projects a 10-square high impenetrable sheet of force both above and below it, which blocks line of effect and can't be moved through by any means other than teleportation. Creatures caught in the area are pushed to either side of the wall they are caught in, chosen by you."
+						}
+					],
+					"preEffect": "",
+					"powerRoll": null,
+					"test": null,
+					"effect": "",
+					"strained": "",
+					"alternateEffects": [],
+					"spend": [],
+					"persistence": []
+				}
+			],
+			"subclasses": [
+				{
+					"id": "vGtuuw0cYpAkkPUN",
+					"name": "Blinkblade",
+					"description": "A master of teleportation magic, the Blinkblades weave in and out of reach with uncanny speed - difficult to catch, and harder still to escape.",
+					"featuresByLevel": [
+						{
+							"level": 1,
+							"features": [
+								{
+									"id": "R6zmbAYzj5QQnf5r",
+									"name": "Blinkblade Skill",
+									"description": "",
+									"type": "Skill",
+									"data": {
+										"skill": "Gymnastics"
+									}
+								},
+								{
+									"id": "d7U62IAB3V2YaasD",
+									"name": "Phase Step",
+									"description": "Whenever you disengage, you may teleport instead of shifting.",
+									"type": "Bonus",
+									"data": {
+										"field": "Disengage",
+										"value": 1,
+										"valueFromController": null,
+										"valueCharacteristics": [],
+										"valueCharacteristicMultiplier": 1,
+										"valuePerLevel": 0,
+										"valuePerEchelon": 0
+									}
+								},
+								{
+									"id": "ItluiV0gSXKqjgz7",
+									"name": "Blink",
+									"description": "",
+									"type": "Ability",
+									"data": {
+										"ability": {
+											"id": "UZK6xyl5g71nt7t8",
+											"name": "Blink",
+											"description": "",
+											"type": {
+												"usage": "Maneuver",
+												"free": false,
+												"trigger": "",
+												"time": "",
+												"qualifiers": [],
+												"freeStrike": false
+											},
+											"keywords": [
+												"Magic"
+											],
+											"distance": [
+												{
+													"type": "Self",
+													"value": 0,
+													"value2": 0,
+													"within": 0,
+													"special": "",
+													"qualifier": ""
+												}
+											],
+											"target": "Self",
+											"cost": 0,
+											"repeatable": false,
+											"minLevel": 1,
+											"preEffect": "",
+											"powerRoll": null,
+											"test": null,
+											"effect": "",
+											"strained": "",
+											"alternateEffects": [],
+											"spend": [],
+											"persistence": [],
+											"sections": [
+												{
+													"type": "text",
+													"text": "You teleport up to 6 squares. You may break up this movement once with a main action, splitting it into two teleports."
+												},
+												{
+													"type": "field",
+													"name": "Spend",
+													"value": 5,
+													"repeatable": false,
+													"effect": "If the above movement is split into two teleports, you may repeat the main action used to break it apart at the destination of the second teleport so long as it was a strike ability that costs 5 or fewer balance."
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": "9eIp7KGA2RYrPQWk",
+									"name": "Flicker Step",
+									"description": "",
+									"type": "Ability",
+									"data": {
+										"ability": {
+											"id": "GN04C4n7iSFme7EB",
+											"name": "Flicker Step",
+											"description": "You instinctively teleport to avoid danger.",
+											"type": {
+												"usage": "Triggered Action",
+												"free": false,
+												"trigger": "You take damage",
+												"time": "",
+												"qualifiers": [],
+												"freeStrike": false
+											},
+											"keywords": [
+												"Magic"
+											],
+											"distance": [
+												{
+													"type": "Self",
+													"value": 0,
+													"value2": 0,
+													"within": 0,
+													"special": "",
+													"qualifier": ""
+												}
+											],
+											"target": "Self",
+											"cost": 0,
+											"repeatable": false,
+											"minLevel": 1,
+											"preEffect": "",
+											"powerRoll": null,
+											"test": null,
+											"effect": "",
+											"strained": "",
+											"alternateEffects": [],
+											"spend": [],
+											"persistence": [],
+											"sections": [
+												{
+													"type": "text",
+													"text": "You take half the damage, you can then teleport up to 4 squares after the triggering effect resolves."
+												},
+												{
+													"type": "field",
+													"name": "Spend",
+													"value": 1,
+													"repeatable": true,
+													"effect": "You teleport an additional 2 squares for each balance spent."
+												}
+											]
+										}
+									}
+								}
+							],
+							"optionalFeatures": []
+						},
+						{
+							"level": 2,
+							"features": [
+								{
+									"id": "3cCLubzSJqOAXhTt",
+									"name": "Afterimage",
+									"description": "Whenever you teleport by any means, you leave a distracting afterimage in your previous location until the start of your next turn. Power rolls targeting enemies adjacent to one or more afterimages gain an edge. The afterimage does not occupy space and cannot be targeted or destroyed. At the start of any turn when an afterimage fades, you can choose to teleport to its location.",
+									"type": "Text",
+									"data": null
+								},
+								{
+									"id": "O1IBnmfpWK2A0Pzm",
+									"name": "2nd Level Blinkblade Ability",
+									"description": "",
+									"type": "Choice",
+									"data": {
+										"options": [
+											{
+												"feature": {
+													"id": "s57fCGoWcBvDEJFS",
+													"name": "Phase Assault",
+													"description": "",
+													"type": "Ability",
+													"data": {
+														"ability": {
+															"id": "iUFlQNI03qMYfk3o",
+															"name": "Phase Assault",
+															"description": "You blink between foes, each reappearance marked by a precise, cutting strike.",
+															"type": {
+																"usage": "Main Action",
+																"free": false,
+																"trigger": "",
+																"time": "",
+																"qualifiers": [],
+																"freeStrike": false
+															},
+															"keywords": [
+																"Magic",
+																"Melee",
+																"Strike",
+																"Weapon"
+															],
+															"distance": [
+																{
+																	"type": "Special",
+																	"value": 0,
+																	"value2": 0,
+																	"within": 0,
+																	"special": "",
+																	"qualifier": ""
+																}
+															],
+															"target": "Special",
+															"cost": 5,
+															"repeatable": false,
+															"minLevel": 1,
+															"sections": [
+																{
+																	"type": "roll",
+																	"roll": {
+																		"characteristic": [
+																			"Agility"
+																		],
+																		"bonus": 0,
+																		"tier1": "3 damage",
+																		"tier2": "6 damage",
+																		"tier3": "9 damage"
+																	}
+																},
+																{
+																	"type": "text",
+																	"text": "Choose a target within range 5, teleport to an unoccupied space adjacent to it. Repeat this effect up to 3 more times. The same target cannot be chosen more than once. Then, apply the power roll result to all chosen targets."
+																}
+															],
+															"preEffect": "",
+															"powerRoll": null,
+															"test": null,
+															"effect": "",
+															"strained": "",
+															"alternateEffects": [],
+															"spend": [],
+															"persistence": []
+														}
+													}
+												},
+												"value": 1
+											},
+											{
+												"feature": {
+													"id": "zZgsWEUpPQHv4vYv",
+													"name": "Horizon Step",
+													"description": "",
+													"type": "Ability",
+													"data": {
+														"ability": {
+															"id": "LFPajs7vWR1FdtDa",
+															"name": "Horizon Step",
+															"description": "None can escape your reach.",
+															"type": {
+																"usage": "Main Action",
+																"free": false,
+																"trigger": "",
+																"time": "",
+																"qualifiers": [],
+																"freeStrike": false
+															},
+															"keywords": [
+																"Magic",
+																"Melee",
+																"Strike",
+																"Weapon"
+															],
+															"distance": [
+																{
+																	"type": "Melee",
+																	"value": 1,
+																	"value2": 0,
+																	"within": 0,
+																	"special": "",
+																	"qualifier": ""
+																}
+															],
+															"target": "One creature",
+															"cost": 5,
+															"repeatable": false,
+															"minLevel": 1,
+															"sections": [
+																{
+																	"type": "roll",
+																	"roll": {
+																		"characteristic": [
+																			"Agility"
+																		],
+																		"bonus": 0,
+																		"tier1": "14 + A damage",
+																		"tier2": "18 + A damage",
+																		"tier3": "23 + A damage"
+																	}
+																},
+																{
+																	"type": "text",
+																	"text": "You may teleport to up to 10 squares before this strike."
+																}
+															],
+															"preEffect": "",
+															"powerRoll": null,
+															"test": null,
+															"effect": "",
+															"strained": "",
+															"alternateEffects": [],
+															"spend": [],
+															"persistence": []
+														}
+													}
+												},
+												"value": 1
+											}
+										],
+										"count": 1,
+										"selected": [],
+										"respiteChange": false
+									}
+								}
+							],
+							"optionalFeatures": []
+						},
+						{
+							"level": 3,
+							"features": [],
+							"optionalFeatures": []
+						},
+						{
+							"level": 4,
+							"features": [
+								{
+									"id": "OqYlJYavowfiz9h3",
+									"name": "Shifting Balance",
+									"description": "",
+									"type": "Heroic Resource Gain",
+									"data": {
+										"tag": "",
+										"trigger": "The first time in an encounter that you or an ally within 10 squares teleports or shifts",
+										"value": "2",
+										"replacesTags": []
+									}
+								}
+							],
+							"optionalFeatures": []
+						},
+						{
+							"level": 5,
+							"features": [
+								{
+									"id": "hsTxBom2cLGrYeQj",
+									"name": "Hard to Catch",
+									"description": "Whenever you take damage from an ability that isn't an attack of opportunity, you can teleport up to your Reason score in squares as a free triggered action.",
+									"type": "Text",
+									"data": null
+								}
+							],
+							"optionalFeatures": []
+						},
+						{
+							"level": 6,
+							"features": [
+								{
+									"id": "gPl2PA0w2fuLfRun",
+									"name": "6th-Level Blinkblade Ability",
+									"description": "",
+									"type": "Choice",
+									"data": {
+										"options": [
+											{
+												"feature": {
+													"id": "ChsTBEXemFbW75pa",
+													"name": "Tether Strike",
+													"description": "",
+													"type": "Ability",
+													"data": {
+														"ability": {
+															"id": "ZgBqaj5pnSROulNO",
+															"name": "Tether Strike",
+															"description": "Space twists at the point of contact, inextricably entangling you to your foe.",
+															"type": {
+																"usage": "Main Action",
+																"free": false,
+																"trigger": "",
+																"time": "",
+																"qualifiers": [],
+																"freeStrike": false
+															},
+															"keywords": [
+																"Magic",
+																"Melee",
+																"Strike",
+																"Weapon"
+															],
+															"distance": [
+																{
+																	"type": "Melee",
+																	"value": 1,
+																	"value2": 0,
+																	"within": 0,
+																	"special": "",
+																	"qualifier": ""
+																}
+															],
+															"target": "One creature",
+															"cost": 9,
+															"repeatable": false,
+															"minLevel": 1,
+															"sections": [
+																{
+																	"type": "roll",
+																	"roll": {
+																		"characteristic": [
+																			"Agility"
+																		],
+																		"bonus": 0,
+																		"tier1": "14 + A damage",
+																		"tier2": "18 + A damage",
+																		"tier3": "23 + A damage",
+																		"crit": ""
+																	}
+																},
+																{
+																	"type": "text",
+																	"text": "You are tethered to the target by a spatial knot until the end of the encounter. At the beginning of each of your turns, you may choose to teleport to any unoccupied space adjacent to the tethered target. In addition, if the target is not a solo or leader, whenever you teleport by any means, you can also teleport the target to any unoccupied space adjacent to your target location. When using this ability, you may choose to forgo the power roll and resulting damage and use it as a free maneuver instead."
+																}
+															],
+															"preEffect": "",
+															"powerRoll": null,
+															"test": null,
+															"effect": "",
+															"strained": "",
+															"alternateEffects": [],
+															"spend": [],
+															"persistence": []
+														}
+													}
+												},
+												"value": 1
+											},
+											{
+												"feature": {
+													"id": "rjpXvBBDZKzpuxD8",
+													"name": "Sunder Space",
+													"description": "",
+													"type": "Ability",
+													"data": {
+														"ability": {
+															"id": "F71itrS7rRzSeoow",
+															"name": "Sunder Space",
+															"description": "You cut a precise incision in reality, folding in upon itself.",
+															"type": {
+																"usage": "Main Action",
+																"free": false,
+																"trigger": "",
+																"time": "",
+																"qualifiers": [],
+																"freeStrike": false
+															},
+															"keywords": [
+																"Area",
+																"Magic",
+																"Weapon"
+															],
+															"distance": [
+																{
+																	"type": "Special",
+																	"value": 0,
+																	"value2": 0,
+																	"within": 0,
+																	"special": "",
+																	"qualifier": ""
+																}
+															],
+															"target": "Special",
+															"cost": 9,
+															"repeatable": false,
+															"minLevel": 1,
+															"sections": [
+																{
+																	"type": "text",
+																	"text": "You create two connected 3 cube areas, one within range 1, and one within range 20. Each area must be placed at a height of no more than 1 square above the ground. Allies that move into a square in either area can choose to instead move into any square in either area. Enemies caught in either area when its created are dazed until the end of their next turn, and may be teleported to any other square in either area."
+																}
+															],
+															"preEffect": "",
+															"powerRoll": null,
+															"test": null,
+															"effect": "",
+															"strained": "",
+															"alternateEffects": [],
+															"spend": [],
+															"persistence": []
+														}
+													}
+												},
+												"value": 1
+											}
+										],
+										"count": 1,
+										"selected": [],
+										"respiteChange": false
+									}
+								}
+							],
+							"optionalFeatures": []
+						},
+						{
+							"level": 7,
+							"features": [],
+							"optionalFeatures": []
+						},
+						{
+							"level": 8,
+							"features": [
+								{
+									"id": "4tQkaISdUhcbn9sm",
+									"name": "Phase Field",
+									"description": "Whenever you teleport by any means, you don't require line of sight to the target location. Additionally, any ally adjacent to you may use Blink as a maneuver with this benefit, but cannot use its spend effect.",
+									"type": "Text",
+									"data": null
+								}
+							],
+							"optionalFeatures": []
+						},
+						{
+							"level": 9,
+							"features": [
+								{
+									"id": "lvT9O1kdC5t1VjNL",
+									"name": "9th-Level Blinkblade Ability",
+									"description": "",
+									"type": "Choice",
+									"data": {
+										"options": [
+											{
+												"feature": {
+													"id": "SPO4siqcEM24uYUr",
+													"name": "Flux Overdrive",
+													"description": "",
+													"type": "Ability",
+													"data": {
+														"ability": {
+															"id": "cvW5kD1nZpL6ACMP",
+															"name": "Flux Overdrive",
+															"description": "Space buckles under your command, reshaping the entire battlefield in an instant.",
+															"type": {
+																"usage": "Maneuver",
+																"free": true,
+																"trigger": "",
+																"time": "",
+																"qualifiers": [],
+																"freeStrike": false
+															},
+															"keywords": [
+																"Magic",
+																"Area"
+															],
+															"distance": [
+																{
+																	"type": "Burst",
+																	"value": 10,
+																	"value2": 0,
+																	"within": 0,
+																	"special": "",
+																	"qualifier": ""
+																}
+															],
+															"target": "Each creature within area",
+															"cost": 11,
+															"repeatable": false,
+															"minLevel": 1,
+															"sections": [
+																{
+																	"type": "text",
+																	"text": "You may teleport each target 5 squares in any direction."
+																}
+															],
+															"preEffect": "",
+															"powerRoll": null,
+															"test": null,
+															"effect": "",
+															"strained": "",
+															"alternateEffects": [],
+															"spend": [],
+															"persistence": []
+														}
+													}
+												},
+												"value": 1
+											},
+											{
+												"feature": {
+													"id": "t7iSr1QPqer6DG6H",
+													"name": "Phase Disruption",
+													"description": "",
+													"type": "Ability",
+													"data": {
+														"ability": {
+															"id": "qQmyrCgwFX9vogks",
+															"name": "Phase Disruption",
+															"description": "You unmoor the target from space itself, such that every strike displaces them with a sudden warp.",
+															"type": {
+																"usage": "Triggered Action",
+																"free": true,
+																"trigger": "The target is targeted by yourself or an ally",
+																"time": "",
+																"qualifiers": [],
+																"freeStrike": false
+															},
+															"keywords": [
+																"Magic"
+															],
+															"distance": [
+																{
+																	"type": "Ranged",
+																	"value": 10,
+																	"value2": 0,
+																	"within": 0,
+																	"special": "",
+																	"qualifier": ""
+																}
+															],
+															"target": "One enemy",
+															"cost": 11,
+															"repeatable": false,
+															"minLevel": 1,
+															"sections": [
+																{
+																	"type": "text",
+																	"text": "The target is phased (save ends). While phased, each time the target is dealt rolled damage, you may teleport them 10 squares in any direction."
+																}
+															],
+															"preEffect": "",
+															"powerRoll": null,
+															"test": null,
+															"effect": "",
+															"strained": "",
+															"alternateEffects": [],
+															"spend": [],
+															"persistence": []
+														}
+													}
+												},
+												"value": 1
+											}
+										],
+										"count": 1,
+										"selected": [],
+										"respiteChange": false
+									}
+								}
+							],
+							"optionalFeatures": []
+						},
+						{
+							"level": 10,
+							"features": [],
+							"optionalFeatures": []
+						}
+					],
+					"selected": false,
+					"abilities": []
+				},
+				{
+					"id": "nCi6Ufmfz74H70Pr",
+					"name": "Runewright",
+					"description": "The Runewright wields the ancient craft of runebranding to sear volatile runes onto living beings and shape the battlefield through groundlaid writs. ",
+					"featuresByLevel": [
+						{
+							"level": 1,
+							"features": [
+								{
+									"id": "5hK9y3rFtS2uW5d0",
+									"name": "Runewright Skill",
+									"description": "",
+									"type": "Skill",
+									"data": {
+										"skill": "Mechanics"
+									}
+								},
+								{
+									"id": "0oQww7Zrc46k3jqm",
+									"name": "Runebrand",
+									"description": "",
+									"type": "Ability",
+									"data": {
+										"ability": {
+											"id": "PG0F4c5cIccZlDl4",
+											"name": "Runebrand",
+											"description": "You imprint a runic sigil on your target, priming it for detonation.",
+											"type": {
+												"usage": "Maneuver",
+												"free": false,
+												"trigger": "",
+												"time": "",
+												"qualifiers": [],
+												"freeStrike": false
+											},
+											"keywords": [
+												"Magic"
+											],
+											"distance": [
+												{
+													"type": "Melee",
+													"value": 1,
+													"value2": 0,
+													"within": 0,
+													"special": "",
+													"qualifier": ""
+												}
+											],
+											"target": "One creature or object",
+											"cost": 1,
+											"repeatable": false,
+											"minLevel": 1,
+											"preEffect": "",
+											"powerRoll": null,
+											"test": null,
+											"effect": "",
+											"strained": "",
+											"alternateEffects": [],
+											"spend": [],
+											"persistence": [],
+											"sections": [
+												{
+													"type": "text",
+													"text": "When using this ability, choose one of the Enweave effects, ignoring the component that changes the damage type of your next weapon ability. You brand your target with a rune imbued by the effect you chose, priming it for detonation. At the end of your turn, the rune is primed. When a rune is primed, the next time the branded target is damaged, the rune detonates, applying its effect to the target and each enemy within range 2 of it.\n\nIf the chosen Enweave effect is 'Gale Strike', you must choose the 'push the target' option, and the branded target is not affected by detonation, while the other targets are affected as if the branded target was the source of the forced movement."
+												},
+												{
+													"type": "field",
+													"name": "Spend",
+													"value": 2,
+													"repeatable": false,
+													"effect": "The rune is immediately primed."
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": "fOqh81YqHhP9SSyC",
+									"name": "Ensnaring Rune",
+									"description": "",
+									"type": "Ability",
+									"data": {
+										"ability": {
+											"id": "MnzMxsJZtPA8FrFs",
+											"name": "Ensnaring Rune",
+											"description": "Your foe steps on one of your many traps.",
+											"type": {
+												"usage": "Triggered Action",
+												"free": false,
+												"trigger": "The target moves",
+												"time": "",
+												"qualifiers": [],
+												"freeStrike": false
+											},
+											"keywords": [
+												"Magic"
+											],
+											"distance": [
+												{
+													"type": "Ranged",
+													"value": 10,
+													"value2": 0,
+													"within": 0,
+													"special": "",
+													"qualifier": ""
+												}
+											],
+											"target": "One enemy",
+											"cost": 0,
+											"repeatable": false,
+											"minLevel": 1,
+											"preEffect": "",
+											"powerRoll": null,
+											"test": null,
+											"effect": "",
+											"strained": "",
+											"alternateEffects": [],
+											"spend": [],
+											"persistence": [],
+											"sections": [
+												{
+													"type": "text",
+													"text": "The target takes damage equal to triple your Reason score."
+												},
+												{
+													"type": "field",
+													"name": "Spend",
+													"value": 1,
+													"repeatable": false,
+													"effect": "If the target has I < average, they are slowed (EoT)."
+												}
+											]
+										}
+									}
+								}
+							],
+							"optionalFeatures": []
+						},
+						{
+							"level": 2,
+							"features": [
+								{
+									"id": "KXLNgaULFP7C3Kkx",
+									"name": "Liminal Runes",
+									"description": "An enemy carrying an undetonated runebrand receives a bane on their power rolls. An ally carrying an undetonated runebrand gains an edge on their power rolls.",
+									"type": "Text",
+									"data": null
+								},
+								{
+									"id": "r7jDReOjykBnFpp2",
+									"name": "2nd-Level Art Ability",
+									"description": "",
+									"type": "Choice",
+									"data": {
+										"options": [
+											{
+												"feature": {
+													"id": "Nl2TsJd6HSAgrZBQ",
+													"name": "Writ of Power",
+													"description": "",
+													"type": "Ability",
+													"data": {
+														"ability": {
+															"id": "HnQmrJFiyb8LEN1l",
+															"name": "Writ of Power",
+															"description": "You brand an arcane writ onto the ground, scorching foes, or soothing allies.",
+															"type": {
+																"usage": "Maneuver",
+																"free": false,
+																"trigger": "",
+																"time": "",
+																"qualifiers": [],
+																"freeStrike": false
+															},
+															"keywords": [
+																"Magic",
+																"Area"
+															],
+															"distance": [
+																{
+																	"type": "Burst",
+																	"value": 2,
+																	"value2": 0,
+																	"within": 0,
+																	"special": "",
+																	"qualifier": ""
+																}
+															],
+															"target": "Each enemy within area",
+															"cost": 5,
+															"repeatable": false,
+															"minLevel": 1,
+															"preEffect": "",
+															"powerRoll": null,
+															"test": null,
+															"effect": "",
+															"strained": "",
+															"alternateEffects": [],
+															"spend": [],
+															"persistence": [],
+															"sections": [
+																{
+																	"type": "text",
+																	"text": "The area remains until the end of the encounter or you are dying. Choose one of the following effects to apply to the area:\n◆Writ of Flame: Each enemy who enters the area for the first time in a combat round or starts their turn there takes damage equal to triple your Reason score.\n◆Writ of Sanctuary: Each ally, or youreslf, who enters the area for the first time in a combat round or starts their turn there may either spend a recovery, or end one effect that is ended by a saving throw or ends at the end of their turn."
+																}
+															]
+														}
+													}
+												},
+												"value": 1
+											},
+											{
+												"feature": {
+													"id": "4g4MOopMSwFNcUr5",
+													"name": "Writ of Binding",
+													"description": "",
+													"type": "Ability",
+													"data": {
+														"ability": {
+															"id": "amPXemJUIcHPs4Zx",
+															"name": "Writ of Binding",
+															"description": "Arcane chains erupt from the ground, coling around your foe.",
+															"type": {
+																"usage": "Main Action",
+																"free": false,
+																"trigger": "",
+																"time": "",
+																"qualifiers": [],
+																"freeStrike": false
+															},
+															"keywords": [
+																"Magic",
+																"Ranged"
+															],
+															"distance": [
+																{
+																	"type": "Ranged",
+																	"value": 5,
+																	"value2": 0,
+																	"within": 0,
+																	"special": "",
+																	"qualifier": ""
+																}
+															],
+															"target": "One creature",
+															"cost": 5,
+															"repeatable": false,
+															"minLevel": 1,
+															"preEffect": "",
+															"powerRoll": null,
+															"test": null,
+															"effect": "",
+															"strained": "",
+															"alternateEffects": [],
+															"spend": [],
+															"persistence": [],
+															"sections": [
+																{
+																	"type": "roll",
+																	"roll": {
+																		"characteristic": [
+																			"Reason"
+																		],
+																		"bonus": 0,
+																		"tier1": "6 damage; M < weak, restrained (save ends)",
+																		"tier2": "10 damage; M < average, restrained (save ends)",
+																		"tier3": "14 damage; M < strong, restrained (save ends)",
+																		"crit": ""
+																	}
+																},
+																{
+																	"type": "text",
+																	"text": "While restrained this way, the target cannot teleport by any means."
+																}
+															]
+														}
+													}
+												},
+												"value": 1
+											}
+										],
+										"count": 1,
+										"selected": [],
+										"respiteChange": false
+									}
+								}
+							],
+							"optionalFeatures": []
+						},
+						{
+							"level": 3,
+							"features": [],
+							"optionalFeatures": []
+						},
+						{
+							"level": 4,
+							"features": [
+								{
+									"id": "MbwubuGcjY1Rhkqr",
+									"name": "Shifting Balance",
+									"description": "",
+									"type": "Heroic Resource Gain",
+									"data": {
+										"tag": "",
+										"trigger": "The first time in an encounter that a creature within 10 squares is affected by an effect that is ended by a saving throw",
+										"value": "2",
+										"replacesTags": []
+									}
+								}
+							],
+							"optionalFeatures": []
+						},
+						{
+							"level": 5,
+							"features": [
+								{
+									"id": "Z5yDsbu9MuWCbzhx",
+									"name": "Tethered Rune",
+									"description": "When a Runebrand is detonated, it applies its effect to every enemy within range 3 of it, instead of within range 2. Additionally, at the start of your turn, you may detonate any previously primed runes.",
+									"type": "Text",
+									"data": null
+								}
+							],
+							"optionalFeatures": []
+						},
+						{
+							"level": 6,
+							"features": [
+								{
+									"id": "hiHMzzdUnDfl3j1I",
+									"name": "6th-Level Runewright Ability",
+									"description": "",
+									"type": "Choice",
+									"data": {
+										"options": [
+											{
+												"feature": {
+													"id": "LgBuKS4aggNnA5kl",
+													"name": "Rune of Siphoning",
+													"description": "",
+													"type": "Ability",
+													"data": {
+														"ability": {
+															"id": "5IzdN0DiFlhMCsgv",
+															"name": "Rune of Siphoning",
+															"description": "You brand a foe with a vicious rune, siphoning the life out of them with every attack.",
+															"type": {
+																"usage": "Maneuver",
+																"free": false,
+																"trigger": "",
+																"time": "",
+																"qualifiers": [],
+																"freeStrike": false
+															},
+															"keywords": [
+																"Magic",
+																"Melee"
+															],
+															"distance": [
+																{
+																	"type": "Melee",
+																	"value": 1,
+																	"value2": 0,
+																	"within": 0,
+																	"special": "",
+																	"qualifier": ""
+																}
+															],
+															"target": "One creature",
+															"cost": 9,
+															"repeatable": false,
+															"minLevel": 1,
+															"sections": [
+																{
+																	"type": "text",
+																	"text": "Until the end of the encounter or you are dying, whenever you or any ally uses an ability to deal rolled damage to the target, the ability deals extra damage equal to twice your Reason, and the creature dealing the damage gains temporary stamina equal to twice your Reason score. When a creature targeted by this ability is reduced to 0 Stamina, you can use a free triggered action to move the rune to a new target within range 5 of the previous target."
+																}
+															],
+															"preEffect": "",
+															"powerRoll": null,
+															"test": null,
+															"effect": "",
+															"strained": "",
+															"alternateEffects": [],
+															"spend": [],
+															"persistence": []
+														}
+													}
+												},
+												"value": 1
+											},
+											{
+												"feature": {
+													"id": "RKPrsahEfVVM5Mev",
+													"name": "Rune of Strength",
+													"description": "",
+													"type": "Ability",
+													"data": {
+														"ability": {
+															"id": "bXrd6ZQFOihQPSOm",
+															"name": "Rune of Strength",
+															"description": "Your brand an ally with an empowering rune, granting them strength beyond their normal means.",
+															"type": {
+																"usage": "Maneuver",
+																"free": false,
+																"trigger": "",
+																"time": "",
+																"qualifiers": [],
+																"freeStrike": false
+															},
+															"keywords": [
+																"Magic"
+															],
+															"distance": [
+																{
+																	"type": "Special",
+																	"value": 0,
+																	"value2": 0,
+																	"within": 0,
+																	"special": "Within the range of your Runebrand ability",
+																	"qualifier": ""
+																}
+															],
+															"target": "Two creatures",
+															"cost": 9,
+															"repeatable": false,
+															"minLevel": 1,
+															"sections": [
+																{
+																	"type": "text",
+																	"text": "Until the end of the encounter or you are dying, the targets gains the following benefits:\n◆ Abilities with rolled damage have their damage increased by your Reason score.\n◆ At the beginning of each of their turns, they gain an additional 3 of their Heroic Resource.\n◆ At the beginning of their turn, they may spend 1 recovery.\n◆ At the beginning of their turn, they end one condition or effect on themself that is ended by a saving throw or that ends at the end of their turn."
+																}
+															],
+															"preEffect": "",
+															"powerRoll": null,
+															"test": null,
+															"effect": "",
+															"strained": "",
+															"alternateEffects": [],
+															"spend": [],
+															"persistence": []
+														}
+													}
+												},
+												"value": 1
+											}
+										],
+										"count": 1,
+										"selected": [],
+										"respiteChange": false
+									}
+								}
+							],
+							"optionalFeatures": []
+						},
+						{
+							"level": 7,
+							"features": [],
+							"optionalFeatures": []
+						},
+						{
+							"level": 8,
+							"features": [
+								{
+									"id": "zUH4WmbIfT94BC7e",
+									"name": "Grand Rune",
+									"description": "When a Runebrand is detonated, it applies its effect to every enemy within range 4 of it, instead of within range 3. In addition, your Runebrand ability now has a 'Ranged 5' range.",
+									"type": "Text",
+									"data": null
+								}
+							],
+							"optionalFeatures": []
+						},
+						{
+							"level": 9,
+							"features": [
+								{
+									"id": "IHL6W6B5dQqqyFug",
+									"name": "9th-Level Runewrite Ability",
+									"description": "",
+									"type": "Choice",
+									"data": {
+										"options": [
+											{
+												"feature": {
+													"id": "LTEgAzt2moZchlH5",
+													"name": "Adamant Seal",
+													"description": "",
+													"type": "Ability",
+													"data": {
+														"ability": {
+															"id": "TAMfs1qKQy0BL8Yk",
+															"name": "Adamant Seal",
+															"description": "The ultimate expression of sealing magic, ward away the very life force of your enemy.",
+															"type": {
+																"usage": "Main Action",
+																"free": false,
+																"trigger": "",
+																"time": "",
+																"qualifiers": [],
+																"freeStrike": false
+															},
+															"keywords": [
+																"Magic",
+																"Ranged"
+															],
+															"distance": [
+																{
+																	"type": "Ranged",
+																	"value": 5,
+																	"value2": 0,
+																	"within": 0,
+																	"special": "",
+																	"qualifier": ""
+																}
+															],
+															"target": "One creature",
+															"cost": 11,
+															"repeatable": false,
+															"minLevel": 1,
+															"sections": [
+																{
+																	"type": "roll",
+																	"roll": {
+																		"characteristic": [
+																			"Reason"
+																		],
+																		"bonus": 0,
+																		"tier1": "4 damage",
+																		"tier2": "6 damage",
+																		"tier3": "10 damage",
+																		"crit": ""
+																	}
+																},
+																{
+																	"type": "text",
+																	"text": "Until the end of the encounter or you are dying, the target has damage weakness 5, is weakened, can't gain Stamina, and automatically fails all saving throws."
+																}
+															],
+															"preEffect": "",
+															"powerRoll": null,
+															"test": null,
+															"effect": "",
+															"strained": "",
+															"alternateEffects": [],
+															"spend": [],
+															"persistence": []
+														}
+													}
+												},
+												"value": 1
+											},
+											{
+												"feature": {
+													"id": "c2BBpPQkBbzuDZYE",
+													"name": "Master Writ",
+													"description": "",
+													"type": "Ability",
+													"data": {
+														"ability": {
+															"id": "pGScYKJWVXrqFBgj",
+															"name": "Master Writ",
+															"description": "You brand a complex writ on the ground, weaving multiple enchantments at once.",
+															"type": {
+																"usage": "Maneuver",
+																"free": false,
+																"trigger": "",
+																"time": "",
+																"qualifiers": [],
+																"freeStrike": false
+															},
+															"keywords": [
+																"Area",
+																"Magic"
+															],
+															"distance": [
+																{
+																	"type": "Burst",
+																	"value": 3,
+																	"value2": 0,
+																	"within": 0,
+																	"special": "",
+																	"qualifier": ""
+																}
+															],
+															"target": "Each enemy within area",
+															"cost": 11,
+															"repeatable": false,
+															"minLevel": 1,
+															"sections": [
+																{
+																	"type": "text",
+																	"text": "The area remains until the end of the encounter. Choose three different Enweave effects without an area. Each enemy who enters the area for the first time in a combat round or starts their turn there suffers the effect of all chosen Enweave effects."
+																}
+															],
+															"preEffect": "",
+															"powerRoll": null,
+															"test": null,
+															"effect": "",
+															"strained": "",
+															"alternateEffects": [],
+															"spend": [],
+															"persistence": []
+														}
+													}
+												},
+												"value": 1
+											}
+										],
+										"count": 1,
+										"selected": [],
+										"respiteChange": false
+									}
+								}
+							],
+							"optionalFeatures": []
+						},
+						{
+							"level": 10,
+							"features": [],
+							"optionalFeatures": []
+						}
+					],
+					"selected": false,
+					"abilities": []
+				},
+				{
+					"id": "HK8oez2ay5ZQNhfp",
+					"name": "Soulforged",
+					"description": "The Soulforged binds a fragment of their soul into a chosen weapon, forging a sentient extension of their will - a Soulblade. Through this bond, they shape and empower their blade, adapting its form and function to meet the shifting demands of battle. ",
+					"featuresByLevel": [
+						{
+							"level": 1,
+							"features": [
+								{
+									"id": "YMhhEe1upKHfymOH",
+									"name": "Soulforged Skill",
+									"description": "",
+									"type": "Skill",
+									"data": {
+										"skill": "Empathize"
+									}
+								},
+								{
+									"id": "1jXjv5q9Tmlax2TD",
+									"name": "Soulbound",
+									"description": "Your Soulblade is more than a weapon - it's an extension of your soul. Its appearance reflects the innermost truth of who you are. You are never truly separated from it; if it's not in your hands, you can summon it instantly as a free maneuver.\n\nYour Soulforged abilities can only be used with your Soulblade. To bond with a new weapon, you must perform a ritual lasting several hours to transfer your bound soul fragment from another weapon to it. You may bond with as many weapons as a kit grants.\n\nBy default, your Soulblade is sentient and capable of communicating with you, though you may choose to forgo this aspect of it.\n",
+									"type": "Text",
+									"data": null
+								},
+								{
+									"id": "NcxnwKBSyd3kjhNW",
+									"name": "Soulshape",
+									"description": "",
+									"type": "Ability",
+									"data": {
+										"ability": {
+											"id": "uajSniPPGVxpq9jX",
+											"name": "Soulshape",
+											"description": "By reshaping the bound fragment of your soul, you persuade your Soulblade to take on a new form.",
+											"type": {
+												"usage": "Maneuver",
+												"free": false,
+												"trigger": "",
+												"time": "",
+												"qualifiers": [],
+												"freeStrike": false
+											},
+											"keywords": [
+												"Magic"
+											],
+											"distance": [
+												{
+													"type": "Self",
+													"value": 0,
+													"value2": 0,
+													"within": 0,
+													"special": "",
+													"qualifier": ""
+												}
+											],
+											"target": "Self",
+											"cost": 0,
+											"repeatable": false,
+											"minLevel": 1,
+											"preEffect": "",
+											"powerRoll": null,
+											"test": null,
+											"effect": "",
+											"strained": "",
+											"alternateEffects": [],
+											"spend": [],
+											"persistence": [],
+											"sections": [
+												{
+													"type": "text",
+													"text": "Choose a modified form for your Soulblade, each granting an effect to melee weapon abilities until the start of your next turn:\n◆Expansive: Area is increased by 1. If the area is a line, increase the size of the larger dimension by 2 instead.\n◆Powerful: Rolled damage is increased by your Reason score.\n◆Resonant: Potency increased by 1.\n◆Reaching: Melee weapon abilities have their distance increased by double your Reason."
+												},
+												{
+													"type": "field",
+													"name": "Spend",
+													"value": 2,
+													"repeatable": false,
+													"effect": "Any numeric benefit of the chosen form is doubled in value."
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": "AMWKBtiwVe5Xbw63",
+									"name": "Blade's Will",
+									"description": "",
+									"type": "Ability",
+									"data": {
+										"ability": {
+											"id": "QfuRewVhDSo3Fcnh",
+											"name": "Blade's Will",
+											"description": "As if moving by its own accord, your Soulblade parries and ripostes.",
+											"type": {
+												"usage": "Triggered Action",
+												"free": false,
+												"trigger": "A creature deals damage to the target.",
+												"time": "",
+												"qualifiers": [],
+												"freeStrike": false
+											},
+											"keywords": [
+												"Melee",
+												"Magic",
+												"Weapon"
+											],
+											"distance": [
+												{
+													"type": "Ranged",
+													"value": 5,
+													"value2": 0,
+													"within": 0,
+													"special": "",
+													"qualifier": ""
+												}
+											],
+											"target": "Self or one ally",
+											"cost": 0,
+											"repeatable": false,
+											"minLevel": 1,
+											"preEffect": "",
+											"powerRoll": null,
+											"test": null,
+											"effect": "",
+											"strained": "",
+											"alternateEffects": [],
+											"spend": [],
+											"persistence": [],
+											"sections": [
+												{
+													"type": "text",
+													"text": "You can shift a number of squares equal to your Reason score. If the target is you, or if you end this shift adjacent to the target, the target takes half the damage."
+												},
+												{
+													"type": "field",
+													"name": "Spend",
+													"value": 2,
+													"repeatable": false,
+													"effect": "Make a melee free strike against the creature that damaged the target."
+												}
+											]
+										}
+									}
+								}
+							],
+							"optionalFeatures": []
+						},
+						{
+							"level": 2,
+							"features": [
+								{
+									"id": "bzETrObsFfukTsKF",
+									"name": "Soul Instinct",
+									"description": "Once per turn, you can make a melee free strike whenever a creature moves from a square adjacent to you to another square adjacent to you. In addition, your stability is increased by 1.",
+									"type": "Text",
+									"data": null
+								},
+								{
+									"id": "zMh3T36dRkETvXP5",
+									"name": "2nd-Level Soulforged Ability",
+									"description": "",
+									"type": "Choice",
+									"data": {
+										"options": [
+											{
+												"feature": {
+													"id": "s9kdt7HC4gyw0SOQ",
+													"name": "Soul Form",
+													"description": "",
+													"type": "Ability",
+													"data": {
+														"ability": {
+															"id": "cvF4m32z5QKl8fuv",
+															"name": "Soul Form",
+															"description": "Your Soulblade takes its true form, flaring with power.",
+															"type": {
+																"usage": "Maneuver",
+																"free": false,
+																"trigger": "",
+																"time": "",
+																"qualifiers": [],
+																"freeStrike": false
+															},
+															"keywords": [
+																"Magic"
+															],
+															"distance": [
+																{
+																	"type": "Self",
+																	"value": 0,
+																	"value2": 0,
+																	"within": 0,
+																	"special": "",
+																	"qualifier": ""
+																}
+															],
+															"target": "Self",
+															"cost": 5,
+															"repeatable": false,
+															"minLevel": 1,
+															"preEffect": "",
+															"powerRoll": null,
+															"test": null,
+															"effect": "",
+															"strained": "",
+															"alternateEffects": [],
+															"spend": [],
+															"persistence": [],
+															"sections": [
+																{
+																	"type": "text",
+																	"text": "Until the end of the encounter, whenever you gain the benefit of a Soulshape form, you may choose an additional form to benefit from. You can use the spend effect for no cost on both form benefits. You may use the Soulshape maneuver."
+																}
+															]
+														}
+													}
+												},
+												"value": 1
+											},
+											{
+												"feature": {
+													"id": "EqBgynwXKZi5gPhh",
+													"name": "Soul Spiral",
+													"description": "",
+													"type": "Ability",
+													"data": {
+														"ability": {
+															"id": "QKw9odWNUqve0maB",
+															"name": "Soul Spiral",
+															"description": "Your Soulblade unfurls in a violent spiral, crashing through foes.",
+															"type": {
+																"usage": "Main Action",
+																"free": false,
+																"trigger": "",
+																"time": "",
+																"qualifiers": [],
+																"freeStrike": false
+															},
+															"keywords": [
+																"Magic",
+																"Weapon",
+																"Melee",
+																"Area"
+															],
+															"distance": [
+																{
+																	"type": "Burst",
+																	"value": 2,
+																	"value2": 0,
+																	"within": 0,
+																	"special": "",
+																	"qualifier": ""
+																}
+															],
+															"target": "Each enemy within area",
+															"cost": 5,
+															"repeatable": false,
+															"minLevel": 1,
+															"preEffect": "",
+															"powerRoll": null,
+															"test": null,
+															"effect": "",
+															"strained": "",
+															"alternateEffects": [],
+															"spend": [],
+															"persistence": [],
+															"sections": [
+																{
+																	"type": "roll",
+																	"roll": {
+																		"characteristic": [
+																			"Agility"
+																		],
+																		"bonus": 0,
+																		"tier1": "5 damage",
+																		"tier2": "8 damage; push 1",
+																		"tier3": "11 damage; push 3"
+																	}
+																}
+															]
+														}
+													}
+												},
+												"value": 1
+											}
+										],
+										"count": 1,
+										"selected": [],
+										"respiteChange": false
+									}
+								}
+							],
+							"optionalFeatures": []
+						},
+						{
+							"level": 3,
+							"features": [],
+							"optionalFeatures": []
+						},
+						{
+							"level": 4,
+							"features": [
+								{
+									"id": "VfHjw4c1hqS0wweX",
+									"name": "Shifting Balance",
+									"description": "",
+									"type": "Heroic Resource Gain",
+									"data": {
+										"tag": "",
+										"trigger": "The first time in an encounter that you or an ally within 10 squares uses a heroic ability",
+										"value": "2",
+										"replacesTags": []
+									}
+								}
+							],
+							"optionalFeatures": []
+						},
+						{
+							"level": 5,
+							"features": [
+								{
+									"id": "JlUL0fMI0wlFxogh",
+									"name": "Soul Flow",
+									"description": "Whenever you use a Heroic Ability that is a main action, if a Soulshape benefit is active, you can extend the duration of it until the end of your next turn. If a Soulshape benefit is not active, you may choose to use Soulshape as a free maneuver, with the effect instead lasting until the end of your next turn.",
+									"type": "Text",
+									"data": null
+								}
+							],
+							"optionalFeatures": []
+						},
+						{
+							"level": 6,
+							"features": [
+								{
+									"id": "vWXo9kMCmYV88YY3",
+									"name": "6th-Level Soulforged Ability",
+									"description": "",
+									"type": "Choice",
+									"data": {
+										"options": [
+											{
+												"feature": {
+													"id": "sbwlnpstNHJjHCUY",
+													"name": "Soul Wave",
+													"description": "",
+													"type": "Ability",
+													"data": {
+														"ability": {
+															"id": "8UT1qs43QJBs2fhB",
+															"name": "Soul Wave",
+															"description": "Your Soulblade blazes with the power of your will, unleashing it in a wave of force.",
+															"type": {
+																"usage": "Main Action",
+																"free": false,
+																"trigger": "",
+																"time": "",
+																"qualifiers": [],
+																"freeStrike": false
+															},
+															"keywords": [
+																"Area",
+																"Magic",
+																"Melee",
+																"Weapon"
+															],
+															"distance": [
+																{
+																	"type": "Line",
+																	"value": 10,
+																	"value2": 3,
+																	"within": 1,
+																	"special": "",
+																	"qualifier": ""
+																}
+															],
+															"target": "Each enemy within area",
+															"cost": 9,
+															"repeatable": false,
+															"minLevel": 1,
+															"sections": [
+																{
+																	"type": "roll",
+																	"roll": {
+																		"characteristic": [
+																			"Agility"
+																		],
+																		"bonus": 0,
+																		"tier1": "4 damage; M < weak, dazed (save ends)",
+																		"tier2": "6 damage; M < average, dazed (save ends)",
+																		"tier3": "10 damage; M < strong, dazed (save ends)",
+																		"crit": ""
+																	}
+																},
+																{
+																	"type": "text",
+																	"text": "Whenever the creature is dealt rolled damage while they have this weakness, it is increased by 1. Additionally, while the target has damage weakness this way, its characteristic scores are treated as 1 lower for the purpose of resisting potency effects."
+																}
+															],
+															"preEffect": "",
+															"powerRoll": null,
+															"test": null,
+															"effect": "",
+															"strained": "",
+															"alternateEffects": [],
+															"spend": [],
+															"persistence": []
+														}
+													}
+												},
+												"value": 1
+											},
+											{
+												"feature": {
+													"id": "T6pGSWeR3EtSoYm0",
+													"name": "Soul Gaze",
+													"description": "",
+													"type": "Ability",
+													"data": {
+														"ability": {
+															"id": "TAryQ8WyMGhLnvkJ",
+															"name": "Soul Gaze",
+															"description": "You peer into your foe's soul, laying bare its true nature - compelling them to do the same",
+															"type": {
+																"usage": "Main Action",
+																"free": false,
+																"trigger": "",
+																"time": "",
+																"qualifiers": [],
+																"freeStrike": false
+															},
+															"keywords": [
+																"Magic",
+																"Ranged"
+															],
+															"distance": [
+																{
+																	"type": "Ranged",
+																	"value": 5,
+																	"value2": 0,
+																	"within": 0,
+																	"special": "",
+																	"qualifier": ""
+																}
+															],
+															"target": "One creature",
+															"cost": 9,
+															"repeatable": false,
+															"minLevel": 1,
+															"sections": [
+																{
+																	"type": "roll",
+																	"roll": {
+																		"characteristic": [
+																			"Agility"
+																		],
+																		"bonus": 0,
+																		"tier1": "6 psychic damage, P < weak, dazed and frightened (save ends)",
+																		"tier2": "10 psychic damage, P < average, dazed and frightened (save ends)",
+																		"tier3": "16 psychic damage, P < strong, dazed and frightened (save ends)",
+																		"crit": ""
+																	}
+																},
+																{
+																	"type": "text",
+																	"text": "Until the end of the encounter or you are dying, the first time in a turn that the target damages another creature, they take 10 damage."
+																}
+															],
+															"preEffect": "",
+															"powerRoll": null,
+															"test": null,
+															"effect": "",
+															"strained": "",
+															"alternateEffects": [],
+															"spend": [],
+															"persistence": []
+														}
+													}
+												},
+												"value": 1
+											}
+										],
+										"count": 1,
+										"selected": [],
+										"respiteChange": false
+									}
+								}
+							],
+							"optionalFeatures": []
+						},
+						{
+							"level": 7,
+							"features": [],
+							"optionalFeatures": []
+						},
+						{
+							"level": 8,
+							"features": [
+								{
+									"id": "w7keEJ8sptuWrgQm",
+									"name": "Soul Manifest",
+									"description": "Choose a Soulshape form, its effects are now permanent. When it is chosen when using Soulshape, the bonuses increase further. You may change the chosen form for this feature as a downtime activity",
+									"type": "Text",
+									"data": null
+								}
+							],
+							"optionalFeatures": []
+						},
+						{
+							"level": 9,
+							"features": [
+								{
+									"id": "sUAOJv9ZyLBMJKsZ",
+									"name": "9th-Level Soulforged Ability",
+									"description": "",
+									"type": "Choice",
+									"data": {
+										"options": [
+											{
+												"feature": {
+													"id": "ETIuvAZekAYJBw77",
+													"name": "Soul Rupture",
+													"description": "",
+													"type": "Ability",
+													"data": {
+														"ability": {
+															"id": "vlpGEcAjyVl9NFhY",
+															"name": "Soul Rupture",
+															"description": "Fraying apart your foe's soul, you impose a debilitating weakness.",
+															"type": {
+																"usage": "Main Action",
+																"free": false,
+																"trigger": "",
+																"time": "",
+																"qualifiers": [],
+																"freeStrike": false
+															},
+															"keywords": [
+																"Magic",
+																"Melee",
+																"Strike",
+																"Weapon"
+															],
+															"distance": [
+																{
+																	"type": "Melee",
+																	"value": 1,
+																	"value2": 0,
+																	"within": 0,
+																	"special": "",
+																	"qualifier": ""
+																}
+															],
+															"target": "One creature",
+															"cost": 11,
+															"repeatable": false,
+															"minLevel": 1,
+															"sections": [
+																{
+																	"type": "roll",
+																	"roll": {
+																		"characteristic": [
+																			"Might"
+																		],
+																		"bonus": 0,
+																		"tier1": "10 + A damage; P < weak, damage weakness 10 (save ends)",
+																		"tier2": "14 + A damage; P < average, damage weakness 10 (save ends)",
+																		"tier3": "20 + A damage; P < strong, damage weakness 10 (save ends)",
+																		"crit": ""
+																	}
+																},
+																{
+																	"type": "text",
+																	"text": "Whenever the creature is dealt rolled damage while they have this damage weakness, it is increased by 1. When this condition would end, the damage weakness is instead lowered by 5. When it is lowered to zero or lower, the condition ends."
+																}
+															],
+															"preEffect": "",
+															"powerRoll": null,
+															"test": null,
+															"effect": "",
+															"strained": "",
+															"alternateEffects": [],
+															"spend": [],
+															"persistence": []
+														}
+													}
+												},
+												"value": 1
+											},
+											{
+												"feature": {
+													"id": "bKYaBNKebODP0cVY",
+													"name": "Soul Realm",
+													"description": "",
+													"type": "Ability",
+													"data": {
+														"ability": {
+															"id": "Wy6zfquojENgtpuT",
+															"name": "Soul Realm",
+															"description": "The boundary between this world and the spirit realm grows thin. Within your reach, souls shimmer exposed.",
+															"type": {
+																"usage": "Maneuver",
+																"free": false,
+																"trigger": "",
+																"time": "",
+																"qualifiers": [],
+																"freeStrike": false
+															},
+															"keywords": [
+																"Area",
+																"Magic"
+															],
+															"distance": [
+																{
+																	"type": "Aura",
+																	"value": 2,
+																	"value2": 0,
+																	"within": 0,
+																	"special": "",
+																	"qualifier": ""
+																}
+															],
+															"target": "Each enemy within area",
+															"cost": 11,
+															"repeatable": false,
+															"minLevel": 1,
+															"sections": [
+																{
+																	"type": "text",
+																	"text": "Until the end of the encounter or you are dying, targets have damage weakness 5 while within the area."
+																}
+															],
+															"preEffect": "",
+															"powerRoll": null,
+															"test": null,
+															"effect": "",
+															"strained": "",
+															"alternateEffects": [],
+															"spend": [],
+															"persistence": []
+														}
+													}
+												},
+												"value": 1
+											}
+										],
+										"count": 1,
+										"selected": [],
+										"respiteChange": false
+									}
+								}
+							],
+							"optionalFeatures": []
+						},
+						{
+							"level": 10,
+							"features": [],
+							"optionalFeatures": []
+						}
+					],
+					"selected": false,
+					"abilities": []
+				}
+			],
+			"level": 1,
+			"characteristics": [],
+			"type": "standard"
+		}
+	],
+	"domains": [],
+	"kits": [
+		{
+			"id": "pv9oQ50gJHNtUUFG",
+			"name": "Sword Master",
+			"description": "An artist of the blade, the battlefield is your canvas - each step a flourish, each cut a stroke.",
+			"type": "",
+			"armor": [
+				"Medium Armor"
+			],
+			"weapon": [
+				"Light Weapon"
+			],
+			"stamina": 6,
+			"speed": 3,
+			"stability": 0,
+			"meleeDamage": {
+				"tier1": 2,
+				"tier2": 2,
+				"tier3": 2
+			},
+			"rangedDamage": null,
+			"meleeDistance": 0,
+			"rangedDistance": 0,
+			"disengage": 0,
+			"features": [
+				{
+					"id": "tYwcKzDXrVVjFXX3",
+					"name": "Gliding Heron",
+					"description": "",
+					"type": "Ability",
+					"data": {
+						"ability": {
+							"id": "KmXBgQQ7xtCIC0Nl",
+							"name": "Gliding Heron",
+							"description": "You move like water, cutting through foes with a single, fluid motion.",
+							"type": {
+								"usage": "Main Action",
+								"free": false,
+								"trigger": "",
+								"time": "",
+								"qualifiers": [],
+								"freeStrike": false
+							},
+							"keywords": [
+								"Melee",
+								"Strike",
+								"Weapon",
+								"Magic"
+							],
+							"distance": [
+								{
+									"type": "Melee",
+									"value": 1,
+									"value2": 0,
+									"within": 0,
+									"special": "",
+									"qualifier": ""
+								}
+							],
+							"target": "Special",
+							"cost": "signature",
+							"repeatable": false,
+							"minLevel": 1,
+							"preEffect": "",
+							"powerRoll": null,
+							"test": null,
+							"effect": "",
+							"strained": "",
+							"alternateEffects": [],
+							"spend": [],
+							"persistence": [],
+							"sections": [
+								{
+									"type": "roll",
+									"roll": {
+										"characteristic": [
+											"Might",
+											"Agility"
+										],
+										"bonus": 0,
+										"tier1": "3 damage",
+										"tier2": "6 damage",
+										"tier3": "9 damage"
+									}
+								},
+								{
+									"type": "text",
+									"text": "You shift up to 3 squares and make one power roll that targets all enemies that you moved through during the move. Enemies are not treated as difficult terrain for the purpose of this movement. You may not end this movement inside an enemy's square."
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "QG1DmKTgkJ66djvG",
+			"name": "Spear Dancer",
+			"description": "In your hands the spear is more than just a weapon - it is an instrument of expression, a tool of of both mobility and power.",
+			"type": "",
+			"armor": [
+				"Medium Armor"
+			],
+			"weapon": [
+				"Medium Weapon"
+			],
+			"stamina": 6,
+			"speed": 1,
+			"stability": 0,
+			"meleeDamage": {
+				"tier1": 2,
+				"tier2": 2,
+				"tier3": 2
+			},
+			"rangedDamage": null,
+			"meleeDistance": 1,
+			"rangedDistance": 0,
+			"disengage": 0,
+			"features": [
+				{
+					"id": "MauPb4P1lqmqUfuQ",
+					"name": "Leaping Swan",
+					"description": "",
+					"type": "Ability",
+					"data": {
+						"ability": {
+							"id": "LeQJlBnIRYv5Q3Yf",
+							"name": "Leaping Swan",
+							"description": "You plant your spear into the earth and launch yourself skyward, twisting through the air before driving down with deadly force.",
+							"type": {
+								"usage": "Main Action",
+								"free": false,
+								"trigger": "",
+								"time": "",
+								"qualifiers": [],
+								"freeStrike": false
+							},
+							"keywords": [
+								"Melee",
+								"Strike",
+								"Weapon"
+							],
+							"distance": [
+								{
+									"type": "Melee",
+									"value": 1,
+									"value2": 0,
+									"within": 0,
+									"special": "",
+									"qualifier": ""
+								}
+							],
+							"target": "One creature",
+							"cost": "signature",
+							"repeatable": false,
+							"minLevel": 1,
+							"sections": [
+								{
+									"type": "roll",
+									"roll": {
+										"characteristic": [
+											"Might",
+											"Agility"
+										],
+										"bonus": 0,
+										"tier1": "3 damage + M or A damage; M < weak, prone",
+										"tier2": "6 damage + M or A damage; M < average, prone",
+										"tier3": "9 damage + M or A damage; M < strong, prone"
+									}
+								},
+								{
+									"type": "text",
+									"text": "You can jump up to 3 squares straight toward the target without provoking attacks of opportunity before this strike."
+								}
+							],
+							"preEffect": "",
+							"powerRoll": null,
+							"test": null,
+							"effect": "",
+							"strained": "",
+							"alternateEffects": [],
+							"spend": [],
+							"persistence": []
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "XfY74SvvDj31l4j5",
+			"name": "Chain Weaver",
+			"description": "Specializing in the elegant control of a chained weapon such as a kusarigama or chain whip, you are able to perform melee attacks at a distance, binding your foes and keeping them at bay.",
+			"type": "",
+			"armor": [
+				"Light Armor"
+			],
+			"weapon": [
+				"Whip"
+			],
+			"stamina": 3,
+			"speed": 0,
+			"stability": 0,
+			"meleeDamage": {
+				"tier1": 1,
+				"tier2": 1,
+				"tier3": 1
+			},
+			"rangedDamage": null,
+			"meleeDistance": 3,
+			"rangedDistance": 0,
+			"disengage": 0,
+			"features": [
+				{
+					"id": "GgM7zEZySSdFxsra",
+					"name": "Binding Snake",
+					"description": "You wrap your chain around your foe, holding them in place.",
+					"type": "Ability",
+					"data": {
+						"ability": {
+							"id": "S5iU8gEIJRqIYj7X",
+							"name": "Binding Snake",
+							"description": "You wrap your chain around your foe, holding them in place.",
+							"type": {
+								"usage": "Main Action",
+								"free": false,
+								"trigger": "",
+								"time": "",
+								"qualifiers": [],
+								"freeStrike": false
+							},
+							"keywords": [
+								"Melee",
+								"Weapon"
+							],
+							"distance": [
+								{
+									"type": "Melee",
+									"value": 1,
+									"value2": 0,
+									"within": 0,
+									"special": "",
+									"qualifier": ""
+								}
+							],
+							"target": "Special",
+							"cost": "signature",
+							"repeatable": false,
+							"minLevel": 1,
+							"sections": [
+								{
+									"type": "roll",
+									"roll": {
+										"characteristic": [
+											"Might",
+											"Agility"
+										],
+										"bonus": 0,
+										"tier1": "2 + M or A damage; A < weak, grabbed",
+										"tier2": "4 + M or A damage; A < average, grabbed",
+										"tier3": "7 + M or A damage; A < strong, grabbed"
+									}
+								}
+							],
+							"preEffect": "",
+							"powerRoll": null,
+							"test": null,
+							"effect": "",
+							"strained": "",
+							"alternateEffects": [],
+							"spend": [],
+							"persistence": []
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "d44d8TwtkyGXvJMX",
+			"name": "Greatblade Adept",
+			"description": "Under your control, the seemingly too-large, clunky blade moves with the grace of a feather.",
+			"type": "",
+			"armor": [
+				"Medium Armor"
+			],
+			"weapon": [
+				"Heavy Weapon"
+			],
+			"stamina": 6,
+			"speed": 1,
+			"stability": 0,
+			"meleeDamage": {
+				"tier1": 0,
+				"tier2": 0,
+				"tier3": 4
+			},
+			"rangedDamage": null,
+			"meleeDistance": 1,
+			"rangedDistance": 0,
+			"disengage": 0,
+			"features": [
+				{
+					"id": "OtapfZlJHW5PvoIa",
+					"name": "Falling Petal Cut",
+					"description": "",
+					"type": "Ability",
+					"data": {
+						"ability": {
+							"id": "6sJfXOzxOeuCjJBh",
+							"name": "Falling Petal Cut",
+							"description": "Seemingly weightless in the air, your enemy feels the full brunt of your blade.",
+							"type": {
+								"usage": "Main Action",
+								"free": false,
+								"trigger": "",
+								"time": "",
+								"qualifiers": [],
+								"freeStrike": false
+							},
+							"keywords": [
+								"Melee",
+								"Strike",
+								"Weapon"
+							],
+							"distance": [
+								{
+									"type": "Melee",
+									"value": 1,
+									"value2": 0,
+									"within": 0,
+									"special": "",
+									"qualifier": ""
+								}
+							],
+							"target": "One creature",
+							"cost": "signature",
+							"repeatable": false,
+							"minLevel": 1,
+							"sections": [
+								{
+									"type": "roll",
+									"roll": {
+										"characteristic": [
+											"Might",
+											"Agility"
+										],
+										"bonus": 0,
+										"tier1": "3 + M or A damage; push 1",
+										"tier2": "6 + M or A damage; push 2",
+										"tier3": "9 + M or A damage; push 4",
+										"crit": ""
+									}
+								}
+							],
+							"preEffect": "",
+							"powerRoll": null,
+							"test": null,
+							"effect": "",
+							"strained": "",
+							"alternateEffects": [],
+							"spend": [],
+							"persistence": []
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "pcjiw-yxGWh-nKPZ2-NNbWt-0xuTb-qGNZJ",
+			"name": "Iron Fist",
+			"description": "Wreathed in steel, your fists are unyielding weapons of destruction.",
+			"type": "",
+			"armor": [],
+			"weapon": [
+				"Unarmed Strike"
+			],
+			"stamina": 6,
+			"speed": 3,
+			"stability": 0,
+			"meleeDamage": {
+				"tier1": 2,
+				"tier2": 2,
+				"tier3": 2
+			},
+			"rangedDamage": null,
+			"meleeDistance": 0,
+			"rangedDistance": 0,
+			"disengage": 0,
+			"features": [
+				{
+					"id": "YmycG-YOTig-GNQjm-oxtMF-IvuNa-hRiFF",
+					"name": "Uppercut",
+					"description": "",
+					"type": "Ability",
+					"data": {
+						"ability": {
+							"id": "Rpuf7-qwajp-NwPZE-AbrYe-dtdMl-jNPhj",
+							"name": "Uppercut",
+							"description": "Your fist connects with their chin --  and they go flying.",
+							"type": {
+								"usage": "Main Action",
+								"free": false,
+								"trigger": "",
+								"time": "",
+								"qualifiers": [],
+								"freeStrike": false
+							},
+							"keywords": [
+								"Melee",
+								"Strike",
+								"Weapon"
+							],
+							"distance": [
+								{
+									"type": "Melee",
+									"value": 1,
+									"value2": 0,
+									"within": 0,
+									"special": "",
+									"qualifier": ""
+								}
+							],
+							"target": "One creature",
+							"cost": "signature",
+							"repeatable": false,
+							"minLevel": 1,
+							"sections": [
+								{
+									"type": "roll",
+									"roll": {
+										"characteristic": [
+											"Might",
+											"Agility"
+										],
+										"bonus": 0,
+										"tier1": "2 + M or A damage; vertical push 1",
+										"tier2": "4 + M or A damage; vertical push 2",
+										"tier3": "6 + M or A damage; vertical push 3"
+									}
+								}
+							],
+							"preEffect": "",
+							"powerRoll": null,
+							"test": null,
+							"effect": "",
+							"strained": "",
+							"alternateEffects": [],
+							"spend": [],
+							"persistence": []
+						}
+					}
+				}
+			]
+		}
+	],
+	"complications": [],
+	"perks": [],
+	"titles": [
+		{
+			"id": "0cscvKlBUFs5kaDg",
+			"name": "Student of The Art",
+			"description": "When you use any of these benefits, you can use your own heroic resource for it, but you can't spend additional balance unless you have the balance class feature.",
+			"echelon": 2,
+			"prerequisites": "You triumph in single combat against the scion of an art, and they have agreed to teach you and portion of their art as a result.",
+			"features": [
+				{
+					"id": "TrodjRoExYFwwExc",
+					"name": "Enweave",
+					"description": "You learn the scion's Enweave maneuver.",
+					"type": "Ability",
+					"data": {
+						"ability": {
+							"id": "NwocKzXIRG9JBCWv",
+							"name": "Enweave",
+							"description": "*You weave magic into your weapon, preparing to unleash it with your next strike.*",
+							"type": {
+								"usage": "Maneuver",
+								"free": false,
+								"trigger": "",
+								"time": "",
+								"qualifiers": [],
+								"freeStrike": false
+							},
+							"keywords": [
+								"Magic",
+								"Weapon"
+							],
+							"distance": [
+								{
+									"type": "Self",
+									"value": 0,
+									"value2": 0,
+									"within": 0,
+									"special": "",
+									"qualifier": ""
+								}
+							],
+							"target": "Self",
+							"cost": 1,
+							"repeatable": false,
+							"minLevel": 1,
+							"sections": [
+								{
+									"type": "text",
+									"text": "Choose one of the following effects, which applies to one target of the next damaging melee weapon ability you use:\n\n◆**Flame Strike:** Damage becomes fire. The target takes fire damage equal to triple your Reason score.\n\n◆**Lightning Strike:** Damage becomes lightning. The target and three different enemies chosen in sequence, each being within 3 squares of the previous target, take lightning damage equal to your Reason.\n\n◆**Gale Strike:** Damage becomes sonic. You can either push the target, or yourself away from the target a distance equal to double your Reason score.\n\n◆**Freeze Strike:** Damage becomes cold. The target is slowed (save ends).\n\nEffects other than the changing of the damage type are applied after the ability is resolved. If you use this ability more than once before it applies to an ability, you can choose one of the damage types to apply to the affected ability, but apply all of the effects.\n\nYou cannot use Enweave more than twice before applying its effect to an ability."
+								},
+								{
+									"type": "field",
+									"name": "",
+									"value": 2,
+									"repeatable": false,
+									"effect": "This ability becomes a free maneuver instead."
+								}
+							],
+							"preEffect": "",
+							"powerRoll": null,
+							"test": null,
+							"effect": "",
+							"strained": "",
+							"alternateEffects": [],
+							"spend": [],
+							"persistence": []
+						}
+					}
+				},
+				{
+					"id": "79HVQx0eGm9wyofB",
+					"name": "Blink",
+					"description": "You learn the scion's Blink maneuver.",
+					"type": "Ability",
+					"data": {
+						"ability": {
+							"id": "J8hU1oBSsyaSCkdT",
+							"name": "Blink",
+							"description": "*…And you miss it.*",
+							"type": {
+								"usage": "Maneuver",
+								"free": false,
+								"trigger": "",
+								"time": "",
+								"qualifiers": [],
+								"freeStrike": false
+							},
+							"keywords": [
+								"Magic"
+							],
+							"distance": [
+								{
+									"type": "Self",
+									"value": 0,
+									"value2": 0,
+									"within": 0,
+									"special": "",
+									"qualifier": ""
+								}
+							],
+							"target": "Self",
+							"cost": 0,
+							"repeatable": false,
+							"minLevel": 1,
+							"sections": [
+								{
+									"type": "text",
+									"text": "You teleport up to 6 squares. You may break up this movement once with a main action, splitting it into two teleports."
+								},
+								{
+									"type": "field",
+									"name": "",
+									"value": 5,
+									"repeatable": false,
+									"effect": "If the above movement is split into two teleports, you may repeat the main action used to break it apart at the destination of the second teleport so long as it was a strike ability that costs 5 or fewer balance."
+								}
+							],
+							"preEffect": "",
+							"powerRoll": null,
+							"test": null,
+							"effect": "",
+							"strained": "",
+							"alternateEffects": [],
+							"spend": [],
+							"persistence": []
+						}
+					}
+				},
+				{
+					"id": "FnCHYJQnYMarlZWl",
+					"name": "Runebrand",
+					"description": "You learn the scion's Runebrand maneuver.",
+					"type": "Ability",
+					"data": {
+						"ability": {
+							"id": "e3GQwExgMh6Du8E1",
+							"name": "Runebrand",
+							"description": "*You brand a volatile rune on your target, priming it for detonation.*",
+							"type": {
+								"usage": "Maneuver",
+								"free": false,
+								"trigger": "",
+								"time": "",
+								"qualifiers": [],
+								"freeStrike": false
+							},
+							"keywords": [
+								"Magic"
+							],
+							"distance": [
+								{
+									"type": "Melee",
+									"value": 1,
+									"value2": 0,
+									"within": 0,
+									"special": "",
+									"qualifier": ""
+								}
+							],
+							"target": "One creature or object",
+							"cost": 1,
+							"repeatable": false,
+							"minLevel": 1,
+							"sections": [
+								{
+									"type": "text",
+									"text": "When using this ability, choose one of the following Enweave effects, ignoring the component that changes the damage type of your next weapon ability.\n\n◆**Flame Strike:** Damage becomes fire. The target takes fire damage equal to triple your Reason score.\n\n◆**Lightning Strike:** Damage becomes lightning. The target and three different enemies chosen in sequence, each being within 3 squares of the previous target, take lightning damage equal to your Reason.\n\n◆**Gale Strike:** Damage becomes sonic. You can either push the target, or yourself away from the target a distance equal to double your Reason score.\n\n◆**Freeze Strike:** Damage becomes cold. The target is slowed (save ends).\n\nYou brand your target with a rune imbued by the effect you chose, priming it for detonation. At the end of your turn, the rune is primed. When a rune is primed, the next time the branded target is damaged, the rune detonates, applying its effect to the target and each enemy within range 2 of it.\n\nIf the chosen Enweave effect is 'Gale Strike', you must choose the 'push the target' option, and the branded target is not affected by detonation, while the other targets are affected as if the branded target was the source of the forced movement."
+								},
+								{
+									"type": "field",
+									"name": "",
+									"value": 2,
+									"repeatable": false,
+									"effect": "The rune is immediately primed."
+								}
+							],
+							"preEffect": "",
+							"powerRoll": null,
+							"test": null,
+							"effect": "",
+							"strained": "",
+							"alternateEffects": [],
+							"spend": [],
+							"persistence": []
+						}
+					}
+				},
+				{
+					"id": "WYfBCtUCyIiIuNgw",
+					"name": "Soulshape",
+					"description": "You learn the scion's Soulshape maneuver.",
+					"type": "Ability",
+					"data": {
+						"ability": {
+							"id": "nZaCyHbGtYaYzyw5",
+							"name": "Soulshape",
+							"description": "*By reshaping the bound fragment of your soul, you persuade your Soulblade to take on a new form.*",
+							"type": {
+								"usage": "Maneuver",
+								"free": false,
+								"trigger": "",
+								"time": "",
+								"qualifiers": [],
+								"freeStrike": false
+							},
+							"keywords": [
+								"Magic"
+							],
+							"distance": [
+								{
+									"type": "Self",
+									"value": 0,
+									"value2": 0,
+									"within": 0,
+									"special": "",
+									"qualifier": ""
+								}
+							],
+							"target": "Self",
+							"cost": 0,
+							"repeatable": false,
+							"minLevel": 1,
+							"sections": [
+								{
+									"type": "text",
+									"text": "Choose a modified form for your weapon, each granting an effect to melee weapon abilities until the start of your next turn:\n\n◆**Expansive:** Area is increased by 1. If the area is a line, increase the size of the larger dimension by 2 instead.\n\n◆**Powerful:** Rolled damage is increased by your Reason score.\n\n◆**Resonant:** Potency increased by 1.\n\n◆**Reaching:** Melee weapon abilities have their distance increased by double your Reason."
+								},
+								{
+									"type": "field",
+									"name": "",
+									"value": 2,
+									"repeatable": false,
+									"effect": "Any numeric benefit of the chosen form is doubled in value."
+								}
+							],
+							"preEffect": "",
+							"powerRoll": null,
+							"test": null,
+							"effect": "",
+							"strained": "",
+							"alternateEffects": [],
+							"spend": [],
+							"persistence": []
+						}
+					}
+				}
+			],
+			"selectedFeatureID": ""
+		}
+	],
+	"items": [
+		{
+			"id": "B6AQoErq38MbNt8g",
+			"name": "Hoversword",
+			"description": "The blade gently hovers horizontally, awaiting its rider.",
+			"type": "Leveled Weapon",
+			"keywords": [
+				"Light Weapon",
+				"Magic"
+			],
+			"crafting": {
+				"id": "MzgoGI2pSsboPcH6",
+				"name": "",
+				"description": "",
+				"itemPrerequisites": "Meteorite shard,  anti-gravity matter",
+				"source": "Texts or lore in Anjali",
+				"characteristic": [
+					"Agility",
+					"Reason",
+					"Intuition"
+				],
+				"goal": 450,
+				"isCustom": false,
+				"progress": null
+			},
+			"effect": "",
+			"featuresByLevel": [
+				{
+					"level": 1,
+					"features": [
+						{
+							"id": "y3VqA9bw5XeHr6DL",
+							"name": "1st Level",
+							"description": "Once per turn, when you become adjacent to an enemy, you can deal damage to it equal to either your Might or Agility score. Additionally, you gently hover while riding the sword, allowing you to ignore dangerous and difficult terrain on the ground.",
+							"type": "Ability Damage",
+							"data": {
+								"keywords": [
+									"Weapon"
+								],
+								"value": 1,
+								"valueFromController": null,
+								"valueCharacteristics": [],
+								"valueCharacteristicMultiplier": 1,
+								"valuePerLevel": 0,
+								"valuePerEchelon": 0,
+								"damageType": "Damage"
+							}
+						}
+					]
+				},
+				{
+					"level": 5,
+					"features": [
+						{
+							"id": "9XTS7fsl7RDmNgFP",
+							"name": "5th Level",
+							"description": "When you deal damage by becoming adjacent to an enemy, they are A<average, prone. Additionally, you can fly. If you don't end your turn on the ground, you fall.",
+							"type": "Ability Damage",
+							"data": {
+								"keywords": [
+									"Weapon"
+								],
+								"value": 1,
+								"valueFromController": null,
+								"valueCharacteristics": [],
+								"valueCharacteristicMultiplier": 1,
+								"valuePerLevel": 0,
+								"valuePerEchelon": 0,
+								"damageType": "Damage"
+							}
+						}
+					]
+				},
+				{
+					"level": 9,
+					"features": [
+						{
+							"id": "qymhBvlMTHG3emtz",
+							"name": "9th Level",
+							"description": "You can deal damage by moving adjacent to an enemy one per turn per enemy instead of once per turn. Additionally, you no longer need to end your turn on the ground to avoid falling.",
+							"type": "Ability Damage",
+							"data": {
+								"keywords": [
+									"Weapon"
+								],
+								"value": 1,
+								"valueFromController": null,
+								"valueCharacteristics": [],
+								"valueCharacteristicMultiplier": 1,
+								"valuePerLevel": 0,
+								"valuePerEchelon": 0,
+								"damageType": "Damage"
+							}
+						}
+					]
+				}
+			],
+			"imbuements": [],
+			"count": 1,
+			"customizationsByLevel": []
+		},
+		{
+			"id": "h5aa3h5rxveBHf5c",
+			"name": "Blade of Lasting Consequences",
+			"description": "The simple facade of this blade is betrayed by its surprising weight.",
+			"type": "Leveled Weapon",
+			"keywords": [
+				"Medium Weapon",
+				"Magic"
+			],
+			"crafting": {
+				"id": "TmpEpTCAFQ8EHGsc",
+				"name": "",
+				"description": "",
+				"itemPrerequisites": "Adamantine chunk, a memento signifying remorse",
+				"source": "Texts or lore in Khelt",
+				"characteristic": [
+					"Agility",
+					"Reason",
+					"Intuition"
+				],
+				"goal": 450,
+				"isCustom": false,
+				"progress": null
+			},
+			"effect": "",
+			"featuresByLevel": [
+				{
+					"level": 1,
+					"features": [
+						{
+							"id": "uH5q8P6PjXbsA6fN",
+							"name": "1st Level",
+							"description": "If you inflict an effect that is ended by a saving throw using this weapon, it is ended by a roll of 8 or higher.",
+							"type": "Ability Damage",
+							"data": {
+								"keywords": [
+									"Weapon"
+								],
+								"value": 1,
+								"valueFromController": null,
+								"valueCharacteristics": [],
+								"valueCharacteristicMultiplier": 1,
+								"valuePerLevel": 0,
+								"valuePerEchelon": 0,
+								"damageType": "Damage"
+							}
+						}
+					]
+				},
+				{
+					"level": 5,
+					"features": [
+						{
+							"id": "kZWAJl0qA39r1xFK",
+							"name": "5th Level",
+							"description": "The potency of your abilities applied by this weapon is increased by 1.",
+							"type": "Ability Damage",
+							"data": {
+								"keywords": [
+									"Weapon"
+								],
+								"value": 1,
+								"valueFromController": null,
+								"valueCharacteristics": [],
+								"valueCharacteristicMultiplier": 1,
+								"valuePerLevel": 0,
+								"valuePerEchelon": 0,
+								"damageType": "Damage"
+							}
+						}
+					]
+				},
+				{
+					"level": 9,
+					"features": [
+						{
+							"id": "aicsiTXM213fZB7c",
+							"name": "9th Level",
+							"description": "Whenever a creature would end an effect that you have inflicted using this weapon, it instead ends at the end of their next turn.",
+							"type": "Ability Damage",
+							"data": {
+								"keywords": [
+									"Weapon"
+								],
+								"value": 1,
+								"valueFromController": null,
+								"valueCharacteristics": [],
+								"valueCharacteristicMultiplier": 1,
+								"valuePerLevel": 0,
+								"valuePerEchelon": 0,
+								"damageType": "Damage"
+							}
+						}
+					]
+				}
+			],
+			"imbuements": [],
+			"count": 1,
+			"customizationsByLevel": []
+		},
+		{
+			"id": "RuNRK-CWxcv-qt5iw-cZBoF-wL3ZI-gJbas",
+			"name": "Shade-Maker",
+			"description": "A shifting shroud of dusk clings to this armor, swallowing light with a whisper.",
+			"type": "Leveled Armor",
+			"keywords": [
+				"Light Armor",
+				"Magic"
+			],
+			"crafting": {
+				"id": "WTDsf-Hy4EQ-inkjP-dkyaN-5I2yN-4Xhyu",
+				"name": "",
+				"description": "",
+				"itemPrerequisites": "Cloth spun from void-silk, essence of shadow",
+				"source": "Texts or lore in Khelt",
+				"characteristic": [
+					"Agility",
+					"Reason",
+					"Intuition"
+				],
+				"goal": 450,
+				"isCustom": false,
+				"progress": null
+			},
+			"effect": "",
+			"featuresByLevel": [
+				{
+					"level": 1,
+					"features": [
+						{
+							"id": "pExcm-RYn5w-wGaBO-K6gb9-yNErV-8qONF",
+							"name": "Stamina Increase",
+							"description": "",
+							"type": "Bonus",
+							"data": {
+								"field": "Stamina",
+								"value": 6,
+								"valueFromController": null,
+								"valueCharacteristics": [],
+								"valueCharacteristicMultiplier": 1,
+								"valuePerLevel": 0,
+								"valuePerEchelon": 0
+							}
+						},
+						{
+							"id": "C7kNW-aExma-pRDcv-rliHA-bIEKf-Uy6ES",
+							"name": "Wreathed in Shadow",
+							"description": "You can hide, even if you're being observed. As a maneuver, you can create a cube 3 pool of shadow within 10 squares that provides concealment to allies which lasts until the end of combat, or one minute. You must gain 1 Victory to be able to use this ability again.",
+							"type": "Text",
+							"data": null
+						}
+					]
+				},
+				{
+					"level": 5,
+					"features": [
+						{
+							"id": "jp92z-58Sq4-hr4tt-rehnE-EWb3a-HeFQu",
+							"name": "Stamina Increase",
+							"description": "",
+							"type": "Bonus",
+							"data": {
+								"field": "Stamina",
+								"value": 6,
+								"valueFromController": null,
+								"valueCharacteristics": [],
+								"valueCharacteristicMultiplier": 1,
+								"valuePerLevel": 0,
+								"valuePerEchelon": 0
+							}
+						},
+						{
+							"id": "f8Kfs-0JOeS-bo4nn-Oe58F-SCVqL-KiXQE",
+							"name": "Corruption Immunity",
+							"description": "",
+							"type": "Damage Modifier",
+							"data": {
+								"modifiers": [
+									{
+										"damageType": "Corruption",
+										"type": "Immunity",
+										"value": 5,
+										"valueFromController": null,
+										"valueCharacteristics": [],
+										"valueCharacteristicMultiplier": 1,
+										"valuePerLevel": 0,
+										"valuePerEchelon": 0
+									}
+								]
+							}
+						},
+						{
+							"id": "TfBYT-K0f78-ZkuS7-2k4AH-17IHz-aDVX7",
+							"name": "Wreathed in Shadow Upgrade",
+							"description": "The area of the pool of shadow increases to 4 cube. You can create the pool of shadow as a free maneuver.",
+							"type": "Text",
+							"data": null
+						}
+					]
+				},
+				{
+					"level": 9,
+					"features": [
+						{
+							"id": "ISlJn-jZOGJ-8fp4k-fwbQZ-lm59M-dcWox",
+							"name": "Stamina Increase",
+							"description": "",
+							"type": "Bonus",
+							"data": {
+								"field": "Recoveries",
+								"value": 9,
+								"valueFromController": null,
+								"valueCharacteristics": [],
+								"valueCharacteristicMultiplier": 1,
+								"valuePerLevel": 0,
+								"valuePerEchelon": 0
+							}
+						},
+						{
+							"id": "JSJ1h-GrlTq-y5aIA-sKRw0-RYV3t-NxIGJ",
+							"name": "Corruption Immunity Upgrade",
+							"description": "",
+							"type": "Damage Modifier",
+							"data": {
+								"modifiers": [
+									{
+										"damageType": "Corruption",
+										"type": "Immunity",
+										"value": 5,
+										"valueFromController": null,
+										"valueCharacteristics": [],
+										"valueCharacteristicMultiplier": 1,
+										"valuePerLevel": 0,
+										"valuePerEchelon": 0
+									}
+								]
+							}
+						},
+						{
+							"id": "7vKVX-8jbLC-obIcy-HocV6-ur3ow-3GuBc",
+							"name": "Wreathed in Shadow Upgrade",
+							"description": "The area of the pool of shadow increases to 5 cube. You no longer need to gain 1 Victory to use this ability again, but can only use it once per turn.",
+							"type": "Text",
+							"data": null
+						}
+					]
+				}
+			],
+			"imbuements": [],
+			"count": 1,
+			"customizationsByLevel": []
+		}
+	],
+	"monsterGroups": [],
+	"skills": [],
+	"languages": [],
+	"projects": [],
+	"terrain": [],
+	"subclasses": [],
+	"imbuements": [],
+	"type": "Homebrew",
+	"adventures": [],
+	"encounters": [],
+	"montages": [],
+	"negotiations": [],
+	"tacticalMaps": []
+}

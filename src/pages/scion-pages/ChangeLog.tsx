@@ -5,6 +5,30 @@ const Changelog = () => (
     <Column>
       <Title>Changelog</Title>
 
+      <Heading3>V1.1</Heading3>
+      <BulletList>
+        <Text>
+          Blink: reduced teleport to 6 squares; movement can be split into two
+          teleports with a main action; reworked spend effect
+        </Text>
+        <Text>
+          Enweave: reworked Lightning Strike to chain to three additional
+          enemies; removed Crimson Strike; simplified Freeze Strike
+        </Text>
+        <Text>
+          Full Moon Arc: reduced damage and added bleeding (save ends)
+        </Text>
+        <Text>Horizon Step: reduced pre-strike teleport to 10 squares</Text>
+        <Text>
+          Runebrand: removed single-target limitation; added Gale Strike
+          detonation rules
+        </Text>
+        <Text>Soulshape: simplified form effects and wording</Text>
+        <Text>
+          Unlimited Bladeworks: additional power roll now targets two 3 cubes
+        </Text>
+      </BulletList>
+
       <Heading3>V0.4.9</Heading3>
       <BulletList>
         <Text>Perk added to 8th-level features</Text>

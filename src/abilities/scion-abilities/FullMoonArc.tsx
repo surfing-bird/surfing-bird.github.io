@@ -10,9 +10,9 @@ export const FullMoonArc = () => (
     targets="Each enemy in the area"
     addedStats={["Agility"]}
     tierResults={{
-      low: "6 damage",
-      middle: "9 damage",
-      high: "13 damage",
+      low: "2 damage; A < WEAK, bleeding (save ends)",
+      middle: "4 damage; A < AVERAGE, bleeding (save ends)",
+      high: "6 damage; A < STRONG, bleeding (save ends)",
     }}
   />
 );

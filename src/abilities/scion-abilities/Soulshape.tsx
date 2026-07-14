@@ -11,22 +11,19 @@ export const Soulshape = () => (
     effect={
       <TextBlock>
         <Text>
-          Choose a modified form for your Soulblade, each granting a
-          distinct effect until the start of your next turn:
+          Choose a modified form for your Soulblade, each granting an effect to
+          melee weapon abilities until the start of your next turn:
         </Text>
         <BulletList>
           <Detail
             detailName="Expansive"
-            detailValue="Melee weapon abilities have their area increased by 1. If the area is a line, increase the size of the larger dimension by 2 instead."
+            detailValue="Area is increased by 1. If the area is a line, increase the size of the larger dimension by 2 instead."
           />
           <Detail
             detailName="Powerful"
-            detailValue="Melee weapon abilities with rolled damage have their damage increased by your Reason score. If the ability force moves a target, the forced movement distance gains a bonus equal to your Reason score."
+            detailValue="Rolled damage is increased by your Reason score."
           />
-          <Detail
-            detailName="Resonant"
-            detailValue="Melee weapon abilities have their potency increased by 1."
-          />
+          <Detail detailName="Resonant" detailValue="Potency increased by 1." />
           <Detail
             detailName="Reaching"
             detailValue="Melee weapon abilities have their distance increased by double your Reason."
@@ -42,4 +39,3 @@ export const Soulshape = () => (
     }
   />
 );
-
