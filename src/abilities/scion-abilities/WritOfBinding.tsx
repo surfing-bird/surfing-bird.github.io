@@ -3,7 +3,7 @@ import { Ability } from "@/components";
 export const WritOfBinding = () => (
   <Ability
     title="Writ of Binding (5 Balance)"
-    subtitle="Arcane chains erupt from the ground, coling around your foe."
+    subtitle="Arcane chains erupt from the ground, coiling around your foe."
     keywords="Magic, Ranged"
     actionType="Main action"
     range="Ranged 5"

@@ -4,7 +4,7 @@ export const CrossSlash = () => (
   <Ability
     title="Cross Slash (7 Balance)"
     subtitle="You cleave the air in multiple directions, unleashing blades of pure force."
-    keywords="Melee, Weapon, Magic, Area"
+    keywords="Area, Magic, Melee, Weapon"
     actionType="Main action"
     range="four 5 × 1 lines within 1"
     targets="Each enemy in the area"

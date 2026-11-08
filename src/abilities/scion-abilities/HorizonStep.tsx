@@ -14,6 +14,6 @@ export const HorizonStep = () => (
       middle: "18 + A damage",
       high: "23 + A damage",
     }}
-    effect="You may teleport to up to 10 squares before this strike."
+    effect="You may teleport up to 10 squares before this strike."
   />
 );

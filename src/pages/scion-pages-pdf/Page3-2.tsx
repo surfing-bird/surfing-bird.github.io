@@ -7,6 +7,7 @@ import {
   SeverTheMoment,
   SanguineThread,
   CutToTheCore,
+  TwinfoldStrike,
 } from "@/abilities/scion-abilities";
 import { ColumnPDF, Heading2, Heading3, PagePDF, Text } from "@/components";
 
@@ -17,6 +18,7 @@ const Page3_2 = () => (
       <StillEdge />
       <YourRageBetraysYou />
       <CutToTheCore />
+      <TwinfoldStrike />
     </ColumnPDF>
 
     <ColumnPDF>

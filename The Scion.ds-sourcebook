@@ -10,7 +10,7 @@
 		{
 			"id": "6I6yyhOOgwGnCawC",
 			"name": "Scion",
-			"description": "You were deemed worthy of a secret Art known only to a chosen few, allowing you to weave steel and magic into a single, fluid dance. Passed down through an unbroken chain of master and disciple, this ancient discipline was entrusted to you, its esoteric techniques guiding you toward the cultivation of Balance: a harmonious alignment of movement, feeling, and intent.\n\nAs a Scion, you are the the quiet before the storm. You move like the wind, and strike as lightning. Your flexibility is unmatched - each blow empowered to suit the moment, whether to debilitate foes, or bring their end closer still. The battlefield is a canvas upon which you paint your masterpiece, and your Art is your brush.",
+			"description": "You were deemed worthy of a secret Art known only to a chosen few, allowing you to weave steel and magic into a single, fluid dance. Passed down through an unbroken chain of master and disciple, this ancient discipline was entrusted to you, its esoteric techniques guiding you toward the cultivation of Balance: a harmonious alignment of movement, feeling, and intent.\n\nAs a scion, you are the the quiet before the storm. You move like the wind, and strike as lightning. Your flexibility is unmatched - each blow empowered to suit the moment, whether to debilitate foes, or bring their end closer still. The battlefield is a canvas upon which you paint your masterpiece, and your Art is your brush.",
 			"heroicResource": "Balance",
 			"subclassName": "Art",
 			"subclassCount": 1,
@@ -84,7 +84,7 @@
 						{
 							"id": "DPrp53cyrPmKlK8Q",
 							"name": "Kit",
-							"description": "You can use and the gain the benefits of a kit.",
+							"description": "You can use and gain the benefits of a kit.",
 							"type": "Kit",
 							"data": {
 								"types": [
@@ -172,7 +172,7 @@
 									"sections": [
 										{
 											"type": "text",
-											"text": "Choose one of the following effects, which applies to one target of the next damaging melee weapon ability you use:\n\n◆ Flame Strike: Damage becomes fire. The target takes fire damage equal to triple your Reason score.\n◆ Lightning Strike: Damage becomes lightning. The target and three different enemies chosen in sequence, each being within 3 squares of the previous target, take lightning damage equal to your Reason.\n◆ Gale Strike: Damage becomes sonic. You can either push the target, or yourself away from the target a distance equal to double your Reason score.\n◆ Freeze Strike: Damage becomes cold. The target is slowed (save ends).\n\nEffects other than the changing of the damage type are applied after the ability is resolved. If you use this ability more than once before it applies to an ability, you can choose one of the damage types to apply to the affected ability, but apply all of the effects.\n\nYou cannot use Enweave more than twice before applying its effect to an ability."
+											"text": "Choose one of the following effects, which applies to one target of the next damaging melee weapon ability you use:\n\n◆ Flame Strike: Damage becomes fire. The target takes fire damage equal to triple your Reason score.\n◆ Lightning Strike: Damage becomes lightning. The target and three different enemies in sequence, each being within 3 squares of the previous target, take lightning damage equal to your Reason.\n◆ Gale Strike: Damage becomes sonic. You can either push the target, or yourself away from the target a distance equal to double your Reason score.\n◆ Freeze Strike: Damage becomes cold. The target is slowed (save ends).\n\nEffects other than the changing of the damage type are applied after the ability is resolved. If you use this ability more than once before it applies to an ability, you can choose one of the damage types to apply to the affected ability, but apply all of the effects.\n\nYou cannot use Enweave more than twice before applying its effect to an ability."
 										},
 										{
 											"type": "field",
@@ -731,7 +731,7 @@
 						},
 						{
 							"type": "text",
-							"text": "Before choosing the target of this ability and resolving the power roll, choose a creature or object within range 5, then either vertical pull 4 the chosen creature or object, or vertical pull yourself 4 from the chosen creature or object's space. When a creature is pulled into the air this way, you may choose to make it stay aloft until the end of your turn."
+							"text": "Before choosing the target of this ability and resolving the power roll, choose a creature or object within range 5, then either vertical pull 4 the chosen creature or object, or vertical pull yourself 4 from the chosen creature or object's space. When a creature is pulled into the air this way and it can't fly, you may choose to make it stay aloft until the end of your turn."
 						}
 					]
 				},
@@ -761,7 +761,7 @@
 							"qualifier": ""
 						}
 					],
-					"target": "Each creature within area",
+					"target": "Each enemy in the area",
 					"cost": "signature",
 					"repeatable": false,
 					"minLevel": 1,
@@ -848,7 +848,7 @@
 						},
 						{
 							"type": "text",
-							"text": "The wall area is only used for targeting, and does not create an actual wall. Each increase to the wall's length is doubled."
+							"text": "The wall area is only used for targeting. Each increase to the wall's length is doubled."
 						}
 					]
 				},
@@ -879,7 +879,7 @@
 							"qualifier": ""
 						}
 					],
-					"target": "One creature or object",
+					"target": "One creature",
 					"cost": "signature",
 					"repeatable": false,
 					"minLevel": 1,
@@ -899,14 +899,14 @@
 									"Agility"
 								],
 								"bonus": 0,
-								"tier1": "6 + R damage; R < weak, disoriented (save ends)",
-								"tier2": "8 + R damage; R < average, disoriented (save ends)",
-								"tier3": "11 + R damage; R < strong, disoriented (save ends)"
+								"tier1": "5 + R psychic damage; R < weak, disoriented (save ends)",
+								"tier2": "8 + R psychic damage; R < average, disoriented (save ends)",
+								"tier3": "11 + R psychic damage; R < strong, disoriented (save ends)"
 							}
 						},
 						{
 							"type": "text",
-							"text": "A disoriented creature only has line of effect within 2 squares."
+							"text": "A disoriented creature has line of effect only within 2 squares."
 						}
 					]
 				},
@@ -1027,7 +1027,7 @@
 				{
 					"id": "mdrzD-jnaTA-NYu5D-U0OGK-4ctLU-6XRIv",
 					"name": "Cut To The Core",
-					"description": "You cut through your opponent's defenses, leaving them vulnerable.",
+					"description": "You cut through your foe's defenses, leaving them vulnerable.",
 					"type": {
 						"usage": "Main Action",
 						"free": false,
@@ -1071,7 +1071,7 @@
 						},
 						{
 							"type": "text",
-							"text": "The target's characteristic scores are treated as one lower for the sake of resisting potencies until the end of their next turn."
+							"text": "The target's characteristic scores are treated as lower by 1 for the sake of resisting potencies until the end of their next turn."
 						}
 					],
 					"preEffect": "",
@@ -1085,7 +1085,7 @@
 				},
 				{
 					"id": "nEF5J2Lof7zx5C0S",
-					"name": "Sever the Moment",
+					"name": "Sever The Moment",
 					"description": "You read the flaw in their stance and cut deep.",
 					"type": {
 						"usage": "Main Action",
@@ -1249,7 +1249,7 @@
 						},
 						{
 							"type": "text",
-							"text": "Create a 1 burst area of mist which provides concealment to allies that lasts until the end of your next turn. Allies inside the mist can hide even while observed."
+							"text": "Create a 1 burst area of mist which provides concealment to yourself and allies that lasts until the end of your next turn. You and allies inside the mist can hide even while observed."
 						}
 					]
 				},
@@ -1281,7 +1281,7 @@
 							"qualifier": ""
 						}
 					],
-					"target": "One creature or object",
+					"target": "One creature",
 					"cost": 3,
 					"repeatable": false,
 					"minLevel": 1,
@@ -1556,9 +1556,10 @@
 						"freeStrike": false
 					},
 					"keywords": [
-						"Melee",
+						"Area",
 						"Magic",
-						"Area"
+						"Melee",
+						"Weapon"
 					],
 					"distance": [
 						{
@@ -1673,7 +1674,7 @@
 							"qualifier": ""
 						}
 					],
-					"target": "One creature or object",
+					"target": "One creature",
 					"cost": 7,
 					"repeatable": false,
 					"minLevel": 1,
@@ -1744,7 +1745,7 @@
 					"sections": [
 						{
 							"type": "text",
-							"text": "Place a d6 die set to 6 to track this effect. Once a turn you may reduce the die by any amount up to its current value. Then, distribute that many spectral blades among enemies within range 5 as you choose. Each blade deals 4 + your Reason score in damage. You cannot assign more than one blade per enemy. In addition, whenever an enemy in range 5 is affected by a potency effect, you may reduce the die by 1 to increase the potency of the ability by 1."
+							"text": "Place a d6 die set to 6 to track this effect. Once on your turn, you may reduce the die by any amount up to its current value. Then, distribute that many spectral blades among enemies within range 5 as you choose. Each blade deals 4 + your Reason score in damage. You cannot assign more than one blade per enemy. In addition, whenever an enemy in range 5 is affected by a potency effect, you may reduce the die by 1 to increase the potency of the ability by 1."
 						}
 					]
 				},
@@ -2208,7 +2209,7 @@
 				{
 					"id": "vGtuuw0cYpAkkPUN",
 					"name": "Blinkblade",
-					"description": "A master of teleportation magic, the Blinkblades weave in and out of reach with uncanny speed - difficult to catch, and harder still to escape.",
+					"description": "The Blinkblade is a master of teleportation magic, using it to blink in and out of reach with uncanny speed - difficult to catch, and harder still to escape.\n\nNO CAGE CAN HOLD ME. I CHOOSE MY PATH.",
 					"featuresByLevel": [
 						{
 							"level": 1,
@@ -2224,8 +2225,8 @@
 								},
 								{
 									"id": "d7U62IAB3V2YaasD",
-									"name": "Phase Step",
-									"description": "Whenever you disengage, you may teleport instead of shifting.",
+									"name": "Phasewalk",
+									"description": "Whenever you disengage, you may teleport instead of shifting. The number of squares you can shift when disengaging is increased by one.",
 									"type": "Bonus",
 									"data": {
 										"field": "Disengage",
@@ -2240,13 +2241,13 @@
 								{
 									"id": "ItluiV0gSXKqjgz7",
 									"name": "Blink",
-									"description": "",
+									"description": "…And you miss it.",
 									"type": "Ability",
 									"data": {
 										"ability": {
 											"id": "UZK6xyl5g71nt7t8",
 											"name": "Blink",
-											"description": "",
+											"description": "…And you miss it.",
 											"type": {
 												"usage": "Maneuver",
 												"free": false,
@@ -2290,7 +2291,7 @@
 													"name": "Spend",
 													"value": 5,
 													"repeatable": false,
-													"effect": "If the above movement is split into two teleports, you may repeat the main action used to break it apart at the destination of the second teleport so long as it was a strike ability that costs 5 or fewer balance."
+													"effect": "If the above movement is split into two teleports, you may repeat the main action used to break it apart at the destination of the second teleport so long as it was a strike ability that costs 3 or fewer balance."
 												}
 											]
 										}
@@ -2499,7 +2500,7 @@
 																},
 																{
 																	"type": "text",
-																	"text": "You may teleport to up to 10 squares before this strike."
+																	"text": "You may teleport up to 10 squares before this strike."
 																}
 															],
 															"preEffect": "",
@@ -2867,7 +2868,7 @@
 				{
 					"id": "nCi6Ufmfz74H70Pr",
 					"name": "Runewright",
-					"description": "The Runewright wields the ancient craft of runebranding to sear volatile runes onto living beings and shape the battlefield through groundlaid writs. ",
+					"description": "The Runewright wields the ancient craft of runebranding to sear volatile runes onto living beings and shape the battlefield through groundlaid writs. You gain the Mechanics skill.\n\nKNOWLEDGE IS POWER. I CARVE ORDER OUT OF CHAOS.",
 					"featuresByLevel": [
 						{
 							"level": 1,
@@ -2890,7 +2891,7 @@
 										"ability": {
 											"id": "PG0F4c5cIccZlDl4",
 											"name": "Runebrand",
-											"description": "You imprint a runic sigil on your target, priming it for detonation.",
+											"description": "You brand a volatile rune on your target, priming it for detonation.",
 											"type": {
 												"usage": "Maneuver",
 												"free": false,
@@ -3052,7 +3053,7 @@
 																	"qualifier": ""
 																}
 															],
-															"target": "Each enemy within area",
+															"target": "Special",
 															"cost": 5,
 															"repeatable": false,
 															"minLevel": 1,
@@ -3067,7 +3068,7 @@
 															"sections": [
 																{
 																	"type": "text",
-																	"text": "The area remains until the end of the encounter or you are dying. Choose one of the following effects to apply to the area:\n◆Writ of Flame: Each enemy who enters the area for the first time in a combat round or starts their turn there takes damage equal to triple your Reason score.\n◆Writ of Sanctuary: Each ally, or youreslf, who enters the area for the first time in a combat round or starts their turn there may either spend a recovery, or end one effect that is ended by a saving throw or ends at the end of their turn."
+																	"text": "The area remains until the end of the encounter or you are dying. Choose one of the following effects to apply to the area:\n◆Writ of Flame: Each enemy who enters the area for the first time in a combat round or starts their turn there takes damage equal to triple your Reason score.\n◆Writ of Sanctuary: Each ally, or yourself, who enters the area for the first time in a combat round or starts their turn there may either spend a recovery, or end one effect that is ended by a saving throw or ends at the end of their turn."
 																}
 															]
 														}
@@ -3085,7 +3086,7 @@
 														"ability": {
 															"id": "amPXemJUIcHPs4Zx",
 															"name": "Writ of Binding",
-															"description": "Arcane chains erupt from the ground, coling around your foe.",
+															"description": "Arcane chains erupt from the ground, coiling around your foe.",
 															"type": {
 																"usage": "Main Action",
 																"free": false,
@@ -3493,7 +3494,7 @@
 				{
 					"id": "HK8oez2ay5ZQNhfp",
 					"name": "Soulforged",
-					"description": "The Soulforged binds a fragment of their soul into a chosen weapon, forging a sentient extension of their will - a Soulblade. Through this bond, they shape and empower their blade, adapting its form and function to meet the shifting demands of battle. ",
+					"description": "The Soulforged binds a fragment of their soul into a chosen weapon, forging a sentient extension of their will - a Soulblade. Through this bond, they shape and empower their blade, adapting its form and function to meet the shifting demands of battle. You gain the Empathize skill.\n\nI AM THE SOUL OF MY BLADE. I BRING JUSTICE FOR ALL.",
 					"featuresByLevel": [
 						{
 							"level": 1,
@@ -4662,7 +4663,7 @@
 							"sections": [
 								{
 									"type": "text",
-									"text": "Choose one of the following effects, which applies to one target of the next damaging melee weapon ability you use:\n\n◆**Flame Strike:** Damage becomes fire. The target takes fire damage equal to triple your Reason score.\n\n◆**Lightning Strike:** Damage becomes lightning. The target and three different enemies chosen in sequence, each being within 3 squares of the previous target, take lightning damage equal to your Reason.\n\n◆**Gale Strike:** Damage becomes sonic. You can either push the target, or yourself away from the target a distance equal to double your Reason score.\n\n◆**Freeze Strike:** Damage becomes cold. The target is slowed (save ends).\n\nEffects other than the changing of the damage type are applied after the ability is resolved. If you use this ability more than once before it applies to an ability, you can choose one of the damage types to apply to the affected ability, but apply all of the effects.\n\nYou cannot use Enweave more than twice before applying its effect to an ability."
+									"text": "Choose one of the following effects, which applies to one target of the next damaging melee weapon ability you use:\n\n◆**Flame Strike:** Damage becomes fire. The target takes fire damage equal to triple your Reason score.\n\n◆**Lightning Strike:** Damage becomes lightning. The target and three different enemies in sequence, each being within 3 squares of the previous target, take lightning damage equal to your Reason.\n\n◆**Gale Strike:** Damage becomes sonic. You can either push the target, or yourself away from the target a distance equal to double your Reason score.\n\n◆**Freeze Strike:** Damage becomes cold. The target is slowed (save ends).\n\nEffects other than the changing of the damage type are applied after the ability is resolved. If you use this ability more than once before it applies to an ability, you can choose one of the damage types to apply to the affected ability, but apply all of the effects.\n\nYou cannot use Enweave more than twice before applying its effect to an ability."
 								},
 								{
 									"type": "field",
@@ -4728,7 +4729,7 @@
 									"name": "",
 									"value": 5,
 									"repeatable": false,
-									"effect": "If the above movement is split into two teleports, you may repeat the main action used to break it apart at the destination of the second teleport so long as it was a strike ability that costs 5 or fewer balance."
+									"effect": "If the above movement is split into two teleports, you may repeat the main action used to break it apart at the destination of the second teleport so long as it was a strike ability that costs 3 or fewer balance."
 								}
 							],
 							"preEffect": "",
@@ -4780,7 +4781,7 @@
 							"sections": [
 								{
 									"type": "text",
-									"text": "When using this ability, choose one of the following Enweave effects, ignoring the component that changes the damage type of your next weapon ability.\n\n◆**Flame Strike:** Damage becomes fire. The target takes fire damage equal to triple your Reason score.\n\n◆**Lightning Strike:** Damage becomes lightning. The target and three different enemies chosen in sequence, each being within 3 squares of the previous target, take lightning damage equal to your Reason.\n\n◆**Gale Strike:** Damage becomes sonic. You can either push the target, or yourself away from the target a distance equal to double your Reason score.\n\n◆**Freeze Strike:** Damage becomes cold. The target is slowed (save ends).\n\nYou brand your target with a rune imbued by the effect you chose, priming it for detonation. At the end of your turn, the rune is primed. When a rune is primed, the next time the branded target is damaged, the rune detonates, applying its effect to the target and each enemy within range 2 of it.\n\nIf the chosen Enweave effect is 'Gale Strike', you must choose the 'push the target' option, and the branded target is not affected by detonation, while the other targets are affected as if the branded target was the source of the forced movement."
+									"text": "When using this ability, choose one of the following Enweave effects, ignoring the component that changes the damage type of your next weapon ability.\n\n◆**Flame Strike:** Damage becomes fire. The target takes fire damage equal to triple your Reason score.\n\n◆**Lightning Strike:** Damage becomes lightning. The target and three different enemies in sequence, each being within 3 squares of the previous target, take lightning damage equal to your Reason.\n\n◆**Gale Strike:** Damage becomes sonic. You can either push the target, or yourself away from the target a distance equal to double your Reason score.\n\n◆**Freeze Strike:** Damage becomes cold. The target is slowed (save ends).\n\nYou brand your target with a rune imbued by the effect you chose, priming it for detonation. At the end of your turn, the rune is primed. When a rune is primed, the next time the branded target is damaged, the rune detonates, applying its effect to the target and each enemy within range 2 of it.\n\nIf the chosen Enweave effect is 'Gale Strike', you must choose the 'push the target' option, and the branded target is not affected by detonation, while the other targets are affected as if the branded target was the source of the forced movement."
 								},
 								{
 									"type": "field",

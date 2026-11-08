@@ -8,7 +8,7 @@ export const FallingStar = () => (
     actionType="Main action"
     range="Special"
     targets="Special"
-    addedStats={["Reason"]}
+    addedStats={["Agility"]}
     tierResults={{
       low: "5 damage; A < WEAK, dazed (save ends)",
       middle: "8 damage; A < AVERAGE, dazed (save ends)",

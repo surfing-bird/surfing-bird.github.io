@@ -12,6 +12,64 @@ const Page1 = () => (
   <Page id="class-subclass">
     <Column>
       <TextBlock>
+        <Heading2>Investiture</Heading2>
+        <Text className="font-bold">
+          This feature replaces your Prayer and Ward features.
+        </Text>
+
+        <Text>
+          Your god provides you with holy relics invested with divine power,
+          defining your approach to combat.
+        </Text>
+      </TextBlock>
+
+      <Heading4>Armaments of War </Heading4>
+      <Text>
+        Your god grants you relics of war. You gain the Warrior Priest kit, and
+        your abilities with the 'Strike' tag gain the 'Weapon' and 'Melee' tags,
+        and a distance of 'Melee 1'. Whenever you make a strike at melee
+        distance, you can use your maneuever to make a free strike against the
+        same target immediately. Additionally, you pick one less conduit
+        signature ability, and the range of your ranged magic abilities is
+        reduced by 5.
+      </Text>
+
+      <Heading4>Censer of Wrath</Heading4>
+      <Text>
+        Your god grants you a blazing censer overflowing with divine wrath. You
+        gain a +1 bonus to rolled damage with magic abilities, and your magic
+        abilities have their area increased by 1. If the area is a line,
+        increase the size of the larger dimension by 2 instead.
+      </Text>
+
+      <Heading4>Reliquary of Grace</Heading4>
+      <Text>
+        Your god grants you a reliquary which protects the just. Your allies are
+        always considered to be within range, line of effect and area of your
+        magic abilities.
+      </Text>
+
+      <Heading4>Mantle of Passage</Heading4>
+      <Text>
+        Your god grants you a mantle that gives you divine speed. You do not
+        provoke attacks of opportunity, and gain a +5 bonus to speed and to the
+        distance you can shift when you take the Disengage move action. When you
+        disengage, you can teleport instead of shifting.
+      </Text>
+
+      <Text className="italic">
+        The base prayers (and similar features on other classes) are imbalanced.
+        The Prayer of Steel is the strongest one, and it's not even close. In
+        terms of kit math, it gets an equivalent of 4 points, whereas the +1
+        damage on Prayer of Destruction would cost 1 point, and the +2 ranged
+        distance on Prayer of Distance is worth 0.5 a point. In addition, the
+        Prayer of Soldier's Skill is lacklustre considering you don't get any
+        abilities with the Weapon tag, so the +1 damage bonus only does anything
+        on free strikes. I've attempted to balance the various prayers, and
+        rework Soldier's Skill to be more viable - and to feel more like a
+        hybrid.
+      </Text>
+      {/* <TextBlock>
         <Heading2>Prayer</Heading2>
         <Text>
           Your god answers a prayer with enhancements to your body and mind.
@@ -74,7 +132,8 @@ const Page1 = () => (
         on free strikes. I've attempted to balance the various prayers, and
         rework Soldier's Skill to be more viable - and to feel more like a
         hybrid.
-      </Text>
+      </Text> */}
+      <Heading2>3rd-Level Features</Heading2>
     </Column>
 
     <Column>

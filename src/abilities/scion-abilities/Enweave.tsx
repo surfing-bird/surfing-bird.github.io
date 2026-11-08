@@ -80,26 +80,24 @@ export const Enweave = () => (
     effect={
       <TextBlock>
         <Text>
-          <strong>Effect:</strong> Choose one of the following effects, which
-          applies to one target of the next damaging melee weapon ability you
-          use:
+          <strong>Effect:</strong> Choose one of the following effects, which affects your next melee weapon ability:
         </Text>
         <BulletList>
           <Detail
             detailName="Flame Strike"
-            detailValue="Damage becomes fire. The target takes fire damage equal to triple your Reason score."
+            detailValue="Damage type becomes fire. One target takes fire damage equal to triple your Reason score."
           />
           <Detail
             detailName="Lightning Strike"
-            detailValue="Damage becomes lightning. The target and three different enemies chosen in sequence, each being within 3 squares of the previous target, take lightning damage equal to your Reason."
+            detailValue="Damage type becomes lightning. One target and three different enemies in sequence, each being within 3 squares of the previous target, take lightning damage equal to your Reason."
           />
           <Detail
             detailName="Gale Strike"
-            detailValue="Damage becomes sonic. You can either push the target, or yourself away from the target a distance equal to double your Reason score."
+            detailValue="Damage type becomes sonic. You can either push one target, or yourself away from one target a distance equal to double your Reason score."
           />
           <Detail
             detailName="Freeze Strike"
-            detailValue="Damage becomes cold. The target is slowed (save ends)."
+            detailValue="Damage type becomes cold. One target is slowed (save ends)."
           />
 
           {/* <Detail

@@ -17,7 +17,7 @@ export const Soulshape = () => (
         <BulletList>
           <Detail
             detailName="Expansive"
-            detailValue="Area is increased by 1. If the area is a line, increase the size of the larger dimension by 2 instead."
+            detailValue="Area is increased by 1. If the area is a line, you must increase the size of the larger dimension, but by 2 instead of 1."
           />
           <Detail
             detailName="Powerful"

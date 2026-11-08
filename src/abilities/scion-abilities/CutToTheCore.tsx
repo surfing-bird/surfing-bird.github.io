@@ -10,9 +10,9 @@ export const CutToTheCore = () => (
     targets="One creature"
     addedStats={["Agility"]}
     tierResults={{
-      low: "3 + A damage;",
-      middle: "5 + A damage;",
-      high: "8 + A damage;",
+      low: "3 + A damage",
+      middle: "5 + A damage",
+      high: "8 + A damage",
     }}
     effect="The target's characteristic scores are treated as lower by 1 for the sake of resisting potencies until the end of their next turn."
   />

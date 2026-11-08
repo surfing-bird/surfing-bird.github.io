@@ -8,7 +8,7 @@ export const EssenceLance = () => (
     actionType="Main action"
     range="Ranged 10"
     targets="One creature"
-    addedStats={["Agility"]}
+    addedStats={["Reason"]}
     tierResults={{
       low: "5 + R psychic damage, R < WEAK, disoriented (save ends)",
       middle: "8 + R psychic damage, R < AVERAGE, disoriented (save ends)",

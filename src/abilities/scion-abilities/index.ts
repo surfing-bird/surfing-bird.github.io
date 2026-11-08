@@ -17,6 +17,7 @@ export { FluxOverdrive } from "./FluxOverdrive";
 export { FullMoonArc } from "./FullMoonArc";
 export { YourRageBetraysYou } from "./YourRageBetraysYou";
 export { CutToTheCore } from "./CutToTheCore";
+export { TwinfoldStrike } from "./TwinfoldStrike";
 export { GlacialBloom } from "./GlacialBloom";
 export { Godspeed } from "./Godspeed";
 export { HorizonStep } from "./HorizonStep";

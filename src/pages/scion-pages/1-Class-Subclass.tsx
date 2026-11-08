@@ -27,7 +27,7 @@ const Class = () => (
         </Text>
 
         <Text>
-          As a Scion, you are the the quiet before the storm. You move like the
+          As a scion, you are the the quiet before the storm. You move like the
           wind, and strike as lightning. Your flexibility is unmatched - each
           blow empowered to suit the moment, whether to debilitate foes, or
           bring their end closer still. The battlefield is a canvas upon which
@@ -104,7 +104,7 @@ const Class = () => (
       <Heading3>Art</Heading3>
       <TextBlock>
         <Text>
-          Each Scion is a single, carefully chosen inheritor of a different Art.
+          Each scion is a single, carefully chosen inheritor of a different Art.
           The masters of each Art hold different ideals, and choose their scions
           according to their adherence to these ideals - and their capability to
           uphold them.

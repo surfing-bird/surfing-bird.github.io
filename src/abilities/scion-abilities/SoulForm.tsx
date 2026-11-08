@@ -8,7 +8,7 @@ export const SoulForm = () => (
     actionType="Maneuver"
     range="Self"
     targets="Self"
-    effect="Until the end of the encounter, whenever you gain the benefit of a Soulshape form, you may choose an additional form to benefit from. You can use the spend effect for no cost on both form benefits. You may use the Soulshape maneuver."
+    effect="Choose a Soulshape form. You gain its effect with its numeric values doubled, and cannot choose it when using Soulshape until the end of the encounter."
   />
 );
 

@@ -7,6 +7,7 @@ import {
   CrescentArc,
   YourRageBetraysYou,
   CutToTheCore,
+  TwinfoldStrike,
 } from "@/abilities/scion-abilities";
 
 const Signatures = () => (
@@ -27,6 +28,7 @@ const Signatures = () => (
       <EssenceLance />
       <StillEdge />
       <BladeBarrier />
+      <TwinfoldStrike />
     </Column>
 
     <Column>

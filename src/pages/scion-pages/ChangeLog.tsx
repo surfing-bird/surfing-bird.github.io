@@ -5,6 +5,28 @@ const Changelog = () => (
     <Column>
       <Title>Changelog</Title>
 
+      <Heading3>V1.1.1</Heading3>
+      <BulletList>
+        <Text>
+          Enweave: applies to your next melee weapon ability; effects specify
+          one target
+        </Text>
+        <Text>Essence Lance: power roll uses Reason</Text>
+        <Text>Falling Star: power roll uses Agility</Text>
+        <Text>
+          Rune of Strength: recovery or condition clear at the start of each of
+          their turns
+        </Text>
+        <Text>
+          Sevenfold Form: damage weakness can only trigger once
+        </Text>
+        <Text>Soul Form: reworked</Text>
+        <Text>Soulshape: clarified Expansive form</Text>
+        <Text>Surge Weave: power roll uses Reason</Text>
+        <Text>Twinfold Strike: added</Text>
+        <Text>Veil Piercer: power roll uses Reason</Text>
+      </BulletList>
+
       <Heading3>V1.1</Heading3>
       <BulletList>
         <Text>

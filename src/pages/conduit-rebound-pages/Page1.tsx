@@ -56,12 +56,16 @@ const Page1 = () => (
           during combat, you gain 1d3 piety.
         </Text>
 
+        <Text className="bold">
+          For each domain piety trigger, you gain 1 piety instead of 2.
+        </Text>
+
         <Text>
           Additionally, you can gain more piety by praying to the gods—but
           beware! Doing so can easily draw their ire, as the gods hate to be
           annoyed. Before you roll to gain piety at the start of your turn, you
           can pray (no action required). If you do, your roll gains the
-          following additional effects:.
+          following additional effects:
         </Text>
 
         <BulletList>

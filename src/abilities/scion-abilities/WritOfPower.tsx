@@ -22,7 +22,7 @@ export const WritOfPower = () => (
           />
           <Detail
             detailName="Writ of Sanctuary"
-            detailValue="Each ally, or youreslf, who enters the area for the first time in a combat round or starts their turn there may either spend a recovery, or end one effect that is ended by a saving throw or ends at the end of their turn."
+            detailValue="Each ally, or yourself, who enters the area for the first time in a combat round or starts their turn there may either spend a recovery, or end one effect that is ended by a saving throw or ends at the end of their turn."
           />
         </BulletList>
       </TextBlock>

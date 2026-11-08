@@ -2,7 +2,7 @@ import { Ability } from "@/components";
 
 export const SeverTheMoment = () => (
   <Ability
-    title="Sever the Moment (3 Balance)"
+    title="Sever The Moment (3 Balance)"
     subtitle="You read the flaw in their stance and cut deep."
     keywords="Melee, Strike, Weapon, Magic"
     actionType="Main action"

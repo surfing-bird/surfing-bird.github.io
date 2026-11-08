@@ -14,7 +14,7 @@ export const SevenfoldForm = () => (
       middle: "7 x 6 damage",
       high: "7 x 7 damage",
     }}
-    effect="Each instance of damage is considered a separate strike."
+    effect="Each instance of damage is considered a separate strike, but this ability can only trigger damage weakness once."
   />
 );
 

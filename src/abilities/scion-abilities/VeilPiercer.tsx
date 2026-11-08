@@ -8,7 +8,7 @@ export const VeilPiercer = () => (
     actionType="Main action"
     range="Ranged 10"
     targets="One creature"
-    addedStats={["Agility"]}
+    addedStats={["Reason"]}
     tierResults={{
       low: "8 + R damage",
       middle: "12 + R damage",
@@ -17,4 +17,3 @@ export const VeilPiercer = () => (
     effect="Create a 1 burst area of mist which provides concealment to yourself and allies that lasts until the end of your next turn. You and allies inside the mist can hide even while observed."
   />
 );
-

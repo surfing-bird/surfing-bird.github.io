@@ -8,7 +8,7 @@ export const SurgeWeave = () => (
     actionType="Main action"
     range="15 wall within 1"
     targets="Every enemy in the area"
-    addedStats={["Agility"]}
+    addedStats={["Reason"]}
     tierResults={{
       low: "4 damage",
       middle: "8 damage",
@@ -17,4 +17,3 @@ export const SurgeWeave = () => (
     effect="Choose any Enweave effect without an area. It is applied to all enemies within the area. The wall does not persist after the ability resolves."
   />
 );
-
