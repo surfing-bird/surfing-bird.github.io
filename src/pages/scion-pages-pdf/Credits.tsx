@@ -6,7 +6,7 @@ const Credits = () => (
       <div className="flex flex-col items-center text-center gap-8 w-full">
         <div className="flex flex-col items-center gap-2">
           <span className="text-5xl font-bold">THE SCION</span>
-          <span className="text-xl">Version 1.1</span>
+          <span className="text-xl">Version 1.1.1</span>
         </div>
 
         <div className="flex flex-col items-center gap-1">
@@ -59,7 +59,7 @@ const Credits = () => (
 
             <Text className="!text-[12px]">
               Devil May Cry, The Stormlight Archive, Demon Slayer, Tome of
-              Battle, Magus (Pathfinder), The Sun Eater.
+              Battle (D&D 3.5), Magus (Pathfinder), The Sun Eater.
             </Text>
           </div>
         </div>

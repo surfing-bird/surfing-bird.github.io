@@ -35,12 +35,12 @@ function App() {
                 </p>
                 <div className="flex flex-wrap items-center gap-4 text-sm font-semibold text-gray-900">
                   <a
-                    href="https://www.backerkit.com/call_to_action/8ee09726-5af5-46ad-bccf-97250877f898/landing?ref=bk-steelechoes"
+                    href="https://steel-echoes.itch.io/mythic-treasures"
                     target="_blank"
                     rel="noreferrer"
                     className="underline decoration-gray-300"
                   >
-                    BackerKit →
+                    Available on itch.io →
                   </a>
                 </div>
               </div>
