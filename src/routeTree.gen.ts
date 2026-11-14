@@ -12,14 +12,9 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as TroubadourRepriseRouteRouteImport } from './routes/troubadour-reprise/route'
 import { Route as StaminaScalingTweaksRouteRouteImport } from './routes/stamina-scaling-tweaks/route'
 import { Route as ShadowReshadeRouteRouteImport } from './routes/shadow-reshade/route'
-import { Route as ScionPdfRouteRouteImport } from './routes/scion-pdf/route'
-import { Route as ScionFullPdfRouteRouteImport } from './routes/scion-full-pdf/route'
-import { Route as ScionChangelogRouteRouteImport } from './routes/scion-changelog/route'
 import { Route as ScionRouteRouteImport } from './routes/scion/route'
 import { Route as FuryRechargedRouteRouteImport } from './routes/fury-recharged/route'
-import { Route as DarkswornPdfRouteRouteImport } from './routes/darksworn-pdf/route'
 import { Route as ConduitReboundRouteRouteImport } from './routes/conduit-rebound/route'
-import { Route as CensorReformedRouteRouteImport } from './routes/censor-reformed/route'
 import { Route as AlternateTestsRouteRouteImport } from './routes/alternate-tests/route'
 import { Route as IndexRouteImport } from './routes/index'
 
@@ -39,21 +34,6 @@ const ShadowReshadeRouteRoute = ShadowReshadeRouteRouteImport.update({
   path: '/shadow-reshade',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ScionPdfRouteRoute = ScionPdfRouteRouteImport.update({
-  id: '/scion-pdf',
-  path: '/scion-pdf',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ScionFullPdfRouteRoute = ScionFullPdfRouteRouteImport.update({
-  id: '/scion-full-pdf',
-  path: '/scion-full-pdf',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ScionChangelogRouteRoute = ScionChangelogRouteRouteImport.update({
-  id: '/scion-changelog',
-  path: '/scion-changelog',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const ScionRouteRoute = ScionRouteRouteImport.update({
   id: '/scion',
   path: '/scion',
@@ -64,19 +44,9 @@ const FuryRechargedRouteRoute = FuryRechargedRouteRouteImport.update({
   path: '/fury-recharged',
   getParentRoute: () => rootRouteImport,
 } as any)
-const DarkswornPdfRouteRoute = DarkswornPdfRouteRouteImport.update({
-  id: '/darksworn-pdf',
-  path: '/darksworn-pdf',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const ConduitReboundRouteRoute = ConduitReboundRouteRouteImport.update({
   id: '/conduit-rebound',
   path: '/conduit-rebound',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const CensorReformedRouteRoute = CensorReformedRouteRouteImport.update({
-  id: '/censor-reformed',
-  path: '/censor-reformed',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AlternateTestsRouteRoute = AlternateTestsRouteRouteImport.update({
@@ -93,14 +63,9 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/alternate-tests': typeof AlternateTestsRouteRoute
-  '/censor-reformed': typeof CensorReformedRouteRoute
   '/conduit-rebound': typeof ConduitReboundRouteRoute
-  '/darksworn-pdf': typeof DarkswornPdfRouteRoute
   '/fury-recharged': typeof FuryRechargedRouteRoute
   '/scion': typeof ScionRouteRoute
-  '/scion-changelog': typeof ScionChangelogRouteRoute
-  '/scion-full-pdf': typeof ScionFullPdfRouteRoute
-  '/scion-pdf': typeof ScionPdfRouteRoute
   '/shadow-reshade': typeof ShadowReshadeRouteRoute
   '/stamina-scaling-tweaks': typeof StaminaScalingTweaksRouteRoute
   '/troubadour-reprise': typeof TroubadourRepriseRouteRoute
@@ -108,14 +73,9 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/alternate-tests': typeof AlternateTestsRouteRoute
-  '/censor-reformed': typeof CensorReformedRouteRoute
   '/conduit-rebound': typeof ConduitReboundRouteRoute
-  '/darksworn-pdf': typeof DarkswornPdfRouteRoute
   '/fury-recharged': typeof FuryRechargedRouteRoute
   '/scion': typeof ScionRouteRoute
-  '/scion-changelog': typeof ScionChangelogRouteRoute
-  '/scion-full-pdf': typeof ScionFullPdfRouteRoute
-  '/scion-pdf': typeof ScionPdfRouteRoute
   '/shadow-reshade': typeof ShadowReshadeRouteRoute
   '/stamina-scaling-tweaks': typeof StaminaScalingTweaksRouteRoute
   '/troubadour-reprise': typeof TroubadourRepriseRouteRoute
@@ -124,14 +84,9 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/alternate-tests': typeof AlternateTestsRouteRoute
-  '/censor-reformed': typeof CensorReformedRouteRoute
   '/conduit-rebound': typeof ConduitReboundRouteRoute
-  '/darksworn-pdf': typeof DarkswornPdfRouteRoute
   '/fury-recharged': typeof FuryRechargedRouteRoute
   '/scion': typeof ScionRouteRoute
-  '/scion-changelog': typeof ScionChangelogRouteRoute
-  '/scion-full-pdf': typeof ScionFullPdfRouteRoute
-  '/scion-pdf': typeof ScionPdfRouteRoute
   '/shadow-reshade': typeof ShadowReshadeRouteRoute
   '/stamina-scaling-tweaks': typeof StaminaScalingTweaksRouteRoute
   '/troubadour-reprise': typeof TroubadourRepriseRouteRoute
@@ -141,14 +96,9 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/alternate-tests'
-    | '/censor-reformed'
     | '/conduit-rebound'
-    | '/darksworn-pdf'
     | '/fury-recharged'
     | '/scion'
-    | '/scion-changelog'
-    | '/scion-full-pdf'
-    | '/scion-pdf'
     | '/shadow-reshade'
     | '/stamina-scaling-tweaks'
     | '/troubadour-reprise'
@@ -156,14 +106,9 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/alternate-tests'
-    | '/censor-reformed'
     | '/conduit-rebound'
-    | '/darksworn-pdf'
     | '/fury-recharged'
     | '/scion'
-    | '/scion-changelog'
-    | '/scion-full-pdf'
-    | '/scion-pdf'
     | '/shadow-reshade'
     | '/stamina-scaling-tweaks'
     | '/troubadour-reprise'
@@ -171,14 +116,9 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/alternate-tests'
-    | '/censor-reformed'
     | '/conduit-rebound'
-    | '/darksworn-pdf'
     | '/fury-recharged'
     | '/scion'
-    | '/scion-changelog'
-    | '/scion-full-pdf'
-    | '/scion-pdf'
     | '/shadow-reshade'
     | '/stamina-scaling-tweaks'
     | '/troubadour-reprise'
@@ -187,14 +127,9 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AlternateTestsRouteRoute: typeof AlternateTestsRouteRoute
-  CensorReformedRouteRoute: typeof CensorReformedRouteRoute
   ConduitReboundRouteRoute: typeof ConduitReboundRouteRoute
-  DarkswornPdfRouteRoute: typeof DarkswornPdfRouteRoute
   FuryRechargedRouteRoute: typeof FuryRechargedRouteRoute
   ScionRouteRoute: typeof ScionRouteRoute
-  ScionChangelogRouteRoute: typeof ScionChangelogRouteRoute
-  ScionFullPdfRouteRoute: typeof ScionFullPdfRouteRoute
-  ScionPdfRouteRoute: typeof ScionPdfRouteRoute
   ShadowReshadeRouteRoute: typeof ShadowReshadeRouteRoute
   StaminaScalingTweaksRouteRoute: typeof StaminaScalingTweaksRouteRoute
   TroubadourRepriseRouteRoute: typeof TroubadourRepriseRouteRoute
@@ -223,27 +158,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ShadowReshadeRouteRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/scion-pdf': {
-      id: '/scion-pdf'
-      path: '/scion-pdf'
-      fullPath: '/scion-pdf'
-      preLoaderRoute: typeof ScionPdfRouteRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/scion-full-pdf': {
-      id: '/scion-full-pdf'
-      path: '/scion-full-pdf'
-      fullPath: '/scion-full-pdf'
-      preLoaderRoute: typeof ScionFullPdfRouteRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/scion-changelog': {
-      id: '/scion-changelog'
-      path: '/scion-changelog'
-      fullPath: '/scion-changelog'
-      preLoaderRoute: typeof ScionChangelogRouteRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/scion': {
       id: '/scion'
       path: '/scion'
@@ -258,25 +172,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FuryRechargedRouteRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/darksworn-pdf': {
-      id: '/darksworn-pdf'
-      path: '/darksworn-pdf'
-      fullPath: '/darksworn-pdf'
-      preLoaderRoute: typeof DarkswornPdfRouteRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/conduit-rebound': {
       id: '/conduit-rebound'
       path: '/conduit-rebound'
       fullPath: '/conduit-rebound'
       preLoaderRoute: typeof ConduitReboundRouteRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/censor-reformed': {
-      id: '/censor-reformed'
-      path: '/censor-reformed'
-      fullPath: '/censor-reformed'
-      preLoaderRoute: typeof CensorReformedRouteRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/alternate-tests': {
@@ -299,14 +199,9 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AlternateTestsRouteRoute: AlternateTestsRouteRoute,
-  CensorReformedRouteRoute: CensorReformedRouteRoute,
   ConduitReboundRouteRoute: ConduitReboundRouteRoute,
-  DarkswornPdfRouteRoute: DarkswornPdfRouteRoute,
   FuryRechargedRouteRoute: FuryRechargedRouteRoute,
   ScionRouteRoute: ScionRouteRoute,
-  ScionChangelogRouteRoute: ScionChangelogRouteRoute,
-  ScionFullPdfRouteRoute: ScionFullPdfRouteRoute,
-  ScionPdfRouteRoute: ScionPdfRouteRoute,
   ShadowReshadeRouteRoute: ShadowReshadeRouteRoute,
   StaminaScalingTweaksRouteRoute: StaminaScalingTweaksRouteRoute,
   TroubadourRepriseRouteRoute: TroubadourRepriseRouteRoute,

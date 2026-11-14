@@ -1,153 +1,38 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
 import "@/styles.css";
-
-export const Route = createFileRoute("/")({
-  component: App,
-});
-
+import "@/publisher.css";
+export const Route = createFileRoute("/")({ component: App });
+const reworks = [
+  { title: "Conduit Rebound", to: "/conduit-rebound", text: "A minimal rework for Conduit." },
+  { title: "Shadow Reshade", to: "/shadow-reshade", text: "A minimal rework for Shadow." },
+  { title: "Fury Recharged", to: "/fury-recharged", text: "A minimal rework for Fury." },
+  { title: "Troubadour Reprise", to: "/troubadour-reprise", text: "A minimal rework for Troubadour." },
+];
 function App() {
   return (
-    <div className="min-h-screen bg-white text-gray-900">
-      <main className="mx-auto flex max-w-5xl flex-col gap-8 px-4 pb-10 pt-6 sm:px-6 lg:px-8">
-        <section className="flex flex-col gap-3">
-          <p className="max-w-2xl text-sm text-gray-600 sm:text-base text-center">
-            A compendium of Draw Steel homebrew made by SurfingBird.
-          </p>
-        </section>
-
-        <section className="flex flex-col gap-4">
-          <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
-            <div className="block">
-              <div className="relative">
-                <img
-                  src="/mythic_treasures_banner.png"
-                  alt="The Mythic Treasures banner"
-                  className="h-48 w-full sm:h-64"
-                />
-                <div className="absolute inset-0 bg-black/10" />
-              </div>
-              <div className="flex flex-col gap-2 p-5 sm:p-6">
-                <h2 className="text-xl font-semibold sm:text-2xl">
-                  Mythic Treasures
-                </h2>
-                <p className="text-sm text-gray-600 sm:text-base">
-                  Wield narrative-driven, character-defining treasures of myth.
-                </p>
-                <div className="flex flex-wrap items-center gap-4 text-sm font-semibold text-gray-900">
-                  <a
-                    href="https://steel-echoes.itch.io/mythic-treasures"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="underline decoration-gray-300"
-                  >
-                    Available on itch.io →
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="flex flex-col gap-4">
-          <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
-            <div className="block">
-              <div className="relative">
-                <img
-                  src="/scion_banner.png"
-                  alt="The Scion banner"
-                  className="h-48 w-full object-cover sm:h-64"
-                />
-                <div className="absolute inset-0 bg-black/10" />
-              </div>
-              <div className="flex flex-col gap-2 p-5 sm:p-6">
-                <h2 className="text-xl font-semibold sm:text-2xl">Scion</h2>
-                <p className="text-sm text-gray-600 sm:text-base">
-                  Become the scion of an ancient mystic art. Weave magic and
-                  steel into a single, fluid dance.
-                </p>
-                <div className="flex flex-wrap items-center gap-4 text-sm font-semibold text-gray-900">
-                  <Link to="/scion" className="underline decoration-gray-300">
-                    Free preview →
-                  </Link>
-                  <a
-                    href="https://surfingbird.itch.io/the-scion"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="underline decoration-gray-300"
-                  >
-                    Full class on itch.io →
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="grid gap-4 sm:grid-cols-2">
-          <Link
-            to="/conduit-rebound"
-            className="flex flex-col gap-2 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
-          >
-            <h3 className="text-lg font-semibold">Conduit Rebound</h3>
-            <p className="text-sm text-gray-600">
-              A Minimal Rework for Conduit.
-            </p>
-            <span className="text-[10px] uppercase tracking-[0.3em] text-gray-500">
-              Open →
-            </span>
-          </Link>
-
-          <Link
-            to="/shadow-reshade"
-            className="flex flex-col gap-2 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
-          >
-            <h3 className="text-lg font-semibold">Shadow Reshade</h3>
-            <p className="text-sm text-gray-600">
-              A Minimal Rework for Shadow.
-            </p>
-            <span className="text-[10px] uppercase tracking-[0.3em] text-gray-500">
-              Open →
-            </span>
-          </Link>
-
-          <Link
-            to="/fury-recharged"
-            className="flex flex-col gap-2 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
-          >
-            <h3 className="text-lg font-semibold">Fury Recharged</h3>
-            <p className="text-sm text-gray-600">A Minimal Rework for Fury.</p>
-            <span className="text-[10px] uppercase tracking-[0.3em] text-gray-500">
-              Open →
-            </span>
-          </Link>
-
-          <Link
-            to="/troubadour-reprise"
-            className="flex flex-col gap-2 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
-          >
-            <h3 className="text-lg font-semibold">Troubadour Reprise</h3>
-            <p className="text-sm text-gray-600">
-              A Minimal Rework for Troubadour.
-            </p>
-            <span className="text-[10px] uppercase tracking-[0.3em] text-gray-500">
-              Open →
-            </span>
-          </Link>
-
-          {/* <Link
-            to="/censor-reformed"
-            className="flex flex-col gap-2 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
-          >
-            <h3 className="text-lg font-semibold">Censor Reformed</h3>
-            <p className="text-sm text-gray-600">
-              A Minimal Rework for Censor.
-            </p>
-            <span className="text-[10px] uppercase tracking-[0.3em] text-gray-500">
-              Open →
-            </span>
-          </Link> */}
-        </section>
-      </main>
-    </div>
+    <main className="se-home">
+      <section className="se-hero">
+        <div className="se-hero-label"><span className="se-small-cross" aria-hidden="true">✦</span> Steel Echoes · Third-party Draw Steel publishing</div>
+        <h1>Draw Steel<br /><em>homebrew</em></h1>
+        <div className="se-hero-bottom"><p>Steel Echoes publishes high-quality third-party supplements for Draw Steel. Here’s what we’ve been working on.</p><a className="se-button" href="#publications">See the supplements <span aria-hidden="true">↓</span></a></div>
+      </section>
+      <section id="publications" className="se-publications">
+        <div className="se-section-heading"><div><p className="se-eyebrow">01 / Supplements</p><h2>Published supplements</h2></div><p>Available on itch.io</p></div>
+        <article className="se-feature se-treasures">
+          <a href="https://steel-echoes.itch.io/mythic-treasures" target="_blank" rel="noreferrer" className="se-art-link" aria-label="Explore Mythic Treasures on itch.io"><img src="/mythic-treasures.avif" alt="Illustrated Mythic Treasures cover artwork" width="1600" height="900" /></a>
+          <div className="se-feature-copy"><p className="se-eyebrow">Treasures / Draw Steel</p><h3>Mythic <br />Treasures</h3><p>Mythic Treasures is a massive collection of new treasures for Draw Steel, designed to define your character and shape how it fights.</p><a className="se-text-link" href="https://steel-echoes.itch.io/mythic-treasures" target="_blank" rel="noreferrer">View on itch.io <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article className="se-feature se-scion">
+          <div className="se-feature-copy"><p className="se-eyebrow">Hero class / Draw Steel</p><h3>The Scion</h3><p>Become the scion of an ancient mystic art. Weave magic and steel into a single, fluid dance.
+          </p><div className="se-feature-actions"><Link className="se-button" to="/scion">Read the free preview <span aria-hidden="true">→</span></Link><a className="se-text-link" href="https://surfingbird.itch.io/the-scion" target="_blank" rel="noreferrer">Full class on itch.io ↗</a></div></div>
+          <Link to="/scion" className="se-art-link" aria-label="Read the Scion preview"><img src="/scion_banner.png" alt="The Scion, a hero who weaves magic and steel" width="1200" height="675" loading="lazy" /></Link>
+        </article>
+      </section>
+      <section id="homebrew" className="se-library">
+        <div className="se-section-heading"><div><p className="se-eyebrow">02 / Homebrew</p><h2>Homebrew <em>& tools</em></h2></div></div>
+        <div className="se-library-layout"><div className="se-library-intro"><h3>Class reworks</h3><p>Our takes on a few of the core classes. Each page has the changes and revised abilities.</p></div><div className="se-resource-list">{reworks.map((item, index) => <Link key={item.to} to={item.to} className="se-resource"><span className="se-resource-number">0{index + 1}</span><div><h3>{item.title}</h3><p>{item.text}</p></div><span aria-hidden="true" className="se-arrow">→</span></Link>)}</div></div>
+        <div className="se-tools"><Link to="/alternate-tests"><span className="se-eyebrow">Rules variant</span><h3>Alternate Tests <span aria-hidden="true">→</span></h3><p>An alternative approach to tests.</p></Link><Link to="/stamina-scaling-tweaks" search={{ s: undefined }}><span className="se-eyebrow">Interactive tool</span><h3>Stamina Scaling <span aria-hidden="true">→</span></h3><p>Compare stamina scaling and adjust the numbers.</p></Link></div>
+      </section>
+    </main>
   );
 }
